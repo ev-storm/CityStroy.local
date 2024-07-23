@@ -164,9 +164,14 @@
 
 
 /*-----------------SHEMA-------------------*/
+	.shema{
+		display: none;
+	}
 	.shema-title{
-		font-size: 5vw;
-		padding: 4vw 0;
+		font-size: 8vw;
+		padding: 6vw 0 0 0;
+		text-align: center;
+		font-weight: 400;
 	}
 
 	.sh-mob{
@@ -175,47 +180,51 @@
 		align-items: center;
 		width: 100%;
 		background-color: #ffffff;
-		padding: 4vw 2vw;
+		padding: 8vw 2vw;
 		overflow: hidden;
 	}
 
 	.sh-mob__item{
 		width: 90vw;
-		height: 50vw;
+		height: fit-content;
 		background-color: #161616;
 		margin: 2vw 0;
 		z-index: 9;
 		transform: translateX(-120%);
-		transition: all 0.7s ease-out;
+		transition: all 0.5s ease;
   	position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: start;
 		flex-direction: column;
 		border-radius: 4vw;
-		padding: 10vw;
+		padding: 8vw;
 	}
-	.sh-mob__item:hover{
-		height: 60vw;
-	}
-	
+	/* .sh-mob__item:hover{
+		height: 70vw;
+		transition: all 0.7s ease-in-out;
+	} */
+
+	/* .sh-mob__item:nth-child(5){
+		height: fit-content;
+	} */
 
 
 	.sh-mob__item.visible {
 		transform: translateX(0);
-		transition: all 0.7s ease-out;
+		transition: all 0.7s ease
 	}
 
 	.sh-mob__item.hidden {
 		transform: translateX(-120%);
-		transition: all 0.7s ease-out;
+		transition: all 0.7s ease;
 	}
 
 
 
 	.sh-mob__item > h2::before{
 		content: url(/assets/img/icon/Frame\ 34.svg);
-		margin-right: 0.2vw;
+		margin-right: 1vw;
 	}
 
 	.shema__down{
@@ -242,41 +251,191 @@
 		font-size: 8vw;
 		font-weight: 300;
 		color: #ffffff;
-		margin: 10vw 0 0 0;
+		margin: 5vw 0 2vw 0;
 		transition: all 0.7s ease;
 		text-align: center;
 		justify-self: center;
 		width: 100%;
-		margin: 15vw 0 0 0;
 		position: relative;
 	}
+/* 	
 	.sh-mob__item:hover > h1{
-		margin-top: 0;
+		margin: 5vw 0;
+		font-weight: 200;
 		transition: all 0.7s ease;
-	}
+	} */
 	
 	.sh-mob__item > h2{
+		font-weight: 200;
+		color: #ffffff;
+		margin: 2vw 0 0 0;	
+		font-size: 4vw;
+		transition: all 0.5s ease;
+		position: relative;
+	}
+
+	.sh-mob__item h2 {
+    opacity: 0; /* Скрываем заголовки по умолчанию */
+    transition: all 0.7s ease-in-out; /* Плавный переход для анимации */
+    /* height: 0; Скрываем высоту */
+		transform: translateY(-200%);
+    overflow: hidden; /* Скрываем содержимое при высоте 0 */
+	}
+	.sh-mob__item.active h2 {
+		transition: all 0.7s ease-in-out;
+		opacity: 1; 
+		transform: translateY(0);
+		/* height: auto;  */
+	}
+	.sh-mob__item{
+		height: 30vw;
+		transition: all 0.7s ease-in-out;
+	}
+	.sh-mob__item.active{
+		height: 60vw;
+		transition: all 0.7s ease-in-out;
+	}
+
+	.sh-mob__item:nth-child(5){
+		height: 65vw;
+		transition: all 0.7s ease-in-out;
+	}
+
+	.sh-mob__item.active:nth-child(5){
+		height: 80vw;
+		transition: all 0.7s ease-in-out;
+	}
+
+	.sh-mob__item.active > img{
+		opacity: 0;
+		height: 0;
+		transition: all 0.7s ease-in-out;
+	}
+
+	.sh-mob__item.active > .fork-m{
+		opacity: 1;
+		transform: translateY(0);
+		transition: all 0.5s ease-out;
+		display: flex;
+	}
+	.sh-mob__item{
+		overflow: hidden;
+		justify-content: center;
+	}
+
+
+
+	.shema__img{
+		width: 100%;
+		padding: 0 15vw;
+		transform: translateY(-100%);
+		opacity: 1;
+		transition: all 0.5s ease-out;
+		position: relative;
+	}
+
+	.fork-m{
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		transform: translateY(-50%);
+		opacity: 0;
+		transition: all 0.5s ease-out;
+		position: relative;
+	}
+	
+
+	.fork-m > h1{
+		color:#ffffff;
+		font-size: 5vw;
+		text-align: center;
+		margin: 2vw 0;
+	}
+	.node_1{
+		width: 0.7vw;
+		height: 5vw;
+		background-color: #1e9dd8;
+	}
+	.node_2{
+		width: 0.7vw;
+		height: 5vw;
+		background-color: #1e9dd8;
+	}
+	.fork-m > button{
+		background-color: #1e9dd8;
+		height: fit-content;
+		margin: 2vw;
+		padding: 2vw;
 		font-size: 5vw;
 		font-weight: 200;
 		color: #ffffff;
-		margin: 1vw 0 0 0;
-		transform: translateY(300%);
-		opacity: 0;
-		transition: all 0.7s ease;
-		position: relative;
+		border-radius: 1vw;
+		border-style:none;
 	}
+	.fork-m__btn{
+		display: flex;
+	}
+	.fork-m__btn > button{
+		background-color: #1e9dd8;
+		height: fit-content;
+		margin: 2vw;
+		padding: 2vw;
+		font-size: 5vw;
+		font-weight: 200;
+		color: #ffffff;
+		border-style:none;
+		border-radius: 1vw;
+	}
+
+
+.sh-mob__banner {
+	width: 90%;
+	height: fit-content;
+	position: fixed;
+	top: 10%;
+	background-color: #1e9dd8;
+	color: white;
+	padding: 8vw;
+	border-radius: 4vw;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	z-index: 99;
+	opacity: 0;
+	transform: translateY(-50%);
+	transition: all 0.3s ease-out;
+}
+
+.show {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all 0.3s ease;
+}
+.hide {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all 0.3s ease;
+}
+
+
+
+.fork-m__btn > button:hover{
+	background-color: #005983;
+	transition: all 0.3s ease-out;
+}
+
+
+
+
+	.sh-mob__banner > h1{
+		font-size: 5vw;
+		font-weight: 300;
+		color: #ffffff;
+	}
+	.sh-mob__banner > h2{
+		font-size: 4vw;
+		font-weight: 200;
+		color: #ffffff;
+	} 
 	
-	.sh-mob__item:hover > h2{
-		transform: translateY(0);
-		opacity: 1;
-		transition: all 0.7s ease;
-	}
-
-
-
-	.shema{
-		display: none;
-	}
 
 
 
@@ -284,6 +443,29 @@
 
 
 
+
+
+/*-----------------MODAL-------------------*/
+.modal__con {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal{
+	display: none;
+	left: 0;
+	margin-left: 0;
+	top: 0;
+	margin-top: 0;
+	padding: 10% 0 10% 0;
+	width: 100%;
+	max-width: 600px;
+	min-width: 400px;
+	min-height: 600px;
+	height: 64vh;
+	transform: translateY(0);
+	opacity: 1;
+}
 
 
 
