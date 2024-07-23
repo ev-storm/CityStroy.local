@@ -260,7 +260,6 @@ var swiper2 = new Swiper(".case__swiper", {
 		let cof = $(this).scrollTop();
 		let blur = "blur("+cof/30+"px)";
 		let top = 15-cof/10+"vw";
-		let hW = document.body.clientHeight;
 
 		$('.video').css({
 			'filter': blur,
@@ -582,6 +581,10 @@ $(".km").mouseenter(function(){
 	});
 
 	// MOB
+
+
+
+
 		// function checkWidth() {
 		// 	// Проверяем ширину окна
 		// 	if (window.innerWidth <= 600) {

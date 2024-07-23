@@ -160,6 +160,11 @@
 
 	<!-- СХЕМА -->
 	<h1 class="shema-title" >Дорожная карта реализации объекта</h1>
+
+	<?php
+		include('components/shema-mob.php')
+	?>
+
 	<div class="shema">
 
 		<div class="shema__item sh-1">
@@ -170,7 +175,6 @@
 			</ul>
 		</div>
 		<img class="shema__right" src="/assets/img/icon/right.png"></img>
-		<img class="shema__down" src="/assets/img/icon/down.svg"></img>
 		<!-- ТЕХНОЛОГИЯ -->
 		<div class="shema__item sh-2">
 			<h1 class="shema__title">ТЕХНОЛОГИЯ<br>ДИЗАЙН</h1>

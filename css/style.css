@@ -799,6 +799,10 @@ li {
 		transition: all 1s ease-out;
 		display: flex;
 	} */
+.sh-mob{
+	display: none;
+}
+
 .shema__down{
 	display: none;
 }
