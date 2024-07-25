@@ -293,51 +293,77 @@ $('#v4').click(function(){
 
 
 
-// ///////////////----ПЕРЕХОД-----/////////////////
-	function myLoop() {
+		///////////////----CART ПЕРЕХОД-----/////////////////
 
-		let i = 0;
-		let interval = setInterval(function(){
+// function myLoop() {
+// 	let i = 1;
+// 	const classes = ['portfolio_back', 'bsb', 'ch', 'river', 'pasta'];
+// 	const baseUrls = {
+// 			'portfolio_back': '/assets/img/portfolio/',
+// 			'bsb': '/assets/img/cart/bsb/',
+// 			'ch': '/assets/img/cart/ch/',
+// 			'river': '/assets/img/cart/river/',
+// 			'pasta': '/assets/img/cart/pasta/',
+// 	};
 
-		if ( i === 6) {
-				clearInterval(interval); // остановка интервала при достижении значения 6
-				i = 1; // сброс счетчика до начального значения
-				setTimeout(myLoop, 1); // запуск функции заново через 1 секунду
-		} else { i++; }
 
-		$('.portfolio_back').css({
-			'background-image': "url('/assets/img/portfolio/"+i+".jpg')",
-			'transition': 'background-image 1.2s ease-in 1.2s',
-			'image-rendering': 'smooth',
-		});
+// 	let interval = setInterval(function() {
+// 			if (i === 6) {
+// 					clearInterval(interval); // остановка интервала при достижении значения 6
+// 					i = 1; // сброс счетчика до начального значения
+// 					setTimeout(myLoop, 1000); // запуск функции заново через 1 секунду
+// 			} else {
+// 					i++;
+// 			}
+			
 
-		$('.bsb').css({
-			'background-image': "url('/assets/img/cart/bsb/"+i+".jpg')",
-		'transition': 'background-image 1.2s ease-in 1.2s',
-		'image-rendering': 'smooth',
-		});
+// 			classes.forEach((className) => {
+// 					$('.' + className).css({
+// 							'background-image': "url('" + baseUrls[className] + i + ".jpg')",
+// 					});
+// 			});
+// 	}, 3000);
+// }
+// myLoop();
 
-		$('.ch').css({
-			'background-image': "url('/assets/img/cart/ch/"+i+".jpg')",
-		'transition': 'background-image 1.2s ease-in 1.2s',
-		'image-rendering': 'smooth',
-		});
+function myLoop() {
+	let i = 0;
+	const classes = ['portfolio_back', 'bsb', 'ch', 'river', 'pasta'];
+	const baseUrls = {
+			'portfolio_back': '/assets/img/portfolio/',
+			'bsb': '/assets/img/cart/bsb/',
+			'ch': '/assets/img/cart/ch/',
+			'river': '/assets/img/cart/river/',
+			'pasta': '/assets/img/cart/pasta/',
+	};
 
-		$('.river').css({
-			'background-image': "url('/assets/img/cart/river/"+i+".jpg')",
-		'transition': 'background-image 1.2s ease-in 1.2s',
-		'image-rendering': 'smooth',
-		});
-		
-		$('.pasta').css({
-			'background-image': "url('/assets/img/cart/pasta/"+i+".jpg')",
-		'transition': 'background-image 1.2s ease-in 1.2s',
-		'image-rendering': 'smooth',
-		});
-		}, 3000);
-	}
+	// Установка начального значения для всех классов
+	classes.forEach((className) => {
+			$('.' + className).css({
+					'background-image': "url('" + baseUrls[className] + "1.jpg')",
+			});
+	});
+
+	let interval = setInterval(function() {
+			if (i === 6) {
+					clearInterval(interval); // остановка интервала при достижении значения 6
+					i = 1; // сброс счетчика до начального значения
+					setTimeout(myLoop, 1000); // запуск функции заново через 1 секунду
+			} else {
+					i++;
+			}
+
+			// Обновляем фоновые изображения, начиная с 1 и обновляя до i
+			classes.forEach((className) => {
+					// Здесь мы обновляем фон только для текущего значения i
+					$('.' + className).css({
+							'background-image': "url('" + baseUrls[className] + i + ".jpg')",
+					});
+			});
+	}, 3000);
+}
+
 myLoop();
-
 
 
 
@@ -358,7 +384,7 @@ myLoop();
 
 
 
-
+//////////////////////-------INFO-CART----------///////////////////
 document.querySelectorAll('.info-cart').forEach(cart => {
 	const img = cart.querySelector('.info_2-img');
 	const infoSleep = cart.querySelector('.info_sleep');
@@ -407,13 +433,29 @@ document.querySelectorAll('.info-cart').forEach(cart => {
 
 
 
+//////////////////////--------CART----------///////////////////
+
+document.querySelectorAll('.cart__item').forEach(cart => {
+	const cartIt = cart.querySelector('.cart__item');
+
+	// Для мобильных устройств
+	cart.addEventListener('touchstart', () => {
+			if (cartIt.classList.contains('cart_up')) {
+					cartIt.classList.remove('cart_up');
+					cartIt.classList.add('cart_down');
+			} else {
+					cartIt.classList.remove('cart_down');
+					cartIt.classList.add('cart_up');
+			}
+	});
+});
 
 
 
 
 
 
-
+//////////////////---------COPY------//////////////////
 
 $('.recvis_copy').click(function(){
 

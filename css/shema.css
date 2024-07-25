@@ -75,7 +75,7 @@
 	}
 	.sh-mob__item.active{
 		height: 60vw;
-		transition: all 0.7s ease-in-out;
+		transition: all 0.5s ease;
 	}
 	.sh-mob__item > img{
 		width: 100%;
@@ -103,7 +103,7 @@
 		transition: all 0.5s ease-out;
 	}
 	.sh-mob__item.active:nth-child(5) > h1{
-		transform: translateY(-300%);
+		transform: translateY(-200%);
 		transition: all 0.5s ease-out;
 	}
 	.sh-mob__item > h1{
@@ -122,10 +122,9 @@
 		color: #ffffff;
 		margin: 2vw 0 0 0;	
 		font-size: 4vw;
-		transition: all 0.5s ease;
 		position: relative;
 		opacity: 0;
-		transition: all 0.7s ease-in-out;
+		transition: all 0.7s ease-out;
 		transform: translateY(-200%);
 		overflow: hidden;
 	}
@@ -134,7 +133,7 @@
 		margin-right: 1vw;
 	}
 	.sh-mob__item.active h2 {
-		transition: all 0.7s ease-in-out;
+		transition: all 0.7s ease-out;
 		opacity: 1; 
 		transform: translateY(0);
 	}
@@ -249,7 +248,7 @@
 	}
 	.hide {
 	opacity: 1;
-	transform: translateY(0);
+	transform: translateY(-400%);
 	transition: all 0.3s ease;
 	}
 
@@ -555,7 +554,7 @@
 	}
 	.hide {
 		opacity: 0;
-		transform: translateY(-100%);
+		transform: translateY(-500%);
 		transition: all 0.3s ease;
 	}
 	.shema{

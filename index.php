@@ -249,7 +249,7 @@
 	</div>
 
 	<div class="info-block_2">
-		<h1 class="info_title_2" >На протяжении <span class="seven-e"> 7 лет</span> мы разрабатываем:</h1>
+		<h1 class="info_title" >На протяжении <span class="seven-e"> 7 лет</span> мы разрабатываем:</h1>
 		<div class="info-cart_con">
 
 			<div class="info-back">
@@ -299,35 +299,6 @@
 			</div>
 		</div>
 	</div>
-
-
-	<!-- <div class="info-block_2">
-    <h1 class="info_title_2">На протяжении <span class="seven-e"> 7 лет</span> мы разрабатываем:</h1>
-    <div class="info-cart_con">
-        <div class="info-back">
-            <div class="info-cart">
-                <img class="info_2-img" src="/assets/img/icon/mac.svg" alt="">
-                <h2>Дизайн-проекты</h2>
-                <div class="info_sleep icart_down">
-                    <h3 class="info-2_sub-title">Повышаем эффективность каждого метра. Уделяем большое внимание зонированию и балансу функций в интерьере</h3>
-                    <a href="/pages/design.php"><div class="button info-button">Подробнее</div></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="info-back">
-            <div class="info-cart">
-                <img class="info_2-img" src="/assets/img/icon/design.svg" alt="">
-                <h2>Интерьеры</h2>
-                <div class="info_sleep icart_down">
-                    <h3 class="info-2_sub-title">Создаем уникальные интерьеры, которые гармонично вписываются в пространство и радуют глаз.</h3>
-                    <a href="/pages/interior.php"><div class="button info-button">Подробнее</div></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
 
 
 	<div class="info-block_3">

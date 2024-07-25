@@ -190,11 +190,11 @@
 
 /* ---------------2------------- */
 .info_title_2{
-	font-size: 5vw;
+	font-size: 7vw;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	margin-top: 10vw;
+	margin: 10vw 0 3vw 0;
 }
 .info_title_2 > span{
 	font-size: 10vw;
@@ -221,7 +221,8 @@
 }
 .info_sleep> a > div{
 	font-size: 4vw;
-	border-radius: 1vw;
+	border-radius: 2vw;
+	padding: 3vw 4vw;
 }
 .info_sleep> a > div:hover{
 	font-size: 4vw;
@@ -314,109 +315,6 @@
 }
 
 
-/*-----------------CART-------------------*/
-
-
-	.cart__item{
-		width: 100%;
-		height: 70vw;
-		margin: 5vw;
-		border-radius: 2vw;
-		transition: all 0.5s ease-in-out;
-	}
-	.cart__item:hover{
-		height: 85vw;
-		transition: all 0.5s ease-in-out;
-	}
-	.cart__title{
-		font-size: 7vw;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		margin: 5vw 0 0 0 ;
-		color: #ffffff;
-		font-weight: 300;
-		align-self: center;
-	}
-	/* #bsbT{
-		font-size: 7vw;
-		text-align: center;
-	} */
-
-	.cart__title {
-		font-size: 8vw;
-		font-weight: 300;
-		margin: 3vw;
-		
-}
-	.cart__content{
-		justify-content: center;
-	}
-
-	.cart__location{
-		font-size: 5vw;
-	}
-	.cart__logo{
-		width: 13vw;
-		margin: 2vw;
-	}
-	.cart__title{
-		font-size: 8vw;
-		font-weight: 300;
-		margin: 3vw;
-	}
-	.cart__sub-title{
-		font-size: 6vw;
-		font-weight: 200;
-	}
-	.cart__button{
-		font-size: 3.5vw;
-		font-weight: 200;
-		margin: 2vw;
-		padding: 2vw 3vw;
-		border-radius: 1vw;
-	}
-	.cart__button:hover{
-		font-size: 3.5vw;
-		font-weight: 200;
-		margin: 2vw;
-		padding: 2vw 3vw;
-		border-radius: 1vw;
-	}
-	.svgYou-cart{
-		width: 6vw;
-	}
-	.svgYou-cart:hover{
-		width: 6vw;
-	}
-
-	.cart-button{
-		font-size: 3.5vw;
-		font-weight: 200;
-		margin: 2vw;
-		padding: 2vw 3vw;
-		border-radius: 1vw;
-	}
-	.cart-button:hover{
-		font-size: 3.5vw;
-		font-weight: 200;
-		margin: 2vw;
-		padding: 2vw 3vw;
-		border-radius: 1vw;
-	}
-
-	.video-title{
-		font-size: 6vw;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		margin: 4vw 3vw;
-		color: #ffffff;
-		font-weight: 300;
-	}
-
-
-
 /*-----------------FOOTER-------------------*/
 
 
@@ -457,4 +355,3 @@
 
 
 }
-

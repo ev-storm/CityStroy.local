@@ -23,7 +23,7 @@
     <!------------------ ПРОЕКТИРОВАНИЕ -------------------->
     <div class="sh-mob__item">
         <h1>Проектирование <br> </h1>
-        <img class="shema__img" src="/assets/img/icon/Group 9136 (1).svg" alt="">
+        <img class="shema__img" src="/assets/img/icon/sh.svg" alt="">
         <div class="fork-m">
             <h1>Технологи<br>Дизайн</h1>
             <div class="node_1"></div>
