@@ -1,8 +1,7 @@
 <div class="modal-over"></div>
-	<div class="modal__con">
-		<div class="modal">
 
-			<img class="modal__logo" src="/assets/img/logo.svg" alt="">
+		<div class="modal">
+			<img class="modal__logo" src="/assets/img/icon/logo.svg" alt="">
 
 			<form class="modal__pop popup_form" action="#" method="POST" enctype="multipart/form-data">
 				<label class="modal__lab form__label" for="">Имя
@@ -67,6 +66,4 @@
 			</div> -->
 
 		
-
-		</div>
 	</div>

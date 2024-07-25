@@ -4,44 +4,7 @@ $('#btn').click(function(){
 $('#btnBD').hide();
 
 
-
-// window.addEventListener('load', function () {
-// 	var preloader = document.getElementById('preloader');
-// 	var preloaderHidden = false;
-
-// 	// Функция для скрытия прелоадера
-// 	function hidePreloader() {
-// 			if (!preloaderHidden) {
-// 					preloader.style.display = 'none'; // или используйте preloader.classList.add('hidden'), если вы применяете классы CSS для скрытия
-// 					preloaderHidden = true;
-// 			}
-// 	}
-// 	// Устанавливаем таймер на 3 секунды (3000 мс)
-// 	setTimeout(hidePreloader, 3000);
-
-
-// 	hidePreloader(); // Скрыть прелоадер
-
-
-// 	$('.menu').css({
-// 					'opacity': 1,
-// 					'transition': 'all 1s ease-out',
-// 					'transform': 'translateY(0vw)',
-// 				})
-		
-// 				setTimeout(function() {
-// 					$('.title__text').css({
-// 							'opacity': 1,
-// 							'transition': 'all 1s ease-out',
-// 							'transform': 'translateY(0vw)',
-// 					});
-// 				}, 200);
-// });
-
-
-
-
-
+///////////////----PRELOADER-----/////////////////
 function hidePreloader() {
 	var preloader = document.getElementById('preloader');
 
@@ -62,7 +25,6 @@ function hidePreloader() {
 	}, 200);
 }
 
-// Скрываем прелоадер через 3 секунды
 var timeoutId = setTimeout(hidePreloader, 3000);
 
 // Скрываем прелоадер, когда вся страница загружена
@@ -73,41 +35,7 @@ window.addEventListener('load', function() {
 
 
 
-
-// 	window.addEventListener('load', function () {
-//     var preloader = document.getElementById('preloader');
-//     var preloaderHidden = false;
-
-//     function hidePreloader() {
-			
-// 					if (!preloaderHidden) {
-// 							preloader.style.display = 'none';
-// 							preloaderHidden = true; 
-// 					}
-//     }
-
-//     // Устанавливаем таймер на 3 секунды (3000 мс)
-//     setTimeout(hidePreloader, 3000);
-
-//     // Скрываем прелоадер снова, если страница загружена быстрее
-//     hidePreloader();
-
-// 		$('.menu').css({
-// 			'opacity': 1,
-// 			'transition': 'all 1s ease-out',
-// 			'transform': 'translateY(0vw)',
-// 		})
-
-// 		setTimeout(function() {
-// 			$('.title__text').css({
-// 					'opacity': 1,
-// 					'transition': 'all 1s ease-out',
-// 					'transform': 'translateY(0vw)',
-// 			});
-// 		}, 200);
-
-// });
-
+///////////////----SWIPER-----/////////////////
 
 // swiper
 function initSwiper() {
@@ -119,7 +47,7 @@ function initSwiper() {
 	// Получаем текущую ширину окна
 	let slidesPerView = $(window).width() <= 600 ? 2 : 6;
 
-	// Инициализация Swiper
+
 	swiperTicker = new Swiper(".ticker", {
 			slidesPerView: slidesPerView,
 			spaceBetween: 0,
@@ -140,18 +68,6 @@ $(document).ready(function() {
 	});
 });
 
-// let swiperTicker = new Swiper(".ticker", {
-// 	slidesPerView: 6,
-// 	spaceBetween: 0,
-// 	loop: true,	
-// 	autoplay: {
-// 		enabled: true,
-// 		delay: 0,
-//   },
-// 	speed: 2500,
-// });
-
-
 
 let portfolio_ticker = new Swiper(".portfolio_ticker", {
 	slidesPerView: 6,
@@ -167,11 +83,6 @@ let portfolio_ticker = new Swiper(".portfolio_ticker", {
 
 
 
-
-
-
-
-
 var swiperWord = new Swiper(".title__slide", {
 	spaceBetween: 70,
 	slidesPerView: 1,
@@ -183,7 +94,6 @@ var swiperWord = new Swiper(".title__slide", {
   },
 	speed: 1000,
 });
-
 
 
 var swiper = new Swiper(".case__swiper-2", {
@@ -204,33 +114,9 @@ var swiper2 = new Swiper(".case__swiper", {
 	},
 });
 
-// LOGO_ANIME	
 
+///////////////---------------/////////////////
 
-
-	// $(".menu").mouseenter(function(){
-	// 		$('#logo__player').trigger('play'); 
-	// });
-
-	// $(".menu").mouseleave(function(){
-	// 	$('#logo__player').trigger('stop'); 
-	// });
-
-	// .menu:hover{
-	// 	background: #161616;
-	// 	transition: all 0.3s ease-out;
-	// 	box-shadow: 30px 40px 80px #000000;
-	// }
-
-	// let column_w2 = $('.about__column_2').width()/10+"vw";
-	// let column_w1 = $('.about__column_1').width();
-
-	// $('.about__column_2').css({
-	// 	'width': column_w2,
-	// })
-
-	// console.log(column_w1);
-	// console.log(column_w2);
 		function onEntry(entry) {
 			entry.forEach(change => {
 				if (change.isIntersecting) {
@@ -310,6 +196,10 @@ var swiper2 = new Swiper(".case__swiper", {
 					// 'box-shadow': '0px 0px 30px #05212ee6',
 				})
 			});
+
+			if(cof>600){
+				$('.case__title').children('h1').fadeOut()
+			}
 			
 			$('.menu').mouseleave(function(){
 				$(this).css({
@@ -322,8 +212,6 @@ var swiper2 = new Swiper(".case__swiper", {
 	});
 
 	//BURGER
-	// $('.mob-menu').animate({width:'toggle'},250);
-	// $('.mob_close').animate({width:'toggle'},250);
 		$('.mob-menu').css({
 			'transform': 'translateX(100%)',
 		})
@@ -381,34 +269,31 @@ var swiper2 = new Swiper(".case__swiper", {
 
 
 
-		// VIDOE
-			document.addEventListener('click', function() {
-				var video = document.getElementById('myVideo');
-				if (video.paused) {
-						video.play();
-				}
-			});
-		// const videoMob = document.getElementById("video-mob");
-		// videoMob.onclick = function() {
-		// 	if (videoMob.paused) {
-		// 		videoMob.play();
-		// 	} else {
-		// 	v.pause();
-		// 	}
-   	// };
-
+///////////////----VIDEO-----/////////////////
 	
+$('#v1').click(function(){
+	$(".video_you").attr('src','/assets/video/1.mp4');
+	$(".video-title_4").html('Первый этап строительства кальянной Мята на ВДНХ');
+});
 
-		const videoMob = document.getElementById("video-mob");
+$('#v2').click(function(){
+	$(".video_you").attr('src','/assets/video/2.mp4');
+	$(".video-title_4").html('Промежуточный этап строительства кальянной Мята на ВДНХ');
+});
 
-		window.addEventListener('load', function () {
-			videoMob.play();
-		});
+$('#v3').click(function(){
+	$(".video_you").attr('src','/assets/video/3.mp4');
+	$(".video-title_4").html('Третий этап строительства кальянной Мята на ВДНХ');
+});
+
+$('#v4').click(function(){
+	$(".video_you").attr('src','/assets/video/4.mp4');
+	$(".video-title_4").html('Завершающий этап строительства кальянной Мята на ВДНХ');
+});
 
 
 
-
-// ПЕРЕХОД
+// ///////////////----ПЕРЕХОД-----/////////////////
 	function myLoop() {
 
 		let i = 0;
@@ -454,233 +339,80 @@ var swiper2 = new Swiper(".case__swiper", {
 myLoop();
 
 
-// СХЕМА
-	$('.shema__sub-title').slideUp();
-	//$('.fork').slideUp(500);
-	$('.fork').fadeOut();
-	$('.shema__img').slideDown();
-
-	$(".shema__item").mouseenter(function(){
-		$(this).children('.shema__title').css({
-			'font-weight':400,
-			'transition': 'all 0.5s ease-out',
-		});
-    $(this).css({'z-index': '21',});
-		$(this).children('.shema__sub-title').slideDown(400);
-		
-		$(this).children('.fork').slideDown(200);
-		$(this).children('.fork').fadeIn(400);
-		$(this).children('.shema__img').slideUp(400);
-
-		$('.fork-el_').css({
-			'font-size':'0.8vw',
-			'transition': 'all 0.2s',
-		});
-		$('.fork-node-right-line').css({
-			'height': '85%',
-			'transition': 'all 0.2s',
-		})
-
-});
 
 
 
-$(".shema__item").mouseleave(function(){
-	$(this).children('.shema__title').css({
-		'font-weight':200,
-		'transition': 'all 0.5s ease-out',
-	});
-	$(this).css({'z-index': '20'});
-	$(this).children('.shema__sub-title').stop(function(){$(".shema__item").mouseover();}).slideUp(400);
+// ///////////////----INFO----/////////////////
 
-	$(this).children('.fork').slideUp(400);
-
-	$(this).children('.fork').stop(function(){$(".shema__item").mouseover();}).slideUp(400);
-
-	$(this).children('.shema__img').stop(function(){$(".shema__item").mouseover();}).slideDown(400);
-
-	$('.fork-el_').css({
-		'font-size':'0vw',
-		'transition': 'all 0.2s',
-	});
-	$('.fork-node-right-line').css({
-		'height': '0%',
-		'transition' : 'all 0.2s',
-	})
-});	
-
-
-$(".fork-el_").mouseenter(function(){
-	$(".proj-table").slideDown(300);
-});
-
-$(".proj-table").slideUp(100);
-
-$(".fork-el_").mouseleave(function(){
-	$(".proj-table").slideUp(300);
-	$(".proj-table").stop(function(){$(".fork-el_").mouseover();}).slideUp(100);
-});
-
-	$(".proj-title").html('');
-	$(".proj-text").html('');
-
-$(".ar").mouseenter(function(){
-	$(".proj-title").html('Aрхитектурные Pешения');
-	$(".proj-text").html('Раздел АР разрабатывается сразу после разработки технологического и дизайн-проекта, он объединяет два этих раздела в один, прорабатываются плоскости сопряжения Дизайна и Технологии, накладываются планы, проверяются размеры, выявляются наложения, дорабатываются узлы, разрезы, прорисовываются дополнительные технические планы. <br><br> В итоге раздел АР объединяет все решения и является одним и единым техническим заданием на проектирование инженерных разделов. Без его создания каждый проектировщик инженерных разделов сам объединяет все планы и у всех это получается по-разному, соответственно, копятся нестыковки и неточности, которые потом, во время стройки, вылезают в виде дополнительных затрат для Заказчика и являются проблемной и стрессовой частью всего процесса реализации объекта.');
-	$(".proj-table").css({ 'height': '30vw' });
-});
-
-$(".ovik").mouseenter(function(){
-	$(".proj-title").html('Отопление, Вентиляция и Кондиционирование');
-	$(".proj-text").html('Раздел ОВиК из инженерных проектов делается первым, так как в нем отражены самые массивные коммуникации и их расположение и вообще возможность прокладки в том или ином месте, что напрямую влияет на вынужденную корректировку дизайна и технологии, и запускает череду переделок, в том числе и проекта АР.<br><br>В целях сохранения времени и денег, часто предварительные планы проекта ОВиК выполняются на стадии разработки Технологии и Дизайна, чтобы проработать все основные моменты. Благодаря этому, дальнейшее проектирование продвигается без глобальных правок.');
-});
-
-$(".vk").mouseenter(function(){
-	$(".proj-title").html('Водоснабжение, Канализация');
-	$(".proj-text").html('Раздел ВК разрабатывается после согласования раздела АР.Важно оптимально развести трубы бытовой и технической канализации. В некоторых случаях, необходимо спроектировать их так, чтобы избежать устройства пандуса в технологической зоне и учесть все нюансы технологии и бытовых нужд ресторана.');
-});
-
-$(".ckc").mouseenter(function(){
-	$(".proj-title").html('Структурированные Кабельные Системы');
-	$(".proj-text").html('Раздел СКС разрабатывается на основе АР и включает в себя звук, видеонаблюдение, видеотрансляции, бесшовный интернет и компьютерно-кассовое оборудование.');
-});
-
-$(".eom").mouseenter(function(){
-	$(".proj-title").html('Электроснабжение, Электроосвещение');
-	$(".proj-text").html('Раздел ЭОМ проектируется последним, так как он концентрирует в себе все исходные данные, которые возникли в процессе проектирования не только Дизайна и Технологии, но и последующих разделов проекта, по которым возникла необходимость в электроэнергии. Данный раздел должен завершать основное проектирование.');
-});
-
-$(".km").mouseenter(function(){
-	$(".proj-title").html('Конструкции Металлические');
-	$(".proj-text").html('Раздел КМ проектируется в том случае, если в ресторане планируются несущие конструкции из металла, такие как антресольный этаж или лестница на металлическом каркасе.');
-});
-
-
-//СХЕМА-CHILD
-
-
-	$(".shema__item:first-child").mouseenter(function(){
-		$(this).animate({
-			left:'5%',
-		}, 1);
-	});
-	$(".shema__item:first-child").mouseleave(function(){
-		$(this).animate({
-			left: 0,
-		}, 1);
-	});
-	$(".shema__item:last-child").mouseenter(function(){
-		$(this).animate({
-			left:'-5%',
-		}, 1);
-	});
-	$(".shema__item:last-child").mouseleave(function(){
-		$(this).animate({
-			left: 0,
-		}, 1);
-	});
-
-	// MOB
-
-
-
-
-		// function checkWidth() {
-		// 	// Проверяем ширину окна
-		// 	if (window.innerWidth <= 600) {
-
-		// 		$(".shema__item:first-child").mouseenter(function(){
-		// 			$(this).animate({
-		// 				left: 0,
-		// 			}, 1);
-		// 		});
-
-		// 		$(".shema__item:last-child").mouseenter(function(){
-		// 			$(this).animate({
-		// 				left: 0,
-		// 			}, 1);
-		// 		});
-
-
-		// 		$(".shema__item").mouseenter(function(){
-
-			
-		// 			$('.fork-el_').css({
-		// 				'font-size':'5vw',
-		// 				'transition': 'all 0.2s',
-		// 			});
-
-		// 			$('.fork-node-right-line').css({
-		// 				'height': '85%',
-		// 				'transition': 'all 0.2s',
-		// 			})
-			
-		// 		});
-
-		// 		$(".shema__item").mouseleave(function(){
-					
-				
-		// 			$('.fork-el_').css({
-		// 				'font-size':'0vw',
-		// 				'transition': 'all 0.2s',
-		// 			});
-		// 			$('.fork-node-right-line').css({
-		// 				'height': '0%',
-		// 				'transition' : 'all 0.2s',
-		// 			})
-		// 		});	
-
-
-
-		// 	}}
-		// 	window.addEventListener('resize', checkWidth); // Вызываем функцию при изменении размера окна
-		// 	window.addEventListener('load', checkWidth); // Вызываем функцию при загрузке страницы
-
-
-
-
-	// info-block_2
- $('.info_sleep').slideUp(400);
+//  $('.info_sleep').slideUp(400);
 	
-$('.info-cart').mouseenter(function(){
-	$(this).children('.info_2-img').slideUp(400);
-	$(this).children('.info_sleep').slideDown(400);
+// $('.info-cart').mouseenter(function(){
+// 	$(this).children('.info_2-img').slideUp(400);
+// 	$(this).children('.info_sleep').slideDown(400);
+// });
+
+// $('.info-cart').mouseleave(function(){
+// 	$(this).children('.info_2-img').stop(function(){$(".info_2-img").mouseover();}).slideDown(400);
+// 	 $(this).children('.info_sleep').stop(function(){$(".info_sleep").mouseover();}).slideUp(400);
+// });
+
+
+
+
+document.querySelectorAll('.info-cart').forEach(cart => {
+	const img = cart.querySelector('.info_2-img');
+	const infoSleep = cart.querySelector('.info_sleep');
+	const iTitle = cart.querySelector('.iTitle');
+
+	// Обработчик для mouseenter и touchstart
+	cart.addEventListener('mouseenter', () => {
+			img.classList.add('icart_up');
+			img.classList.remove('icart_down');
+			infoSleep.classList.add('icart_up');
+			infoSleep.classList.remove('icart_down');
+			iTitle.classList.add('icart_up');
+			iTitle.classList.remove('icart_down');
+	});
+
+	// Обработчик для mouseleave и touchend
+	cart.addEventListener('mouseleave', () => {
+			img.classList.add('icart_down');
+			img.classList.remove('icart_up');
+			infoSleep.classList.add('icart_down');
+			infoSleep.classList.remove('icart_up');
+			iTitle.classList.add('icart_down');
+			iTitle.classList.remove('icart_up');
+	});
+
+	// Для мобильных устройств
+	cart.addEventListener('touchstart', () => {
+			img.classList.toggle('icart_up');
+			img.classList.toggle('icart_down');
+			infoSleep.classList.toggle('icart_up');
+			infoSleep.classList.toggle('icart_down');
+			iTitle.classList.toggle('icart_up');
+			iTitle.classList.toggle('icart_down');
+	});
+
+
+
+
+	
+	// При окончании касания
+	cart.addEventListener('touchend', () => {
+			// Дополнительно можно управлять состояниями, если это требуется
+	});
 });
 
-$('.info-cart').mouseleave(function(){
-	$(this).children('.info_2-img').stop(function(){$(".info_2-img").mouseover();}).slideDown(400);
-	 $(this).children('.info_sleep').stop(function(){$(".info_sleep").mouseover();}).slideUp(400);
-});
-
-
-
-
-// video
-$('#v1').click(function(){
-	$(".video_you").attr('src','/assets/video/1.mp4');
-	$(".video-title_4").html('Первый этап строительства кальянной Мята на ВДНХ');
-});
-
-$('#v2').click(function(){
-	$(".video_you").attr('src','/assets/video/2.mp4');
-	$(".video-title_4").html('Промежуточный этап строительства кальянной Мята на ВДНХ');
-});
-
-$('#v3').click(function(){
-	$(".video_you").attr('src','/assets/video/3.mp4');
-	$(".video-title_4").html('Третий этап строительства кальянной Мята на ВДНХ');
-});
-
-$('#v4').click(function(){
-	$(".video_you").attr('src','/assets/video/4.mp4');
-	$(".video-title_4").html('Завершающий этап строительства кальянной Мята на ВДНХ');
-});
 
 
 
 
 
-// COPY
+
+
+
+
 
 
 $('.recvis_copy').click(function(){

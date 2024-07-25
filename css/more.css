@@ -299,6 +299,10 @@ PROJECT */
 	display: flex;
 	justify-content: space-around;
 	padding: 7vw 1vw;
+	background-image: url(../assets/img/portfolio/4.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
 }
 .recvis_main{
 	display: flex;
@@ -319,10 +323,11 @@ PROJECT */
 .recvis_{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	background-color: #ffffff;
+	justify-content: start;
+	background-color: #00000080;
 	border-radius: 0.5vw;
 	padding: 0.5vw;
+	backdrop-filter: blur(10px);
 }
 .recvis{
 	display: flex;
@@ -334,11 +339,11 @@ PROJECT */
 	transition: var(--duration);
 }
 .recvis:hover{
-	background-color: var(--main-blue);
+	background: linear-gradient(99deg, rgba(24,130,180,1) 0%, rgba(0,84,124,1) 100%);
 	transition: var(--duration);
 }
 .recvis:hover > .recvis_title > h1{
-	color: #00547c;
+	color: #ffffff;
 	transition: var(--duration2);
 }
 .recvis:hover > .recvis_title > h2{
@@ -352,7 +357,7 @@ PROJECT */
 }
 .recvis-main_title > h1{
 	font-size: 1.5vw;
-	background-color: var(--main-blue);
+	background: linear-gradient(99deg, rgba(24,130,180,1) 0%, rgba(0,84,124,1) 100%);
 	color: #ffffff;
 	font-weight: 300;
 	padding: 1vw 1vw 1vw 2vw;
@@ -361,19 +366,32 @@ PROJECT */
 }
 .recvis_title > h1{
 	font-size: 1.3vw;
-	color: var(--main-blue);
+	color: #ffffff;
 	font-weight: 300;
 	margin: 0;
 }
+.recvis_title > a > h1{
+	font-size: 1vw;
+	color: #ffffff80;
+	font-weight: 300;
+	margin: 0;
+	padding: 1vw 0;
+	transition: var(--duration2);
+}
+.recvis_title:hover > a > h1{
+	color: #ffffff;
+	transition: var(--duration2);
+}
 .recvis_title > h2{
 	font-size: 1vw;
-	color: #00547c;
+	color: #ffffff90;
 	font-weight: 300;
 	margin: 0.2vw 0 0 0 ;
 }
 .recvis_copy > svg{
 	width: 50%;
 	margin: 0 0 0.5vw 1vw;
+	stroke:#ffffff90;
 	scale: 0.5;
 	transition: var(--duration);
 }
@@ -401,6 +419,9 @@ PROJECT */
 	position: relative;
 	transform:translateY(-0.5vw);
 	transition: var(--duration2);
+}
+.recvis > .recvis_copy > svg > path{
+	stroke:#ffffff80;
 }
 .recvis:hover > .recvis_copy > svg > path{
 	stroke:#ffffff;

@@ -17,7 +17,11 @@
 <style>
 	.menu__main > li:nth-child(1) > a {
 		color: #28bbff;
-		font-weight: 200;
+		font-weight: 300;
+	}
+	.menu-mob_main > li:nth-child(1) > a {
+		color: #28bbff;
+		font-weight: 300;
 	}
 </style>
 
@@ -159,102 +163,11 @@
 	</div> 
 
 	<!-- СХЕМА -->
-	<h1 class="shema-title" >Дорожная карта реализации объекта</h1>
-
+	
 	<?php
-		include('components/shema-mob.php')
+		include('components/shema.php')
 	?>
-
-	<div class="shema">
-
-		<div class="shema__item sh-1">
-			<h1 class="shema__title">АНАЛИЗ Т.У.</h1>
-			<ul class="shema__sub-title">
-				<li class="shema__sub-title__item">Сбор исходных данных</li>
-				<li class="shema__sub-title__item">Анализ технических условий</li>
-			</ul>
-		</div>
-		<img class="shema__right" src="/assets/img/icon/right.png"></img>
-		<!-- ТЕХНОЛОГИЯ -->
-		<div class="shema__item sh-2">
-			<h1 class="shema__title">ТЕХНОЛОГИЯ<br>ДИЗАЙН</h1>
-			<ul class="shema__sub-title">
-				<li class="shema__sub-title__item">Разработка технологий</li>
-				<li class="shema__sub-title__item">Дизайн проект</li>
-			</ul>
-		</div>
-		<img class="shema__right" src="/assets/img/icon/right.png"></img>
-		<img class="shema__down" src="/assets/img/icon/down.svg"></img>
-		<!-- ПРОЕКТИРОВАНИЕ -->
-		<div class="shema__proj sh-3">
-			<div class="shema__item project">
-			<h1 class="shema__title">ПРОЕКТИРОВАНИЕ</h1>
-			<img class="shema__img" src="/assets/img/icon/Group 9136 (1).svg" alt="">
-
-			<div class="fork">
-				<div class="fork-node-left-title">
-					<div>
-						<h3>Технологии</h3>
-						<h3>Дизайн</h3>
-					</div>
-				</div>
-				<div class="fork-node-left">
-					<div></div>
-				</div>
-				<div class="fork-node-centre">
-					<h3 class="fork-el_ ar">АР</h3>
-				</div>
-				<div class="fork-node-right">
-					<div class="fork-node-right-line"></div>
-				</div>
-				<div class="fork-el">
-					<h3 class="fork-el_ ovik">ОВиК</h3>
-					<h3 class="fork-el_ vk">ВК</h3>
-					<h3 class="fork-el_ ckc">СКС</h3>
-					<h3 class="fork-el_ eom">ЭОМ</h3>
-					<h3 class="fork-el_ km">КМ</h3>
-				</div>
-			</div>
-			</div>
-		</div>
-		<!-- ИНФО-ТАБЛО -->
-		<div class="proj-table">
-			<h2 class="proj-title"></h2>
-			<h3 class="proj-text"></h3>
-		</div>
-		<img class="shema__right" src="/assets/img/icon/right.png"></img>
-		<img class="shema__down" src="/assets/img/icon/down.svg"></img>
-		<!-- СМЕТА -->
-		<div class="shema__item sh-4">
-			<h1 class="shema__title">СМЕТА</h1>
-			<ul class="shema__sub-title">
-				<li class="shema__sub-title__item" >Честные смены</li>
-				<li class="shema__sub-title__item">Подсчёт всего и сразу</li>
-			</ul>
-		</div>
-		<img class="shema__right" src="/assets/img/icon/right.png"></img>
-		<img class="shema__down" src="/assets/img/icon/down.svg"></img>
-		<!-- С.Р.М. -->
-		<div class="shema__item sh-5">
-			<h1 class="shema__title">С.Р.М.</h1>
-			<ul class="shema__sub-title">
-				<li class="shema__sub-title__item">Выполнение всех работ <br> согласно проекту</li>
-				<li class="shema__sub-title__item">Инженеры и проектировщики</li>
-				<li class="shema__sub-title__item">Квалифицированные строители</li>
-			</ul>
-		</div>
-		<img class="shema__right" src="/assets/img/icon/right.png"></img>
-		<img class="shema__down" src="/assets/img/icon/down.svg"></img>
-			<!-- ГАРАНТИЙНОЕ И СЕРВИСНОЕ ОБСЛУЖИВАНИЕ -->
-		<div class="shema__item sh-6">
-			<h1 class="shema__title GSO">ГАРАНТИЙНОЕ И СЕРВИСНОЕ ОБСЛУЖИВАНИЕ</h1>
-			<ul class="shema__sub-title">
-				<!-- <li class="shema__sub-title__item">ГАРАНТИЙНОЕ И СЕРВИСНОЕ ОБСЛУЖИВАНИЕ</li> -->
-				<li class="shema__sub-title__item">1 год сервисного обслуживания</li>
-				<li class="shema__sub-title__item">Постгарантийное обслуживание <br> на договорных условиях</li>
-			</ul>
-		</div>
-	</div>
+	
 
 
 	<!-- INFO -->
@@ -342,7 +255,7 @@
 			<div class="info-back">
 				<div class="info-cart">
 					<img class="info_2-img" src="/assets/img/icon/mac.svg" alt="">
-					<h2>Дизайн-проекты</h2>
+					<h2 class="iTitle">Дизайн-проекты</h2>
 					<div class="info_sleep">
 						<h3 class="info-2_sub-title" >Повышаем эффективность каждого метра. Уделяем большое внимание зонированию и балансу функций в интерьере</h3>
 						<a href="/pages/design.php"><div class="button info-button">Подробнее</div></a>
@@ -353,12 +266,12 @@
 			<div class="info-back">
 				<div class="info-cart">
 					<img class="info_2-img" src="/assets/img/icon/plan_kv.svg" alt="">
-					<h2>Проектирование</h2>
-						<div class="info_sleep">
-							<h3 class="info-2_sub-title" >Разрабатываем технологию и инженерные проекты, оптимизируя бюджет и уменьшая сроки проведения строительных работ
-							</h3>
-							<a href="/pages/project.php"><div class="button info-button">Подробнее</div></a>
-						</div>
+					<h2 class="iTitle">Проектирование</h2>
+					<div class="info_sleep">
+						<h3 class="info-2_sub-title" >Разрабатываем технологию и инженерные проекты, оптимизируя бюджет и уменьшая сроки проведения строительных работ
+						</h3>
+						<a href="/pages/project.php"><div class="button info-button">Подробнее</div></a>
+					</div>
 				</div>
 			</div>
 
@@ -366,7 +279,7 @@
 			<div class="info-back">
 				<div class="info-cart">
 						<img class="info_2-img" src="/assets/img/icon/valik.svg" alt="">
-						<h2>Строительство</h2>
+						<h2 class="iTitle"> Строительство</h2>
 						<div class="info_sleep">
 							<h3 class="info-2_sub-title">Выполняем этапы строительно-монтажных и отделочных работ согласно проекту, управляем строительными процессами, координируем работу субподрядчиков</h3>
 							<a href="/pages/SMR.php"><div class="button info-button">Подробнее</div></a>
@@ -377,17 +290,44 @@
 			<div class="info-back">
 				<div class="info-cart">
 						<img class="info_2-img" src="/assets/img/icon/plita.svg" alt="">
-						<h2>Технология</h2>
-						<div class="info_sleep">
+						<h2 class="iTitle">Технология</h2>
+						<div class="info_sleep icart_down">
 							<h3 class="info-2_sub-title">Разрабатываем планировки помещений и расстановку технологического оборудования для максимальной эффективности ресторана ПО</h3>
 							<a href="/pages/tehno.php"><div class="button info-button">Подробнее</div></a>
 					</div>
 				</div>
 			</div>
-
-
 		</div>
 	</div>
+
+
+	<!-- <div class="info-block_2">
+    <h1 class="info_title_2">На протяжении <span class="seven-e"> 7 лет</span> мы разрабатываем:</h1>
+    <div class="info-cart_con">
+        <div class="info-back">
+            <div class="info-cart">
+                <img class="info_2-img" src="/assets/img/icon/mac.svg" alt="">
+                <h2>Дизайн-проекты</h2>
+                <div class="info_sleep icart_down">
+                    <h3 class="info-2_sub-title">Повышаем эффективность каждого метра. Уделяем большое внимание зонированию и балансу функций в интерьере</h3>
+                    <a href="/pages/design.php"><div class="button info-button">Подробнее</div></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-back">
+            <div class="info-cart">
+                <img class="info_2-img" src="/assets/img/icon/design.svg" alt="">
+                <h2>Интерьеры</h2>
+                <div class="info_sleep icart_down">
+                    <h3 class="info-2_sub-title">Создаем уникальные интерьеры, которые гармонично вписываются в пространство и радуют глаз.</h3>
+                    <a href="/pages/interior.php"><div class="button info-button">Подробнее</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
 
 
 	<div class="info-block_3">
@@ -471,26 +411,26 @@
 	</div>
 
 
-	<div class="info-block_4">
-		<h1 class="info_title" >Мы собрали коллектив, «заточенный» на рестораны:</h1>
+	<div class="info-block_2">
+		<h1 class="info_title_3" >Мы собрали коллектив, «заточенный» на рестораны:</h1>
 		<div class="info-cart_con">
 
-			<div class="info-back_2">
+			<div class="info-back">
 				<div class="info-cart">
 					<img class="info_2-img" src="/assets/img/icon/lin.svg" alt="">
-					<h2>Дизайн-проекты</h2>
-					<div class="info_sleep">
+					<h2 class="iTitle">Дизайн-проекты</h2>
+					<div class="info_sleep icart_down">
 						<h3 class="info-2_sub-title" >Весь состав ИТР нашей компании с высшим строительным и инженерным образованием.</h3>
 						<a href="/pages/design.php"><div class="button info-button">Подробнее</div></a>
 					</div>
 				</div>
 			</div>
 
-			<div class="info-back_2">
+			<div class="info-back">
 				<div class="info-cart">
 						<img class="info_2-img" src="/assets/img/icon/prob.svg" alt="">
-						<h2>Проектирование</h2>
-						<div class="info_sleep">
+						<h2 class="iTitle">Проектирование</h2>
+						<div class="info_sleep icart_down">
 							<h3 class="info-2_sub-title" >Наши дизайнеры имеют множественный успешный опыт ресторанных проектов.
 							</h3>
 							<a href="/pages/project.php"><div class="button info-button">Подробнее</div></a>
@@ -499,22 +439,22 @@
 			</div>
 
 			
-			<div class="info-back_2">
+			<div class="info-back">
 				<div class="info-cart">
 						<img class="info_2-img" src="/assets/img/icon/casc.svg" alt="">
-						<h2>Строительство</h2>
-						<div class="info_sleep">
+						<h2 class="iTitle">Строительство</h2>
+						<div class="info_sleep icart_down">
 							<h3 class="info-2_sub-title">Команда строителей обладает разносторонней квалификацией и имеет опыт в ремонте ресторанов, умеет воплотить все задумки дизайнера и пожелания Заказчика.</h3>
 							<a href="/pages/SMR.php"><div class="button info-button">Подробнее</div></a>
 						</div>
 				</div>
 			</div>
 
-			<div class="info-back_2">
+			<div class="info-back">
 				<div class="info-cart">
 						<img  class="info_2-img" src="/assets/img/icon/colp.svg" alt="">
-						<h2>Технологи</h2>
-						<div class="info_sleep">
+						<h2 class="iTitle">Технологи</h2>
+						<div class="info_sleep icart_down">
 						<h3 class="info-2_sub-title" id="info-sub_4" >Многие технологи помимо технического образования, до нас долго работали поварами в ресторане и знают изнутри как сделать правильно и удобно, а значит у команды ресторана есть где вкладывать душу в работу, что напрямую отражается на качестве кухни и репутации ресторана.</h3>
 						<a href="/pages/tehno.php"><div class="button info-button">Подробнее</div></a>
 					</div>
@@ -534,7 +474,7 @@
 				<div class="cart__content">
 					<h3 class="cart__location">ТЦ Саларис</h3>
 					<img class="cart__logo" src="/assets/img/icon/logo/BSB.png" alt="BLACK STAR BURGER">
-					<h1 class="cart__title">BLACK STAR BURGER</h1>
+					<h1 class="cart__title" >BLACK STAR BURGER</h1>
 					<h2 class="cart__sub-title">Бургерная 180 м&#178</h2>
 					<div class="cart__link">
 						<a href="/case/bsb.php">

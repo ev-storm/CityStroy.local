@@ -1,24 +1,67 @@
 <footer>
+		
+	<div class="banner_con">
+			<div class="banner element-animation_up">
+				<div class="banner_left">
+					<div class="banner_title">
+						<h1>Хотите обсудить проект?</h1>
+					</div>
+					<button class="button banner_button">Консультация</button>
+				</div>
 
-	<nav class="footer-menu"
-	onmouseenter="footer__player_3.play()" 
-	onmouseleave="footer__player_3.stop()">
-		<div class="footer__logo"
-				alt="img/alt_logo">
-				<a class="footer__linc-logo" href="../index.php">
-					<dotlottie-player 
-						id="footer__player_3"
-						class="footer__player"
-						src="/assets/animation/logo.json" 
-						background="transparent" 
-						speed="1" 
-						loop="false"
-						autoplay="false">
-					</dotlottie-player>
-				</a>
-			</div>
 
-	<ul class="menu__main menu__main-footer">
+				<div class="banner_main">
+					<div class="banner_main_title">
+						<h1>Опишите Вашу задачу и мы расскажем чем можем помочь, а также дадим индивидуальные рекомендации по реализации проекта:</h1>
+					</div>
+					<ul type="disc">
+						<li>&bull; Какие решения позволят сэкономить без потери качества</li>
+						<li>	&bull; Как возможно сократить срок строительства</li>
+						<li>	&bull; На что следует обратить внимание в вашем проекте, чтобы не допустить проблем во время строительства</li>
+					</ul>
+				</div>
+
+
+				<!-- <div class="banner_logo"
+				onmouseenter="logo__player_2.play()" 
+				onmouseleave="logo__player_2.stop()">
+						<a class="logo__a" href="#">
+							<dotlottie-player 
+								id="logo__player_2"
+								class="logo__player"
+								src="/assets/animation/logo-2.json" 
+								background="transparent" 
+								speed="1" 
+								loop="false"
+								autoplay="false">
+							</dotlottie-player>
+						</a>
+					</div>
+				
+			</div> -->
+	</div>
+
+
+<nav class="footer-menu"
+			 onmouseenter="footer__player_3.play()" 
+			 onmouseleave="footer__player_3.stop()">
+	<div class="footer__logo"
+			alt="img/alt_logo">
+			<a class="footer__linc-logo" href="../index.php">
+				<dotlottie-player 
+					id="footer__player_3"
+					class="footer__player"
+					src="/assets/animation/logo.json" 
+					background="transparent" 
+					speed="1" 
+					loop="false"
+					autoplay="false">
+				</dotlottie-player>
+			</a>
+	</div>
+
+	<div class="main__menu-footer__con">
+		<ul class="menu__main menu__main-footer">
 			<li><a class="menu__main__item" href="../index.php">Главная</a></li>
 			<li><a class="menu__main__item" href="/pages/tehno.php">Технологии</a></li>
 			<li><a class="menu__main__item" href="/pages/design.php">Дизайн</a></li>
@@ -26,20 +69,24 @@
 			<li><a class="menu__main__item" href="/pages/SMR.php">Ремонт и СМР</a></li>
 			<li><a class="menu__main__item" href="/pages/portfolio.php">Портфолио</a></li>
 			<li><a class="menu__main__item" href="/pages/contact.php">Контакты</a></li>
-	</ul>
-	<div class="footer__about">
-	<li><button class="button-footer button modal__btn">Связаться с нами</button></li>
-		<h1 class="footer__text">
-			ООО "СИТИСТРОЙ" <br	>ИНН 7730212956 ОГРН 1167746840117 © 2014-2024
-		</h1>
-		<h2 class="footer_sub-text">
-			Политика конфиденциальности. <br> Информация, размещенная на сайте, 
-			носит ознакомительный характер и ни при каких условиях не является 
-			публичной офертой определяемой положением Статьи 437 Гражданского 
-			кодекса Российской Федерации.
-		</h2>
+		</ul>
 	</div>
-	</nav>
+		
+	<div class="footer__about">
+		<!-- <button class="button-footer button modal__btn">Связаться с нами</button> -->
+		<h1> ООО "СИТИСТРОЙ"<span> © &nbsp; 2014-2024</span> </h1>
+		<h2>
+				<span> ИНН 7730212956 &nbsp; &nbsp;  ОГРН 1167746840117 </span><br>
+				Политика конфиденциальности. <br> Информация, размещенная на сайте, 
+				носит ознакомительный характер и ни при каких условиях не является 
+				публичной офертой определяемой положением Статьи 437 Гражданского 
+				кодекса Российской Федерации.
+				
+		</h2>
+
+	</div>
+
+</nav>
 	
 
 </footer>

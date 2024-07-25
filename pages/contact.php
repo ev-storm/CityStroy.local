@@ -17,7 +17,11 @@
 <style>
 	.menu__main > li:nth-child(7) > a {
 		color: #28bbff;
-		font-weight: 200;
+		font-weight: 300;
+	}
+	.menu-mob_main > li:nth-child(7) > a {
+		color: #28bbff;
+		font-weight: 300;
 	}
 </style>
 
@@ -278,7 +282,11 @@
 						<h3>Скопировано</h3>
 					</div>
 				</div>
-
+				<div class="recvis">
+					<div class="recvis_title">
+					<a href="#"><h1>Политика конфиденциальности</h1></a>
+					</div>
+				</div>
 			</div>
 
 		</article>

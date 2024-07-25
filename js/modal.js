@@ -1,5 +1,6 @@
 
 $('.modal-over').hide();
+$('.modal').hide();
 
 $('.modal__btn').click(function(){
 	$('.modal-over').fadeIn();
@@ -15,7 +16,7 @@ $('.modal-over').click(function(){
 	$('.modal-over').fadeOut();
 	$('.modal').fadeOut(400);
 	$('.modal').css({
-		'transform': 'translateY(-70%)',
+		'transform': 'translateY(-50%)',
 		'transition': '0.7s',
 		'opacity':'0'
 	})

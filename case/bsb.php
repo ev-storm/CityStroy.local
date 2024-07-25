@@ -184,9 +184,7 @@
 		</article>
 
 
-	<?php
-		include('../components/banner.php')
-	?>
+
 </body>
 
 <!-- FOTTER -->
@@ -198,3 +196,7 @@
 	include('../components/modal.php')
 ?>
 </html>
+
+<script>
+
+</script>
