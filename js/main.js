@@ -366,7 +366,21 @@ function myLoop() {
 myLoop();
 
 
+$(document).ready(function() {
+	// Обработчик события наведения мыши для элементов с классом .cart__item
+	$('.cart__item').on('mouseenter', function() {
+			// Удаляем класс .cart__active у всех элементов .cart__item
+			$('.cart__item').removeClass('cart__active');
+			
+			// Добавляем класс .cart__active к текущему элементу
+			$(this).addClass('cart__active');
+	});
 
+	// Убираем класс .cart__active, когда мышь уходит с элемента
+	$('.cart__item').on('mouseleave', function() {
+			$(this).removeClass('cart__active');
+	});
+});
 
 // ///////////////----INFO----/////////////////
 

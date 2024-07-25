@@ -628,49 +628,15 @@ li {
 	margin: 0;
 }
 
-
-/* HOVER */
-.cart__filter:hover{
-	background: #0000009c;
-	backdrop-filter: blur(3px);
-	transition: var(--duration);
+.video-title{
+	font-size: 6vw;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin: 4vw 3vw;
+	color: #ffffff;
+	font-weight: 300;
 }
-.cart__filter:hover .cart__location{
-	scale: 1;
-	transition: 500ms;
-}
-.cart__filter:hover .cart__logo{
-	scale: 1;
-	transition: 500ms;
-}
-.cart__filter:hover .cart__title{
-	transform: translate(0px, -20px);
-	scale: 1;
-	transition: 250ms;
-}
-.cart__filter:hover .cart__sub-title{
-	scale: 1;
-	transition: 500ms;
-}
-.cart__filter:hover .cart__link{
-	scale: 1;
-	transition: 500ms;
-}
-.cart__content:hover{
-	opacity: 1;
-	transition: var(--duration);
-}
-.cart__youtube{
-	background-color: transparent;
-	border-style: none;
-	cursor: pointer;
-}
-.cart__youtube:hover{
-	opacity: 1;
-	transition: var(--duration);
-}
-
-
 
 
 

@@ -136,6 +136,60 @@
 }
 
 
+/* HOVER */
+.cart__filter:hover{
+	background: #0000009c;
+	backdrop-filter: blur(3px);
+	transition: var(--duration);
+}
+.cart__filter:hover .cart__location{
+	scale: 1;
+	transition: 500ms;
+}
+.cart__filter:hover .cart__logo{
+	scale: 1;
+	transition: 500ms;
+}
+.cart__filter:hover .cart__title{
+	transform: translate(0px, -20px);
+	scale: 1;
+	transition: 250ms;
+}
+.cart__filter:hover .cart__sub-title{
+	scale: 1;
+	transition: 500ms;
+}
+.cart__filter:hover .cart__link{
+	scale: 1;
+	transition: 500ms;
+}
+.cart__content:hover{
+	opacity: 1;
+	transition: var(--duration);
+}
+.cart__youtube{
+	background-color: transparent;
+	border-style: none;
+	cursor: pointer;
+}
+.cart__youtube:hover{
+	opacity: 1;
+	transition: var(--duration);
+}
+
+
+.cart__item {
+	transition: transform 0.3s ease, background-color 0.3s ease; /* Разрешаем анимацию на эти свойства */
+}
+
+.cart__active {
+	transform: scale(1.05); /* Увеличение элемента на 5% */
+	background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый фон (можно изменить) */
+}
+
+
+
+
 @media (max-width: 600px){
 	
 /*-----------------CART MOB-------------------*/
@@ -229,15 +283,6 @@
 	border-radius: 1vw;
 }
 
-.video-title{
-	font-size: 6vw;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	margin: 4vw 3vw;
-	color: #ffffff;
-	font-weight: 300;
-}
 
 
 
