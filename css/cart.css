@@ -19,6 +19,7 @@
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
+
 .cart__item{
 	display: flex;
 	flex-direction: column;
@@ -29,7 +30,7 @@
 	border-radius: 0.5vw;
 	box-shadow: 10px 15px 28px rgb(0, 0, 0);
 	image-rendering: smooth;
-	/* background-image: url('/assets/img/cart/main.png'); */
+	/* background-image: url('/assets/img/cart/main.png');  */
 	background-size: cover;
 	background-position: center;
 	margin-top: 2vw;
@@ -37,20 +38,9 @@
 	transition: all 1.2s ease-in-out;
 	flex-wrap: wrap;
 }
+/* ------------------- */
 
-/* .bsb{
-	background-image: url('/assets/img/cart/bsb/6.jpg');
-}
-.ch{
-	background-image: url('/assets/img/cart/ch/6.jpg');
-}
-.river{
-	background-image: url('/assets/img/cart/river/6.jpg');
-}
-.pasta{
-	background-image: url('/assets/img/cart/pasta/6.jpg');
-} */
-
+/* ------------------- */
 
 
 .cart__filter{
@@ -61,7 +51,7 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 0.5vw;
-	background: #0000001f;
+	background: transparent;
 	transition: var(--duration);
 }
 .cart__content{
@@ -177,11 +167,6 @@
 	opacity: 1;
 	transition: var(--duration);
 }
-
-
-
-
-
 
 
 @media (max-width: 600px){

@@ -1008,13 +1008,14 @@ li {
 	display: none;
 }
 .footer__about > h1{
-	 display: block;
+	display: block;
 	font-size: 0.8vw;
 	font-weight: 300;
 	color: #ffffff;
 	transition: all 0.5s;
 	text-shadow: 0 0 0 #ffffff;
 	transition: all 0.5s ease-in-out;
+	margin: 1vw 0 0.2vw 0;
 }
 .footer__about:hover > h1{
 	text-shadow: 0 0 0.3vw #ffffff, 0 0 0.7vw var(--main-blue), 0 0 1vw var(--main-blue);
@@ -1035,11 +1036,11 @@ li {
 	height: auto;
 	transition: var(--duration2);
 }
- /* .footer__about:hover > h2{
-	color: #ffffff;
+ .footer__about:hover > h2{
+	color: #ffffff90;
 	height: auto;
 	transition: var(--duration2);
-} */
+}
 .footer__about > h2 > span{
 	font-size: 0.6vw;
 	font-weight: 300;

@@ -313,132 +313,56 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// $('#v1').css({
-// 	'filter': 'brightness(100%)',
-// 	'scale': '1.2',
-// 	'transition': 'var(--duration2)',
-// })
-
-// $('#v1').click(function(){
-// 	$(".video_you").attr('src','/assets/video/1.mp4');
-// 	$(".video-title_4").html('Первый этап строительства кальянной Мята на ВДНХ');
-// 	$(this).css({
-// 		'filter': 'brightness(100%)',
-// 		'scale': '1.2',
-// 		'transition': 'var(--duration2)',
-// 	})
-// 	$(".video-button").css({
-// 		'filter': 'brightness(60%)',
-// 		'scale': '1',
-// 		'transition': 'var(--duration2)',
-// 	})
-
-// });
-
-// $('#v2').click(function(){
-// 	$(".video_you").attr('src','/assets/video/2.mp4');
-// 	$(".video-title_4").html('Промежуточный этап строительства кальянной Мята на ВДНХ');
-// 	$(this).css({
-// 		'filter': 'brightness(100%)',
-// 		'scale': '1.2',
-// 		'transition': 'var(--duration2)',
-// 	})
-// });
-
-// $('#v3').click(function(){
-// 	$(".video_you").attr('src','/assets/video/3.mp4');
-// 	$(".video-title_4").html('Третий этап строительства кальянной Мята на ВДНХ');
-// 	$(this).css({
-// 		'filter': 'brightness(100%)',
-// 		'scale': '1.2',
-// 		'transition': 'var(--duration2)',
-// 	})
-// });
-
-// $('#v4').click(function(){
-// 	$(".video_you").attr('src','/assets/video/4.mp4');
-// 	$(".video-title_4").html('Завершающий этап строительства кальянной Мята на ВДНХ');
-// 	$(this).css({
-// 		'filter': 'brightness(100%)',
-// 		'scale': '1.2',
-// 		'transition': 'var(--duration2)',
-// 	})
-// });
-
 
 
 		///////////////----CART ПЕРЕХОД-----/////////////////
 
-// function myLoop() {
-// 	let i = 1;
-// 	const classes = ['portfolio_back', 'bsb', 'ch', 'river', 'pasta'];
-// 	const baseUrls = {
-// 			'portfolio_back': '/assets/img/portfolio/',
-// 			'bsb': '/assets/img/cart/bsb/',
-// 			'ch': '/assets/img/cart/ch/',
-// 			'river': '/assets/img/cart/river/',
-// 			'pasta': '/assets/img/cart/pasta/',
-// 	};
-
-
-// 	let interval = setInterval(function() {
-// 			if (i === 6) {
-// 					clearInterval(interval); // остановка интервала при достижении значения 6
-// 					i = 1; // сброс счетчика до начального значения
-// 					setTimeout(myLoop, 1000); // запуск функции заново через 1 секунду
-// 			} else {
-// 					i++;
-// 			}
-			
-
-// 			classes.forEach((className) => {
-// 					$('.' + className).css({
-// 							'background-image': "url('" + baseUrls[className] + i + ".jpg')",
-// 					});
-// 			});
-// 	}, 3000);
-// }
-// myLoop();
-
 function myLoop() {
-	let i = 0;
-	const classes = ['portfolio_back', 'bsb', 'ch', 'river', 'pasta'];
-	const baseUrls = {
-			'portfolio_back': '/assets/img/portfolio/',
-			'bsb': '/assets/img/cart/bsb/',
-			'ch': '/assets/img/cart/ch/',
-			'river': '/assets/img/cart/river/',
-			'pasta': '/assets/img/cart/pasta/',
-	};
 
-	// Установка начального значения для всех классов
-	classes.forEach((className) => {
-			$('.' + className).css({
-					'background-image': "url('" + baseUrls[className] + "1.jpg')",
-			});
+	let i = 0;
+	let interval = setInterval(function(){
+
+	if ( i === 6) {
+			clearInterval(interval); // остановка интервала при достижении значения 6
+			i = 1; // сброс счетчика до начального значения
+			setTimeout(myLoop, 1); // запуск функции заново через 1 секунду
+	} else { i++; }
+
+	$('.portfolio_back').css({
+		'background-image': "url('/assets/img/portfolio/"+i+".jpg')",
+		'transition': 'background-image 1.2s ease-in 1.2s',
+		'image-rendering': 'smooth',
 	});
 
-	let interval = setInterval(function() {
-			if (i === 6) {
-					clearInterval(interval); // остановка интервала при достижении значения 6
-					i = 1; // сброс счетчика до начального значения
-					setTimeout(myLoop, 1000); // запуск функции заново через 1 секунду
-			} else {
-					i++;
-			}
+	$('.bsb').css({
+		'background-image': "url('/assets/img/cart/bsb/"+i+".jpg')",
+	'transition': 'background-image 1.2s ease-in 1.2s',
+	'image-rendering': 'smooth',
+	});
 
-			// Обновляем фоновые изображения, начиная с 1 и обновляя до i
-			classes.forEach((className) => {
-					// Здесь мы обновляем фон только для текущего значения i
-					$('.' + className).css({
-							'background-image': "url('" + baseUrls[className] + i + ".jpg')",
-					});
-			});
+	$('.ch').css({
+		'background-image': "url('/assets/img/cart/ch/"+i+".jpg')",
+	'transition': 'background-image 1.2s ease-in 1.2s',
+	'image-rendering': 'smooth',
+	});
+
+	$('.river').css({
+		'background-image': "url('/assets/img/cart/river/"+i+".jpg')",
+	'transition': 'background-image 1.2s ease-in 1.2s',
+	'image-rendering': 'smooth',
+	});
+
+	$('.pasta').css({
+		'background-image': "url('/assets/img/cart/pasta/"+i+".jpg')",
+	'transition': 'background-image 1.2s ease-in 1.2s',
+	'image-rendering': 'smooth',
+	});
 	}, 3000);
 }
-
 myLoop();
 
+
+//////////////////////////////////////////////////////////////
 
 $(document).ready(function() {
 	// Обработчик события наведения мыши для элементов с классом .cart__item
@@ -455,6 +379,12 @@ $(document).ready(function() {
 			$(this).removeClass('cart__active');
 	});
 });
+
+
+
+
+
+
 
 // ///////////////----INFO----/////////////////
 
