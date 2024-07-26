@@ -529,7 +529,7 @@
 
 	<a href="pages/portfolio.php">
 		<div class="cart-button-con"> 
-			<button class="button cart-button">СМОТРЕТЬ БОЛЬШЕ</button>
+			<button class="button cart-button-more">СМОТРЕТЬ БОЛЬШЕ</button>
 		</div>
 	</a>
 
@@ -558,19 +558,19 @@
 
 			<div class="video_rule element-animation">
 				<div class="video_r">
-					<button id="v1" class="video-button vbt_1"></button>
+					<button id="v1" class="video-button v-btn_activ"></button>
 					<!-- <h1 class="video-button-title vt_1">Первый этап строительства кальянной Мята на ВДНХ</h1> -->
 				</div>
 				<div class="video_r">
-					<button id="v2" class="video-button vbt_2"></button>
+					<button id="v2" class="video-button"></button>
 					<!-- <h1 class="video-button-title vt_2">Первый этап строительства кальянной Мята на ВДНХ</h1> -->
 				</div>
 				<div class="video_r">
-					<button id="v3" class="video-button vbt_3"></button>
+					<button id="v3" class="video-button"></button>
 					<!-- <h1 class="video-button-title vt_3">Первый этап строительства кальянной Мята на ВДНХ</h1> -->
 				</div>
 				<div class="video_r">
-					<button id="v4" class="video-button vbt_4"></button>
+					<button id="v4" class="video-button"></button>
 					<!-- <h1 class="video-button-title vt_4">Первый этап строительства кальянной Мята на ВДНХ</h1> -->
 				</div>
 			</div>
@@ -586,7 +586,7 @@
 						</svg>
 				</h1>
 			</a>
-			<a href="#"><div class="button">Смотреть еще</div></a>
+			<a href="#"><div class="button button-video-more">Смотреть еще</div></a>
 		</div>
 	</div>
 

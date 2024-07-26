@@ -45,8 +45,8 @@
 <nav class="footer-menu"
 			 onmouseenter="footer__player_3.play()" 
 			 onmouseleave="footer__player_3.stop()">
-	<div class="footer__logo"
-			alt="img/alt_logo">
+	<div class="footer__logo">
+			<img class="footer__logo-mob" src="../assets/img/icon/logo.svg" alt="">
 			<a class="footer__linc-logo" href="../index.php">
 				<dotlottie-player 
 					id="footer__player_3"
@@ -87,6 +87,9 @@
 	</div>
 
 </nav>
+<div class="C-mob-con">
+	<h1 class="C-mob"> ООО "СИТИСТРОЙ"<span> © &nbsp; 2014-2024</span> </h1>
+</div>
 	
 
 </footer>

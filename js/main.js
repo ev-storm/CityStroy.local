@@ -270,26 +270,100 @@ var swiper2 = new Swiper(".case__swiper", {
 
 
 ///////////////----VIDEO-----/////////////////
+
+document.addEventListener('DOMContentLoaded', function() {
+	const buttons = document.querySelectorAll('.video-button');
+	const videoElement = document.querySelector('.video_you');
+	const videoTitle = document.querySelector('.video-title_4');
 	
-$('#v1').click(function(){
-	$(".video_you").attr('src','/assets/video/1.mp4');
-	$(".video-title_4").html('Первый этап строительства кальянной Мята на ВДНХ');
+	// Удаляем предыдущие классы и добавляем событие клика для каждой кнопки
+	buttons.forEach(button => {
+			button.addEventListener('click', function() {
+					// Убираем активные классы со всех кнопок
+					buttons.forEach(btn => {
+							btn.classList.remove('v-btn_activ');
+							btn.classList.add('v-btn_dis');
+					});
+
+					// Добавляем активный класс к нажимаемой кнопке
+					this.classList.remove('v-btn_dis');
+					this.classList.add('v-btn_activ');
+
+					// Изменяем видео и заголовок в зависимости от кнопки
+					switch (this.id) {
+							case 'v1':
+										videoElement.src = '/assets/video/1.mp4';
+										videoTitle.innerHTML = 'Первый этап строительства кальянной Мята на ВДНХ';
+										break;
+							case 'v2':
+									videoElement.src = '/assets/video/2.mp4';
+									videoTitle.innerHTML = 'Промежуточный этап строительства кальянной Мята на ВДНХ';
+									break;
+							case 'v3':
+									videoElement.src = '/assets/video/3.mp4';
+									videoTitle.innerHTML = 'Третий этап строительства кальянной Мята на ВДНХ';
+									break;
+							case 'v4':
+									videoElement.src = '/assets/video/4.mp4';
+									videoTitle.innerHTML = 'Завершающий этап строительства кальянной Мята на ВДНХ';
+									break;
+					}
+			});
+	});
 });
 
-$('#v2').click(function(){
-	$(".video_you").attr('src','/assets/video/2.mp4');
-	$(".video-title_4").html('Промежуточный этап строительства кальянной Мята на ВДНХ');
-});
 
-$('#v3').click(function(){
-	$(".video_you").attr('src','/assets/video/3.mp4');
-	$(".video-title_4").html('Третий этап строительства кальянной Мята на ВДНХ');
-});
+// $('#v1').css({
+// 	'filter': 'brightness(100%)',
+// 	'scale': '1.2',
+// 	'transition': 'var(--duration2)',
+// })
 
-$('#v4').click(function(){
-	$(".video_you").attr('src','/assets/video/4.mp4');
-	$(".video-title_4").html('Завершающий этап строительства кальянной Мята на ВДНХ');
-});
+// $('#v1').click(function(){
+// 	$(".video_you").attr('src','/assets/video/1.mp4');
+// 	$(".video-title_4").html('Первый этап строительства кальянной Мята на ВДНХ');
+// 	$(this).css({
+// 		'filter': 'brightness(100%)',
+// 		'scale': '1.2',
+// 		'transition': 'var(--duration2)',
+// 	})
+// 	$(".video-button").css({
+// 		'filter': 'brightness(60%)',
+// 		'scale': '1',
+// 		'transition': 'var(--duration2)',
+// 	})
+
+// });
+
+// $('#v2').click(function(){
+// 	$(".video_you").attr('src','/assets/video/2.mp4');
+// 	$(".video-title_4").html('Промежуточный этап строительства кальянной Мята на ВДНХ');
+// 	$(this).css({
+// 		'filter': 'brightness(100%)',
+// 		'scale': '1.2',
+// 		'transition': 'var(--duration2)',
+// 	})
+// });
+
+// $('#v3').click(function(){
+// 	$(".video_you").attr('src','/assets/video/3.mp4');
+// 	$(".video-title_4").html('Третий этап строительства кальянной Мята на ВДНХ');
+// 	$(this).css({
+// 		'filter': 'brightness(100%)',
+// 		'scale': '1.2',
+// 		'transition': 'var(--duration2)',
+// 	})
+// });
+
+// $('#v4').click(function(){
+// 	$(".video_you").attr('src','/assets/video/4.mp4');
+// 	$(".video-title_4").html('Завершающий этап строительства кальянной Мята на ВДНХ');
+// 	$(this).css({
+// 		'filter': 'brightness(100%)',
+// 		'scale': '1.2',
+// 		'transition': 'var(--duration2)',
+// 	})
+// });
 
 
 
@@ -399,48 +473,108 @@ $(document).ready(function() {
 
 
 //////////////////////-------INFO-CART----------///////////////////
+// document.querySelectorAll('.info-cart').forEach(cart => {
+// 	const img = cart.querySelector('.info_2-img');
+// 	const infoSleep = cart.querySelector('.info_sleep');
+// 	const iTitle = cart.querySelector('.iTitle');
+
+// 	// Обработчик для mouseenter и touchstart
+// 	cart.addEventListener('mouseenter', () => {
+// 			img.classList.add('icart_up');
+// 			img.classList.remove('icart_down');
+// 			infoSleep.classList.add('icart_up');
+// 			infoSleep.classList.remove('icart_down');
+// 			iTitle.classList.add('icart_up');
+// 			iTitle.classList.remove('icart_down');
+// 	});
+
+// 	// Обработчик для mouseleave и touchend
+// 	cart.addEventListener('mouseleave', () => {
+// 			img.classList.add('icart_down');
+// 			img.classList.remove('icart_up');
+// 			infoSleep.classList.add('icart_down');
+// 			infoSleep.classList.remove('icart_up');
+// 			iTitle.classList.add('icart_down');
+// 			iTitle.classList.remove('icart_up');
+// 	});
+
+// 	// Для мобильных устройств
+// 	cart.addEventListener('touchstart', () => {
+// 		img.classList.toggle('icart_down');
+// 		infoSleep.classList.toggle('icart_down');
+// 		iTitle.classList.toggle('icart_down');
+// });
+
+
+// });
+
 document.querySelectorAll('.info-cart').forEach(cart => {
 	const img = cart.querySelector('.info_2-img');
 	const infoSleep = cart.querySelector('.info_sleep');
 	const iTitle = cart.querySelector('.iTitle');
 
+	// Храним состояние активного элемента
+	let isActive = false;
+
 	// Обработчик для mouseenter и touchstart
 	cart.addEventListener('mouseenter', () => {
-			img.classList.add('icart_up');
-			img.classList.remove('icart_down');
-			infoSleep.classList.add('icart_up');
-			infoSleep.classList.remove('icart_down');
-			iTitle.classList.add('icart_up');
-			iTitle.classList.remove('icart_down');
+			if (!isActive) {
+					img.classList.add('icart_up');
+					img.classList.remove('icart_down');
+					infoSleep.classList.add('icart_up');
+					infoSleep.classList.remove('icart_down');
+					iTitle.classList.add('icart_up');
+					iTitle.classList.remove('icart_down');
+			}
 	});
 
-	// Обработчик для mouseleave и touchend
+	// Обработчик для mouseleave
 	cart.addEventListener('mouseleave', () => {
-			img.classList.add('icart_down');
-			img.classList.remove('icart_up');
-			infoSleep.classList.add('icart_down');
-			infoSleep.classList.remove('icart_up');
-			iTitle.classList.add('icart_down');
-			iTitle.classList.remove('icart_up');
+			if (!isActive) {
+					img.classList.add('icart_down');
+					img.classList.remove('icart_up');
+					infoSleep.classList.add('icart_down');
+					infoSleep.classList.remove('icart_up');
+					iTitle.classList.add('icart_down');
+					iTitle.classList.remove('icart_up');
+			}
 	});
 
 	// Для мобильных устройств
-	cart.addEventListener('touchstart', () => {
-			img.classList.toggle('icart_up');
-			img.classList.toggle('icart_down');
-			infoSleep.classList.toggle('icart_up');
-			infoSleep.classList.toggle('icart_down');
-			iTitle.classList.toggle('icart_up');
-			iTitle.classList.toggle('icart_down');
-	});
+	cart.addEventListener('touchstart', (event) => {
+			event.preventDefault(); // Останавливаем дальнейшую обработку событий
 
+			// Если этот элемент активен, отключаем его
+			if (isActive) {
+					img.classList.add('icart_down');
+					img.classList.remove('icart_up');
+					infoSleep.classList.add('icart_down');
+					infoSleep.classList.remove('icart_up');
+					iTitle.classList.add('icart_down');
+					iTitle.classList.remove('icart_up');
+					isActive = false; // Деактивируем
+			} else {
+					// Если другой элемент был активен, деактивируем его
+					document.querySelectorAll('.info-cart').forEach(otherCart => {
+							if (otherCart !== cart && otherCart.querySelector('.info_2-img').classList.contains('icart_up')) {
+									otherCart.querySelector('.info_2-img').classList.add('icart_down');
+									otherCart.querySelector('.info_2-img').classList.remove('icart_up');
+									otherCart.querySelector('.info_sleep').classList.add('icart_down');
+									otherCart.querySelector('.info_sleep').classList.remove('icart_up');
+									otherCart.querySelector('.iTitle').classList.add('icart_down');
+									otherCart.querySelector('.iTitle').classList.remove('icart_up');
+							}
+					});
 
-
-
-	
-	// При окончании касания
-	cart.addEventListener('touchend', () => {
-			// Дополнительно можно управлять состояниями, если это требуется
+					// Активируем текущий элемент
+					img.classList.add('icart_up');
+					img.classList.remove('icart_down');
+					infoSleep.classList.add('icart_up');
+					infoSleep.classList.remove('icart_down');
+					iTitle.classList.add('icart_up');
+					iTitle.classList.remove('icart_down');
+					isActive = true; // Активируем
+			}
 	});
 });
 
@@ -449,20 +583,38 @@ document.querySelectorAll('.info-cart').forEach(cart => {
 
 //////////////////////--------CART----------///////////////////
 
-document.querySelectorAll('.cart__item').forEach(cart => {
-	const cartIt = cart.querySelector('.cart__item');
+// document.querySelectorAll('.cart__item').forEach(cart => {
+// 	const cartIt = cart.querySelector('.cart__item');
 
-	// Для мобильных устройств
-	cart.addEventListener('touchstart', () => {
-			if (cartIt.classList.contains('cart_up')) {
-					cartIt.classList.remove('cart_up');
-					cartIt.classList.add('cart_down');
-			} else {
-					cartIt.classList.remove('cart_down');
-					cartIt.classList.add('cart_up');
-			}
-	});
-});
+// 	// Для мобильных устройств
+// 	cart.addEventListener('touchstart', () => {
+// 			if (cartIt.classList.contains('cart_up')) {
+// 					cartIt.classList.remove('cart_up');
+// 					cartIt.classList.add('cart_down');
+// 			} else {
+// 					cartIt.classList.remove('cart_down');
+// 					cartIt.classList.add('cart_up');
+// 			}
+// 	});
+// });
+
+// document.querySelectorAll('.cart__item').forEach(cart => {
+
+// 	// cart.addEventListener('mouseenter', () => {
+// 	// 		cart.classList.add('cart-up'); // Добавляем класс для эффекта
+// 	// });
+// 	// cart.addEventListener('mouseleave', () => {
+// 	// 		cart.classList.remove('cart-up'); // Убираем класс эффекта
+// 	// });
+
+
+// 	cart.addEventListener('touchstart', () => {
+// 			cart.classList.add('cart-up'); // Добавляем класс для эффекта при касании
+// 	});
+// 	cart.addEventListener('touchend', () => {
+// 			cart.classList.remove('cart-up'); // Убираем класс эффекта после касания
+// 	});
+// });
 
 
 

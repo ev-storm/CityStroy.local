@@ -1,5 +1,8 @@
-
-
+:root {
+  --main-blue: #1e9dd8;
+	--dark-blue: rgba(0,84,124,1) 69%;
+	--grad-blue: linear-gradient(119deg, rgba(30,157,216,1) 0%, rgba(0,84,124,1) 69%);
+}
 
 
 /*-----------------SHEMA_MOB-------------------*/
@@ -161,8 +164,9 @@
 		border-style:none;
 	}
 	.fork-m > h1{
-		color:#ffffff;
+		color:var(--main-blue);
 		font-size: 5vw;
+		font-weight: 300;
 		text-align: center;
 		margin: 2vw 0;
 	}
@@ -219,10 +223,10 @@
 	.sh-mob__banner {
 	width: 90%;
 	height: fit-content;
+	max-height: 40vh;
 	position: fixed;
 	top: 10%;
-	background-color: #1e9dd8;
-	color: white;
+	background-color: var(--main-blue);
 	padding: 8vw;
 	border-radius: 4vw;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -230,6 +234,7 @@
 	opacity: 0;
 	transform: translateY(-50%);
 	transition: all 0.3s ease-out;
+	overflow: scroll;
 	}
 	.sh-mob__banner > h1{
 		font-size: 5vw;
@@ -237,9 +242,9 @@
 		color: #ffffff;
 	}
 	.sh-mob__banner > h2{
-		font-size: 4vw;
-		font-weight: 200;
-		color: #ffffff;
+		font-size: 3.5vw;
+		font-weight: 300;
+		color: #ffffff99;
 	} 
 	.show {
 	opacity: 1;
@@ -451,13 +456,16 @@
 		flex-direction: column;
 		justify-content: space-between;
 		width: 100%;
-		color: #ffffff;
 	}
 	.sh__fork-title{
-		margin: 0.5vw;
+		margin: 0 0.2vw 0 0.7vw;
 		display: flex;
 		flex-direction: column;
 		align-items: end;
+	}
+	.sh__fork-title > h1{
+		color: #1e9dd8;
+		font-weight: 300;
 	}
 	.sh__item.active > .sh__fork {
 		opacity: 1;
@@ -525,9 +533,8 @@
 		position: fixed;
 		top: 17%;
 		left: 15%;
-		background-color: rgba(0, 47, 69, 0.82);
+		background-color: var(--main-blue);
 		backdrop-filter: blur(10px);
-		color: white;
 		padding: 0.5vw 4vw;
 		border-radius: 0.5vw;
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -543,9 +550,11 @@
 		color: #ffffff;
 	}
 	.sh__banner > h2 {
-		font-size: 1vw;
-		font-weight: 200;
+		font-size: 0.9vw;
+		font-weight: 300;
 		color: #ffffff99;
+		letter-spacing: 0vw;
+		margin-bottom: 1vw;
 	}
 	.show {
 		opacity: 1;

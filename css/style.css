@@ -38,6 +38,7 @@ a{
 
 :root {
   --main-blue: #1e9dd8;
+	--dark-blue: rgba(0,84,124,1) 69%;
 	--grad-blue: linear-gradient(119deg, rgba(30,157,216,1) 0%, rgba(0,84,124,1) 69%);
 	--main-black: #161616;
 	--radius: 0.6em;
@@ -838,7 +839,7 @@ li {
 	filter: brightness(60%);
 	transition: var(--duration2);
 }
-.video-button:hover{
+/* .video-button:hover{
 	filter: brightness(100%);
 	scale: 1.2;
 	transition: var(--duration2);
@@ -847,18 +848,30 @@ li {
 	filter: brightness(100%);
 	scale: 1.2;
 	transition: var(--duration2);
+} */
+
+.v-btn_activ {
+	filter: brightness(100%);
+	transform: scale(1.2);
+	transition: var(--duration2);
 }
 
-.vbt_1{
+.v-btn_dis {
+	filter: brightness(60%);
+	transform: scale(1);
+	transition: var(--duration2);
+}
+
+#v1{
 	background-image: url('/assets/video/cover/1.jpg');
 }
-.vbt_2{
+#v2{
 	background-image: url('/assets/video/cover/1.2.jpg');
 }
-.vbt_3{
+#v3{
 	background-image: url('/assets/video/cover/2.jpg');
 }
-.vbt_4{
+#v4{
 	background-image: url('/assets/video/cover/end.jpg');
 }
 
@@ -885,79 +898,9 @@ li {
 
 
 /* footer */
-.footer-menu{
-	display: flex;
-	flex-direction: row;
-	justify-content:center;
-	background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 100%);
-	z-index: 99;
-	position: relative;
-}
-.footer__logo{
-	display: flex;
-	justify-content: center;
-	width: 15%;
-}
-.footer__linc-logo{
-	display: flex;
-	justify-content: end;
-}
-.footer__player{
-	width: 50%;
-} 
-.menu__main-footer{
-	padding: 2vw 0 0 0;
-	justify-content: space-around;
-}
-.main__menu-footer__con{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 80%;
-}
-.footer__about{
-	width: 20%;
-	padding: 0 1vw;
-}
-.footer__about > h1{
-	font-size: 0.8vw;
-	font-weight: 300;
-	color: #ffffff;
-	transition: all 0.5s;
-}
-.footer__about > h1 > span{
-	font-size: 0.7vw;
-	font-weight: 100;
-	color: #ffffff;
-	transition: all 0.5s;
-}
-.footer__about > h2{
-	width: 100%;
-	font-size: 0.5vw;
-	color: #ffffff65;
-	font-weight: 100;
-	overflow: hidden;
-	height: 2vw;
-	transition: var(--duration2);
-}
- .footer__about:hover > h2{
-	color: #ffffff;
-	height: auto;
-	transition: var(--duration2);
-}
-.footer__about > h2 > span{
-	font-size: 0.6vw;
-	font-weight: 300;
-	color: #ffffff90;
-	transition: all 0.5s;
-}
-.footer__about:hover > h2 > span{
-	font-size: 0.6vw;
-	font-weight: 300;
-	color: #ffffff;
-	transition: all 0.5s;
-}
+
+
+
 .banner_con{
 	width: 100%;
 	height: fit-content;
@@ -1016,12 +959,100 @@ li {
 	font-weight: 200;
 	line-height: 1.5;
 }
-.banner_logo{
+/* .banner_logo{
 	width: 10%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+} */
+
+.footer__logo-mob{
+	display: none;
 }
+.footer-menu{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 100%);
+	z-index: 99;
+	position: relative;
+}
+.footer__logo{
+	display: flex;
+	justify-content: center;
+	width: 15%;
+}
+.footer__linc-logo{
+	display: flex;
+	justify-content: end;
+}
+.footer__player{
+	width: 50%;
+} 
+.menu__main-footer{
+	padding: 2vw 0 0 0;
+	justify-content: space-around;
+}
+.main__menu-footer__con{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+}
+.footer__about{
+	width: 20%;
+	padding: 0 1vw;
+}
+.C-mob{
+	display: none;
+}
+.footer__about > h1{
+	 display: block;
+	font-size: 0.8vw;
+	font-weight: 300;
+	color: #ffffff;
+	transition: all 0.5s;
+	text-shadow: 0 0 0 #ffffff;
+	transition: all 0.5s ease-in-out;
+}
+.footer__about:hover > h1{
+	text-shadow: 0 0 0.3vw #ffffff, 0 0 0.7vw var(--main-blue), 0 0 1vw var(--main-blue);
+	transition: all 0.5s ease-in-out;
+}
+.footer__about > h1 > span{
+	font-size: 0.7vw;
+	font-weight: 100;
+	color: #ffffff;
+	transition: all 0.5s;
+}
+.footer__about > h2{
+	width: 100%;
+	font-size: 0.5vw;
+	color: #ffffff65;
+	font-weight: 100;
+	overflow: hidden;
+	height: auto;
+	transition: var(--duration2);
+}
+ /* .footer__about:hover > h2{
+	color: #ffffff;
+	height: auto;
+	transition: var(--duration2);
+} */
+.footer__about > h2 > span{
+	font-size: 0.6vw;
+	font-weight: 300;
+	color: #ffffff90;
+	transition: all 0.5s;
+}
+.footer__about:hover > h2 > span{
+	font-size: 0.6vw;
+	font-weight: 300;
+	color: #ffffff;
+	transition: all 0.5s;
+}
+
 #logo__player_2{
 	width: 100%;
 	height: 100%;
