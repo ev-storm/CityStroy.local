@@ -31,7 +31,7 @@
 			<div class="title">
 				<div class="title__text">
 					<div>
-						<h1> ДИЗАЙН &nbsp ПРОЕКТИРОВАНИЕ &nbsp РЕМОНТ &nbsp </h1>
+						<h1> ДИЗАЙН ПРОЕКТИРОВАНИЕ РЕМОНТ</h1>
 						<div class="swiper title__slide">
 							<div class="swiper-wrapper title__item">
 								<div class="swiper-slide"><h1>ПОМЕЩЕНИЙ</h1></div>

@@ -28,20 +28,21 @@
 	.title__text > div{
 		display: flex;
 		flex-direction: column;
+		width: 100%;
 	}
 	.title__text > div > h1{
-		font-size: 7vw;
+		font-size: 9vw;
 		padding: 2vw;
 		text-align: center;
 		line-height: 1.5;
 		margin-top: 40vw;
-		font-weight: 300;
+		font-weight: 200;
 	}
 	.title__item > div > h1{
-		font-size: 7vw;
+		font-size: 9vw;
 		padding: 2vw;
 		text-align: center;
-		height: 7vh;
+		height: 9vh;
 		justify-content: center;
 		padding: 0;
 		margin-top: -5vw;
@@ -54,15 +55,19 @@
 	.title__text > h2{
 		font-size: 4vw;
 		font-weight: 100;
-		margin: 15vw 15vw 0 15vw;
+		margin: 20vw 20vw 0 15vw;
 		text-align: center;
 		line-height: 1.5;
 	}
 	.title__slide{
 		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.swiper-slide > h1{
-		font-weight: 300;
+		width: 100%;
+		font-weight: 200;
 	}
 	.modal__btn{
 		font-size: 4vw;

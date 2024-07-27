@@ -239,6 +239,7 @@ li {
 	align-items: center;
 	margin: 0vw;
 	font-size: 3vw;
+	word-spacing: 2vw;
 }
 .title__text > h2{
 	font-size: 1vw;
@@ -254,6 +255,7 @@ li {
 	display: flex;
 	align-items: center;
 	height: 10vh;
+	margin-left: 2vw;
 }
 .title__button{
 	z-index: 1;
