@@ -27,7 +27,7 @@ function hidePreloader() {
 
 var timeoutId = setTimeout(hidePreloader, 3000);
 
-// Скрываем прелоадер, когда вся страница загружена
+// // Скрываем прелоадер, когда вся страница загружена
 window.addEventListener('load', function() {
 	clearTimeout(timeoutId); // Останавливаем таймер, если страница загрузилась раньше
 	hidePreloader(); // Скрываем прелоадер
@@ -59,6 +59,11 @@ function initSwiper() {
 			speed: 2500,
 	});
 }
+initSwiper()
+
+
+
+
 
 // Выполнить инициализацию Swiper при загрузке страницы и изменении размера окна
 $(document).ready(function() {
@@ -67,6 +72,7 @@ $(document).ready(function() {
 			initSwiper();
 	});
 });
+
 
 
 let portfolio_ticker = new Swiper(".portfolio_ticker", {
@@ -96,23 +102,57 @@ var swiperWord = new Swiper(".title__slide", {
 });
 
 
-var swiper = new Swiper(".case__swiper-2", {
-	spaceBetween: 10,
-	slidesPerView: 4,
-	freeMode: true,
-	watchSlidesProgress: true,
-});
 
-var swiper2 = new Swiper(".case__swiper", {
-	spaceBetween: 10,
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-	thumbs: {
-		swiper: swiper,
-	},
-});
+
+
+	var caseSwiper = new Swiper(".case__swiper-2", {
+			spaceBetween: 10,
+			slidesPerView: 4,
+			freeMode: true,
+			watchSlidesProgress: true,
+	});
+
+	var caseSwiper2 = new Swiper(".case__swiper", {
+			spaceBetween: 10,
+			navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+			},
+			thumbs: {
+					swiper: caseSwiper,
+			},
+	});
+
+
+	const CartSwiper = new Swiper('.carts-back', {
+		loop: true,
+		effect: 'fade',
+		fadeEffect: {
+				crossFade: true
+		},
+		autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+		},
+		speed: 2000, // Установка скорости анимации
+	});
+	
+	const titleMobSwiper = new Swiper('.title-mob', {
+		loop: true,
+		effect: 'fade',
+		fadeEffect: {
+				crossFade: true
+		},
+		autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+		},
+		speed: 2000, // Установка скорости анимации
+	});
+
+
+
+
 
 
 ///////////////---------------/////////////////
@@ -199,8 +239,31 @@ var swiper2 = new Swiper(".case__swiper", {
 
 			if(cof>600){
 				$('.case__title').children('h1').fadeOut()
+				$('.case__title').css({'z-index':'0'})
 			}
+			if(cof<600){
+				$('.case__title').children('h1').fadeIn()
+				$('.case__title').css({'z-index':'99'})
+			}
+			if(cof>600){
+				$('.case__btn-down').hide()
+			}
+			if(cof<600){
+				$('.case__btn-down').show()
+			}
+
+			if(cof>800){
+				$('.title-mob').hide()
+			}
+			if(cof<800){
+				$('.title-mob').fadeIn()
+			}
+			console.log(cof)
+
 			
+		
+
+
 			$('.menu').mouseleave(function(){
 				$(this).css({
 					'background': '#161616c9',
@@ -361,18 +424,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // }
 // myLoop();
 
-const CartSwiper = new Swiper('.swiper-container', {
-	loop: true,
-	effect: 'fade',
-	fadeEffect: {
-			crossFade: true
-	},
-	autoplay: {
-			delay: 3000,
-			disableOnInteraction: false,
-	},
-	speed: 1000, // Установка скорости анимации
-});
+
 
 
 //////////////////////////////////////////////////////////////
@@ -594,47 +646,3 @@ $('.recvis').click(function(){
 });
 
 
-
-// ЭФФЕКТ КЕНЕТА
-// let kenBurnsEffect = () => {
-// 	let elements = document.querySelectorAll('.ken-burns');
-// 	element = elements[0];
-// 	element_1 = elements[1];
-// 	element_2 = elements[2];
-// 	element_3 = elements[3];
-	
-// 	let scale = 1.1;
-// 	let dx = 0;
-// 	let dy = 0;
-
-// 	let updateBgPosition = () => {
-// 			element.style.backgroundPosition = `${dx}px ${dy}px`;
-// 			element_1.style.backgroundPosition = `${dx}px ${dy}px`;
-// 			element_2.style.backgroundPosition = `${dx}px ${dy}px`;
-// 			element_3.style.backgroundPosition = `${dx}px ${dy}px`;
-// 	};
-
-// 	let updateBgScale = () => {
-// 			element.style.backgroundSize = `${scale * 100}%`;
-// 			element_1.style.backgroundSize = `${scale * 100}%`;
-// 			element_2.style.backgroundSize = `${scale * 100}%`;
-// 			element_3.style.backgroundSize = `${scale * 100}%`;
-// 	};
-// 	let animate = () => {
-// 		dx -= 0.005;
-// 		dy += 0.005;
-// 		scale += 0.0002;
-
-// 			updateBgPosition();
-// 			updateBgScale();
-
-// 			requestAnimationFrame(animate);
-// 	};
-// 	function kenBurnsEffect(element, scale = 1.5, duration = 100) {
-// 		element.style.transition = `transform ${duration}s linear`;
-// 		element.style.transform = `scale(${scale})`;
-// 	}
-// 	animate();
-// };
-// setInterval(kenBurnsEffect, 10000);
-// kenBurnsEffect();

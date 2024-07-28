@@ -1,44 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<meta name="format-detection	" content="telephone=no">
-	<meta name="description" content="Cитистрой. Дизайн, проектирование и ремонт коммерческих помещений">
-	<title>BSB</title>
 
-		<!-- link -->
-		<link rel="stylesheet" href="../css/case.css">
-		<link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="../css/modal.css">
-		<link rel="stylesheet" href="../css/font.css">
-		<link rel="stylesheet" href="../css/more.css">
-		<script defer src="../libs/inputmask.min.js"></script>
-		<script defer src="../libs/just-validate3.3.3.min.js"></script>
-		<script src="../libs/jquery-3.7.1.min.js"></script>
-		<script defer src="../js/script-new.js"></script>
-		<script defer src="../js/main.js"></script>
-		<script defer src="../js/modal.js"></script>
-		<script defer src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-	
-	<!-- OpenGraph -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https:" />
-	<meta property="og:title" content="Дизайн, проектирование и ремонт коммерческих помещений"/>
-	<meta property="og:description" content="Описание страницы" />
-	<meta property="og:image" content="img.jpg" />
-	<!-- telegram_image1x1 -->
-	<meta name="twitter:card" content="img.jpg" />
-	<!-- SEO -->
-	<meta name="keywords" content="теги СЕО">
-	<!-- fav -->
-	<link type="image/x-icon" href="/assets/img/icon/fav.ico" rel="shortcut icon">
-	<link type="Image/x-icon" href="/assets/img/icon/fav.ico" rel="icon">
-</head>
+<!-- HEAD -->
+<?php
+	include('../components/head.php')
+?>
 <!-- PRELOADER -->
 <?php
 	include('../components/preloader.php')
@@ -47,6 +13,7 @@
 <?php
 	include('../components/header.php')
 ?>
+
 <style>
 	.menu__main > li:nth-child(6) > a {
 		color: #28bbff;
@@ -56,18 +23,38 @@
 
 <body>
 		<article>
-
+		
 			<div class="case__title">
 				<h1>BLACK STAR BURGER</h1>
 			</div>
 
-			<div class="case__cover case-bsb">
+			<div class="title__button case__btn-down">
+					<a href="#case__about">
+						<div class="down" 
+						onmouseenter="down__button.play()" 
+						onmouseleave="down__button.stop()"	>
+							<dotlottie-player
+							id="down__button"
+							class="down__button"
+							src="/assets/animation/down.json" 
+							background="transparent" 
+							speed="1">
+							</dotlottie-player>
+						</div>
+					</a>
+				</div>
 			</div>
 			
 
-			<div class="case__about">
+			<img class="case__cover-mob" src="../assets/img/case/bsb/5.jpg" alt="">
+			<div class="case__cover case-bsb">
+			</div>
+
+		
+
+			<div id="case__about" class="case__about">
 				<div class="case__video">
-					<video class="case__about-video" controls="true" loop="true" muted="true" autoplay="true" poster="">
+					<video class="case__about-video" controls="true" loop="true" muted="true" autoplay="true" playsinline>
 							<source src="../assets/video/case/bsb.mp4" type="video/mp4" />
 					</video>
 					<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
@@ -149,11 +136,11 @@
 						</ul>
 					</h2>
 				</div>
-
-
 			</div>
 
+
 			<!-- SWIPER__CASE -->
+		<div class="case__swiper-con">
 			<div class="swiper case__swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide case__slide"><img src="../assets/img/case/bsb/1.jpg"/></div>
@@ -161,7 +148,6 @@
 					<div class="swiper-slide case__slide"><img src="../assets/img/case/bsb/3.jpg"/></div>
 					<div class="swiper-slide case__slide"><img src="../assets/img/case/bsb/4.jpg"/></div>
 					<div class="swiper-slide case__slide"><img src="../assets/img/case/bsb/5.jpg"/></div>
-					<div class="swiper-slide case__slide"><img src="../assets/img/case/bsb/6.jpg"/></div>
 				</div>
 
 				<div class="swiper-button-next case__swiper-btn"></div>
@@ -176,9 +162,10 @@
 					<div class="swiper-slide case__slide-2"><img src="../assets/img/cart/bsb/3.jpg"/></div>
 					<div class="swiper-slide case__slide-2"><img src="../assets/img/cart/bsb/4.jpg"/></div>
 					<div class="swiper-slide case__slide-2"><img src="../assets/img/cart/bsb/5.jpg"/></div>
-					<div class="swiper-slide case__slide-2"><img src="../assets/img/cart/bsb/6.jpg"/></div>
 				</div>
 			</div>
+		</div>
+
 
 
 		</article>

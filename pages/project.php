@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+
 <!-- HEAD -->
 <?php
 	include('../components/head.php')
@@ -12,6 +13,8 @@
 <?php
 	include('../components/header.php')
 ?>
+
+<script defer src="../js/shema.js"></script>
 <style>
 	.menu__main > li:nth-child(4) > a {
 		color: #28bbff;
@@ -64,6 +67,16 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="title-mob swiper-container">
+        <div class="swiper-wrapper">
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/1.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/2.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/3.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/4.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/5.jpg" alt=""></div>
+        </div>
+    	</div>
 
 			<div class="video__con">
 					<video class="video" loop="true" muted="true" autoplay="true" poster="">

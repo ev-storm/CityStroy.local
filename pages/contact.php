@@ -59,6 +59,16 @@
 				</div>
 			</div>
 
+			<div class="title-mob swiper-container">
+        <div class="swiper-wrapper">
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/1.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/2.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/3.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/4.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/5.jpg" alt=""></div>
+        </div>
+    	</div>
+
 			<div class="video__con">
 					<video class="video" loop="true" muted="true" autoplay="true" poster="">
 						<source src="../assets/video/contact.mp4" type="video/mp4">

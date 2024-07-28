@@ -10,14 +10,15 @@
 		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" href="../css/shema.css">
 		<link rel="stylesheet" href="../css/media.css">
-		<link rel="stylesheet" href="../css/cart.css">
+		<link rel="stylesheet" href="../css/case.css">
 		<link rel="stylesheet" href="../css/modal.css">
 		<link rel="stylesheet" href="../css/carts.css">
-		<link rel="stylesheet" href="../css/font.css">
+		<link rel="stylesheet" href="../css/font.css">	
 		<link rel="stylesheet" href="../css/more.css">
+		<link rel="stylesheet" href="../css/preloader.css">
+
 		<script defer src="../js/main.js"></script>
 		<script defer src="../js/modal.js"></script>
-		<script defer src="../js/shema.js"></script>
 		<script src="../libs/jquery-3.7.1.min.js"></script>
 		<script defer src="../libs/inputmask.min.js"></script>
 		<script defer src="../libs/just-validate3.3.3.min.js"></script>

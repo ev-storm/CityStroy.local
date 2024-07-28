@@ -1,7 +1,6 @@
 
 
 //---------------SCROLL----------------------------------------------------------
-
 document.addEventListener("scroll", () => {
 	const items = document.querySelectorAll('.sh-mob__item');
 	const itemsDown = document.querySelectorAll('.shema__down');
@@ -56,45 +55,46 @@ document.addEventListener("scroll", () => {
 
 //-------------BANNER-----------------------------------------------------------
 
-const buttonsMob = document.querySelectorAll('.fork-m__btn button, .AR'); 
-const bannerMob = document.getElementById('banner');
-const bannerTitle = document.getElementById('banner-title');
-const bannerText = document.getElementById('banner-text');
-let bannerTimeout__m; // Переменная для хранения идентификатора таймера
+document.addEventListener('DOMContentLoaded', () => {
+	const buttonsMob = document.querySelectorAll('.fork-m__btn button, .AR'); 
+	const bannerMob = document.getElementById('banner');
+	const bannerTitle = document.getElementById('banner-title');
+	const bannerText = document.getElementById('banner-text');
+	let bannerTimeout__m; 
 
-buttonsMob.forEach(button => {
-    button.addEventListener('click', () => {
-        const banTitleMob = button.getAttribute('data-message');
-        const banTextMob = button.getAttribute('value');
-        bannerTitle.textContent = banTitleMob;
-        bannerText.textContent = banTextMob;
+	if (bannerMob) {
+			buttonsMob.forEach(button => {
+					button.addEventListener('click', () => {
+							const banTitleMob = button.getAttribute('data-message');
+							const banTextMob = button.getAttribute('value');
+							bannerTitle.textContent = banTitleMob;
+							bannerText.textContent = banTextMob;
 
-        // Показ баннера
-        bannerMob.classList.add('show');
+							bannerMob.classList.add('show');
 
-        // Очистка предыдущего таймера, если он существует
-        if (bannerTimeout__m) {
-            clearTimeout(bannerTimeout__m);
-        }
+							if (bannerTimeout__m) {
+									clearTimeout(bannerTimeout__m);
+							}
 
-        // Установка нового таймера на скрытие баннера
-        bannerTimeout__m = setTimeout(() => {
-					bannerMob.classList.remove('show'); 
-        }, 8000);
-    });
-});
+							bannerTimeout__m = setTimeout(() => {
+									bannerMob.classList.remove('show'); 
+							}, 8000);
+					});
+			});
 
-// Обработчик для прокрутки страницы
-window.addEventListener('scroll', () => {
-    if (bannerMob.classList.contains('show')) {
-				bannerMob.classList.remove('show');
+			window.addEventListener('scroll', () => {
+					if (bannerMob.classList.contains('show')) {
+							bannerMob.classList.remove('show');
 
-        // Очистка таймера, если баннер скрыт вручную при прокрутке
-        if (bannerTimeout__m) {
-            clearTimeout(bannerTimeout__m);
-            bannerTimeout__m = null; // Сбрасываем идентификатор таймера
-        }
-    }
+							if (bannerTimeout__m) {
+									clearTimeout(bannerTimeout__m);
+									bannerTimeout__m = null;
+							}
+					}
+			});
+	} else {
+			console.error('Элемент с id "banner" не найден');
+	}
 });
 
 //----------------ITEMS-------------------------------------
@@ -165,62 +165,50 @@ document.addEventListener("scroll", () => {
 
 //-------------BANNER-----------------------------------------------------------
 
-const buttons__sh = document.querySelectorAll('.sh__fork-btn button, .AR'); 
-const banner__sh = document.getElementById('sh__banner');
-const bannerTitle__sh = document.getElementById('sh__banner-title');
-const bannerText__sh = document.getElementById('sh__banner-text');
-let bannerTimeout; // Переменная для хранения идентификатора таймера
+document.addEventListener('DOMContentLoaded', () => {
+	const buttons__sh = document.querySelectorAll('.sh__fork-btn button, .AR'); 
+	const banner__sh = document.getElementById('sh__banner');
+	const bannerTitle__sh = document.getElementById('sh__banner-title');
+	const bannerText__sh = document.getElementById('sh__banner-text');
+	let bannerTimeout__sh; // Переменная для хранения идентификатора таймера
 
-buttons__sh.forEach(button => {
-    button.addEventListener('click', () => {
-        const banTitle = button.getAttribute('data-message');
-        const banText = button.getAttribute('value');
-        bannerTitle__sh.textContent = banTitle;
-        bannerText__sh.textContent = banText;
+	if (buttons__sh) {
+			buttons__sh.forEach(button => {
+					button.addEventListener('click', () => {
+							const banTitle__sh = button.getAttribute('data-message');
+							const banText__sh = button.getAttribute('value');
+							bannerTitle__sh.textContent = banTitle__sh;
+							bannerText__sh.textContent = banText__sh;
 
-        // Показ баннера
-        banner__sh.classList.add('show');
+							banner__sh.classList.add('show');
 
-        // Очистка предыдущего таймера, если он существует
-        if (bannerTimeout) {
-            clearTimeout(bannerTimeout);
-        }
+							if (bannerTimeout__sh) {
+									clearTimeout(bannerTimeout__sh);
+							}
 
-        // Установка нового таймера на скрытие баннера
-        bannerTimeout = setTimeout(() => {
-            banner__sh.classList.remove('show'); 
-        }, 8000);
-    });
+							bannerTimeout__sh = setTimeout(() => {
+								banner__sh.classList.remove('show'); 
+							}, 8000);
+					});
+			});
+
+			window.addEventListener('scroll', () => {
+					if (banner__sh.classList.contains('show')) {
+							banner__sh.classList.remove('show');
+
+							if (bannerTimeout__sh) {
+									clearTimeout(bannerTimeout__sh);
+									bannerTimeout__sh = null;
+							}
+					}
+			});
+	} else {
+			console.error('Элемент с id "banner" не найден');
+	}
 });
 
-// Обработчик для прокрутки страницы
-window.addEventListener('scroll', () => {
-    if (banner__sh.classList.contains('show')) {
-        banner__sh.classList.remove('show');
-
-        // Очистка таймера, если баннер скрыт вручную при прокрутке
-        if (bannerTimeout) {
-            clearTimeout(bannerTimeout);
-            bannerTimeout = null; // Сбрасываем идентификатор таймера
-        }
-    }
-});
 
 //----------------ITEMS-------------------------------------
-
-// document.querySelectorAll('.sh__item').forEach(item => {
-// 	item.addEventListener('mouseenter', () => {
-// 			const isActive = item.classList.contains('active');
-// 			if (!isActive) {
-// 					document.querySelectorAll('.sh__item').forEach(otherItem => {
-// 							otherItem.classList.remove('active'); // Закрываем другие элементы
-// 					});
-
-					
-// 					item.classList.add('active');
-// 				}
-// 		});
-// });
 
 document.querySelectorAll('.sh__item').forEach(item => {
 	item.addEventListener('mouseenter', () => {
@@ -244,6 +232,5 @@ function closeItems(event) {
 			});
 	}
 }
-
 // Добавляем слушатель к документу
 document.addEventListener('click', closeItems);

@@ -229,7 +229,7 @@
 	background-color: var(--main-blue);
 	padding: 8vw;
 	border-radius: 4vw;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2vw 10vw #000000;
 	z-index: 99;
 	opacity: 0;
 	transform: translateY(-200%);
