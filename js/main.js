@@ -317,49 +317,62 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		///////////////----CART ПЕРЕХОД-----/////////////////
 
-function myLoop() {
+// function myLoop() {
 
-	let i = 0;
-	let interval = setInterval(function(){
+// 	let i = 0;
+// 	let interval = setInterval(function(){
 
-	if ( i === 6) {
-			clearInterval(interval); // остановка интервала при достижении значения 6
-			i = 1; // сброс счетчика до начального значения
-			setTimeout(myLoop, 1); // запуск функции заново через 1 секунду
-	} else { i++; }
+// 	if ( i === 6) {
+// 			clearInterval(interval); // остановка интервала при достижении значения 6
+// 			i = 1; // сброс счетчика до начального значения
+// 			setTimeout(myLoop, 1); // запуск функции заново через 1 секунду
+// 	} else { i++; }
 
-	$('.portfolio_back').css({
-		'background-image': "url('/assets/img/portfolio/"+i+".jpg')",
-		'transition': 'background-image 1.2s ease-in 1.2s',
-		'image-rendering': 'smooth',
-	});
+// 	$('.portfolio_back').css({
+// 		'background-image': "url('/assets/img/portfolio/"+i+".jpg')",
+// 		'transition': 'background-image 1.2s ease-in 1.2s',
+// 		'image-rendering': 'smooth',
+// 	});
 
-	$('.bsb').css({
-		'background-image': "url('/assets/img/cart/bsb/"+i+".jpg')",
-	'transition': 'background-image 1.2s ease-in 1.2s',
-	'image-rendering': 'smooth',
-	});
+// 	$('.bsb').css({
+// 		'background-image': "url('/assets/img/cart/bsb/"+i+".jpg')",
+// 	'transition': 'background-image 1.2s ease-in 1.2s',
+// 	'image-rendering': 'smooth',
+// 	});
 
-	$('.ch').css({
-		'background-image': "url('/assets/img/cart/ch/"+i+".jpg')",
-	'transition': 'background-image 1.2s ease-in 1.2s',
-	'image-rendering': 'smooth',
-	});
+// 	$('.ch').css({
+// 		'background-image': "url('/assets/img/cart/ch/"+i+".jpg')",
+// 	'transition': 'background-image 1.2s ease-in 1.2s',
+// 	'image-rendering': 'smooth',
+// 	});
 
-	$('.river').css({
-		'background-image': "url('/assets/img/cart/river/"+i+".jpg')",
-	'transition': 'background-image 1.2s ease-in 1.2s',
-	'image-rendering': 'smooth',
-	});
+// 	$('.river').css({
+// 		'background-image': "url('/assets/img/cart/river/"+i+".jpg')",
+// 	'transition': 'background-image 1.2s ease-in 1.2s',
+// 	'image-rendering': 'smooth',
+// 	});
 
-	$('.pasta').css({
-		'background-image': "url('/assets/img/cart/pasta/"+i+".jpg')",
-	'transition': 'background-image 1.2s ease-in 1.2s',
-	'image-rendering': 'smooth',
-	});
-	}, 3000);
-}
-myLoop();
+// 	$('.pasta').css({
+// 		'background-image': "url('/assets/img/cart/pasta/"+i+".jpg')",
+// 	'transition': 'background-image 1.2s ease-in 1.2s',
+// 	'image-rendering': 'smooth',
+// 	});
+// 	}, 3000);
+// }
+// myLoop();
+
+const CartSwiper = new Swiper('.swiper-container', {
+	loop: true,
+	effect: 'fade',
+	fadeEffect: {
+			crossFade: true
+	},
+	autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+	},
+	speed: 1000, // Установка скорости анимации
+});
 
 
 //////////////////////////////////////////////////////////////
@@ -437,7 +450,6 @@ $(document).ready(function() {
 
 
 // });
-
 document.querySelectorAll('.info-cart').forEach(cart => {
 	const img = cart.querySelector('.info_2-img');
 	const infoSleep = cart.querySelector('.info_sleep');
@@ -470,10 +482,8 @@ document.querySelectorAll('.info-cart').forEach(cart => {
 			}
 	});
 
-	// Для мобильных устройств
-	cart.addEventListener('touchstart', (event) => {
-			event.preventDefault(); // Останавливаем дальнейшую обработку событий
-
+	// Для мобильных устройств - обработчик click
+	cart.addEventListener('click', () => {
 			// Если этот элемент активен, отключаем его
 			if (isActive) {
 					img.classList.add('icart_down');

@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="../css/media.css">
 		<link rel="stylesheet" href="../css/cart.css">
 		<link rel="stylesheet" href="../css/modal.css">
+		<link rel="stylesheet" href="../css/carts.css">
 		<link rel="stylesheet" href="../css/font.css">
 		<link rel="stylesheet" href="../css/more.css">
 		<script defer src="../js/main.js"></script>

@@ -380,27 +380,26 @@
 }
 .video-more{
 	width: 100%;
-	margin: 0;
 }
 .video-more > a > div{
 	width: 100%;
-	margin: 4vw 0 10vw 0;
 }
 .video-more > a{
 	margin: 0;
 	margin: 0;
 }
 .button-video-more{
-	font-size: 3vw;
-	width: 100%;
-	margin: 0;
-	padding: 1vw 3vw;
-	border-radius: 1vw;
+	font-size: 4.2vw;
+		padding: 2vw 4vw;
+		margin: 4vw 0 10vw 0;
+		border-radius: 1.7vw;
 
 }
 .button-video-more:hover{
-	font-size: 3vw;
-	width: 100%;
+	font-size: 4.2vw;
+		padding: 2vw 4vw;
+		margin: 4vw 0 10vw 0;
+		border-radius: 1.7vw;
 }
 
 .map_adres{

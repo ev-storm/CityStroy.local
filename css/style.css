@@ -75,7 +75,7 @@ a{
 	&:hover{
 		color: var(--main-black);
 		font-size: 0.8vw;
-		font-weight: 400;
+		font-weight: 300;
 		background: var(--main-blue);
 		transition: var(--duration);
 		position: relative;

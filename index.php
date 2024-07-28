@@ -132,6 +132,7 @@
 		<button class="button-about button modal__btn">ОБСУДИТЬ ПРОЕКТИРОВАНИЕ</button>
 	</article>
 
+
 	<!-- SWIPER-TICKER -->
 	<div class="swiper ticker">
 		<h1 class="ticker__name">НАШИ КЛИЕНТЫ</h1>
@@ -162,8 +163,8 @@
     </div>
 	</div> 
 
+
 	<!-- СХЕМА -->
-	
 	<?php
 		include('components/shema.php')
 	?>
@@ -438,7 +439,8 @@
 
 	<!-- CART -->
 	<h1 class="cart-title" >ВЫПОЛНЕННЫЕ ПРОЕКТЫ</h1>
-	<div class="cart">
+
+	<!-- <div class="cart">
 
 		<div class="cart__item bsb"> 
 			<div class="cart__item bsb2"> 
@@ -535,18 +537,14 @@
 			</div>
 		</div>
 	</div>
+	</div> -->
+
+	<?php
+		include('components/carts.php')
+	?>
 
 
-	</div>
-
-
-
-
-	<a href="pages/portfolio.php">
-		<div class="cart-button-con"> 
-			<button class="button cart-button-more">СМОТРЕТЬ БОЛЬШЕ</button>
-		</div>
-	</a>
+	
 
 
 	<!-- VIDEO -->
