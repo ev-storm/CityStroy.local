@@ -48,7 +48,7 @@
         <h3 class="cart__location">ТЦ Саларис</h3>
         <img class="cart__logo" src="/assets/img/cart/logo/01.svg" alt="BLACK STAR BURGER">
         <h1 class="cart__title">ЧАЙХАНА №1</h1>
-        <h2 class="cart__sub-title">Ресторан 900 м&#178²</h2>
+        <h2 class="cart__sub-title">Ресторан 900 м&#178</h2>
         <div class="cart__link">
             <a href="/case/bsb.php">
                 <button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>

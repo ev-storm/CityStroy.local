@@ -28,7 +28,7 @@ a{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	padding: 1vw;
+	padding: 0.5vw;
 	flex-wrap: wrap;
 }
 
@@ -41,7 +41,6 @@ a{
 	border-radius: 0.5vw;
 	box-shadow: 0.5vw 0.5vw 2vw #000000;
 }
-
 .carts-back{
 	width: 48vw;
 	height: 27vw;
