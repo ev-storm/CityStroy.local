@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<!-- HEAD -->
-<?php
-	include('../components/head.php')
-?>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection	" content="telephone=no">
+	<meta name="description" content="Cитистрой. Дизайн, проектирование и ремонт коммерческих помещений">
+	<title>Технология</title>
+
+		<!-- link -->
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/shema.css">
+		<link rel="stylesheet" href="../css/media.css">
+		<link rel="stylesheet" href="../css/case.css">
+		<link rel="stylesheet" href="../css/modal.css">
+		<link rel="stylesheet" href="../css/carts.css">
+		<link rel="stylesheet" href="../css/font.css">	
+		<link rel="stylesheet" href="../css/more.css">
+		<link rel="stylesheet" href="../css/preloader.css">
+
+		<script defer src="../js/main.js"></script>
+		<script defer src="../js/modal.js"></script>
+		<script src="../libs/jquery-3.7.1.min.js"></script>
+		<script defer src="../libs/inputmask.min.js"></script>
+		<script defer src="../libs/just-validate3.3.3.min.js"></script>
+		<script defer src="../js/script-new.js"></script>
+		<script defer src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+		
+
+	
+	<!-- OpenGraph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https:" />
+	<meta property="og:title" content="Дизайн, проектирование и ремонт коммерческих помещений"/>
+	<meta property="og:description" content="Главная" />
+	<meta property="og:image" content="../assets/img/cart/main.jpg" />
+	<!-- telegram_image1x1 -->
+	<meta name="twitter:card" content="../assets/img/cart/main.jpg" />
+	<!-- SEO -->
+	<meta name="keywords" content="теги СЕО">
+	<!-- fav -->
+	<link type="image/x-icon" href="/assets/img/icon/fav.ico" rel="shortcut icon">
+	<link type="Image/x-icon" href="/assets/img/icon/fav.ico" rel="icon">
+</head>
+
+
 <!-- PRELOADER -->
 <?php
 	include('../components/preloader.php')
@@ -59,10 +103,10 @@
 
 				<div class="title-mob swiper-container">
         <div class="swiper-wrapper">
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/1.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/4.jpg" alt=""></div>
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/2.jpg" alt=""></div>
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/3.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/4.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/1.jpg" alt=""></div>
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/5.jpg" alt=""></div>
         </div>
     	</div>
@@ -82,27 +126,27 @@
 			<div class="about__item teh">
 				<h3>
 					<img src="/assets/img/icon/Subtract-1.png" alt="">
-					<a href="#">Перегородки и стены</a>
+					Перегородки и стены
 				</h3>
 				<h3>
 					<img src="/assets/img/icon/Subtract.png" alt="">
-					<a href="#">Нестандартное оборудование</a>
+					Нестандартное оборудование
 				</h3>
 				<h3 >
 					<img src="/assets/img/icon/Subtract-2.png" alt="">
-					<a href="#">Водоснабжение, канализация, вентиляция, электроснабжение</a>
+					Водоснабжение, канализация, вентиляция, электроснабжение
 				</h3>
 				<h3>
 					<img src="/assets/img/icon/Subtract-1.png" alt="">
-					<a href="#">Технологические потоки</a>
+					Технологические потоки
 				</h3>
 				<h3>
 					<img src="/assets/img/icon/Subtract.png" alt="">
-					<a href="#">Отделка стен, полов и потолков</a>
+					Отделка стен, полов и потолков
 				</h3>
 				<h3 >
 					<img src="/assets/img/icon/Subtract-2.png" alt="">
-					<a href="#">Спецификация и расстановка технологического оборудования</a>
+					Спецификация и расстановка технологического оборудования
 				</h3>
 			</div>
 			
@@ -145,7 +189,7 @@
 		<!-- SCREEN_3 CART-->
 		<article>
 			<!-- 1 -->
-			<div class="cart-teh">
+			<div class="cart-teh сart-teh__mob">
 				<img class="element-animation" src="/assets/img/teh/1.jpg" alt="">
 				<div class="title-teh_con">
 					<h1 class="title-teh">Перегородки и стены</h1>
@@ -159,7 +203,7 @@
 				</div>
 			</div>
 			<!-- 2 -->
-			<div class="cart-teh">
+			<div class="cart-teh сart-teh__mob">
 				<img class="element-animation" src="/assets/img/teh/2.jpg" alt="">
 				<div class="title-teh_con">
 					<h1 class="title-teh">Спецификация и расстановка технологического оборудования</h1>
@@ -171,7 +215,7 @@
 				</div>
 			</div>
 			<!-- 3 -->
-			<div class="cart-teh">
+			<div class="cart-teh сart-teh__mob">
 				<img class="element-animation" src="/assets/img/teh/3.jpg" alt="">
 				<div class="title-teh_con">
 					<h1 class="title-teh">Водоснабжение, канализация, вентиляция, электроснабжение</h1>
@@ -184,7 +228,7 @@
 				</div>
 			</div>
 			<!-- 4 -->
-			<div class="cart-teh">
+			<div class="cart-teh сart-teh__mob">
 				<img class="element-animation" src="/assets/img/teh/4.jpg" alt="">
 				<div class="title-teh_con">
 					<h1 class="title-teh">Технологические потоки</h1>
@@ -195,7 +239,7 @@
 				</div>
 			</div>
 			<!-- 5 -->
-			<div class="cart-teh">
+			<div class="cart-teh сart-teh__mob">
 				<img class="element-animation" src="/assets/img/teh/5.jpg" alt="">
 				<div class="title-teh_con">
 					<h1 class="title-teh">Отделка стен, полов и потолков</h1>
@@ -211,7 +255,7 @@
 				</div>
 			</div>
 			<!-- 6 -->
-			<div class="cart-teh">
+			<div class="cart-teh сart-teh__mob">
 				<img  class="element-animation" src="/assets/img/teh/6.jpg" alt="">
 				<div class="title-teh_con">
 					<h1 class="title-teh">Нестандартное оборудование</h1>

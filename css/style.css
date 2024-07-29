@@ -83,28 +83,28 @@ a{
 }
 
 .element-animation {
-  /* Скроем элемент в начальном состоянии */
-  opacity: 0;
-  transition: var(--duration2);
-  transform: translateX(-200px);
+	opacity: 0;
+	transition: var(--duration2);
+	transform: translateX(-200px);
 }
 .element-animation.element-show {
-  opacity: 1;
-  transition: var(--duration2);
-  transform: translateX(0);
+	opacity: 1;
+	transform: translateX(0);
 }
 
 .element-animation_up {
-  /* Скроем элемент в начальном состоянии */
-  opacity: 0;
-  transition: var(--duration2);
-  transform: translateY(200px);
+	opacity: 0;
+	transition: var(--duration2);
+	transform: translateY(200px);
 }
 .element-animation_up.element-show {
-  opacity: 1;
-  transition: var(--duration2);
-  transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
+.cart-teh > img{
+	width: 50vw;
+}
+/* Пример медиа-запроса для мобильных устройств */
 
 /* menu */
 .menu{
@@ -199,6 +199,8 @@ li {
 	transition: var(--duration);
 }
 
+
+
 /* title */
 .title__con{
 	display: flex;
@@ -277,29 +279,40 @@ li {
 	transition: var(--duration);
 }
 
-/* video__bg */
-.title-mob{
-	display: none;
-}
-.video__con{
-	display: block;
-	height: 100vh;
-	width: 100%; 
-	position: relative;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-	filter:brightness(40%);
-}
 
-.video{
-	position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+	/* video__bg */
+	
+
+	@media (min-width: 601px) {
+	
+    .title-mob{
+			display: none;
+		}
+		.title-mob__slide > img{
+			display: none;
+		}
+		.video__con{
+			height: 100vh;
+			width: 100%; 
+			position: absolute;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			filter:brightness(40%);
+		}
+		
+		.video{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+
+
 
 
 /* SCREEN_2 ABOUT */
@@ -343,6 +356,7 @@ li {
 	display: flex;
 	justify-content: space-evenly;
 }
+@media (min-width: 601px){
 .about__column > div:nth-child(1){
 	width: 20%;
 }
@@ -368,6 +382,7 @@ li {
 }
 .about__column > div > div > img{
 	width: 1vw;
+}
 }
 .button-about{
 	margin: 4vw 0 2vw 0;
@@ -751,6 +766,7 @@ li {
 	justify-content: start;
 	width: 100%;
 	align-items: center;
+	background-color: #161616;
 }
 .video-more{
 	display: flex;

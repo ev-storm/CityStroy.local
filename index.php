@@ -94,6 +94,7 @@
 	<!-- SCREEN_2 ABOUT-->
 	<article id="anchor-about" class="about">
 		<h1 class="about__title">За счёт строительного опыта и технических компетенций:</h1>
+		
 		<div class="about__item">
 			<h3 class="element-animation">
 				<img src="/assets/img/icon/Subtract-1.png" alt="">

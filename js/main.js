@@ -155,29 +155,52 @@ var swiperWord = new Swiper(".title__slide", {
 
 
 
-///////////////---------------/////////////////
+///////////////-------element-animation--------/////////////////
 
-		function onEntry(entry) {
-			entry.forEach(change => {
-				if (change.isIntersecting) {
-				change.target.classList.add('element-show');
-				}
+		// Функция, которая добавляет класс анимации при видимости элемента
+function animateOnScrolling() {
+	const elements = document.querySelectorAll('.element-animation, .element-animation_up');
+
+	elements.forEach(elm => {
+			const rect = elm.getBoundingClientRect();
+			const viewportHeight = window.innerHeight;
+
+			// Проверяем, пересекает ли элемент область видимости
+			if (rect.top <= viewportHeight && rect.bottom >= 0) {
+					elm.classList.add('element-show');
+			} else {
+					// Можно удалить класс, если элемент выходит за пределы видимости (при необходимости)
+					elm.classList.remove('element-show');
+			}
+	});
+}
+
+// Проверка наличия IntersectionObserver
+if ('IntersectionObserver' in window) {
+	let options = { threshold: [0.1] };
+
+	let observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+					if (entry.isIntersecting) {
+							entry.target.classList.add('element-show');
+					}
 			});
-		}
-		
-		let options = {
-			threshold: [0.1] };
-		let observer = new IntersectionObserver(onEntry, options);
-		let elements = document.querySelectorAll('.element-animation');
-		let elements_up = document.querySelectorAll('.element-animation_up');
-		
-		for (let elm of elements) {
-			observer.observe(elm);
-		}
+	}, options);
 
-		for (let elm of elements_up) {
+	document.querySelectorAll('.element-animation, .element-animation_up').forEach(elm => {
 			observer.observe(elm);
-		}
+	});
+} else {
+	// Если IntersectionObserver не поддерживается, регистрируем слушатель события прокрутки
+	window.addEventListener('scroll', animateOnScrolling);
+	window.addEventListener('resize', animateOnScrolling); // Для адаптации при изменении размера окна
+	animateOnScrolling(); // Проверка на старте, чтобы увидеть элементы, которые уже на экране
+}
+
+
+
+
+
 
 // MENU
 
@@ -252,13 +275,13 @@ var swiperWord = new Swiper(".title__slide", {
 				$('.case__btn-down').show()
 			}
 
-			if(cof>800){
-				$('.title-mob').hide()
-			}
-			if(cof<800){
-				$('.title-mob').fadeIn()
-			}
-			console.log(cof)
+			// if(cof>800){
+			// 	$('.title-mob').hide()
+			// }
+			// if(cof<800){
+			// 	$('.title-mob').fadeIn()
+			// }
+	
 
 			
 		
@@ -380,50 +403,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		///////////////----CART ПЕРЕХОД-----/////////////////
 
-// function myLoop() {
-
-// 	let i = 0;
-// 	let interval = setInterval(function(){
-
-// 	if ( i === 6) {
-// 			clearInterval(interval); // остановка интервала при достижении значения 6
-// 			i = 1; // сброс счетчика до начального значения
-// 			setTimeout(myLoop, 1); // запуск функции заново через 1 секунду
-// 	} else { i++; }
-
-// 	$('.portfolio_back').css({
-// 		'background-image': "url('/assets/img/portfolio/"+i+".jpg')",
-// 		'transition': 'background-image 1.2s ease-in 1.2s',
-// 		'image-rendering': 'smooth',
-// 	});
-
-// 	$('.bsb').css({
-// 		'background-image': "url('/assets/img/cart/bsb/"+i+".jpg')",
-// 	'transition': 'background-image 1.2s ease-in 1.2s',
-// 	'image-rendering': 'smooth',
-// 	});
-
-// 	$('.ch').css({
-// 		'background-image': "url('/assets/img/cart/ch/"+i+".jpg')",
-// 	'transition': 'background-image 1.2s ease-in 1.2s',
-// 	'image-rendering': 'smooth',
-// 	});
-
-// 	$('.river').css({
-// 		'background-image': "url('/assets/img/cart/river/"+i+".jpg')",
-// 	'transition': 'background-image 1.2s ease-in 1.2s',
-// 	'image-rendering': 'smooth',
-// 	});
-
-// 	$('.pasta').css({
-// 		'background-image': "url('/assets/img/cart/pasta/"+i+".jpg')",
-// 	'transition': 'background-image 1.2s ease-in 1.2s',
-// 	'image-rendering': 'smooth',
-// 	});
-// 	}, 3000);
-// }
-// myLoop();
-
 
 
 
@@ -453,55 +432,6 @@ $(document).ready(function() {
 
 // ///////////////----INFO----/////////////////
 
-//  $('.info_sleep').slideUp(400);
-	
-// $('.info-cart').mouseenter(function(){
-// 	$(this).children('.info_2-img').slideUp(400);
-// 	$(this).children('.info_sleep').slideDown(400);
-// });
-
-// $('.info-cart').mouseleave(function(){
-// 	$(this).children('.info_2-img').stop(function(){$(".info_2-img").mouseover();}).slideDown(400);
-// 	 $(this).children('.info_sleep').stop(function(){$(".info_sleep").mouseover();}).slideUp(400);
-// });
-
-
-
-//////////////////////-------INFO-CART----------///////////////////
-// document.querySelectorAll('.info-cart').forEach(cart => {
-// 	const img = cart.querySelector('.info_2-img');
-// 	const infoSleep = cart.querySelector('.info_sleep');
-// 	const iTitle = cart.querySelector('.iTitle');
-
-// 	// Обработчик для mouseenter и touchstart
-// 	cart.addEventListener('mouseenter', () => {
-// 			img.classList.add('icart_up');
-// 			img.classList.remove('icart_down');
-// 			infoSleep.classList.add('icart_up');
-// 			infoSleep.classList.remove('icart_down');
-// 			iTitle.classList.add('icart_up');
-// 			iTitle.classList.remove('icart_down');
-// 	});
-
-// 	// Обработчик для mouseleave и touchend
-// 	cart.addEventListener('mouseleave', () => {
-// 			img.classList.add('icart_down');
-// 			img.classList.remove('icart_up');
-// 			infoSleep.classList.add('icart_down');
-// 			infoSleep.classList.remove('icart_up');
-// 			iTitle.classList.add('icart_down');
-// 			iTitle.classList.remove('icart_up');
-// 	});
-
-// 	// Для мобильных устройств
-// 	cart.addEventListener('touchstart', () => {
-// 		img.classList.toggle('icart_down');
-// 		infoSleep.classList.toggle('icart_down');
-// 		iTitle.classList.toggle('icart_down');
-// });
-
-
-// });
 document.querySelectorAll('.info-cart').forEach(cart => {
 	const img = cart.querySelector('.info_2-img');
 	const infoSleep = cart.querySelector('.info_sleep');
