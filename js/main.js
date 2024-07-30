@@ -76,7 +76,7 @@ $(document).ready(function() {
 
 
 let portfolio_ticker = new Swiper(".portfolio_ticker", {
-	slidesPerView: 6,
+	slidesPerView: 4,
 	spaceBetween: 0,
 	loop: true,	
 	autoplay: {
@@ -149,6 +149,8 @@ var swiperWord = new Swiper(".title__slide", {
 		},
 		speed: 2000, // Установка скорости анимации
 	});
+
+
 
 
 

@@ -2,9 +2,52 @@
 <html lang="ru">
 
 <!-- HEAD -->
-<?php
-	include('../components/head.php')
-?>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection	" content="telephone=no">
+	<meta name="description" content="Cитистрой. Дизайн, проектирование и ремонт коммерческих помещений">
+	<title>Ремонт и СМР</title>
+
+		<!-- link -->
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/shema.css">
+		<link rel="stylesheet" href="../css/media.css">
+		<link rel="stylesheet" href="../css/case.css">
+		<link rel="stylesheet" href="../css/modal.css">
+		<link rel="stylesheet" href="../css/carts.css">
+		<link rel="stylesheet" href="../css/font.css">	
+		<link rel="stylesheet" href="../css/more.css">
+		<link rel="stylesheet" href="../css/preloader.css">
+
+		<script defer src="../js/main.js"></script>
+		<script defer src="../js/modal.js"></script>
+		<script src="../libs/jquery-3.7.1.min.js"></script>
+		<script defer src="../libs/inputmask.min.js"></script>
+		<script defer src="../libs/just-validate3.3.3.min.js"></script>
+		<script defer src="../js/script-new.js"></script>
+		<script defer src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+		
+	<!-- OpenGraph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https:" />
+	<meta property="og:title" content="Дизайн, проектирование и ремонт коммерческих помещений"/>
+	<meta property="og:description" content="Главная" />
+	<meta property="og:image" content="../assets/img/cart/main.jpg" />
+	<!-- telegram_image1x1 -->
+	<meta name="twitter:card" content="../assets/img/cart/main.jpg" />
+	<!-- SEO -->
+	<meta name="keywords" content="теги СЕО">
+	<!-- fav -->
+	<link type="image/x-icon" href="/assets/img/icon/fav.ico" rel="shortcut icon">
+	<link type="Image/x-icon" href="/assets/img/icon/fav.ico" rel="icon">
+</head>
+
 <!-- PRELOADER -->
 <?php
 	include('../components/preloader.php')
@@ -127,20 +170,21 @@
 	</article>
 
 	<!-- SCREEN_3 ABOUT-->
-	<article>
+	<article  class="about__3">
 			
-			<div class="cart-teh">
-				<img class="element-animation" src="/assets/img/smr/1.png" alt="">
-				<div class="title-teh_con">
+			<div class="cart-teh smr">
+				<img class="element-animation " src="/assets/img/smr/1.png" alt="">
+				<div class="title-teh_con element-animation">
 					<h1 class="title-teh">Специализация в ресторанной тематике</h1>
 					<h2 class="text-teh">Работая с 2016 года в ремонте коммерческой недвижимости, основную часть опыта мы приобрели на объектах ресторанного назначения: от самых маленьких до двух- трехуровневых ресторанов большой площади. Наш опыт и знания позволяют решить любую задачу в сфере ресторанного бизнеса.</h2>
 				</div>
 			</div> 
 			
-			<div class="smeta_con">
+			<div class="smeta_con ">
 				<h1><span class="element-animation">Честные сметы.</span> Как известно, есть два метода работы с Клиентом.</h1>
-				<div class="cart-teh smeta">	
-					<img class="element-animation" src="/assets/img/smr/$.svg" alt="">
+				
+				<div class="cart-teh element-animation smeta">	
+					<img  src="/assets/img/smr/$.svg" alt="">
 					<div class="title-teh_con smeta-title">
 						<h1 class="title-teh">Первый метод</h1>
 						<h2 class="text-teh">Первый метод расчёта сметы рассчитан на тех, кто подбирает подрядчика преимущественно по цене. <br> <br>Зная это, подрядчики готовят сметы такие, чтобы выиграть конкурентную борьбу и подписать договор, а дальше разными методами «разгоняют» заказчика на дополнительные сметы, аргументируя это ошибками, допущенными самим же заказчиком по незнанию.<br> <br> Таких мест очень много и поле для «маневров» здесь большое, особенно в том случае, когда проектируют и строят разные компании.
@@ -148,8 +192,8 @@
 					</div>
 				</div>
 
-				<div class="cart-teh smeta">	
-					<img class="element-animation" src="/assets/img/smr/2.svg" alt="">
+				<div class="cart-teh element-animation smeta">	
+					<img  src="/assets/img/smr/2.svg" alt="">
 					<div class="title-teh_con smeta-title">
 						<h1 class="title-teh">Второй метод</h1>
 						<h2 class="text-teh">Второй метод расчёта сметы заключается в том, что подрядная компания считает все и сразу, учитывая все возможные затраты, проектирует правильно, без «закладок» и возможных будущих изменений.<br> <br> Смета получается дороже, чем у тех, кто идёт по первому пути, но это даёт заказчику максимально приближенный вариант к действительным затратам, наиболее правдивую картину предстоящих инвестиций.<br> <br> Второй метод в итоге реализации проекта даёт существенную экономию заказчику, в сравнении с первым. В первом варианте Заказчик втянут в процесс и дороги назад нет, как нет потолка затрат.
@@ -157,8 +201,8 @@
 					</div>
 				</div>
 
-				<div class="cart-teh smeta">	
-					<img class="element-animation" src="/assets/img/smr/3.svg" alt="">
+				<div class="cart-teh element-animation smeta">	
+					<img src="/assets/img/smr/3.svg" alt="">
 					<div class="title-teh_con smeta-title">
 						<h1 class="title-teh">Во втором случае заказчик видит реальную сметную стоимость всех разделов проекта</h1>
 						<h2 class="text-teh">Он убережён не только от неизвестного количества дополнительных затрат в ходе реализации инвестиций, но и от роста издержек (простой уже нанятого персонала, аренда, штрафы, налоги), но и, что наиболее важно, - от недополученной прибыли от срыва сроков начала работы ресторана. У второго метода есть один большой минус - при недостатке доверия у Заказчика часто складывается впечатление, что его «разводят» и хотят на нем излишне «навариться».<br><br> Ценность честности очевидна только при негативном опыте Заказчика, который столкнулся прежде с заниженной сметой, а в итоге переплатил в процессе, и, например, за год от начала инвестирования вернул себе гораздо меньше денег, чем если бы работал с такой компанией как наша
@@ -166,8 +210,8 @@
 					</div>
 				</div>
 
-				<div class="cart-teh smeta">	
-					<img class="element-animation" src="/assets/img/smr/4.svg" alt="">
+				<div class="cart-teh element-animation smeta">	
+					<img src="/assets/img/smr/4.svg" alt="">
 					<div class="title-teh_con smeta-title">
 						<h1 class="title-teh">Как мы считаем сметы?</h1>
 						<h2 class="text-teh">Мы считаем сметы только на основании проектов и только после личной встречи с Заказчиком и осмотра объекта. Именно тогда мы можем получить наиболее полную картину расходов.<br><br> Расчет на основании одной лишь площади и без встречи с Заказчиком мы не делаем и считаем подобный расчет крайне непрофессиональным.<br><br> Надеемся, что именно из этого и сложилась наша репутация на рынке.
@@ -176,8 +220,8 @@
 					</div>
 				</div>
 
-				<div class="cart-teh smeta">	
-					<img class="element-animation" src="/assets/img/smr/5.svg" alt="">
+				<div class="cart-teh element-animation smeta ">	
+					<img src="/assets/img/smr/5.svg" alt="">
 					<div class="title-teh_con smeta-title">
 						<h1 class="title-teh">Уже есть смета?<br>Проведем её аудит</h1>
 						<h2 class="text-teh">Мы считаем сметы только на основании проектов и только после личной встречи с Заказчиком и осмотра объекта. Именно тогда мы можем получить наиболее полную картину расходов.<br><br> Расчет на основании одной лишь площади и без встречи с Заказчиком мы не делаем и считаем подобный расчет крайне непрофессиональным.<br><br> Надеемся, что именно из этого и сложилась наша репутация на рынке.
@@ -190,34 +234,37 @@
 				</div>
 			</div>
 
-			<div class="cart-teh smeta-team">	
-				<div class="title-teh_con">
-					<img class="element-animation" src="/assets/img/smr/6.svg" alt="">
-					<h1 class="title-teh">Команда инженеров и строителей</h1>
-					<h2 class="text-teh">Наша команда сформировалась исходя из точки приложения усилий.
+			<div class="cart-teh smeta-team ">	
+				<div class=" title-teh_con">
+					<img class=" element-animation" src="/assets/img/smr/6.svg" alt="">
+					<h1 class=" element-animation title-teh">Команда инженеров и строителей</h1>
+					<h2 class=" element-animationtext-teh">Наша команда сформировалась исходя из точки приложения усилий.
 					Объекты мы сдаем в срок и добиваемся результата системной планомерной работой.</h2>
 				</div>
 				<img class="element-animation" src="/assets/img/smr/3.jpeg" alt="">
 			</div> 
 
-			<<div class="smeta_con">
+			<<div class="smeta_con ">
 				<h1> Мы собрали коллектив,<span class="element-animation">«заточенный»</span> на рестораны:</h1>
-				<div class="smeta-cart_con">
-					<div class="smeta-cart element-animation">
+				<div class="smeta-cart_con element-animation">
+					<div class="smeta-cart ">
 						<img src="/assets/img/smr/7.svg" alt="">
 						<h1>Инженеры</h1>
 						<h2>Весь состав ИТР нашей компании с высшим строительным и инженерным образованием.</h2>
 					</div>
+
 					<div class="smeta-cart element-animation">
 						<img src="/assets/img/smr/8.svg" alt="">
 						<h1>Дизайнеры</h1>
 						<h2>Наши дизайнеры имеют множественный успешный опыт ресторанных проектов.</h2>
 					</div>
+
 					<div class="smeta-cart element-animation">
 						<img src="/assets/img/smr/9.svg" alt="">
 						<h1>Технологи</h1>
 						<h2>Многие технологи помимо технического образования, до нас долго работали поварами в ресторане и знают изнутри как сделать правильно и удобно, а значит у команды ресторана есть где вкладывать душу в работу, что напрямую отражается на качестве кухни и репутации ресторана.</h2>
 					</div>
+					
 					<div class="smeta-cart element-animation">
 						<img src="/assets/img/smr/10.svg" alt="">
 						<h1>Строители</h1>

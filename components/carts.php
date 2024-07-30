@@ -15,7 +15,7 @@
     </div>
     <div class="cart__content">
         <h3 class="cart__location">ТЦ Саларис</h3>
-        <img class="cart__logo" src="/assets/img/cart/logo/01.svg" alt="BLACK STAR BURGER">
+        <img class="cart__logo" src="/assets/img/cart/logo/10.svg" alt="BLACK STAR BURGER">
         <h1 class="cart__title">BLACK STAR BURGER</h1>
         <h2 class="cart__sub-title">Бургерная 180 м²</h2>
         <div class="cart__link">
@@ -47,7 +47,7 @@
     </div>
     <div class="cart__content">
         <h3 class="cart__location">ТЦ Саларис</h3>
-        <img class="cart__logo" src="/assets/img/cart/logo/01.svg" alt="BLACK STAR BURGER">
+        <img class="cart__logo" src="/assets/img/cart/logo/08.svg" alt="BLACK STAR BURGER">
         <h1 class="cart__title">ЧАЙХАНА №1</h1>
         <h2 class="cart__sub-title">Ресторан 900 м&#178</h2>
         <div class="cart__link">
@@ -79,7 +79,7 @@
     </div>
     <div class="cart__content">
         <h3 class="cart__location">ЖК Зил Арт</h3>
-        <img class="cart__logo" src="/assets/img/cart/logo/01.svg" alt="BLACK STAR BURGER">
+        <img class="cart__logo" src="/assets/img/cart/logo/02.svg" alt="BLACK STAR BURGER">
         <h1 class="cart__title">RIVER ONE</h1>
         <h2 class="cart__sub-title">КАЛЬЯННАЯ 250 м&#178</h2>
         <div class="cart__link">
@@ -111,7 +111,7 @@
 			</div>
 			<div class="cart__content">
 					<h3 class="cart__location">ТЦ Ривьева</h3>
-					<img class="cart__logo" src="/assets/img/cart/logo/01.svg" alt="BLACK STAR BURGER">
+					<img class="cart__logo" src="/assets/img/cart/logo/22.svg" alt="BLACK STAR BURGER">
 					<h1 class="cart__title">PASTA CUP</h1>
 					<h2 class="cart__sub-title">Ресторан 260 м&#178</h2>
 					<div class="cart__link">
@@ -128,6 +128,7 @@
 					</div>
 			</div>
 		</div>
+
 
 		<div class="cart-more">
 			<a href="pages/portfolio.php">

@@ -481,28 +481,31 @@
 				</a>
 			</div>
 
+	
 
 
-			<div class="video_rule element-animation">
-				<div class="video_r">
-					<button id="v1" class="video-button v-btn_activ"></button>
-					<!-- <h1 class="video-button-title vt_1">Первый этап строительства кальянной Мята на ВДНХ</h1> -->
-				</div>
-				<div class="video_r">
-					<button id="v2" class="video-button"></button>
-					<!-- <h1 class="video-button-title vt_2">Первый этап строительства кальянной Мята на ВДНХ</h1> -->
-				</div>
-				<div class="video_r">
-					<button id="v3" class="video-button"></button>
-					<!-- <h1 class="video-button-title vt_3">Первый этап строительства кальянной Мята на ВДНХ</h1> -->
-				</div>
-				<div class="video_r">
-					<button id="v4" class="video-button"></button>
-					<!-- <h1 class="video-button-title vt_4">Первый этап строительства кальянной Мята на ВДНХ</h1> -->
-				</div>
-			</div>
+		<div class="video_rule element-animation">
+					<div class="video_r">
+						<button id="v1" class="video-button v-btn_activ"></button>
+					</div>
+					<div class="video_r">
+						<button id="v2" class="video-button"></button>
+					</div>
+					<div class="video_r">
+						<button id="v3" class="video-button"></button>
+					</div>
+					<div class="video_r">
+						<button id="v4" class="video-button"></button>
+					</div>
+				</div> 
+
 		</div>
 	</div>
+
+
+		
+
+
 
 	<div class="video-more-con">
 		<div class="video-more">		

@@ -21,7 +21,7 @@
 		color: #161616;
 		background-color: #ffffff;
 		margin: 0;
-		padding-top: 2vw;
+		padding-top: 10vw;
 		padding-bottom: 0;
 	}
 	.sh-mob{
@@ -120,20 +120,20 @@
 		width: 100%;
 		position: relative;
 	}
-	.sh-mob__item > h2{
-		font-weight: 200;
-		color: #ffffff;
-		margin: 2vw 0 0 0;	
-		font-size: 4vw;
-		position: relative;
-		opacity: 0;
-		transition: all 0.7s ease-out;
-		transform: translateY(-200%);
-		overflow: hidden;
-	}
+  .sh-mob__item > h2 {
+    font-weight: 300;
+    color: #ffffff91;
+    margin: 2vw 0 0 0;
+    font-size: 4.5vw;
+    position: relative;
+    opacity: 0;
+    transition: all 0.7s ease-out;
+    transform: translateY(-200%);
+    overflow: hidden;
+  }
 	.sh-mob__item > h2::before{
 		content: url(/assets/img/icon/Frame\ 34.svg);
-		margin-right: 1vw;
+		margin-right: 3vw;
 	}
 	.sh-mob__item.active h2 {
 		transition: all 0.7s ease-out;
@@ -236,13 +236,13 @@
 	transition: all 0.3s ease-out;
 	overflow: scroll;
 	}
-	.sh-mob__banner > h1{
-		font-size: 5vw;
-		font-weight: 300;
-		color: var(--dark-blue);
-	}
+	.sh-mob__banner > h1 {
+    font-size: 6vw;
+    font-weight: 300;
+    color: var(--dark-blue);
+  }
 	.sh-mob__banner > h2{
-		font-size: 3.5vw;
+		font-size: 4vw;
 		font-weight: 300;
 		color: #001e2d;
 	} 
@@ -256,6 +256,7 @@
 	transform: translateY(-400%);
 	transition: all 0.3s ease;
 	}
+
 
 }
 

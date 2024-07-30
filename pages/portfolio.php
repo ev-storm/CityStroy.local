@@ -2,9 +2,52 @@
 <html lang="ru">
 
 <!-- HEAD -->
-<?php
-	include('../components/head.php')
-?>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection	" content="telephone=no">
+	<meta name="description" content="Cитистрой. Дизайн, проектирование и ремонт коммерческих помещений">
+	<title>Портфолио</title>
+
+		<!-- link -->
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/shema.css">
+		<link rel="stylesheet" href="../css/media.css">
+		<link rel="stylesheet" href="../css/case.css">
+		<link rel="stylesheet" href="../css/modal.css">
+		<link rel="stylesheet" href="../css/carts.css">
+		<link rel="stylesheet" href="../css/font.css">	
+		<link rel="stylesheet" href="../css/more.css">
+		<link rel="stylesheet" href="../css/preloader.css">
+
+		<script defer src="../js/main.js"></script>
+		<script defer src="../js/modal.js"></script>
+		<script src="../libs/jquery-3.7.1.min.js"></script>
+		<script defer src="../libs/inputmask.min.js"></script>
+		<script defer src="../libs/just-validate3.3.3.min.js"></script>
+		<script defer src="../js/script-new.js"></script>
+		<script defer src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+		
+
+	
+	<!-- OpenGraph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https:" />
+	<meta property="og:title" content="Дизайн, проектирование и ремонт коммерческих помещений"/>
+	<meta property="og:description" content="Главная" />
+	<meta property="og:image" content="../assets/img/cart/main.jpg" />
+	<!-- telegram_image1x1 -->
+	<meta name="twitter:card" content="../assets/img/cart/main.jpg" />
+	<!-- SEO -->
+	<meta name="keywords" content="теги СЕО">
+	<!-- fav -->
+	<link type="image/x-icon" href="/assets/img/icon/fav.ico" rel="shortcut icon">
+	<link type="Image/x-icon" href="/assets/img/icon/fav.ico" rel="icon">
+</head>
 <!-- PRELOADER -->
 <?php
 	include('../components/preloader.php')
@@ -107,221 +150,269 @@
 
 
 
-	<!-- CART -->
-	<h1 class="cart-title" >ВЫПОЛНЕННЫЕ ПРОЕКТЫ</h1>
-	<div class="cart">
-		<div class="cart__item bsb"> 
-			<div class="cart__filter">
-				<div class="cart__content">
-					<h3 class="cart__location">ТЦ Саларис</h3>
-					<img class="cart__logo" src="../assets/img/icon/logo/BSB.png" alt="BLACK STAR BURGER">
-					<h1 class="cart__title">BLACK STAR BURGER</h1>
-					<h2 class="cart__sub-title">Бургерная 180 м&#178</h2>
-					<div class="cart__link">
-						<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
-						<button class="cart__youtube">
-							<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
-								<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
-								</svg>
-							</a>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
+<!-- CART -->
+<h1 class="cart-title" >ВЫПОЛНЕННЫЕ ПРОЕКТЫ</h1>
+<div class="carts-con">
 
-		<div class="cart__item ch">
-			<div class="cart__filter">
-				<div class="cart__content">
-					<h3 class="cart__location">ТЦ Саларис</h3>
-					<img class="cart__logo" src="../assets/img/icon/logo/ch.png" alt="ЧАЙХАНА №1">
-					<h1 class="cart__title">ЧАЙХАНА №1</h1>
-					<h2 class="cart__sub-title">Ресторан 900 м&#178</h2>
-					<div class="cart__link">
-						<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
-						<button class="cart__youtube">
-							<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
-								<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
-								</svg>
-							</a>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="cart__item river">
-			<div class="cart__filter">
-				<div class="cart__content">
-					<h3 class="cart__location">ЖК Зил Арт</h3>
-					<img class="cart__logo" src="../assets/img/icon/logo/R.png" alt="">
-					<h1 class="cart__title">RIVER ONE</h1>
-					<h2 class="cart__sub-title">КАЛЬЯННАЯ 250 м&#178</h2>
-					<div class="cart__link">
-						<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
-						<button class="cart__youtube">
-							<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
-								<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
-								</svg>
-							</a>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="cart__item pasta">
-			<div class="cart__filter">
-				<div class="cart__content">
-					<h3 class="cart__location">ТЦ Ривьева</h3>
-					<img class="cart__logo" src="../assets/img/icon/logo/PASTA.png" alt="">
-					<h1 class="cart__title">PASTA CUP</h1>
-					<h2 class="cart__sub-title">Ресторан 260 м&#178</h2>
-					<div class="cart__link">
-						<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
-						<button class="cart__youtube">
-							<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
-								<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
-								</svg>
-							</a>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="cart__item pasta">
-			<div class="cart__filter">
-				<div class="cart__content">
-					<h3 class="cart__location">ТЦ Ривьева</h3>
-					<img class="cart__logo" src="../assets/img/icon/logo/PASTA.png" alt="">
-					<h1 class="cart__title">PASTA CUP</h1>
-					<h2 class="cart__sub-title">Ресторан 260 м&#178</h2>
-					<div class="cart__link">
-						<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
-						<button class="cart__youtube">
-							<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
-								<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
-								</svg>
-							</a>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="cart__item pasta">
-			<div class="cart__filter">
-				<div class="cart__content">
-					<h3 class="cart__location">ТЦ Ривьева</h3>
-					<img class="cart__logo" src="../assets/img/icon/logo/PASTA.png" alt="">
-					<h1 class="cart__title">PASTA CUP</h1>
-					<h2 class="cart__sub-title">Ресторан 260 м&#178</h2>
-					<div class="cart__link">
-						<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
-						<button class="cart__youtube">
-							<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
-								<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
-								</svg>
-							</a>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="cart__item pasta">
-			<div class="cart__filter">
-				<div class="cart__content">
-					<h3 class="cart__location">ТЦ Ривьева</h3>
-					<img class="cart__logo" src="../assets/img/icon/logo/PASTA.png" alt="">
-					<h1 class="cart__title">PASTA CUP</h1>
-					<h2 class="cart__sub-title">Ресторан 260 м&#178</h2>
-					<div class="cart__link">
-						<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
-						<button class="cart__youtube">
-							<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
-								<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
-								</svg>
-							</a>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="cart__item pasta">
-			<div class="cart__filter">
-				<div class="cart__content">
-					<h3 class="cart__location">ТЦ Ривьева</h3>
-					<img class="cart__logo" src="../assets/img/icon/logo/PASTA.png" alt="">
-					<h1 class="cart__title">PASTA CUP</h1>
-					<h2 class="cart__sub-title">Ресторан 260 м&#178</h2>
-					<div class="cart__link">
-						<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
-						<button class="cart__youtube">
-							<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
-								<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
-								</svg>
-							</a>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="cart__item pasta">
-			<div class="cart__filter">
-				<div class="cart__content">
-					<h3 class="cart__location">ТЦ Ривьева</h3>
-					<img class="cart__logo" src="../assets/img/icon/logo/PASTA.png" alt="">
-					<h1 class="cart__title">PASTA CUP</h1>
-					<h2 class="cart__sub-title">Ресторан 260 м&#178</h2>
-					<div class="cart__link">
-						<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
-						<button class="cart__youtube">
-							<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
-								<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
-								</svg>
-							</a>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="cart__item pasta">
-			<div class="cart__filter">
-				<div class="cart__content">
-					<h3 class="cart__location">ТЦ Ривьева</h3>
-					<img class="cart__logo" src="../assets/img/icon/logo/PASTA.png" alt="">
-					<h1 class="cart__title">PASTA CUP</h1>
-					<h2 class="cart__sub-title">Ресторан 260 м&#178</h2>
-					<div class="cart__link">
-						<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
-						<button class="cart__youtube">
-							<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
-								<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
-								</svg>
-							</a>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		
+	<!-- BLACK STAR BURGER -->
+	<div class="carts">
+    <div class="carts-back swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide carts-slide"><img src="/assets/img/cart/bsb/1.jpg" alt=""></div>
+            <div class="swiper-slide carts-slide"><img src="/assets/img/cart/bsb/2.jpg" alt=""></div>
+            <div class="swiper-slide carts-slide"><img src="/assets/img/cart/bsb/3.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/bsb/4.jpg" alt=""></div>
+            <div class="swiper-slide carts-slide"><img src="/assets/img/cart/bsb/5.jpg" alt=""></div>
+            <div class="swiper-slide carts-slide"><img src="/assets/img/cart/bsb/6.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="cart__content">
+        <h3 class="cart__location">ТЦ Саларис</h3>
+        <img class="cart__logo" src="/assets/img/cart/logo/10.svg" alt="BLACK STAR BURGER">
+        <h1 class="cart__title">BLACK STAR BURGER</h1>
+        <h2 class="cart__sub-title">Бургерная 180 м²</h2>
+        <div class="cart__link">
+            <a href="/case/bsb.php">
+                <button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+            </a>
+            <button class="cart__youtube">
+                <a href="https://www.youtube.com/watch?v=G0Mfo7zb9qE&embeds_referring_euri=https%3A%2F%2Fcitystroy-msk.tilda.ws%2F&source_ve_path=Mjg2NjY&feature=emb_logo" target="_blank">
+                    <svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
+                    </svg>
+                </a>
+            </button>
+        </div>
+    </div>
 	</div>
 
+	<!-- ЧАЙХАНА №1 -->
+	<div class="carts">
+    <div class="carts-back swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide carts-slide"><img src="/assets/img/cart/ch/1.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/ch/2.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/ch/3.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/ch/4.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/ch/5.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/ch/6.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="cart__content">
+        <h3 class="cart__location">ТЦ Саларис</h3>
+        <img class="cart__logo" src="/assets/img/cart/logo/08.svg" alt="ЧАЙХАНА №1">
+        <h1 class="cart__title">ЧАЙХАНА №1</h1>
+        <h2 class="cart__sub-title">Ресторан 900 м&#178</h2>
+        <div class="cart__link">
+            <a href="/case/bsb.php">
+                <button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+            </a>
+            <button class="cart__youtube">
+                <a href="https://www.youtube.com/watch?v=xEbphigR2JE&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
+                    <svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
+                    </svg>
+                </a>
+            </button>
+        </div>
+    </div>
+	</div>
+
+	<!-- RIVER ONE -->
+	<div class="carts">
+    <div class="carts-back swiper-container">
+        <div class="swiper-wrapper">
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/river/1.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/river/2.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/river/3.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/river/4.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/river/5.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/river/6.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="cart__content">
+        <h3 class="cart__location">ЖК Зил Арт</h3>
+        <img class="cart__logo" src="/assets/img/cart/logo/02.svg" alt="RIVER ONE">
+        <h1 class="cart__title">RIVER ONE</h1>
+        <h2 class="cart__sub-title">КАЛЬЯННАЯ 250 м&#178</h2>
+        <div class="cart__link">
+            <a href="/case/bsb.php">
+                <button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+            </a>
+            <button class="cart__youtube">
+                <a href="https://www.youtube.com/@CityStroy" target="_blank">
+                    <svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
+                    </svg>
+                </a>
+            </button>
+        </div>
+    </div>
+	</div>
+
+
+	<!-- PASTA CUP -->
+	<div class="carts">
+		<div class="carts-back swiper-container">
+				<div class="swiper-wrapper">
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/pasta/1.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/pasta/2.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/pasta/3.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/pasta/4.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/pasta/5.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/pasta/6.jpg" alt=""></div>
+				</div>
+		</div>
+		<div class="cart__content">
+				<h3 class="cart__location">ТЦ Ривьева</h3>
+				<img class="cart__logo" src="/assets/img/cart/logo/22.svg" alt="PASTA CUP">
+				<h1 class="cart__title">PASTA CUP</h1>
+				<h2 class="cart__sub-title">Ресторан 260 м&#178</h2>
+				<div class="cart__link">
+						<a href="/case/bsb.php">
+								<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+						</a>
+						<button class="cart__youtube">
+								<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
+										<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
+										</svg>
+								</a>
+						</button>
+				</div>
+		</div>
+	</div>
+
+	<!-- МЯТА PLATINUM -->
+	<div class="carts">
+		<div class="carts-back swiper-container">
+				<div class="swiper-wrapper">
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/1.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/2.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/3.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/4.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/5.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/6.jpg" alt=""></div>
+				</div>
+		</div>
+		<div class="cart__content">
+				<h3 class="cart__location">ТЦ Остров мечты</h3>
+				<img class="cart__logo" src="/assets/img/cart/logo/11.svg" alt="МЯТА PLATINUM<">
+				<h1 class="cart__title">МЯТА PLATINUM</h1>
+				<h2 class="cart__sub-title">Кальянная 500 м&#178</h2>
+				<div class="cart__link">
+						<a href="/case/bsb.php">
+								<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+						</a>
+						<button class="cart__youtube">
+								<a href="https://www.youtube.com/watch?v=G0Mfo7zb9qE&embeds_referring_euri=https%3A%2F%2Fcitystroy-msk.tilda.ws%2F&source_ve_path=Mjg2NjY&feature=emb_logo" target="_blank">
+										<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
+										</svg>
+								</a>
+						</button>
+				</div>
+		</div>
+	</div>
+
+	<!-- IL PATIO -->
+	<div class="carts">
+		<div class="carts-back swiper-container">
+				<div class="swiper-wrapper">
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/il-pat/01.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/il-pat/05.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/il-pat/06.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/il-pat/07.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/il-pat/08.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/il-pat/09.jpg" alt=""></div>
+				</div>
+		</div>
+		<div class="cart__content">
+				<h3 class="cart__location">ТЦ Июнь</h3>
+				<img class="cart__logo" src="/assets/img/cart/logo/12.svg" alt="IL PATIO">
+				<h1 class="cart__title">IL PATIO</h1>
+				<h2 class="cart__sub-title">Ресторан 300 м&#178</h2>
+				<div class="cart__link">
+						<a href="/case/bsb.php">
+								<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+						</a>
+						<button class="cart__youtube">
+								<a href="https://www.youtube.com/watch?v=2S-qCGLFUFQ&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
+										<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
+										</svg>
+								</a>
+						</button>
+				</div>
+		</div>
+	</div>
+
+	<!-- НИЯМА -->
+	<div class="carts">
+		<div class="carts-back swiper-container">
+				<div class="swiper-wrapper">
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/niama/02.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/niama/05.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/niama/06.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/niama/04.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/niama/03.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/niama/02.jpg" alt=""></div>
+				</div>
+		</div>
+		<div class="cart__content">
+				<h3 class="cart__location">ТЦ Июнь</h3>
+				<img class="cart__logo" src="/assets/img/cart/logo/25.svg" alt="BLACK STAR BURGER">
+				<h1 class="cart__title">НИЯМА</h1>
+				<h2 class="cart__sub-title">Кафе 124 м&#178</h2>
+				<div class="cart__link">
+						<a href="/case/bsb.php">
+								<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+						</a>
+						<button class="cart__youtube">
+								<a href="https://www.youtube.com/watch?v=2S-qCGLFUFQ&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
+										<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
+										</svg>
+								</a>
+						</button>
+				</div>
+		</div>
+	</div>
+
+		<!-- НИЯМА -->
+		<div class="carts">
+		<div class="carts-back swiper-container">
+				<div class="swiper-wrapper">
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata_2/1.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata_2/2.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata_2/3.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata_2/4.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata_2/5.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata_2/6.jpg" alt=""></div>
+				</div>
+		</div>
+		<div class="cart__content">
+				<h3 class="cart__location">ТЦ Айсберг</h3>
+				<img class="cart__logo" src="/assets/img/cart/logo/11.svg" alt="МЯТА LOUNGE">
+				<h1 class="cart__title">МЯТА LOUNGE</h1>
+				<h2 class="cart__sub-title">Кальянная 260 м&#178</h2>
+				<div class="cart__link">
+						<a href="/case/bsb.php">
+								<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+						</a>
+						<button class="cart__youtube">
+						<a href="https://www.youtube.com/watch?v=2S-qCGLFUFQ&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
+										<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
+										</svg>
+								</a>
+						</button>
+				</div>
+		</div>
+	</div>
+
+
+</div>
 
 
 

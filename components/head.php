@@ -35,7 +35,7 @@
 	<meta property="og:url" content="https:" />
 	<meta property="og:title" content="Дизайн, проектирование и ремонт коммерческих помещений"/>
 	<meta property="og:description" content="Главная" />
-	<meta property="og:image" content="../assets/img/cart/main.jpg" />
+	<meta property="og:image" content="../assets/img/cart/main.jpg"/>
 	<!-- telegram_image1x1 -->
 	<meta name="twitter:card" content="../assets/img/cart/main.jpg" />
 	<!-- SEO -->

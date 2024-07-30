@@ -179,18 +179,22 @@
 	<!-- DESI_SHEMA -->
 	<div class="desi-sh_con">
 		<h1>Дизайн = мощный маркетинговый инструмент</h1>
-		<div class="desi-sh">
-			<div class="desi-sh_item element-animation">
-				<h2>Дизайн</h2>
-			</div>
-			<img class="shema__right element-animation" src="/assets/img/icon/right.png"></img>
-			<div class="desi-sh_item element-animation">
-				<h2>Профессиональные проектировщики и строители</h2>
-			</div>
-			<img class="shema__right element-animation" src="/assets/img/icon/right.png"></img>
+		<div class="desi-sh ">
+
 			<div class="desi-sh_item element-animation">
 				<h2>Успешный бизнес</h2>
 			</div>
+			<img class="shema__right" src="/assets/img/icon/right.svg"></img>
+
+			<div class="desi-sh_item element-animation">
+				<h2>Профессиональные проектировщики и строители</h2>
+			</div>
+			<img class="shema__right" src="/assets/img/icon/right.svg"></img>
+			
+			<div class="desi-sh_item element-animation">
+				<h2>Успешный бизнес</h2>
+			</div>
+
 		</div>
 	</div>
 
@@ -211,7 +215,7 @@
 					<h2>Комфорт</h2>
 				</div>
 
-				<div class="desi-inf_item">
+				<div class="desi-inf_item desi-inf__bez">
 					<dotlottie-player 
 						class="desi-inf__player"
 						src="/assets/animation/komf.json" 
@@ -239,7 +243,7 @@
 		</div>
 
 		<!-- DESI_LIST -->
-		<article>
+		<article class="des-list__main">
 			<!-- 1 -->
 			<div class="cart-teh">
 				<img class="element-animation" src="/assets/img/desi/1.jpg" alt="">
@@ -275,7 +279,7 @@
 						<li>Геофизические характеристики расположения</li>
 						<li>Конструктивные особенности помещения</li>
 					</ul>
-					<h3>
+					<h3 class="des-h3">
 						Огромную роль играют условия создания проекта, такие как сроки, зачастую сжатые, бюджет и конечно же техническое задание от заказчика
 					</h3>
 				</div>

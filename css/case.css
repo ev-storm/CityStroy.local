@@ -4,14 +4,12 @@
 	--swiper-theme-color: #ffffff;
 	--swiper-navigation-size: 0.2vw;
 }
-
-
-.case__swiper-2.case__slide-2 {
-	opacity: 0.4;
-} 
-.case__swiper-2.swiper-slide-thumb-active {
-	opacity: 1;
+.case__cover-mob{
+	display: none;
 }
+
+
+
 
 .case__slide > img{
 	width: 100vw;
@@ -19,12 +17,14 @@
 	object-fit: cover;
 }
 
+
 .case__slide-2 > img{
 	width: 24vw;
 	height: 10vw;
 	object-fit: cover;
 	margin: 1vw;
 	border-radius: 0.5vw;
+
 }
 
 /* TITLE */
