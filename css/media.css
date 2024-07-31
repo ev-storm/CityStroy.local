@@ -72,6 +72,7 @@
 	} 
 
 	.title-mob__slide > img{
+		display: block;
 		height: 100vh;
 		position: center;
 		size: cover;
@@ -328,7 +329,7 @@
 		font-size: 6vw;
 		font-weight: 300;
 		line-height: 2;
-		color: #ffffff91;
+		color: #ffffff;
 		transition: var(--duration);
 	}
 	/* .cart-teh__mob > img {

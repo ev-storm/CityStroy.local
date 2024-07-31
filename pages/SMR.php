@@ -86,6 +86,7 @@
 					<button class="button modal__btn">
 						СВЯЗАТЬСЯ С НАМИ
 					</button>
+					<a href="#smr_about">
 					<div class="down" 
 					onmouseenter="down__button.play()" 
 					onmouseleave="down__button.stop()"	>
@@ -97,16 +98,17 @@
 					speed="1">
 					</dotlottie-player>
 					</div>
+					</a>
 				</div>
 			</div>
 
 			<div class="title-mob swiper-container">
         <div class="swiper-wrapper">
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/1.jpg" alt=""></div>
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/2.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/8.jpg" alt=""></div>
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/3.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/4.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/5.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/6.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/9.jpg" alt=""></div>
         </div>
     	</div>
 
@@ -120,7 +122,7 @@
 
 
 	<!-- SCREEN_2 ABOUT-->
-	<article class="about">
+	<article id="smr_about" class="about">
 		<h1 class="about__title">За счёт строительного опыта и технических компетенций:</h1>
 		<div class="about__item">
 			<h3>
@@ -216,7 +218,7 @@
 						<h1 class="title-teh">Как мы считаем сметы?</h1>
 						<h2 class="text-teh">Мы считаем сметы только на основании проектов и только после личной встречи с Заказчиком и осмотра объекта. Именно тогда мы можем получить наиболее полную картину расходов.<br><br> Расчет на основании одной лишь площади и без встречи с Заказчиком мы не делаем и считаем подобный расчет крайне непрофессиональным.<br><br> Надеемся, что именно из этого и сложилась наша репутация на рынке.
 						</h2>
-						<button class="button smeta-btn">НАЗНАЧИТЬ ВСТРЕЧУ</button>
+						<button class="button smeta-btn modal__btn">НАЗНАЧИТЬ ВСТРЕЧУ</button>
 					</div>
 				</div>
 
@@ -227,8 +229,8 @@
 						<h2 class="text-teh">Мы считаем сметы только на основании проектов и только после личной встречи с Заказчиком и осмотра объекта. Именно тогда мы можем получить наиболее полную картину расходов.<br><br> Расчет на основании одной лишь площади и без встречи с Заказчиком мы не делаем и считаем подобный расчет крайне непрофессиональным.<br><br> Надеемся, что именно из этого и сложилась наша репутация на рынке.
 						</h2>
 						<div>
-							<button class="button smeta-btn">КОНСУЛЬТАЦИЯ</button>
-							<button class="button smeta-btn">ПОЛУЧИТЬ АУДИТ</button>
+							<button class="button smeta-btn modal__btn">КОНСУЛЬТАЦИЯ</button>
+							<button class="button smeta-btn modal__btn">ПОЛУЧИТЬ АУДИТ</button>
 						</div>
 					</div>
 				</div>

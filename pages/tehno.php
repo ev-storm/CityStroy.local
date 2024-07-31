@@ -87,27 +87,29 @@
 						<button class="button modal__btn">
 							СВЯЗАТЬСЯ С НАМИ
 						</button>
-						<div class="down" 
-						onmouseenter="down__button_teh.play()" 
-						onmouseleave="down__button_teh.stop()"	>
-							<dotlottie-player
-								id="down__button_teh"
-								class="down__button"
-								src="/assets/animation/down.json" 
-								background="transparent" 
-								speed="1">
-							</dotlottie-player>
-						</div>
+						<a href="#teho-about">
+							<div class="down" 
+							onmouseenter="down__button_teh.play()" 
+							onmouseleave="down__button_teh.stop()"	>
+								<dotlottie-player
+									id="down__button_teh"
+									class="down__button"
+									src="/assets/animation/down.json" 
+									background="transparent" 
+									speed="1">
+								</dotlottie-player>
+							</div>
+						</a>
 					</div>
 				</div>
 
 				<div class="title-mob swiper-container">
         <div class="swiper-wrapper">
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/4.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/2.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/3.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/1.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/9.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/6.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/13.jpg" alt=""></div>
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/5.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/7.jpg" alt=""></div>
         </div>
     	</div>
 
@@ -120,32 +122,32 @@
 		</article>
 		
 	<!-- SCREEN_2 ABOUT-->
-		<article class="about">
+		<article id="teho-about" class="about">
 			<h1 class="about__title">Разрабатываем Технологический проект для Заказчика со следующими разделами:</h1>
 
 			<div class="about__item teh">
 				<h3>
-					<img src="/assets/img/icon/Subtract-1.png" alt="">
+					<img src="/assets/img/icon/teh_1.svg" alt="">
 					Перегородки и стены
 				</h3>
 				<h3>
-					<img src="/assets/img/icon/Subtract.png" alt="">
+					<img src="/assets/img/icon/teh_6.svg" alt="">
 					Нестандартное оборудование
 				</h3>
 				<h3 >
-					<img src="/assets/img/icon/Subtract-2.png" alt="">
+					<img src="/assets/img/icon/teh_5.svg" alt="">
 					Водоснабжение, канализация, вентиляция, электроснабжение
 				</h3>
 				<h3>
-					<img src="/assets/img/icon/Subtract-1.png" alt="">
+					<img src="/assets/img/icon/teh_3.svg" alt="">
 					Технологические потоки
 				</h3>
 				<h3>
-					<img src="/assets/img/icon/Subtract.png" alt="">
+					<img src="/assets/img/icon/teh_4.svg" alt="">
 					Отделка стен, полов и потолков
 				</h3>
 				<h3 >
-					<img src="/assets/img/icon/Subtract-2.png" alt="">
+					<img src="/assets/img/icon/teh_2.svg" alt="">
 					Спецификация и расстановка технологического оборудования
 				</h3>
 			</div>

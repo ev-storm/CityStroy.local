@@ -55,7 +55,8 @@ validation
 
 		let formData = new FormData(event.target);
 
-		console.log(...formData);
+		//console.log(...formData);
+		
 
 		let xhr = new XMLHttpRequest();
 
@@ -63,6 +64,26 @@ validation
 			if (xhr.readyState === 4) {
 				if (xhr.status === 200) {
 					console.log('Отправлено');
+
+					$('.modal-over').fadeOut(600);
+					$('.modal-con').fadeOut(400);
+					$('.modal-con').css({
+						'transform': 'translateY(-70%)',
+						'transition': '0.7s',
+						'opacity':'0'
+					})
+
+					
+
+					$('.banner__mail').addClass('show');
+
+					setTimeout(() => {
+						$('.banner__mail').addClass('hide');
+					}, 3000);
+					
+
+				
+
 				}
 			}
 		}

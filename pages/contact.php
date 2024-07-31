@@ -105,11 +105,11 @@
 
 			<div class="title-mob swiper-container">
         <div class="swiper-wrapper">
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/1.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/2.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/3.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/4.jpg" alt=""></div>
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/5.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/6.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/7.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/8.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/9.jpg" alt=""></div>
         </div>
     	</div>
 
@@ -124,8 +124,8 @@
 
 		<article class="recvis_con" id="recvis_con">
 			
-			<div class="recvis_ recL">
-
+		<div class="recvis_ recL">
+			<div class="recvis_back">
 				<div class="recvis-main_title">
 					<h1>Реквезиты ООО «СитиСтрой»</h1>
 				</div>
@@ -289,6 +289,7 @@
 				</div>
 
 			</div>	
+		</div>	
 
 			<div class="recvis_ recR">
 				<div class="recvis-main_title">

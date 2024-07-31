@@ -1,26 +1,37 @@
 
 $('.modal-over').hide();
-$('.modal').hide();
+$('.modal-con').hide();
 
 $('.modal__btn').click(function(){
-	$('.modal-over').fadeIn();
-	$('.modal').show();
-	$('.modal').css({
+	
+		$('.modal-over').fadeIn(600);
+	
+
+	$('.modal-con').show();
+	$('.modal-con').css({
 		'transform': 'translateY(0px)',
 		'transition': '0.7s',
 		'opacity':'1'
 	})
 });
 
-$('.modal-over').click(function(){
-	$('.modal-over').fadeOut();
-	$('.modal').fadeOut(400);
-	$('.modal').css({
-		'transform': 'translateY(-50%)',
+
+
+$('.modal-over, .modal__logo-closed').click(function(){
+
+	$('.modal-over').fadeOut(600);
+
+	$('.modal-con').fadeOut(400);
+	$('.modal-con').css({
+		'transform': 'translateY(-70%)',
 		'transition': '0.7s',
 		'opacity':'0'
 	})
+
 });
+
+
+
 
 
 // CHECK
@@ -44,3 +55,20 @@ $('.modal-over').click(function(){
 
 	// Добавляем обработчик события на чекбокс для изменения состояния кнопки
 	checkbox.addEventListener('change', updateButtonState);
+
+
+
+	window.addEventListener('scroll', () => {
+
+
+		$('.modal-over').fadeOut(600);
+		$('.modal-con').fadeOut(400);
+		$('.modal-con').css({
+			'transform': 'translateY(-70%)',
+			'transition': '0.7s',
+			'opacity':'0'
+		})
+
+		console.log('od')
+		
+	});

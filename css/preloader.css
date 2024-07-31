@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
+
 }
  
 .spinner {
@@ -19,6 +20,7 @@
   border-top-color: #1a1a1a;
   border-radius: 50%;
   animation: spin 1s linear infinite;
+	backdrop-filter: blur(10px);
 }
  
 @keyframes spin {

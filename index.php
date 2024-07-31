@@ -2,9 +2,52 @@
 <html lang="ru">
 
 <!-- HEAD -->
-<?php
-	include('components/head.php')
-?>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection	" content="telephone=no">
+	<meta name="description" content="Cитистрой. Дизайн, проектирование и ремонт коммерческих помещений">
+	<title>Главная</title>
+
+		<!-- link -->
+		<link rel="stylesheet" href="../css/font.css">	
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/shema.css">
+		<link rel="stylesheet" href="../css/media.css">
+		<link rel="stylesheet" href="../css/case.css">
+		<link rel="stylesheet" href="../css/modal.css">
+		<link rel="stylesheet" href="../css/carts.css">
+		<link rel="stylesheet" href="../css/more.css">
+		<link rel="stylesheet" href="../css/preloader.css">
+
+		<script defer src="../js/main.js"></script>
+		<script defer src="../js/modal.js"></script>
+		<script src="../libs/jquery-3.7.1.min.js"></script>
+		<script defer src="../libs/inputmask.min.js"></script>
+		<script defer src="../libs/just-validate3.3.3.min.js"></script>
+		<script defer src="../js/script-new.js"></script>
+		<script defer src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+		
+
+	
+	<!-- OpenGraph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https:" />
+	<meta property="og:title" content="Дизайн, проектирование и ремонт коммерческих помещений"/>
+	<meta property="og:description" content="Главная" />
+	<meta property="og:image" content="../assets/img/cart/main.jpg"/>
+	<!-- telegram_image1x1 -->
+	<meta name="twitter:card" content="../assets/img/cart/main.jpg" />
+	<!-- SEO -->
+	<meta name="keywords" content="теги СЕО">
+	<!-- fav -->
+	<link type="image/x-icon" href="/assets/img/icon/fav.ico" rel="shortcut icon">
+	<link type="Image/x-icon" href="/assets/img/icon/fav.ico" rel="icon">
+</head>
 <!-- PRELOADER -->
 <?php
 	include('components/preloader.php')
@@ -78,7 +121,6 @@
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/2.jpg" alt=""></div>
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/3.jpg" alt=""></div>
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/4.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/5.jpg" alt=""></div>
         </div>
     	</div>
 
@@ -93,8 +135,8 @@
 
 	<!-- SCREEN_2 ABOUT-->
 	<article id="anchor-about" class="about">
+	
 		<h1 class="about__title">За счёт строительного опыта и технических компетенций:</h1>
-		
 		<div class="about__item">
 			<h3 class="element-animation">
 				<img src="/assets/img/icon/Subtract-1.png" alt="">
@@ -152,29 +194,29 @@
 	<div class="swiper ticker">
 		<h1 class="ticker__name">НАШИ КЛИЕНТЫ</h1>
     <div class="swiper-wrapper">
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (1).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (2).svg"></div>
-			<div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (3).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (4).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (5).svg"></div>
-			<div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (6).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (7).svg"></div>
-			<div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (8).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (9).svg"></div>
-			<div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (10).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (11).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (12).svg"></div>
-			<div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (13).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (14).svg"></div>
-			<div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (15).svg"></div>
-			<div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (16).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (17).svg"></div>
-			<div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (18).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (19).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (20).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (21).svg"></div>
-			<div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (22).svg"></div>
-      <div class="swiper-slide ticker__slide"><img src="assets/img/logo_swiper/swiper (23).svg"></div>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (1).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (2).svg"></div></a>
+			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (3).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (4).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (5).svg"></div></a>
+			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (6).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (7).svg"></div></a>
+			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (8).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (9).svg"></div></a>
+			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (10).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (11).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (12).svg"></div></a>
+			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (13).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (14).svg"></div></a>
+			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (15).svg"></div></a>
+			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (16).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (17).svg"></div></a>
+			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (18).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (19).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (20).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (21).svg"></div></a>
+			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (22).svg"></div></a>
+      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (23).svg"></div></a>
     </div>
 	</div> 
 
@@ -480,9 +522,6 @@
 					</svg>
 				</a>
 			</div>
-
-	
-
 
 		<div class="video_rule element-animation">
 					<div class="video_r">

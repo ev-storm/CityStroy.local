@@ -4,9 +4,9 @@
 			<div class="banner element-animation_up">
 				<div class="banner_left">
 					<div class="banner_title">
-						<h1>Хотите обсудить проект?</h1>
+							<h1>Хотите обсудить проект?</h1>
 					</div>
-					<button class="button banner_button">Консультация</button>
+					<button class="button banner_button modal__btn">Консультация</button>
 				</div>
 
 

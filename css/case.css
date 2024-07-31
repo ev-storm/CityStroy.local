@@ -8,6 +8,12 @@
 	display: none;
 }
 
+.case__slide-2 {
+	opacity: 0.4;
+} 
+.swiper-slide-thumb-active {
+	opacity: 1;
+}
 
 
 

@@ -1,8 +1,12 @@
 <div class="modal-over"></div>
+<div class="modal-con">
 
 		<div class="modal">
-			<img class="modal__logo" src="/assets/img/icon/logo.svg" alt="">
-
+			<div class="modal__logo-closed">
+				<img class="modal__logo-" src="/assets/img/icon/burger-close.svg" alt="">
+				<img class="modal__logo" src="/assets/img/icon/logo.svg" alt="">
+				<img class="modal__close" src="/assets/img/icon/burger-close.svg" alt="">
+			</div>
 			<form class="modal__pop popup_form" action="#" method="POST" enctype="multipart/form-data">
 				<label class="modal__lab form__label" for="">Имя
 					<input class="input modal__input input-name" type="text" data-validate-field="name" name="Имя" onkeyup="nameBD.value = this.value" placeholder="Введите имя" autofocus>
@@ -21,7 +25,7 @@
 					<label id="ch" method="post" type="checkbox" value="1" class="modal__check-text" for="modal__check">
 						<span class="modal__check"></span>
 						Согласие на обработку данных
-						<a href="#"><img class="modal__check-que" src="/assets/img/icon/que.svg" alt=""></a>
+						<a href="../pages/assent.php"><img class="modal__check-que" src="/assets/img/icon/que.svg" alt=""></a>
 					</label>
 				</div>
 				<button  id="btn" class="button button-modal">Отправить</button>
@@ -65,5 +69,11 @@
 				</form>
 			</div> -->
 
-		
-	</div>
+		</div>
+
+</div>
+
+<div class="banner__mail">
+	<h1>Данные успешно отправлены</h1>
+</div>
+

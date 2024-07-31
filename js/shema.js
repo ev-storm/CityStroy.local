@@ -92,10 +92,13 @@ document.addEventListener('DOMContentLoaded', () => {
 							}
 					}
 			});
+
 	} else {
 			console.error('Элемент с id "banner" не найден');
 	}
 });
+
+
 
 //----------------ITEMS-------------------------------------
 
@@ -202,10 +205,38 @@ document.addEventListener('DOMContentLoaded', () => {
 							}
 					}
 			});
+
+			window.addEventListener('scroll', () => {
+				if (banner__sh.classList.contains('show')) {
+						banner__sh.classList.remove('show');
+
+						if (bannerTimeout__sh) {
+								clearTimeout(bannerTimeout__sh);
+								bannerTimeout__sh = null;
+						}
+				}
+			});
+
+			const closeBannerButton = document.querySelector('.close__banner-con');
+
+			closeBannerButton.addEventListener('click', () => {
+
+				if (banner__sh.classList.contains('show')) {
+							banner__sh.classList.remove('show');
+					}
+			});
+		
+
 	} else {
 			console.error('Элемент с id "banner" не найден');
 	}
+
 });
+
+
+
+
+
 
 
 //----------------ITEMS-------------------------------------

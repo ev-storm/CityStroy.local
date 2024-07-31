@@ -17,7 +17,11 @@
 <style>
 	.menu__main > li:nth-child(6) > a {
 		color: #28bbff;
-		font-weight: 200;
+		font-weight: 300;
+	}
+	.menu-mob_main > li:nth-child(6) > a {
+		color: #28bbff;
+		font-weight: 300;
 	}
 </style>
 

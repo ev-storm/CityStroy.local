@@ -83,6 +83,7 @@ a{
 	z-index: 10;
 	transition: var(--trans_content);
 	color: #ffffff;
+	overflow: hidden;
 }
 .carts:hover > .cart__content{
 	backdrop-filter:brightness(40%);
@@ -100,14 +101,26 @@ a{
 	transition: var(--trans_content);
 }
 
+
 .cart__logo {
 	scale: 0.5;
+	width: 6vw;
 	opacity: 0;
 	transform: translateY(5vw);
 	transition: var(--trans_content);
 }
+.duble-cart__logo >.cart__logo{
+	margin: 0 2vw;
+}
 .cart__content:hover >.cart__logo{
 	scale: 1;
+	opacity: 0.7;
+	transform: translateY(0);
+	transition: var(--trans_content);
+}
+
+.cart__content:hover >.duble-cart__logo >.cart__logo{
+	scale: 1.2;
 	opacity: 0.7;
 	transform: translateY(0);
 	transition: var(--trans_content);
@@ -120,6 +133,7 @@ a{
 	scale: 0.7;
 	opacity: 0;
 	transition: var(--trans_content);
+	text-align: center;
 }
 .cart__content:hover >.cart__title{
 	scale: 1;
@@ -307,6 +321,8 @@ a{
 		width: 12vw;
 		transition: var(--duration);
 	}
+
+
 	
 
 

@@ -468,11 +468,15 @@ PROJECT */
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	background-color: #00000080;
+	background-color: #0000006e;
+  backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	border-radius: 0.5vw;
 	padding: 0.5vw;
-	backdrop-filter: blur(10px);
 }
+/* .recvis_back{
+	filter: blur(10px);
+} */
 .recvis{
 	display: flex;
 	align-items: start;
@@ -561,7 +565,7 @@ PROJECT */
 	margin: 0;
 	opacity: 0;
 	position: relative;
-	transform:translateY(-0.5vw);
+	transform:translateY(-3vw);
 	transition: var(--duration2);
 }
 .recvis > .recvis_copy > svg > path{
@@ -597,9 +601,9 @@ PROJECT */
 		flex-direction: column;
 	}
 	.recvis {
+		display: flex;
     align-items: start;
     justify-content: space-between;
-    align-items: center;
     padding: 3vw 5vw;
     margin: 0 3vw;
     border-radius: 2vw;
@@ -618,12 +622,14 @@ PROJECT */
 		border-radius: 2vw;
 		padding: 0;
 	}
+
 	.recvis_copy > svg {
-		width: 50%;
+		width: 8vw;
 		margin: 0 0 0.5vw 1vw;
 		stroke: #ffffff90;
 		scale: 0.9;
 		transition: var(--duration);
+		height: fit-content;
 	}
 	.recvis_copy > h3 {
 		font-size: 3vw;
@@ -660,6 +666,7 @@ PROJECT */
 	background-image: url('/assets/img/portfolio/7.jpg');
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 }
 
 

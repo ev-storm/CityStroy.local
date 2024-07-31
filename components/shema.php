@@ -123,8 +123,8 @@
         <img class="sh__img" src="/assets/img/icon/sh.svg" alt="">
         <div class="sh__fork">
 					<div class="sh__fork-title">
-						<h1>Технологи</h1>
-						<h1>Дизайн</h1>
+						<a href="../pages/tehno.php"><h1>Технологи</h1></a>
+						<a href="../pages/design.php"><h1>Дизайн</h1></a>
 					</div>
 					<div class="sh__node_1-1"></div>
 					<div class="sh__node_1"></div>
@@ -191,7 +191,10 @@
     </div>
 
     <div class="sh__banner" id="sh__banner">
-        <h1 id="sh__banner-text"></h1>
+				<div class="close__banner-con">
+					<img  class="close__banner" src="../assets/img/icon/bunner-close.svg" alt="">
+				</div>
+				<h1 id="sh__banner-text"></h1>
         <h2 id="sh__banner-title"></h2>
     </div>
 

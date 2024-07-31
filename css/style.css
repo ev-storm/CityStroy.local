@@ -1,7 +1,7 @@
 /* (Ctrl+K) + (Ctrl+0)  Скрыть*/
 /* (Ctrl+K) + (Ctrl+J)  Раскрыть*/
 *{
-	cursor: default;
+	/* cursor: default; */
 	box-sizing: border-box;
 }
 
@@ -51,6 +51,13 @@ a{
 	--el: 2;
 	--wcart: calc( (100vw / var(--el)) - var(--gap));
 	/* --wi: 100vw; */
+}
+
+.title-mob{
+	display: none;
+}
+.title-mob__slide > img{
+	display: none;
 }
 
 
@@ -126,6 +133,8 @@ a{
 	justify-content: end;
 	width: 15vw;
 	margin: 0;
+	padding: 0;
+
 }
 .logo__player{
 	width:60%;
@@ -197,6 +206,15 @@ li {
 .menu__link__item:hover > path{
 	fill: var(--main-blue);
 	transition: var(--duration);
+}
+.info_title_3{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 7vw 0 1vw 0;
 }
 
 
@@ -413,7 +431,7 @@ li {
 	justify-content: center;
 } */
 
-.ticker__slide > img{
+.ticker__slide > a > img{
 	width: 10vw;
 	transition-duration: 500ms;
 	padding-bottom: 1vw;
@@ -713,7 +731,7 @@ li {
 	font-size: 1.5vw;	
 	font-weight: 200;
 	color: #ffffff;
-	margin-top: 1vw;
+	margin: 1vw 1vw 1vw 0;
 	padding: 0;
 	transition: var(--duration2);
 }
@@ -904,6 +922,18 @@ li {
 }
 #v4{
 	background-image: url('/assets/video/cover/end.jpg');
+}
+#v5{
+	background-image: url('/assets/video/cover/d1.jpg');
+}
+#v6{
+	background-image: url('/assets/video/cover/d2.jpg');
+}
+#v7{
+	background-image: url('/assets/video/cover/d3.jpg');
+}
+#v8{
+	background-image: url('/assets/video/cover/d4.jpg');
 }
 
 /* MAP */
@@ -1182,6 +1212,41 @@ li {
 .mob-menu_con{
 	display: none;
 }
+
+.assent-con{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20vw 15vw;
+}
+.assent{
+
+}
+.assent > h1{
+	font-size: 2vw;
+	font-weight: 300;
+	color: #1e9dd8;
+}
+.assent > h2{
+	font-size: 1vw;
+	color: #ffffff;
+	font-weight: 200;
+	line-height: 1.8;
+}
+.assent > h2 > span{
+	font-size: 1vw;
+	color: #1e9dd8;
+	font-weight: 300;
+	line-height: 1.8;
+}
+.assent > h2 > a > span{
+	font-size: 1vw;
+	color: #1e9dd8;
+	font-weight: 300;
+	line-height: 1.8;
+}
+
 
 
 

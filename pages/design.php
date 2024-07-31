@@ -88,27 +88,29 @@
 					<button class="button modal__btn">
 						СВЯЗАТЬСЯ С НАМИ
 					</button>
-					<div class="down" 
-					onmouseenter="down__button.play()" 
-					onmouseleave="down__button.stop()"	>
-					<dotlottie-player
-					id="down__button"
-					class="down__button"
-					src="/assets/animation/down.json" 
-					background="transparent" 
-					speed="1">
-					</dotlottie-player>
+					<a href="#des_about">
+						<div class="down" 
+						onmouseenter="down__button.play()" 
+						onmouseleave="down__button.stop()"	>
+						<dotlottie-player
+						id="down__button"
+						class="down__button"
+						src="/assets/animation/down.json" 
+						background="transparent" 
+						speed="1">
+						</dotlottie-player>
 					</div>
+					</a>
 				</div>
 			</div>
 
 			<div class="title-mob swiper-container">
         <div class="swiper-wrapper">
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/3.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/2.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/8.jpg" alt=""></div>
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/1.jpg" alt=""></div>
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/4.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/5.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/7.jpg" alt=""></div>
         </div>
     	</div>
 
@@ -122,23 +124,23 @@
 
 
 	<!-- SCREEN_2 ABOUT-->
-	<article class="about">
+	<article id="des_about" class="about">
 		<h1 class="about__title">Разрабатываем Дизайн проект для Заказчика со следующими разделами:</h1>
 		<div class="about__item desi-about__item">
 			<h3>
-				<img src="/assets/img/icon/Subtract-1.png" alt="">
+				<img src="/assets/img/icon/des_2.svg" alt="">
 				Дизайн ресторана как маркетинговый инструмент
 			</h3>
 			<h3>
-				<img src="/assets/img/icon/Subtract.png" alt="">
+				<img src="/assets/img/icon/des_3.svg" alt="">
 				Процесс создания дизайна ресторана
 			</h3>
 			<h3 >
-				<img src="/assets/img/icon/Subtract-2.png" alt="">
+				<img src="/assets/img/icon/des_1.svg" alt="">
 				Особенности и факторы, которые учитывает дизайнер
 			</h3>
 			<h3 >
-				<img src="/assets/img/icon/Subtract-2.png" alt="">
+				<img src="/assets/img/icon/des_4.svg" alt="">
 				Условия успешной реализации дизайн-проекта
 			</h3>
 		</div>
@@ -299,6 +301,42 @@
 			</div>
 			
 		</article>
+		
+	<!-- VIDEO -->
+	<div class="video_con">
+		<h1 class="video-title">О дизайне ресторанов, кафе, баров и кальянных</h1>
+		<h2 class="video-title_2">Дина Дмитриева</h2>
+		<div class="video-block">
+			<div class="video_b">
+				<video class="video_you"  controls="true" loop="true" muted="true" autoplay="true" poster="">
+						<source class="main-video" src="/assets/video/d1.mp4" type="video/mp4" />
+				</video>
+				<a href="https://www.youtube.com/watch?v=HyhMKgziaQs&t=34s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
+				<h1 class="video-title_4">О дизайне ресторанов, кафе, баров и кальянных Часть 2</h1>
+				<svg class="svgYou" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
+					</svg>
+				</a>
+			</div>
+
+		<div class="video_rule element-animation">
+					<div class="video_r">
+						<button id="v5" class="video-button v-btn_activ"></button>
+					</div>
+					<div class="video_r">
+						<button id="v6" class="video-button"></button>
+					</div>
+					<div class="video_r">
+						<button id="v7" class="video-button"></button>
+					</div>
+					<div class="video_r">
+						<button id="v8" class="video-button"></button>
+					</div>
+					
+				</div> 
+
+		</div>
+	</div>
 
 
 	<?php

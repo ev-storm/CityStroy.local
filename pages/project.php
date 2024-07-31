@@ -96,6 +96,7 @@
 					<button class="button modal__btn">
 						СВЯЗАТЬСЯ С НАМИ
 					</button>
+					<a href="#proj_about">
 					<div class="down" 
 					onmouseenter="down__button.play()" 
 					onmouseleave="down__button.stop()"	>
@@ -107,16 +108,17 @@
 					speed="1">
 					</dotlottie-player>
 					</div>
+					</a>
 				</div>
 			</div>
 
 			<div class="title-mob swiper-container">
         <div class="swiper-wrapper">
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/2.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/1.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/9.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/8.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/11.jpg" alt=""></div>
 						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/3.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/4.jpg" alt=""></div>
-						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/5.jpg" alt=""></div>
+						<div class="swiper-slide title-mob__slide"><img src="/assets/img/case/cover/10.jpg" alt=""></div>
         </div>
     	</div>
 
@@ -130,7 +132,7 @@
 
 
 	<!-- SCREEN_2 ABOUT-->
-	<article class="about">
+	<article id="proj_about" class="about">
 		<h1 class="about__title">За счёт строительного опыта и технических компетенций:</h1>
 		<div class="about__item">
 			<h3>

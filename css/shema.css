@@ -364,7 +364,7 @@
 	.sh__item.active:nth-child(5) {
 		height: 13vw;
 		width: 30vw;
-		scale: 1.4;
+		scale: 1;
 		transition: all 0.3s ease-out;
 	}
 	.sh__item:nth-child(5) > h1 {
@@ -464,8 +464,12 @@
 		flex-direction: column;
 		align-items: end;
 	}
-	.sh__fork-title > h1{
+	.sh__fork-title > a > h1{
 		color: #1e9dd8;
+		font-weight: 300;
+	}
+	.sh__fork-title > a > h1:hover{
+		color: #ffffff;
 		font-weight: 300;
 	}
 	.sh__item.active > .sh__fork {
@@ -768,5 +772,17 @@
 	.shema__right{
 		padding: 0;
 		margin: 0;
-	} 
+	}
+	.sh__banner > div{
+		width: 100%;
+		display: flex;
+		justify-content: end;
+	}
+	.close__banner{
+		margin-top: 1vw;
+		margin-bottom: -2vw;
+	}
+
+
+
 }

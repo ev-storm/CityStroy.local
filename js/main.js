@@ -1,6 +1,6 @@
-$('#btn').click(function(){
-	$( "#btnBD" ).click();
-});
+// $('#btn').click(function(){
+// 	$( "#btnBD" ).click();
+// });
 $('#btnBD').hide();
 
 
@@ -78,12 +78,18 @@ $(document).ready(function() {
 let portfolio_ticker = new Swiper(".portfolio_ticker", {
 	slidesPerView: 4,
 	spaceBetween: 0,
-	loop: true,	
+	loop: true,
 	autoplay: {
-		enabled: true,
-		delay: 0,
-  },
+			enabled: true,
+			delay: 0,
+	},
 	speed: 2500,
+	
+	breakpoints: {
+			600: { // Когда ширина экрана 600px или меньше
+					slidesPerView: 6,
+			},
+	},
 });
 
 
@@ -108,12 +114,14 @@ var swiperWord = new Swiper(".title__slide", {
 	var caseSwiper = new Swiper(".case__swiper-2", {
 			spaceBetween: 10,
 			slidesPerView: 4,
+			loop: true,
 			freeMode: true,
 			watchSlidesProgress: true,
 	});
 
 	var caseSwiper2 = new Swiper(".case__swiper", {
 			spaceBetween: 10,
+			loop: true,
 			navigation: {
 					nextEl: ".swiper-button-next",
 					prevEl: ".swiper-button-prev",
@@ -395,6 +403,22 @@ document.addEventListener('DOMContentLoaded', function() {
 									videoElement.src = '/assets/video/4.mp4';
 									videoTitle.innerHTML = 'Завершающий этап строительства кальянной Мята на ВДНХ';
 									break;
+							case 'v5':
+								videoElement.src = '/assets/video/d1.mp4';
+								videoTitle.innerHTML = 'О дизайне ресторанов, кафе, баров и кальянных Часть 1';
+								break;
+							case 'v6':
+								videoElement.src = '/assets/video/d2.mp4';
+								videoTitle.innerHTML = 'О дизайне ресторанов, кафе, баров и кальянных Часть 2';
+								break;
+							case 'v7':
+								videoElement.src = '/assets/video/d3.mp4';
+								videoTitle.innerHTML = 'О дизайне ресторанов, кафе, баров и кальянных Часть 3';
+								break;
+							case 'v8':
+								videoElement.src = '/assets/video/d4.mp4';
+								videoTitle.innerHTML = 'О дизайне ресторанов, кафе, баров и кальянных Часть 3';
+								break;	
 					}
 			});
 	});
@@ -551,14 +575,14 @@ $('.recvis_copy').click(function(){
 
 	$(this).children('h3').css({
 		'opacity': '1',
-		'transform':'translateY(-0.1vw)',
+		'transform':'translateY(-1vw)',
 		'transition': 'var(--duration2)',
 	})
 
 		setTimeout(() => {
 		$(this).children('h3').css({
 			'opacity': '0',
-			'transform':'translateY(-0.5vw)',
+			'transform':'translateY(-3vw)',
 			'transition': 'var(--duration2)',
 		})
 	}, 1000);
@@ -576,5 +600,7 @@ $('.recvis').click(function(){
 		$temp.remove();
 		
 });
+
+
 
 
