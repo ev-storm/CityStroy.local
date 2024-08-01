@@ -7,6 +7,32 @@
 /*-----------------MODAL-------------------*/
 @media (max-width: 600px){
 
+	.button{
+		font-family: Gilroy;
+		font-size: 0.8vw;
+		font-weight: 300;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: normal;
+		color: #ffffff;
+		background: transparent;
+		padding: 0.5vw 1vw;
+		border-style: solid;
+		border-width: 0.15vw;
+		border-color: var(--main-blue);
+		border-radius: 0.3vw;
+		z-index: 10;
+		cursor: pointer;
+		transition: var(--duration);
+		&:hover{
+			color: var(--main-black);
+			font-size: 0.8vw;
+			font-weight: 300;
+			background: var(--main-blue);
+			transition: var(--duration);
+			position: relative;
+		}
+	}
 
 	#btn{
 		font-size: 4vw;
@@ -126,11 +152,12 @@
 		justify-content: center;
 	}
 	.title__text > h2{
-		font-size: 4vw;
-		font-weight: 100;
+		font-size: 5vw;
+		font-weight: 200;
 		margin: 15vw 20vw 0 20vw;
 		text-align: center;
 		line-height: 1.5;
+		opacity: 0.8;
 	}
 	.title__slide{
 		width: 100%;
@@ -157,6 +184,34 @@
 	}
 	.down__button{
 		width: 20vw;
+	}
+
+	.assent-con{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 35vw 10vw 10vw 10vw;
+	}
+	
+	.assent > h1{
+		font-size: 5vw;
+		font-weight: 300;
+	}
+	.assent > h2{
+		font-size: 3vw;
+		font-weight: 200;
+		line-height: 1.8;
+	}
+	.assent > h2 > span{
+		font-size: 3vw;
+		font-weight: 300;
+		line-height: 1.8;
+	}
+	.assent > h2 > a > span{
+		font-size: 3vw;
+		font-weight: 300;
+		line-height: 1.8;
 	}
 
 
@@ -267,7 +322,15 @@
 	.warn-mob > div > img{
 		display: none;
 	}
-
+	.element-animation {
+		opacity: 0;
+		transition: var(--duration2);
+		transform: translateX(-200px);
+	}
+	.element-animation.element-show {
+		opacity: 1;
+		transform: translateX(0);
+	}
 
 
 
@@ -346,7 +409,7 @@
 		padding: 4vw 0 4vw 0;
 	}
 
-	.ticker__slide > img{
+	.ticker__slide > a 	> img{
 		width: 40vw;
 		margin-left: 5vw;
 		z-index: 9999;
@@ -633,12 +696,20 @@
 	font-size: 5vw;
 	letter-spacing: 0.2vw;
 	border-radius: 1vw;
+	margin: 0;
+	border-color: #ffffff;
+	border-width: 0.2vw;
+	font-weight: 300;
 }
 .banner_button:hover{
 	width: 100%;
 	font-size: 5vw;
 	letter-spacing: 0.2vw;
 	border-radius: 1vw;
+	color: rgba(0,84,124,1) 69%;;
+	background-color: #ffffff	;
+	border-width: 0.2;
+	font-weight: 300;
 }
 .banner_main{
 	width: 100%;

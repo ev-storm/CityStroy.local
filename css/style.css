@@ -77,7 +77,6 @@ a{
 	border-radius: 0.3vw;
 	z-index: 10;
 	cursor: pointer;
-	/* transition: all 0.1s ease-out; */
 	transition: var(--duration);
 	&:hover{
 		color: var(--main-black);
@@ -88,6 +87,7 @@ a{
 		position: relative;
 	}
 }
+
 
 .element-animation {
 	opacity: 0;
@@ -857,6 +857,11 @@ li {
 	border-radius: 0.5vw;
 	box-shadow: 10px 15px 28px rgb(0, 0, 0);
 }
+.video_you_2{
+	width: 100%;
+	border-radius: 0.5vw;
+	box-shadow: 10px 15px 28px rgb(0, 0, 0);
+}
 .video_rule{
 	display: flex;
 	flex-direction: column;
@@ -934,6 +939,12 @@ li {
 }
 #v8{
 	background-image: url('/assets/video/cover/d4.jpg');
+}
+#v9{
+	background-image: url('/assets/video/cover/1_vdnh.jpg');
+}
+#v10{
+	background-image: url('/assets/video/cover/2_vdnh.jpg');
 }
 
 /* MAP */
@@ -1065,10 +1076,11 @@ li {
 	width: 20%;
 	padding: 0 1vw;
 }
+
 .C-mob{
 	display: none;
 }
-.footer__about > h1{
+.footer__about > a > h1{
 	display: block;
 	font-size: 0.8vw;
 	font-weight: 300;
@@ -1078,11 +1090,11 @@ li {
 	transition: all 0.5s ease-in-out;
 	margin: 1vw 0 0.2vw 0;
 }
-.footer__about:hover > h1{
+.footer__about:hover > a > h1{
 	text-shadow: 0 0 0.3vw #ffffff, 0 0 0.7vw var(--main-blue), 0 0 1vw var(--main-blue);
 	transition: all 0.5s ease-in-out;
 }
-.footer__about > h1 > span{
+.footer__about > a > h1 > span{
 	font-size: 0.7vw;
 	font-weight: 100;
 	color: #ffffff;
@@ -1133,6 +1145,8 @@ li {
 	position: fixed;
 	z-index: 9999;
 }
+
+
 .mob-menu{
 	display: flex;
 	flex-direction: column;
@@ -1194,8 +1208,8 @@ li {
 	margin: 0;
 }
 .mob_logo{
-	width: 17%;
-	margin: 8%;
+	width: 25%;
+	margin: 10%;
 }
 .mob_open{
 	width: 10%;
@@ -1220,9 +1234,7 @@ li {
 	align-items: center;
 	padding: 20vw 15vw;
 }
-.assent{
 
-}
 .assent > h1{
 	font-size: 2vw;
 	font-weight: 300;
@@ -1247,6 +1259,52 @@ li {
 	line-height: 1.8;
 }
 
+
+.eror-con{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	flex-direction: column;
+}
+.eror-con > h1{
+	margin-top: 20vw;
+	font-size: 4vw;
+	color: #ffffff;
+}
+.eror-con > a > button{
+	font-size: 1vw;
+	font-weight: 300;
+}
+.eror-con > a  > button:hover{
+	font-size: 1vw;
+	font-weight: 300;
+}
+@media (max-width: 600px){
+	.eror-con > h1{
+		font-size: 10vw;
+		text-align: center;
+		color: #ffffff;
+	}
+	.eror-con > a >  button{
+		font-size: 5vw;
+		font-weight: 300;
+		padding: 2vw 4vw;
+		border-radius: 2vw;
+	}
+	.eror-con > a > button:hover{
+		font-size: 5vw;
+		font-weight: 300;
+		padding: 2vw 4vw;
+		border-radius: 2vw;
+	}
+
+	.mob_logo {
+    width: 45%;
+    margin: 10%;
+}
+}
 
 
 

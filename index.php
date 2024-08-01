@@ -126,7 +126,7 @@
 
 			<div class="video__con">
 					<video  class="video" loop="true" muted="true" autoplay="true" playsinline>
-						<source src="/assets/video/City.mp4" type="video/mp4">
+						<source src="/assets/video/City_low.mp4" type="video/mp4">
 					</video>
 			</div>
 
@@ -541,6 +541,35 @@
 		</div>
 	</div>
 
+	<div class="video_con video_case__2">
+		<h2 class="video-title_2">Строим лучший ресторан на ВДНХ</h2>
+		<h3 class="video-title_3">IL Patio и Планета Суши</h3>
+		<div class="video-block">
+			<div class="video_b">
+				<video class="video_you_2"  controls="true" loop="true" muted="true" autoplay="true" poster="">
+						<source class="main-video" src="/assets/video/v-1_vdnh.mp4" type="video/mp4" />
+				</video>
+				<a href="https://www.youtube.com/watch?v=chF9nZqKmco&list=PL6aYZ63FPoLpORt1a0EyzoiqxiDX_ZFc5&index=1&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
+				<h1 class="video-title_4">Первый этап строительства ресторана IL Patio и Планета Суши на ВДНХ
+				</h1>
+				<svg class="svgYou" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
+					</svg>
+				</a>
+			</div>
+
+		<div class="video_rule element-animation">
+					<div class="video_r">
+						<button id="v9" class="video-button v-btn_activ"></button>
+					</div>
+					<div class="video_r">
+						<button id="v10" class="video-button"></button>
+					</div>
+				</div> 
+
+		</div>
+	</div>
+
 
 		
 
@@ -555,9 +584,12 @@
 						</svg>
 				</h1>
 			</a>
-			<a href="#"><div class="button button-video-more">Смотреть еще</div></a>
+			<button class="button button-video-more">Смотреть еще</button>
 		</div>
 	</div>
+
+
+
 
 	<div class="map">
 	<div class="map_adres">
@@ -566,7 +598,7 @@
 		<h3>Пн-Сб: с 9-00 до 21-00</h3>
 		<h3>Вс - выходной</h3>
 	</div>
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2d28c45439fe823b6f7eba08d6e39c3af7f77022bbca364b172c1ddd9e17d0c2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+		<!-- <script  type="text/javascript" charset="utf-8" defer src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2d28c45439fe823b6f7eba08d6e39c3af7f77022bbca364b172c1ddd9e17d0c2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script> -->
 	</div>
 
 	<?php

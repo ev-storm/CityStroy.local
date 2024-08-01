@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+<title>BLACK STAR BURGER</title>
 <!-- HEAD -->
 <?php
 	include('../components/head.php')
@@ -58,9 +59,10 @@
 
 			<div id="case__about" class="case__about">
 				<div class="case__video">
-					<video class="case__about-video" controls="true" loop="true" muted="true" autoplay="true" playsinline>
+					<video id="myVideo" class="case__about-video" controls="true" loop="true" muted="true" autoplay="true" playsinline>
 							<source src="../assets/video/case/bsb.mp4" type="video/mp4" />
 					</video>
+					<div class="glow" id="glowEffect"></div>
 					<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
 						<h1 class="video-title_5">Мы в YouTube
 							<svg width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +78,7 @@
 							<span>Локация:</span> ТРЦ Остров мечты <br>
 							<span>Площадь объекта:</span> 180 м2 <br>
 							<span>Срок реализации проекта:</span> 54 дней</h2>
-					<button class="button case__btn">Записаться на экскурсию</button>
+					<button class="button case__btn modal__btn">Записаться на экскурсию</button>
 				</div>
 			</div>
 
@@ -147,11 +149,11 @@
 		<div class="case__swiper-con">
 			<div class="swiper case__swiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide case__slide"><img src="../assets/img/case/bsb/1.jpg"/></div>
-					<div class="swiper-slide case__slide"><img src="../assets/img/case/bsb/2.jpg"/></div>
-					<div class="swiper-slide case__slide"><img src="../assets/img/case/bsb/3.jpg"/></div>
-					<div class="swiper-slide case__slide"><img src="../assets/img/case/bsb/4.jpg"/></div>
-					<div class="swiper-slide case__slide"><img src="../assets/img/case/bsb/5.jpg"/></div>
+					<div class="swiper-slide case__slide"><img src="../assets/img/cart/bsb/1.jpg"/></div>
+					<div class="swiper-slide case__slide"><img src="../assets/img/cart/bsb/2.jpg"/></div>
+					<div class="swiper-slide case__slide"><img src="../assets/img/cart/bsb/3.jpg"/></div>
+					<div class="swiper-slide case__slide"><img src="../assets/img/cart/bsb/4.jpg"/></div>
+					<div class="swiper-slide case__slide"><img src="../assets/img/cart/bsb/5.jpg"/></div>
 				</div>
 
 				<div class="swiper-button-next case__swiper-btn"></div>
@@ -168,6 +170,7 @@
 					<div class="swiper-slide case__slide-2"><img src="../assets/img/cart/bsb/5.jpg"/></div>
 				</div>
 			</div>
+
 		</div>
 
 

@@ -4,6 +4,7 @@
 $('#btnBD').hide();
 
 
+
 ///////////////----PRELOADER-----/////////////////
 function hidePreloader() {
 	var preloader = document.getElementById('preloader');
@@ -370,6 +371,7 @@ if ('IntersectionObserver' in window) {
 document.addEventListener('DOMContentLoaded', function() {
 	const buttons = document.querySelectorAll('.video-button');
 	const videoElement = document.querySelector('.video_you');
+	const videoElement2 = document.querySelector('.video_you_2');
 	const videoTitle = document.querySelector('.video-title_4');
 	
 	// Удаляем предыдущие классы и добавляем событие клика для каждой кнопки
@@ -418,11 +420,31 @@ document.addEventListener('DOMContentLoaded', function() {
 							case 'v8':
 								videoElement.src = '/assets/video/d4.mp4';
 								videoTitle.innerHTML = 'О дизайне ресторанов, кафе, баров и кальянных Часть 3';
-								break;	
+								break;
+							case 'v9':
+							videoElement2.src = '/assets/video/v-1_vdnh.mp4';
+							videoTitle.innerHTML = 'Первый этап строительства ресторана IL Patio и Планета Суши на ВДНХ';
+							break;		
+							case 'v10':
+							videoElement2.src = '/assets/video/v-2_vdnh.mp4';
+							videoTitle.innerHTML = 'Второй этап строительства ресторана IL Patio и Планета Суши на ВДНХ';
+							break;
 					}
 			});
 	});
 });
+
+
+$('.video_case__2').slideUp();
+
+$('.button-video-more').click(function(){
+
+	$('.video_case__2').slideDown();
+
+});
+
+
+
 
 
 
@@ -601,6 +623,47 @@ $('.recvis').click(function(){
 		
 });
 
+
+
+
+
+// script.js
+const video = document.getElementById('myVideo');
+const glowEffect = document.getElementById('glowEffect');
+const canvas = document.createElement('canvas');
+const context = canvas.getContext('2d');
+
+function updateGlowColor() {
+    if (video.paused || video.ended) return;
+
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+    
+    const frame = context.getImageData(0, 0, canvas.width, canvas.height);
+    const data = frame.data;
+    
+    let r = 0, g = 0, b = 0;
+    const pixelCount = data.length / 4;
+    
+    for (let i = 0; i < data.length; i += 4) {
+        r += data[i];     // Красный
+        g += data[i + 1]; // Зеленый
+        b += data[i + 2]; // Синий
+    }
+
+    // Найдите средние значения цветов
+    r = Math.round(r / pixelCount);
+    g = Math.round(g / pixelCount);
+    b = Math.round(b / pixelCount);
+
+    // Установите цвет свечения
+    glowEffect.style.backgroundColor = `rgba(${r}, ${g}, ${b}, 0.6)`;
+
+    requestAnimationFrame(updateGlowColor);
+}
+
+video.addEventListener('play', updateGlowColor);
 
 
 

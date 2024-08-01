@@ -4,7 +4,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="format-detection	" content="telephone=no">
 	<meta name="description" content="Cитистрой. Дизайн, проектирование и ремонт коммерческих помещений">
-	<title>Главная</title>
 
 		<!-- link -->
 		<link rel="stylesheet" href="../css/style.css">
@@ -35,7 +34,7 @@
 	<meta property="og:url" content="https:" />
 	<meta property="og:title" content="Дизайн, проектирование и ремонт коммерческих помещений"/>
 	<meta property="og:description" content="Главная" />
-	<meta property="og:image" content="../assets/img/cart/main.jpg"/>
+	<meta property="og:image" content="../assets/img/cart/main.jpg" />
 	<!-- telegram_image1x1 -->
 	<meta name="twitter:card" content="../assets/img/cart/main.jpg" />
 	<!-- SEO -->

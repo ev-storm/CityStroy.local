@@ -23,7 +23,7 @@ $('.modal-over, .modal__logo-closed').click(function(){
 
 	$('.modal-con').fadeOut(400);
 	$('.modal-con').css({
-		'transform': 'translateY(-70%)',
+		'transform': 'translateY(-100%)',
 		'transition': '0.7s',
 		'opacity':'0'
 	})

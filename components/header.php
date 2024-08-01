@@ -58,7 +58,9 @@
 
 	<nav class="mob-menu_con">
 		<div class="mob-menu_logo">
+		<a href="#anchor_title">
 			<img class="mob_logo" src="../assets/img/icon/logo.svg" alt="">
+		</a>
 			<img class="mob_open" src="../assets/img/icon/burger-open.svg" alt="">
 			<img class="mob_close" src="../assets/img/icon/burger-close.svg" alt="">
 		</div>
@@ -73,7 +75,7 @@
 				<li><a href="/pages/portfolio.php">Портфолио</a></li>
 				<li><a href="/pages/contact.php">Контакты</a></li>
 			</ul>
-			<button class="button-menu-mob">СВЯЗАТЬСЯ С НАМИ</button>
+			<button class="button-menu-mob modal__btn">СВЯЗАТЬСЯ С НАМИ</button>
 
 			<ul class="menu-mob_link">
 				<li>
