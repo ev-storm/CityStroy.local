@@ -195,6 +195,7 @@
 					<div class="form-section"><h1 class="form-title">Контактные данные</h1>
 						<div class="input-form-ban">
 							<label class="modal__lab in-cont" for="">Имя
+								
 								<input class="modal__input big-input__name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
 							</label>
 						</div>

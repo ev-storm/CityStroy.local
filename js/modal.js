@@ -217,6 +217,9 @@ $('.kit-info-close__banner').click(function(){
 	const checkboxButtonBig = document.getElementById('big__check-btn');
 	const buttonBannerBig = document.getElementById('btn-big-form');
 
+	const checkboxButtonKit = document.getElementById('kit__check-btn');
+	const buttonBannerKit = document.getElementById('btn-kit-banner');
+
 
 	// Функция для обновления состояния кнопки
 	function updateButtonState() {
@@ -245,6 +248,14 @@ $('.kit-info-close__banner').click(function(){
 					buttonBannerBig.disabled = true; // Блокируем кнопку
 			}
 
+			if (checkboxButtonKit.checked) {
+				buttonBannerKit.classList.remove('disabled'); // Убираем класс 'disabled'
+				buttonBannerKit.disabled = false; // Разблокируем кнопку
+		} else {
+				buttonBannerKit.classList.add('disabled'); // Добавляем класс 'disabled'
+				buttonBannerKit.disabled = true; // Блокируем кнопку
+		}
+
 		
 
 	}
@@ -259,6 +270,7 @@ $('.kit-info-close__banner').click(function(){
 		checkbox.addEventListener('change', updateButtonState);
 		checkboxButton.addEventListener('change', updateButtonState);
 		checkboxButtonBig.addEventListener('change', updateButtonState);
+		checkboxButtonKit.addEventListener('change', updateButtonState);
 
 
 

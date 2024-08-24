@@ -175,6 +175,83 @@ validationTripForm
 		event.target.reset();
 	});
 
+	
+// --------KIT FORM ------------------
+const kitForm = document.querySelector('.kit-form');
+const kitTelSelector = kitForm.querySelector('.kit-input__tel');
+const inputmaskKit = new Inputmask('+7 (999) 999-99-99');
+inputmaskKit.mask(kitTelSelector);
+
+const validationKitForm = new JustValidate('.kit-form');
+
+validationKitForm
+	.addField('.kit-input__name', [
+		{
+			rule: 'minLength',
+			value: 3,
+			errorMessage: 'Введите более 3 символов'
+		},
+		{
+			rule: 'maxLength',
+			value: 30,
+			errorMessage: 'Введите менее 30 символов'
+		},
+		{
+			rule: 'required',
+			value: true,
+			errorMessage: 'Введите имя!'
+		}
+	])
+		.addField('.kit-input__tel', [
+			{
+				rule: 'required',
+				value: true,
+				errorMessage: 'Телефон обязателен',
+			},
+			{
+				rule: 'function',
+				validator: function () {
+					const phone = kitTelSelector.inputmask.unmaskedvalue();
+					return phone.length === 10;
+				},
+				errorMessage: 'Введите корректный телефон',
+			},
+		])
+	.onSuccess((event) => {
+		console.log('Validation passes and form submitted', event);
+
+		let infoKitFormData = new FormData(event.target);
+		
+
+		let xhr = new XMLHttpRequest();
+
+		xhr.onreadystatechange = function () {
+			if (xhr.readyState === 4) {
+				if (xhr.status === 200) {
+					console.log('Отправлено');
+
+					$('.kit-info-banner').fadeOut(400)
+					$('.kit-info-banner').css({
+						'transform': 'translateX(-500px)',
+						'transition': 'all 0.5s ease-out',
+					})
+
+					$('.banner__mail').removeClass('hide');
+					$('.banner__mail').addClass('show');
+
+					setTimeout(() => {
+						$('.banner__mail').addClass('hide');
+					}, 3000);
+				}
+			}
+		}
+
+		xhr.open('POST', 'mail.php', true);
+		xhr.send(infoKitFormData);
+
+		event.target.reset();
+	});
+
 
 
 
@@ -206,21 +283,7 @@ validationBigForm
 			errorMessage: 'Введите имя!'
 		}
 	])
-	// .addField('.big-input__tel', [
-	// 	{
-	// 		rule: 'required',
-	// 		value: true,
-	// 		errorMessage: 'Телефон обязателен',
-	// 	},
-	// 	{
-	// 		rule: 'function',
-	// 		validator: function () {
-	// 			const phone = bigTelSelector.inputmask.unmaskedvalue();
-	// 			return phone.length === 10;
-	// 		},
-	// 		errorMessage: 'Введите корректный телефон',
-	// 	},
-	// ])
+ 
 	.onSuccess((event) => {
 		console.log('Validation passes and form submitted', event);
 
@@ -261,5 +324,3 @@ validationBigForm
 	});
 
 
-
-	

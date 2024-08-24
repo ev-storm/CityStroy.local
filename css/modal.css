@@ -407,6 +407,12 @@ textarea {
 	width: 1px;
   display: none;
 }
+#kit__check-btn {
+	position: absolute;
+	top: 0;
+	width: 1px;
+  display: none;
+}
 
 
 .modal__check {
@@ -424,6 +430,9 @@ textarea {
 .modal__check-btn {
   border: 1px solid #ffffff;
 }
+.kit__check-btn {
+  border: 1px solid #ffffff;
+}
 
 .modal__check-text{
 	font-family: Gilroy;
@@ -434,7 +443,7 @@ textarea {
 	letter-spacing: 0.05vw;
 }
 .modal__check-text:hover{
-	color: #60c0ec;
+	color: #ffffff99;
 	transition: 0.5s;
 }
 
@@ -449,6 +458,10 @@ textarea {
 #big__check-btn:checked + .modal__check-text .big__check-btn {
   content: "";
 	background-color: #0093d8
+}
+#kit__check-btn:checked + .modal__check-text .kit__check-btn {
+  content: "";
+	background-color: #ffffff
 }
 
 
@@ -505,6 +518,32 @@ textarea {
 	background-color: #ffffff;
 }
 .button-banner.disabled {
+	font-size: 0.9vw;
+	opacity: 0.5;
+	pointer-events: none;
+}
+.kit-button-banner {
+	border-style: solid;
+	border-color: #ffffff;
+	border-width: 0.1vw;
+	width: 100%;
+	opacity: 1;
+	cursor: pointer; 
+	pointer-events: auto; 
+	font-size: 0.9vw;
+}
+.kit-button-banner:hover {
+	border-style: solid;
+	border-color: #ffffff;
+	border-width: 0.1vw;
+	width: 100%;
+	opacity: 1;
+	cursor: pointer; 
+	pointer-events: auto; 
+	font-size: 0.9vw;
+	background-color: #ffffff;
+}
+.kit-button-banner.disabled {
 	font-size: 0.9vw;
 	opacity: 0.5;
 	pointer-events: none;
