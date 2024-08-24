@@ -1,0 +1,392 @@
+/* SWIPER */
+:root {
+  --swiper-navigation-color: #ffffff;
+	--swiper-theme-color: #ffffff;
+	--swiper-navigation-size: 0.2vw;
+}
+.case__cover-mob{
+	display: none;
+}
+
+.case__slide-2 {
+	opacity: 0.4;
+} 
+.swiper-slide-thumb-active {
+	opacity: 1;
+}
+
+
+
+.case__slide > img{
+	width: 100vw;
+	height: 35vw;
+	object-fit: cover;
+}
+
+
+.case__slide-2 > img{
+	width: 24vw;
+	height: 10vw;
+	object-fit: cover;
+	margin: 1vw;
+	border-radius: 0.5vw;
+
+}
+
+/* TITLE */
+.case-bsb{
+	background-image: url('../assets/img/case/bsb/3.jpg');
+}
+.case-ch{
+	background-image: url('../assets/img/cart/ch/1.jpg');
+}
+.case-costa{
+	background-image: url('../assets/img/cart/costa/8.jpg');
+}
+.case-river{
+	background-image: url('../assets/img/cart/river/4.jpg');
+}
+.case-IL_suhsi{
+	background-image: url('../assets/img/cart/IL_&_sushi/9.jpg');
+}
+.case-pasta{
+	background-image: url('../assets/img/cart/pasta/2.jpg');
+}
+.case-miata-ostrov{
+	background-image: url('../assets/img/cart/miata/1.jpg');
+}
+.case-niama-reutov{
+	background-image: url('../assets/img/cart/niama_reutov/1.jpg');
+}
+.case-il-pat{
+	background-image: url('../assets/img/cart/il-pat/1.jpg');
+}
+.case-miata-ace{
+	background-image: url('../assets/img/cart/miata_2/4.jpg');
+}
+.case-sinabon{
+	background-image: url('../assets/img/cart/cin_&_don/1.png');
+}
+.case-niama_butovo{
+	background-image: url('../assets/img/cart/niama/1.jpg');
+}
+.case-luna{
+	background-image: url('../assets/img/cart/luna/1.jpg');
+}
+.case-il_geo{
+	background-image: url('../assets/img/cart/IL_&_geo/1.jpg');
+}
+
+
+
+
+.case__btn-down{
+	position: fixed;
+	top: 80%;
+	left: 50%;
+	z-index: 120; 
+	width: 4vw;
+	margin-left: -2vw;
+}
+
+
+
+.case__cover{
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-size:cover;
+	filter:brightness(40%);
+	z-index: 99; 
+}
+
+.case__title{
+	display: flex;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 99; 
+	margin-top: 6vw;
+}
+.case__title > h1{
+	font-size: 5vw;
+	color: #ffffff;
+	font-weight: 400;
+	z-index: 99; 
+}
+
+
+/* ABOUT */
+.case__about{
+	display: flex;
+	padding: 2vw 5vw;
+	justify-content: space-around;
+	align-items: start;
+	z-index: 500;
+	background-color: #161616;
+	position: relative;
+}
+.case__video{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+.case__about-video{
+	border-radius: 0.5vw;
+	width: 50vw;
+	height: fit-content;
+	z-index: 99;
+	/* box-shadow: 1vw 1vw 13vw #ffffff; */
+}
+.glow {
+	position: absolute;
+	top: 2vw;
+	left: 9vw;
+	width: 50vw;
+	height:28vw;
+	pointer-events: none; /* Чтобы не мешать взаимодействию с видео */
+	border-radius: 10px;
+	filter: blur(40px); /* Степень размытия */
+	opacity: 0.8; /* Прозрачность эффекта */
+}
+
+
+.case__about-title{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.case__about-title > h1{
+	color: #ffffff;
+	font-size: 2vw;
+	font-weight: 300;
+}
+.case__about-title > h2{
+	color: #ffffff;
+	font-size: 1.3vw;
+	font-weight: 200;
+	line-height: 1.5;
+}
+.case__about-title > h2 > span{
+	color: #1e9dd8;
+	font-size: 1.3vw;
+	font-weight: 300;
+}
+.case__btn{
+	margin-top: 4vw;
+}
+
+/* REPORT */
+.case__report{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 2vw 4vw;
+	align-items: center;
+	background-color: #161616;
+	z-index: 99;
+	position: relative;
+}
+.case__report-point{
+	width: 80%;
+}
+.case__report-point > h1{
+	color: #1e9dd8;
+	font-size: 1.8vw;
+	font-weight: 300;
+	margin: 2vw 0 0.5vw 0;
+}
+.case__report-point > h2{
+	color: #ffffff;
+	font-size: 1vw;
+	font-weight: 200;
+	line-height: 1.5;
+}
+.case__report-point > h2 > span{
+	font-weight: 300;
+	font-size: 1.2vw;
+}
+
+
+.case__report-point > h2 > ul > li::before{
+	content: url('');
+	background-image: url(../assets/img/icon/plus.svg);
+	position: absolute;
+	background-size: cover;
+	width: 1vw;
+	height: 1vw;
+	left: 13%;
+}
+
+
+
+
+
+@media (max-width: 600px){
+
+	.case__about{
+		border-radius: 2vw;
+	}
+
+	.case__cover-mob{
+		display: block;
+		position: sticky;
+		top:0;
+		margin-left: -50vw;
+		height: 100vh;
+		filter:brightness(40%);
+		
+
+	}
+	
+	.case__cover{
+		width: 100%;
+		height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-size:cover;
+		filter:brightness(40%);
+		z-index: 99; 
+    /* Использовать префиксы, если вы добавите другие свойства */
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	}
+	.case__title > h1{
+		font-size: 12vw;
+		padding: 5vw;
+		text-align: center;
+	}
+
+	.case__btn-down{
+		top: 90%;
+		left: 50%;
+		z-index: 120; 
+		width: 20vw;
+		margin-left: -10vw;
+	}
+	.case__about{
+		flex-direction: column;
+	}
+	.case__about-video{
+		width: 100%;
+		border-radius: 2vw;
+		margin: 2vw 0;
+		box-shadow: 2vw 2vw 10vw #000000;
+	}
+	.glow {
+		position: absolute;
+		top: 2vw;
+		left: 8vw;
+		width: 52vw;
+		height:28vw;
+		pointer-events: none; /* Чтобы не мешать взаимодействию с видео */
+		border-radius: 10px;
+		filter: blur(26px); /* Степень размытия */
+		opacity: 0; /* Прозрачность эффекта */
+	}
+	.video-title_5{
+		margin-top: -53vw;
+		margin-left: 50vw;
+	}
+	.video-title_5 >svg{
+		margin-right: 2vw;
+	}
+	.case__about-title{
+		width: 100%;
+		align-items: center;
+	}
+	.case__about-title > h1{
+		font-size: 9vw;
+		margin-bottom: 0;
+	}
+	.case__about-title > h2{
+		width: 100%;
+		font-size: 4vw;
+		font-weight: 200;
+		line-height: 1.5;
+		text-align: start;
+		align-items: start;
+	}
+	.case__about-title > h2 > span{
+		font-size: 4vw;
+	}
+
+	.case__btn{
+		font-size: 5vw;
+		padding: 2vw;
+		width: 100%;
+		border-radius: 1.5vw;
+	}
+	.case__btn:hover{
+		font-size: 5vw;
+	}
+
+	.case__report{
+		width: 100%;
+	}
+	.case__report-point{
+		width: 90%;
+	}
+	.case__report-point > h1{
+		font-size: 8vw;
+	}
+	.case__report-point > h2{
+		font-size: 4vw;
+	}
+	.case__report-point > h2 > span{
+		font-size: 5vw;
+	}
+	.case__report-point > h2 > ul > li{
+		margin-bottom: 3vw;
+	}
+	.case__report-point > h2 > ul > li::before{
+		content: url('');
+		background-image: url(../assets/img/icon/plus.svg);
+		position: absolute;
+		background-size: cover;
+		width: 4vw;
+		height: 4vw;
+		left: 10%;
+		margin-top: 2vw;
+	}
+
+	.case__swiper-con{
+		background-color: #161616;
+		position: relative;
+	}
+
+	.case__slide > img{
+		width: 100vw;
+		height: 60vw;
+		object-fit: cover;
+	}
+	
+	.case__slide-2 > img{
+		width: 100%;
+		height: 15vw;
+		margin: 0;
+		object-fit: cover;
+		border-radius: 0.5vw;
+		box-shadow: 1vw 1vw 1vw #000000;
+	}
+	.swiper-button-next, .swiper-button-prev{
+		scale: 0.5;
+	}
+
+
+	.case__slide-2 {
+		opacity: 0.4;
+	} 
+	.swiper-slide-thumb-active {
+		opacity: 1;
+	}
+
+	
+
+}
