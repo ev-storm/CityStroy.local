@@ -10,7 +10,7 @@ const validation = new JustValidate('.popup_form');
 
 
 validation
-	.addField('.input-name', [
+	.addField('.input__name', [
 		{
 			rule: 'minLength',
 			value: 3,
@@ -59,7 +59,7 @@ validation
 
 		let formData = new FormData(event.target);
 
-		console.log(...formData);
+		
 		
 
 		let xhr = new XMLHttpRequest();
@@ -72,7 +72,7 @@ validation
 					$('.modal-over').fadeOut(600);
 					$('.modal-con').fadeOut(400);
 					$('.modal-con').css({
-						'transform': 'translateY(-70%)',
+						'transform': 'translateY(-100%)',
 						'transition': '0.7s',
 						'opacity':'0'
 					})
@@ -155,7 +155,7 @@ validationTripForm
 
 					$('.info-banner').fadeOut(400)
 					$('.info-banner').css({
-						'transform': 'translateX(-500px)',
+						'transform': 'translateX(-100%)',
 						'transition': 'all 0.5s ease-out',
 					})
 
@@ -232,7 +232,7 @@ validationKitForm
 
 					$('.kit-info-banner').fadeOut(400)
 					$('.kit-info-banner').css({
-						'transform': 'translateX(-500px)',
+						'transform': 'translateX(-100%)',
 						'transition': 'all 0.5s ease-out',
 					})
 
@@ -257,10 +257,17 @@ validationKitForm
 
 
 //---------- BIG FORM  -----------------
+
+
 const bigForm = document.querySelector('.big-form');
-// const bigTelSelector = bigForm.querySelector('.big-input__tel');
-// const inputmaskBig = new Inputmask('+7 (999) 999-99-99');
-// inputmaskBig.mask(bigTelSelector);
+const bigSelector = bigForm.querySelector('.big-tel');
+const inputmaskBig = new Inputmask('+7 (999) 999-99-99');
+inputmaskBig.mask(bigSelector);
+
+
+
+
+
 
 const validationBigForm = new JustValidate('.big-form');
 
@@ -283,7 +290,32 @@ validationBigForm
 			errorMessage: 'Введите имя!'
 		}
 	])
- 
+	.addField('.big-tel', [
+		{
+			rule: 'required',
+			value: true,
+			errorMessage: 'Телефон обязателен',
+		},
+		// {
+		// 	rule: 'minLength',
+		// 	value: 10,
+		// 	errorMessage: 'Введите корректный телефон'
+		// },
+		// {
+		// 	rule: 'maxLength',
+		// 	value: 11,
+		// 	errorMessage: 'Введите корректный телефон'
+		// },
+		 {
+			rule: 'function',
+			validator: function () {
+				const phoneBig = bigSelector.inputmask.unmaskedvalue();
+				return phoneBig.length === 10;
+			},
+			errorMessage: 'Введите корректный телефон',
+		},
+	
+	])
 	.onSuccess((event) => {
 		console.log('Validation passes and form submitted', event);
 
@@ -317,10 +349,21 @@ validationBigForm
 			}
 		}
 
-		xhr.open('POST', 'mail.php', true);
+		xhr.open('POST', 'commer-mail.php', true);
 		xhr.send(bigFormData);
 
 		event.target.reset();
 	});
+
+
+
+
+
+
+
+
+
+
+
 
 

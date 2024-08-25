@@ -9,16 +9,16 @@
 			</div>
 			<form class="modal__pop popup_form" action="#" method="POST" enctype="multipart/form-data">
 				<label class="modal__lab form__label" for="">Имя
-					<input class="input modal__input input-name" type="text" data-validate-field="name" name="Имя" onkeyup="nameBD.value = this.value" placeholder="Введите имя" autofocus>
+					<input class="input modal__input input__name" type="text" data-validate-field="name" name="Имя"  placeholder="Введите имя" autofocus>
 				</label>
 				<label class="modal__lab form__label" for="">Email
-					<input class="input input-mail modal__input" type="email" data-validate-field="email" name="Email" onkeyup="emailBD.value = this.value" placeholder="Введите почту">
+					<input class="input input-mail modal__input" type="email" data-validate-field="email" name="Email"  placeholder="Введите почту">
 				</label>
 				<label class="modal__lab form__label" for="">Телефон
-					<input class="input modal__input input-tel" onkeyup="phoneBD.value = this.value" type="tel" data-validate-field="tel" name="Телефон" placeholder="Введите телефон">
+					<input class="input modal__input input-tel"  type="tel" data-validate-field="tel" name="Телефон" placeholder="Введите телефон">
 				</label>
 				<label class="modal__lab form__label" for="">Сообщение
-					<textarea class="modal__input textarea" id="textarea" onkeyup="textareaBD.value = this.value" name="Сообщение" cols="20" rows="4" placeholder="Введите сообщение" maxlength="140"></textarea>
+					<textarea class="modal__input textarea" id="textarea"  name="Сообщение" cols="20" rows="4" placeholder="Введите сообщение" maxlength="140"></textarea>
 				</label>
 				<div class="modal__check-con">
 					<input id="modal__check" type="checkbox">

@@ -1,4 +1,8 @@
 <footer>
+
+
+
+
 		
 	<div class="banner_con">
 			<div class="banner element-animation_up">

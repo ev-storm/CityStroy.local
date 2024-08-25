@@ -1,7 +1,7 @@
 /* (Ctrl+K) + (Ctrl+0)  Скрыть*/
 /* (Ctrl+K) + (Ctrl+J)  Раскрыть*/
 *{
-	/* cursor: default; */
+	cursor: auto;
 	box-sizing: border-box;
 }
 
@@ -28,6 +28,7 @@ h1,h2,h3,p,span{
 	font-weight: 200;
 	font-size: 1vw;
 	letter-spacing:0.05vw;
+	cursor: auto;
 }
 
 a{
@@ -37,7 +38,7 @@ a{
 
 
 :root {
-  --main-blue: #1e9dd8;
+  	--main-blue: #1e9dd8;
 	--dark-blue: rgba(0,84,124,1) 69%;
 	--grad-blue: linear-gradient(119deg, rgba(30,157,216,1) 0%, rgba(0,84,124,1) 69%);
 	--main-black: #161616;
@@ -50,7 +51,6 @@ a{
 	--gap: 50px;
 	--el: 2;
 	--wcart: calc( (100vw / var(--el)) - var(--gap));
-	/* --wi: 100vw; */
 }
 
 .title-mob{
@@ -78,14 +78,14 @@ a{
 	z-index: 10;
 	cursor: pointer;
 	transition: var(--duration);
-	&:hover{
-		color: var(--main-black);
-		font-size: 0.8vw;
-		font-weight: 300;
-		background: var(--main-blue);
-		transition: var(--duration);
-		position: relative;
-	}
+}
+.button:hover{
+	color: var(--main-black);
+	font-size: 0.8vw;
+	font-weight: 300;
+	background: var(--main-blue);
+	transition: var(--duration);
+	position: relative;
 }
 
 

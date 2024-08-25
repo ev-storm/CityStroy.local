@@ -104,15 +104,15 @@ let cof = $(this).scrollTop();
 
 if(cof < 1000){
 	$('.info-banner').css({
-		'transform': 'translateX(-500px)',
+		'transform': 'translateX(-200%)',
 		'transition': 'all 0.5s ease-out',
 	})
 	$('.commer-banner-con').css({
-		'transform': 'translateX(500px)',
+		'transform': 'translateX(200%)',
 		'transition': 'all 0.5s ease-out',
 	})
 	$('.kit-info-banner').css({
-		'transform': 'translateX(-500px)',
+		'transform': 'translateX(-200%)',
 		'transition': 'all 0.5s ease-out',
 	})
 	
@@ -120,7 +120,7 @@ if(cof < 1000){
 }
 if(cof < 200){
 	$('.commer-banner-mini').css({
-		'left': '120%'
+		'left': '200%'
 	})
 }
 if(cof > 201){
@@ -139,7 +139,7 @@ if(cof>2300){
 $('.info-close__banner').click(function(){
 	$('.info-banner').fadeOut(400)
 	$('.info-banner').css({
-		'transform': 'translateX(-500px)',
+		'transform': 'translateX(-200%)',
 		'transition': 'all 0.5s ease-out',
 	})
 })
@@ -158,7 +158,7 @@ if(cof > 1900 && cof < 1930){
 
 $('.commer-close').click(function(){
 	$('.commer-banner-con').css({
-		'transform': 'translateX(500px)',
+		'transform': 'translateX(200%)',
 		'transition': 'all 0.5s ease-out',
 	})
 })
@@ -173,7 +173,7 @@ $('.commer-banner-mini').click(function(){
 
 $('.commer-btn').click(function(){
 	$('.commer-banner-con').css({
-		'transform': 'translateX(500px)',
+		'transform': 'translateX(200%)',
 		'transition': 'all 0.5s ease-out',
 	})
 })
@@ -190,7 +190,7 @@ if(cof>3300){
 $('.kit-info-close__banner').click(function(){
 	$('.kit-info-banner').fadeOut(400)
 	$('.kit-info-banner').css({
-		'transform': 'translateX(-500px)',
+		'transform': 'translateX(-200%)',
 		'transition': 'all 0.5s ease-out',
 	})
 })
@@ -357,7 +357,7 @@ $('.kit-info-close__banner').click(function(){
 
 
 		document.addEventListener('DOMContentLoaded', function() {
-			const radioInputs = document.querySelectorAll('input[name="res"]');
+			const radioInputs = document.querySelectorAll('.over-res');
 			const textInput = document.querySelector('.over-res-in');
 		
 			radioInputs.forEach(radio => {
