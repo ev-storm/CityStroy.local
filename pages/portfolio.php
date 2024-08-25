@@ -28,6 +28,8 @@
 
 <body>
 
+
+
 <!-- SCREEN_1-TITLE -->
 <article  class="title__con">
 	<div class="title">
@@ -77,6 +79,9 @@
 
 </article>
 
+
+
+
 <!-- SWIPER-TICKER -->
 <div class="swiper portfolio_ticker">
 	<h1 class="portfolio_ticker__name">НАШИ КЛИЕНТЫ</h1>
@@ -108,7 +113,16 @@
 	</div>
 </div> 
 
-
+<div class="container">
+	<div class="container-in">
+		<input type="text" class="search-input input-carts" placeholder="Введите текст для поиска...">
+	
+		<button class="button clear-btn">
+			<img class="clear-btn-img" src="/assets/img/icon/urn.svg" alt="">
+		</button>
+	</div>
+	<div class="dropdown"></div>
+</div>
 
 <!-- CART -->
 <h1 id="anchor_title" class="cart-title" >ВЫПОЛНЕННЫЕ ПРОЕКТЫ</h1>
@@ -116,7 +130,8 @@
 <div class="carts-con">
 
 	<!-- BLACK STAR BURGER -->
-	<div class="carts">
+
+	<div class="carts classBS">
     <div class="carts-back swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide carts-slide"><img src="/assets/img/cart/bsb/1.jpg" alt=""></div>
@@ -146,9 +161,11 @@
         </div>
     </div>
 	</div>
+	
 
 	<!-- ЧАЙХАНА №1 -->
-	<div class="carts">
+
+	<div class="carts classCH">
     <div class="carts-back swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide carts-slide"><img src="/assets/img/cart/ch/1.jpg" alt=""></div>
@@ -180,7 +197,7 @@
 	</div>
 
 	<!-- RIVER ONE -->
-	<div class="carts">
+	<div class="carts classR1">
     <div class="carts-back swiper-container">
         <div class="swiper-wrapper">
 						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/river/1.jpg" alt=""></div>
@@ -213,7 +230,7 @@
 
 	
 	<!--IL PATIO и ПЛАНЕТА СУШИ -->
-	<div class="carts">
+	<div class="carts classIL&PL">
 		<div class="carts-back swiper-container">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/IL_&_sushi/1.jpg" alt=""></div>
@@ -250,7 +267,7 @@
 
 
 	<!-- PASTA CUP -->
-	<div class="carts">
+	<div class="carts classPAS">
 		<div class="carts-back swiper-container">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/pasta/1.jpg" alt=""></div>
@@ -282,7 +299,7 @@
 	</div>
 
 	<!-- МЯТА PLATINUM Остров мечты-->
-	<div class="carts">
+	<div class="carts  classMO">
 		<div class="carts-back swiper-container">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/1.jpg" alt=""></div>
@@ -314,7 +331,7 @@
 	</div>
 
 	<!-- IL PATIO -->
-	<div class="carts">
+	<div class="carts  classIL">
 		<div class="carts-back swiper-container">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/il-pat/1.jpg" alt=""></div>
@@ -346,7 +363,7 @@
 	</div>
 
 	<!-- НИЯМА ТЦ Бутово Молл -->
-	<div class="carts">
+	<div class="carts classNIB">
 		<div class="carts-back swiper-container">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/niama/2.jpg" alt=""></div>
@@ -378,7 +395,7 @@
 	</div>
 
 	<!-- МЯТА LOUNGE Айсберг-->
-	<div class="carts">
+	<div class="carts classMA">
 		<div class="carts-back swiper-container">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata_2/1.jpg" alt=""></div>
@@ -410,7 +427,7 @@
 	</div>
 
 	<!--COSTA COFFEE -->
-	<div class="carts">
+	<div class="carts classCOS">
 		<div class="carts-back swiper-container">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide carts-slide"><img src="/assets/img/cart/costa/1.jpg" alt=""></div>
@@ -442,7 +459,7 @@
 	</div>
 
 	<!-- НИЯМА Реутов Парк -->
-	<div class="carts">
+	<div class="carts classNR">
 		<div class="carts-back swiper-container">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/niama_reutov/1.jpg" alt=""></div>
@@ -474,7 +491,7 @@
 	</div>
 
 	<!-- LUNA -->
-	<div class="carts">
+	<div class="carts classL">
 		<div class="carts-back swiper-container">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/luna/1.jpg" alt=""></div>
@@ -506,7 +523,7 @@
 	</div>
 
 	<!--CINNABON & DONUTTO -->
-	<div class="carts">
+	<div class="carts classC&D">
 		<div class="carts-back swiper-container">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/cin_&_don/1.png" alt=""></div>
@@ -536,7 +553,7 @@
 	</div>
 
 	<!--IL PATIO и GEORGES -->
-	<div class="carts">
+	<div class="carts classIL&G">
 		<div class="carts-back swiper-container">
 				<div class="swiper-wrapper">
 						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/IL_&_geo/1.jpg" alt=""></div>

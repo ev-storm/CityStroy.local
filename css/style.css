@@ -763,27 +763,12 @@ li {
 	transition: var(--duration2);
 	cursor: pointer;
 } */
-.svgYou-cart{
-	margin-left: 1vw;
-	width: 2.8vw;
-	transition: var(--duration);
+.cart-button-more{
+	font-size: 4.2vw;
+	padding: 2vw 4vw;
+	margin: 1vw 2vw;
+	border-radius: 2vw;
 }
-.svgYou-cart:hover{
-	margin-left: 1vw;
-	width: 3.5vw;
-	transition: var(--duration);
-}
-.svgYou-cart > path{
-	fill: #ffffff;
-	transition: var(--duration);
-}
-.svgYou-cart:hover > path{
-	fill: #ff4343;
-	transition: var(--duration);
-}
-
-
-
 .svgYou:hover{
 	margin-left: 1vw;
 	scale: 1.2;
