@@ -763,12 +763,13 @@ li {
 	transition: var(--duration2);
 	cursor: pointer;
 } */
-.cart-button-more{
+/* .cart-button-more{
 	font-size: 4.2vw;
 	padding: 2vw 4vw;
 	margin: 1vw 2vw;
 	border-radius: 2vw;
-}
+} */
+
 .svgYou:hover{
 	margin-left: 1vw;
 	scale: 1.2;

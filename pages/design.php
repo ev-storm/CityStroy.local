@@ -37,8 +37,7 @@
 					</div>
 
 					<h2>
-						Строим коммерческие помещения с нуля до пуска в 
-						эксплуатацию и постгарантийного обслуживания
+						Под ключ: от дизайн-концепции до 3D визуализации и строительных чертежей
 					</h2>
 				</div>
 
@@ -83,50 +82,46 @@
 
 	<!-- SCREEN_2 ABOUT-->
 	<article id="des_about" class="about">
-		<h1 class="about__title">Разрабатываем Дизайн проект для Заказчика со следующими разделами:</h1>
+		<h1 class="about__title">Создаем атмосферный интерьер, который работает на увеличение прибыли:</h1>
 		<div class="about__item desi-about__item">
 			<h3>
-				<img src="/assets/img/icon/des_2.svg" alt="">
-				Дизайн ресторана как маркетинговый инструмент
+				<img class="des-icon" src="/assets/img/icon/des_2.svg" alt="">
+				Привлекает больше новых посетителей
 			</h3>
 			<h3>
-				<img src="/assets/img/icon/des_3.svg" alt="">
+				<img class="des-icon" src="/assets/img/icon/des_3.svg" alt="">
 				Процесс создания дизайна ресторана
 			</h3>
 			<h3 >
-				<img src="/assets/img/icon/des_1.svg" alt="">
-				Особенности и факторы, которые учитывает дизайнер
+				<img class="des-icon" src="/assets/img/icon/des_1.svg" alt="">
+				Повышает средний чек, привлекая более платежеспособную аудиторию
 			</h3>
 			<h3 >
-				<img src="/assets/img/icon/des_4.svg" alt="">
-				Условия успешной реализации дизайн-проекта
+				<img class="des-icon" src="/assets/img/icon/des_4.svg" alt="">
+				Увеличивает эффективность сотрудников
 			</h3>
 		</div>
 		<div class="about__column">
 			<div>
 				<div>
-					<img src="../assets/img/icon/Frame 34.svg" alt="">
 					<h1 class="about__column_2">Эргономика</h1>
 				</div>
 				<h3>Создаем интерьер как удобную среду для персонала и гостей</h3>
 			</div>
 			<div>
 				<div>
-					<img src="/assets/img/icon/Frame 34.svg" alt="">
 					<h1>Психология цветовосприятия</h1>
 				</div>
 				<h3>Учитываем способность зрения человека воспринимать и преобразовывать цвета в ощущение оттенков</h3>
 			</div>
 			<div>
 				<div>
-					<img src="/assets/img/icon/Frame 34.svg" alt="">
 					<h1>Освещение</h1>
 				</div>
 				<h3>Многоуровневое освещение всех помещений ресторана, применение декоративных светильников и конструкций</h3>
 			</div>
 			<div>
 				<div>
-					<img src="/assets/img/icon/Frame 34.svg" alt="">
 					<h1>Визуализация</h1>
 				</div>
 				<h3>Предлагаем варианты планировок и визуализаций всех частей ресторана</h3>
@@ -135,9 +130,88 @@
 		<button class="button-about button modal__btn">ОБСУДИТЬ ПРОЕКТИРОВАНИЕ</button>
 	</article>
 
+	
+
+
+
+	<!-- DESI_INFO-MINI -->
+	<div class="desi-inf_con">
+			<h1>Закладываем технические характеристики: свет, звук, вентиляция</h1>
+			<div class="desi-inf">
+
+				<div class="desi-inf_item">
+					<dotlottie-player 
+						class="desi-inf__player-small des-vent"
+						src="/assets/animation/vent.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="false">
+					</dotlottie-player>
+					<div>
+						<h2>Система вентиляции</h2>
+						<h3>При разработке проекта мы в прямом смысле ставим себя на место гостей: где они сидят и как себя при этом чувствуют, достаточно ли воздуха, тепло им или холодно, какие запахи должны доходить до посетителей, а какие нет, и в зависимости от характеристик помещения предлагаем места под кондиционирование и вентиляцию, а также указываем необходимые мощности и объемы.</h3>
+					</div>
+					
+				</div>
+
+				<div class="desi-inf_item desi-inf__bez">
+					<dotlottie-player 
+						class="desi-inf__player-small des-sound"
+						src="/assets/animation/sound.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div>
+						<h2>Звук</h2>
+						<h3>Учитываем размер и зонирование помещения для размещения точек звука, чтобы гостям было максимально комфортно в атмосфере ресторана, дополненного фоновой музыкой, при этом прописываем громкость.</h3>
+					</div>
+					
+				</div>
+
+				<div class="desi-inf_item">
+					<dotlottie-player 
+						class="desi-inf__player-small des-docs"
+						src="/assets/animation/docs.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div>
+						<h2>Нормы и требования</h2>
+						<h3>Соблюдаем СанПиН, требования законодательства по безопасности, пожаростойкости материалов, горючести и т.д</h3>
+					</div>
+				</div>
+
+				<div class="desi-inf_item">
+					<dotlottie-player 
+						class="desi-inf__player-small des-lamp"
+						src="/assets/animation/lamp.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div>
+						<h2>Свет</h2>
+						<h3>Мы учитываем все особенности помещения и применяем передовые научные исследования в области световосприятия. Правильная освещенность придает уют помещению, благодаря чему гости хотят провести больше времени в ресторане, больше заказывают блюд и увеличивают выручку заведения.</h3>
+					</div>
+					
+				</div>
+
+			</div>
+	</div>
+
+
+
+
+
 
 	<!-- DESI_SHEMA -->
-	<div class="desi-sh_con">
+	<!-- <div class="desi-sh_con">
 		<h1>Дизайн = мощный маркетинговый инструмент</h1>
 		<div class="desi-sh ">
 
@@ -156,51 +230,9 @@
 			</div>
 
 		</div>
-	</div>
+	</div> -->
 
-		<!-- DESI_INFO -->
-		<div class="desi-inf_con">
-			<h1>Наш дизайн это:</h1>
-			<div class="desi-inf">
-
-				<div class="desi-inf_item">
-					<dotlottie-player 
-						class="desi-inf__player"
-						src="/assets/animation/bez.json" 
-						background="transparent" 
-						speed="1" 
-						loop="true"
-						autoplay="true">
-					</dotlottie-player>
-					<h2>Комфорт</h2>
-				</div>
-
-				<div class="desi-inf_item desi-inf__bez">
-					<dotlottie-player 
-						class="desi-inf__player"
-						src="/assets/animation/komf.json" 
-						background="transparent" 
-						speed="1" 
-						loop="true"
-						autoplay="true">
-					</dotlottie-player>
-					<h2>Безопасность</h2>
-				</div>
-
-				<div class="desi-inf_item">
-					<dotlottie-player 
-						class="desi-inf__player"
-						src="/assets/animation/eff.json" 
-						background="transparent" 
-						speed="1" 
-						loop="true"
-						autoplay="true">
-					</dotlottie-player>
-					<h2>Эффективность</h2>
-				</div>
-
-			</div>
-		</div>
+	
 
 		<!-- DESI_LIST -->
 		<article class="des-list__main">
@@ -208,44 +240,34 @@
 			<div class="cart-teh">
 				<img class="element-animation" src="/assets/img/desi/1.jpg" alt="">
 				<div class="title-teh_con">
-					<h1 class="title-teh">Дизайн ресторана как маркетинговый инструмент</h1>
-					<h2 class="text-teh">Основная задача дизайна – способствовать успеху ресторана.
-					В связи с этим первостепенную роль в рождении концепции заведения, играет умение дизайнера уловить философию кухни, сформулировать описание целевой аудитории.</h2>
-					<ul>
-						<li>Это создаёт средство коммуникации с гостями ресторана
-						на эмоциональном уровне, дополняет и поддерживает инвестиции ресторатора в основной инструмент – Кухню.</li><br>
-						<li>Концепция оформления пространства должна помочь ресторатору
-								создать быть физически комфортную и безопасную среду. И конечно же дизайн должен быть реализуем, то есть соответствовать нормам, и финансовым возможностям Заказчика, и современным трендам.</li>
-					</ul>
+					<h1 class="title-teh">Раскрываем концепцию</h1>
+					<h2 class="text-teh">Через дизайн транслируем общую идею ресторана и раскрываем ее. Опираемся на меню и кухню, личность шеф-повара, исторический контекст локации.<br><br>
+					Учитываем ключевые эмоциональные задачи, которые должен выполнять интерьер в заданной концепции: создавать расслабляющую или наоборот экспрессивную оживленную обстановку, транслировать ощущение уюта или в первую очередь подчеркивать статус гостя.</h2>
 				</div>
 			</div>
 			<!-- 2 -->
 			<div class="cart-teh">
 				<img class="element-animation" src="/assets/img/desi/2.jpg" alt="">
 				<div class="title-teh_con">
-					<h1 class="title-teh">Процесс создания</h1>
-					<h2 class="text-teh">Можно смело сказать, что красота в дизайне ресторана и вообще общепита, вторична. Начинается все с особенностей меню, оборудования, режима и формы работы заведения.<br><br> Кто придет в ресторан и каким будет средний чек, где расположено заведение и какое количество гостей должно вместить для необходимой выручки?<br><br> К этим и множеству других вопросов дизайнер тщательно готовится, собирает данные, и лишь тогда берется за работу. И не один, а в тандеме с инженерами – специалистами по кухонному оборудованию, кондиционированию и вентиляции, пожарным системам, слаботочным системам, акустике.<br><br> Кроме них привлекаются узкие специалисты, например по озеленению, светотехнике, художники, производители различных индивидуальных изделий. Немаловажную роль играет организация этого процесса.</h2>
+					<h1 class="title-teh">Делаем упор на маркетинг</h1>
+					<h2 class="text-teh">Учитываем психологию вашей целевой аудитории и создаем пространство, привлекающее внимание, в которое хочется возвращаться снова и снова.<br><br>
+					Учитываем актуальные тренды в дизайне, создавая интерьер, который будет актуален долгие годы.</h2>
 				</div>
 			</div>
+			
+			
+			
 			<!-- 3 -->
 			<div class="cart-teh">
 				<img class="element-animation" src="/assets/img/desi/3.jpg" alt="">
 				<div class="title-teh_con">
-					<h1 class="title-teh">Особенности и факторы, которые учитывает дизайнер</h1>
-					<h2 class="text-teh">Несколько факторов, которые влияют на то, каким получится интерьер:</h2>
-					<ul>
-						<li>Личность шеф-повара</li>
-						<li>Исторический контекст локации</li>
-						<li>Геофизические характеристики расположения</li>
-						<li>Конструктивные особенности помещения</li>
-					</ul>
-					<h3 class="des-h3">
-						Огромную роль играют условия создания проекта, такие как сроки, зачастую сжатые, бюджет и конечно же техническое задание от заказчика
-					</h3>
+					<h1 class="title-teh">Прорабатываем эргономику</h1>
+					<h2 class="text-teh">Учитываем исходную геометрию помещения и его конструктивные особенности, чтобы подстроить интерьер под нужды гостей и персонала. <br><br>
+					Моделируем разные сценарии использования пространства и делаем заведение максимально комфортным: персоналу будет удобно передвигаться, а гости за соседними столиками не будут мешать друг другу.</h2>
 				</div>
 			</div>
 			<!-- 4 -->
-			<div class="cart-teh">
+			<!-- <div class="cart-teh">
 				<img class="element-animation" src="/assets/img/desi/4.jpg" alt="">
 				<div class="title-teh_con">
 					<h1 class="title-teh">Условия успешной реализации дизайн-проекта</h1>
@@ -256,14 +278,58 @@
 						<li>Дизайн, как инструмент создает путь к успеху, возможность, которую можно реализовать только в сплоченной команде инженеров и строителей</li>
 					</ul>
 				</div>
-			</div>
-			
+			</div> -->
 		</article>
+
+	<!-- DESI_INFO -->
+	<!-- <div class="desi-inf_con">
+					<h1>Наш дизайн это:</h1>
+					<div class="desi-inf-b">
+
+						<div class="desi-inf_item-b">
+							<dotlottie-player 
+								class="desi-inf__player-small"
+								src="/assets/animation/bez.json" 
+								background="transparent" 
+								speed="1" 
+								loop="false"
+								autoplay="false">
+							</dotlottie-player>
+							<h2>Комфорт</h2>
+						</div>
+
+						<div class="desi-inf_item-b desi-inf__bez">
+							<dotlottie-player 
+								class="desi-inf__player-small"
+								src="/assets/animation/komf.json" 
+								background="transparent" 
+								speed="1" 
+								loop="false"
+								autoplay="false">
+							</dotlottie-player>
+							<h2>Безопасность</h2>
+						</div>
+
+						<div class="desi-inf_item-b">
+							<dotlottie-player 
+								class="desi-inf__player-small"
+								src="/assets/animation/eff.json" 
+								background="transparent" 
+								speed="1" 
+								loop="false"
+								autoplay="false">
+							</dotlottie-player>
+							<h2>Эффективность</h2>
+						</div>
+
+					</div>
+	</div> -->
+			
 		
 	<!-- VIDEO -->
 	<div class="video_con">
 		<h1 class="video-title">О дизайне ресторанов, кафе, баров и кальянных</h1>
-		<h2 class="video-title_2">Дина Дмитриева</h2>
+		<h2 class="video-title_2"><span>Дизайнер</span>Дина Дмитриева</h2>
 		<div class="video-block">
 			<div class="video_b">
 				<video class="video_you"  controls="true" loop="true" muted="true" autoplay="true" poster="">
@@ -298,7 +364,7 @@
 
 
 
-</body>
+
 
 <!-- FOTTER -->
 <?php
@@ -317,5 +383,6 @@
 <?php
 	include('../components/info-banner.php')
 ?>
+	</body>
 
 </html>

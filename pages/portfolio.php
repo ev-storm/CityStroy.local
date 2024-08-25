@@ -124,8 +124,12 @@
 	<div class="dropdown"></div>
 </div>
 
+
 <!-- CART -->
 <h1 id="anchor_title" class="cart-title" >ВЫПОЛНЕННЫЕ ПРОЕКТЫ</h1>
+<div class="not-found">
+	<h1 >Проект не найден</h1>
+</div>
 
 <div class="carts-con">
 
@@ -522,6 +526,38 @@
 		</div>
 	</div>
 
+	<!-- МЯТА PLATINUM Остров мечты-->
+	<div class="carts  classMV">
+		<div class="carts-back swiper-container">
+				<div class="swiper-wrapper">
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/1.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/2.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/3.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/4.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/5.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/miata/6.jpg" alt=""></div>
+				</div>
+		</div>
+		<div class="cart__content">
+				<h3 class="cart__location">МФК Солнце Москвы</h3>
+				<img class="cart__logo" src="/assets/img/cart/logo/11.svg" alt="МЯТА PLATINUM<">
+				<h1 class="cart__title">МЯТА</h1>
+				<h2 class="cart__sub-title">Кальянная 315 м&#178</h2>
+				<div class="cart__link">
+						<a href="/case/miata-ostrov.php">
+								<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+						</a>
+						<button class="cart__youtube">
+								<a href="https://www.youtube.com/watch?v=G0Mfo7zb9qE&embeds_referring_euri=https%3A%2F%2Fcitystroy-msk.tilda.ws%2F&source_ve_path=Mjg2NjY&feature=emb_logo" target="_blank">
+										<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
+										</svg>
+								</a>
+						</button>
+				</div>
+		</div>
+	</div>
+
 	<!--CINNABON & DONUTTO -->
 	<div class="carts classC&D">
 		<div class="carts-back swiper-container">
@@ -572,6 +608,34 @@
 				</div>
 				<h1 class="cart__title">IL PATIO и GEORGES</h1>
 				<h2 class="cart__sub-title">Ресторан 470 м&#178</h2>
+				<div class="cart__link">
+						<a href="/case/il_&_geo.php">
+								<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+						</a>
+						<button class="cart__youtube">
+								<a href="https://www.youtube.com/@CityStroy" target="_blank">
+										<svg class="svgYou-cart" width="30" height="30" viewBox="0 0 111 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M108.64 13.5457C107.361 8.58451 103.607 4.68574 98.8293 3.35769C90.1794 0.948243 55.4777 0.948242 55.4777 0.948242C55.4777 0.948242 20.7765 0.948243 12.1262 3.35769C7.34901 4.68574 3.59478 8.58451 2.31597 13.5457C-0.00414956 22.5289 -0.00415039 41.2828 -0.00415039 41.2828C-0.00415039 41.2828 -0.00414956 60.0368 2.31597 69.0201C3.59478 73.9813 7.34901 77.88 12.1262 79.2078C20.7765 81.6174 55.4777 81.6174 55.4777 81.6174C55.4777 81.6174 90.1794 81.6174 98.8293 79.2078C103.607 77.88 107.361 73.9813 108.64 69.0201C110.96 60.0368 110.96 41.2828 110.96 41.2828C110.96 41.2828 110.951 22.5289 108.64 13.5457ZM44.3645 58.5694L73.1926 41.286L44.3645 24.0023V58.5694Z" fill="white"/>
+										</svg>
+								</a>
+						</button>
+				</div>
+		</div>
+	</div>
+
+	<!--Батони, -->
+	<div class="carts classIL&G">
+		<div class="carts-back swiper-container">
+				<div class="swiper-wrapper">
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/bat/1.jpg" alt=""></div>
+						<div class="swiper-slide carts-slide"><img src="../assets/img/cart/bat/2.jpg" alt=""></div>
+				</div>
+		</div>
+		<div class="cart__content">
+				<h3 class="cart__location">ТРЦ Саларис</h3>
+					<img class="cart__logo" src="/assets/img/cart/logo/26.svg" alt="">
+				<h1 class="cart__title">Батони</h1>
+				<h2 class="cart__sub-title">Фуд-Корт 68 м&#178</h2>
 				<div class="cart__link">
 						<a href="/case/il_&_geo.php">
 								<button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>

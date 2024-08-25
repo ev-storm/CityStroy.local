@@ -91,7 +91,6 @@ a{
 }
 .container{
 	display: flex;
-	/* justify-content: end; */
 	width: 100%;
 	padding: 0 4vw;
 	margin-bottom: -10.5vw;
@@ -113,14 +112,23 @@ a{
 }
 /* --------------------- SEARCH ------------------- */
 
-
-
+.not-found{
+	display: none;
+	width: 100%;
+	vertical-align: middle;
+	text-align: center; 
+}
+.not-found h1{
+	color: #1e9dd8;
+	font-size: 2vw;
+}
 .carts-con{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	padding: 0.5vw;
 	flex-wrap: wrap;
+	min-height: 50vw;
 }
 
 .carts{
