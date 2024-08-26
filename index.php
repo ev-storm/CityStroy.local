@@ -608,16 +608,16 @@
 
 
 	<div class="map">
-	<div class="map_adres">
-		<h3>Адрес:</h3>
-		<a href="https://yandex.ru/maps/-/CDSkA28l" target="_blank"><h3>г. Москва, Береговой проезд, д. 7</h3></a>
-		<h3>Пн-Сб: с 9-00 до 21-00</h3>
-		<h3>Вс - выходной</h3>
-	</div>
-		<!-- <script  type="text/javascript" charset="utf-8" defer src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2d28c45439fe823b6f7eba08d6e39c3af7f77022bbca364b172c1ddd9e17d0c2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script> -->
-	</div>
+		<div class="map_adres">
+			<h3>Адрес:</h3>
+			<a href="https://yandex.ru/maps/-/CDSkA28l" target="_blank"><h3>г. Москва, Береговой проезд, д. 7</h3></a>
+			<h3>Пн-Сб: с 9-00 до 21-00</h3>
+			<h3>Вс - выходной</h3>
+		</div>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8d8693730a0869f08ed03da284ecfd94eae03b6b2f37acf1da6a5f8bb7b8ca7b&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>	</div>
 
 
+	<!-- --------------------------------------- -->
 <div class="commer-banner-con">
 	<div class="commer-banner">
 		<div>
@@ -641,7 +641,6 @@
 <?php
 	include('components/footer.php')
 ?>
-
 <!-- BIG-BANNER -->
 <?php
 	include('components/big-form.php')

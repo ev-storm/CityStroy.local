@@ -139,9 +139,9 @@
 			<h1>Закладываем технические характеристики: свет, звук, вентиляция</h1>
 			<div class="desi-inf">
 
-				<div class="desi-inf_item">
+				<div class="desi-inf_item move-con">
 					<dotlottie-player 
-						class="desi-inf__player-small des-vent"
+						class="desi-inf__player-small des-vent move"
 						src="/assets/animation/vent.json" 
 						background="transparent" 
 						speed="1" 
@@ -155,9 +155,9 @@
 					
 				</div>
 
-				<div class="desi-inf_item desi-inf__bez">
+				<div class="desi-inf_item desi-inf__bez move-con">
 					<dotlottie-player 
-						class="desi-inf__player-small des-sound"
+						class="desi-inf__player-small des-sound move"
 						src="/assets/animation/sound.json" 
 						background="transparent" 
 						speed="1" 
@@ -186,9 +186,9 @@
 					</div>
 				</div>
 
-				<div class="desi-inf_item">
+				<div class="desi-inf_item move-con">
 					<dotlottie-player 
-						class="desi-inf__player-small des-lamp"
+						class="desi-inf__player-small move des-lamp"
 						src="/assets/animation/lamp.json" 
 						background="transparent" 
 						speed="1" 
@@ -364,25 +364,43 @@
 
 
 
+	<!-- --------------------------------------- -->
+	<div class="commer-banner-con">
+		<div class="commer-banner">
+			<div>
+				<img class="commer-close" src="../assets/img/icon/banner-close.svg" alt="">
+				<img class="commer-img" src="/assets/img/icon/comm-img.svg" alt="">
+				<h1 class="commer-h1">Коммерческое предложение</h1>
+			</div>
+			<h2 class="commer-h2">Ответьте на 6 вопросов, чтобы узнать стоимость и срок реализации вашего проекта</h2>
+			<button class="button commer-btn modal__KP">Заполнить коммерческое предложение</button>
+		</div>
+		
+		<div class="commer-text">
+			<h1> + Бесплатно cделаем предварительные планы зонирования, расстановки кухонного оборудования с размерами, планировки посадочных мест*</h1>
+		</div>
+	</div>
+	<div class="commer-banner-mini">
+			<img class="commer-img" src="/assets/img/icon/comm-img.svg" alt="">
+	</div>
 
-
-<!-- FOTTER -->
-<?php
-	include('../components/footer.php')
-?>
-
-<!-- MODAL -->
-<?php
-	include('../components/modal.php')
-?>
-<!-- BIG-BANNER -->
-<?php
-	include('../components/big-form.php')
-?>
-<!-- INFO-BANNER -->
-<?php
-	include('../components/info-banner.php')
-?>
+	<!-- FOTTER -->
+	<?php
+		include('../components/footer.php')
+	?>
+	<!-- BIG-BANNER -->
+	<?php
+		include('../components/big-form.php')
+	?>
+	<!-- INFO-BANNER -->
+	<?php
+		include('../components/info-banner.php')
+	?>
+	<!-- MODAL-BANNER -->
+	<?php
+		include('../components/modal.php')
+	?>
+	
 	</body>
 
 </html>

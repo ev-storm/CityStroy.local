@@ -61,5 +61,5 @@
 
 				<button  id="btn-kit-banner" class="button kit-button-banner">Отправить</button>
 				<!-- <input id="btn" type="submit" class="button" value="Отправить"> -->
-			</form>
+		</form>
 </div>

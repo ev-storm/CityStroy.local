@@ -1,13 +1,11 @@
 <header>
-	<nav class="menu" 
-		onmouseenter="logo__player.play()" 
-		onmouseleave="logo__player.stop()">
-		<div class="menu__logo"
+	<nav class="menu">
+		<div class="menu__logo move-con"
 			alt="logo">
 			<a class="logo__a" href="#anchor_title">
 				<dotlottie-player 
 					id="logo__player"
-					class="logo__player"
+					class="logo__player move"
 					src="/assets/animation/logo-2.json" 
 					background="transparent" 
 					speed="1" 
@@ -18,13 +16,13 @@
 		</div>
 
 		<ul  class="menu__main">
-				<li><a class="menu__main__item" href="../index.php">Главная</a></li>
-				<li><a class="menu__main__item" href="/pages/tehno.php">Технологии</a></li>
-				<li><a class="menu__main__item" href="/pages/design.php">Дизайн</a></li>
-				<li><a class="menu__main__item" href="/pages/project.php">Проектирование</a></li>
-				<li><a class="menu__main__item" href="/pages/SMR.php">Ремонт и СМР</a></li>
-				<li><a class="menu__main__item" href="/pages/portfolio.php">Портфолио</a></li>
-				<li><a class="menu__main__item" href="/pages/contact.php">Контакты</a></li>
+				<li><a class="menu__main__item" href="../главная">Главная</a></li>
+				<li><a class="menu__main__item" href="/проектирование_технологии">Технология</a></li>
+				<li><a class="menu__main__item" href="/дизайн">Дизайн</a></li>
+				<li><a class="menu__main__item" href="/инженерное_проектирование">Проектирование</a></li>
+				<li><a class="menu__main__item" href="/портфолио">Ремонт и СМР</a></li>
+				<li><a class="menu__main__item" href="/СМР">Портфолио</a></li>
+				<li><a class="menu__main__item" href="/контакты">Контакты</a></li>
 
 				<li><button class="button-menu button modal__btn">Связаться с нами</button></li>
 		</ul>

@@ -45,6 +45,29 @@
 				'opacity':'0'
 		});
 	});
+// -----------------------------------------
+
+
+$('.plan-con').hide();
+
+
+
+$('.tehno-plan__img').click(function(){
+	$('.plan-con').fadeIn(0);
+});
+
+$('.plan-close').click(function(){
+	$('.plan-con').fadeOut(0);
+});
+
+
+$('.plan-con').click(function(event){
+	// Если клик произошел на фон, а не на содержимое
+	if (event.target === this) {
+		$('.plan-con').fadeOut(0);
+	}
+});
+
 
 
 
@@ -195,6 +218,28 @@ $('.kit-info-close__banner').click(function(){
 	})
 })
 
+  if (window.location.pathname === '/pages/tehno.php') {
+        // Исполнение скрипта только на странице pages/tehno.php
+        $(window).scroll(function() {
+            var cof = $(window).scrollTop(); // Определение значения cof
+
+            if(cof > 1300){
+                $('.kit-info-banner').css({
+                    'transform': 'translateX(0px)',
+                    'transition': 'all 0.5s ease-out',
+                });
+            }
+
+            $('.kit-info-close__banner').click(function(){
+                $('.kit-info-banner').fadeOut(400);
+                $('.kit-info-banner').css({
+                    'transform': 'translateX(-200%)',
+                    'transition': 'all 0.5s ease-out',
+                });
+            });
+        });
+    }
+
 });
 
 
@@ -219,6 +264,9 @@ $('.kit-info-close__banner').click(function(){
 
 	const checkboxButtonKit = document.getElementById('kit__check-btn');
 	const buttonBannerKit = document.getElementById('btn-kit-banner');
+
+	const checkboxButtonKitTehno = document.getElementById('kit__check-btn-tehno');
+	const buttonBannerKitTehno = document.getElementById('btn-kit-banner-tehno');
 
 
 	// Функция для обновления состояния кнопки
@@ -251,12 +299,19 @@ $('.kit-info-close__banner').click(function(){
 			if (checkboxButtonKit.checked) {
 				buttonBannerKit.classList.remove('disabled'); // Убираем класс 'disabled'
 				buttonBannerKit.disabled = false; // Разблокируем кнопку
-		} else {
-				buttonBannerKit.classList.add('disabled'); // Добавляем класс 'disabled'
-				buttonBannerKit.disabled = true; // Блокируем кнопку
-		}
+			} else {
+					buttonBannerKit.classList.add('disabled'); // Добавляем класс 'disabled'
+					buttonBannerKit.disabled = true; // Блокируем кнопку
+			}
 
-		
+			if (checkboxButtonKitTehno.checked) {
+				buttonBannerKitTehno.classList.remove('disabled'); // Убираем класс 'disabled'
+				buttonBannerKitTehno.disabled = false; // Разблокируем кнопку
+			} else {
+					buttonBannerKitTehno.classList.add('disabled'); // Добавляем класс 'disabled'
+					buttonBannerKitTehno.disabled = true; // Блокируем кнопку
+			}
+
 
 	}
 
@@ -271,6 +326,7 @@ $('.kit-info-close__banner').click(function(){
 		checkboxButton.addEventListener('change', updateButtonState);
 		checkboxButtonBig.addEventListener('change', updateButtonState);
 		checkboxButtonKit.addEventListener('change', updateButtonState);
+		checkboxButtonKitTehno.addEventListener('change', updateButtonState);
 
 
 
@@ -371,4 +427,19 @@ $('.kit-info-close__banner').click(function(){
 			});
 		});
 
-	
+
+
+
+
+
+
+		var planSwiper = new Swiper(".planSwiper", {
+			direction: "vertical",
+			pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+			},
+			mousewheel: {
+					invert: false,
+			},
+	});

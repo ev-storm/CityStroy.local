@@ -470,6 +470,8 @@ $('.button-video-more').click(function(){
 
 		///////////////----CART SEARCH-----/////////////////
 
+		if (window.location.pathname === '/pages/portfolio.php') {
+
 
 	document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.querySelector('.search-input');
@@ -568,6 +570,9 @@ $('.button-video-more').click(function(){
 			});
 	}
 
+
+
+
 	// Инициализация
 	notFound.style.display = 'none';
 	searchInput.addEventListener('input', filterItems);
@@ -577,6 +582,7 @@ $('.button-video-more').click(function(){
 
 	
 });
+};
 
 
 
@@ -586,11 +592,11 @@ $('.button-video-more').click(function(){
 
 document.addEventListener('DOMContentLoaded', function() {
 	// Получаем все элементы с классом desi-inf_item
-	const desiInfItems = document.querySelectorAll('.desi-inf_item');
+	const moveCon = document.querySelectorAll('.move-con');
 
-	desiInfItems.forEach(item => {
+	moveCon.forEach(item => {
 			// Находим анимационный плеер внутри каждого desi-inf_item
-			const player = item.querySelector('.desi-inf__player-small');
+			const player = item.querySelector('.move');
 
 			// Добавляем обработчик события на mouseenter для начала анимации
 			item.addEventListener('mouseenter', () => {

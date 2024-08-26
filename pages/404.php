@@ -20,6 +20,7 @@
 <body>
 		<article>
 			<div class="eror-con">
+				<img src="/assets/img/icon/pepe.png" alt="">
 				<h1>СТРАНИЦА НЕ НАЙДЕНА</h1>
 				<a href="../index.php">
 				<button class="button" >На главную</button>
