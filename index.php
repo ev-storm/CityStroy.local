@@ -77,21 +77,25 @@
 		<article id="anchor_title" class="title__con">
 			<div class="title">
 				<div class="title__text">
+					
 					<div>
 						<h1> ДИЗАЙН ПРОЕКТИРОВАНИЕ РЕМОНТ</h1>
 						<div class="swiper title__slide">
 							<div class="swiper-wrapper title__item">
-								<div class="swiper-slide"><h1>КОММЕРЧЕСКИХ <br>ПОМЕЩЕНИЙ</h1></div>
+
 								<div class="swiper-slide"><h1>РЕСТОРАНОВ</h1></div>
 								<div class="swiper-slide"><h1>МАГАЗИНОВ</h1></div>
 								<div class="swiper-slide"><h1>КАФЕ</h1></div>
+								<div class="swiper-slide"><h1>КОММЕРЧЕСКИХ ...</h1></div>
+								<div class="swiper-slide"><h1>ПОМЕЩЕНИЙ</h1></div>
 							</div>	
 						</div>
 					</div>
 
 					<h2>
 					Строительство ресторанов и кафе
-					в Москве «под ключ»
+					в Москве «под ключ» <br>
+					<p>от дизайна и проектирования до пуска в эксплуатацию</p>
 					</h2>
 				</div>
 
@@ -140,19 +144,19 @@
 		<h1 class="about__title">Помогаем открыть заведение, которое эффективно функционирует и окупается, прорабатывая при строительстве все ключевые аспекты его успеха</h1>
 		<div class="about__item">
 			<h3 class="element-animation">
-				<img src="/assets/img/icon/Subtract-1.png" alt="">
+				<img src="/assets/icon/6.svg" alt="">
 				Укладывамся в срок и не выходим за бюджет сметы во время ремонта и СМР	
 			</h3>
 			<h3 class="element-animation">
-				<img src="/assets/img/icon/Subtract.png" alt="">
+				<img src="/assets/icon/7.svg" alt="">
 				Сокращаем бюджет строительства за счет оптимальных инженерных решений
 			</h3>
 			<h3 class="element-animation">
-				<img src="/assets/img/icon/Subtract-2.png" alt="">
+				<img src="/assets/icon/15.svg" alt="">
 				Закладываем основу окупаемости через технологический проект кухни
 			</h3>
 			<h3 class="element-animation">
-				<img src="/assets/img/icon/Subtract.svg" alt="">
+				<img src="/assets/icon/18.svg" alt="">
 				Работаем на увеличение прибыли, создавая атмосферный дизайн интерьера
 			</h3>
 		</div>

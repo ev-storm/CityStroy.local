@@ -52,8 +52,12 @@ $('.plan-con').hide();
 
 
 
+
 $('.tehno-plan__img').click(function(){
 	$('.plan-con').fadeIn(0);
+	$('.plan-con').css({
+		'display':'flex'
+	});
 });
 
 $('.plan-close').click(function(){

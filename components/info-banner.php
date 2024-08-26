@@ -43,7 +43,7 @@
 		<img  class="kit-info__banner-img" src="../assets/img/icon/kit.svg" alt="">
 
 		<h2>Разрабатываем предварительные примерные планы зонирования, расстановки кухонного оборудования с размерами, планировки посадочных мест</h2>
-		<a href="#"><h2>Подробнее...</h2></a>
+		<a href="../технология"><h2>Подробнее...</h2></a>
 		<form class="kit-form" action="#" method="POST" enctype="multipart/form-data">
 
 					<input class="modal__input kit-input__name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">

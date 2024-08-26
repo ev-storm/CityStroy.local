@@ -544,6 +544,15 @@
 		border-top-left-radius: 0.3vw;
 		border-bottom-left-radius: 0.3vw;
 	}
+	.button-sh__banner{
+		border-color: #ffffff;
+		width: 100%;
+		margin: 2vw 0;
+	}
+	.button-sh__banner:hover{
+		border-color: #ffffff;
+		background-color: #ffffff;
+	}
 	.sh__banner {
 		width: 70%;
 		height: fit-content;

@@ -32,13 +32,33 @@
 				<div class="title">
 					<div class="title__text">
 						<div>
+							<h1> ТЕХНОЛОГИЧЕСКОЕ ПРОЕКТИРОВАНИЕ</h1>
+							<div class="swiper title__slide">
+								<div class="swiper-wrapper title__item">
+
+								<div class="swiper-slide"><h1>РЕСТОРАНОВ</h1></div>
+								<div class="swiper-slide"><h1>МАГАЗИНОВ</h1></div>
+								<div class="swiper-slide"><h1>КАФЕ</h1></div>
+								<div class="swiper-slide"><h1>КОММЕРЧЕСКИХ ...</h1></div>
+								<div class="swiper-slide"><h1>ПОМЕЩЕНИЙ</h1></div>
+							</div>	
+						</div>
+					</div>
+
+					<h2>
+							кухни и зала для ресторанов за 8-10 дней в Москве «под ключ» <br>
+							<p>перегородки и стены, спецификация и расстановка оборудования, планировка посадочных мест,<br> планы привязки инженерных коммуникаций</p>
+						</h2>
+				</div>
+						<!-- <div>
 							<h1>ТЕХНОЛОГИЧЕСКОЕ ПРОЕКТИРОВАНИЕ</h1>
 						</div>
-
 						<h2>
-						кухни и зала для ресторанов за 8-10 дней в Москве
+							кухни и зала для ресторанов за 8-10 дней в Москве «под ключ» <br>
+							<p>перегородки и стены, спецификация и расстановка оборудования, планировка посадочных мест,<br> планы привязки инженерных коммуникаций</p>
 						</h2>
-					</div>
+
+					</div> -->
 
 					<div class="title__button">
 						<button class="button modal__btn">
@@ -84,16 +104,16 @@
 
 			<div class="about__item teh">
 				<h3>
-					<img src="/assets/img/icon/teh_yes.svg" alt="">
+					<img src="/assets/icon/16.svg" alt="">
 					Повышения качества кухни и его удержания на высоком уровне
 				</h3>
 				<h3>
-					<img src="/assets/img/icon/teh_3.svg" alt="">
+					<img src="/assets/icon/3.svg" alt="">
 					Увеличения эффективности работы персонала и проходимости заведения
 				</h3>
 				
 				<h3 >
-					<img src="/assets/img/icon/teh_5.svg" alt="">
+					<img src="/assets/icon/2.svg" alt="">
 						Уменьшения ежемесячных операционных расходов
 				</h3>
 								<!-- <h3 >
@@ -102,15 +122,15 @@
 				</h3>
 				<h3> -->
 				<h3>
-					<img src="/assets/img/icon/teh_6.svg" alt="">
+					<img src="/assets/icon/19.svg" alt="">
 					Нестандартное оборудование
 				</h3>
 				<h3>
-					<img src="/assets/img/icon/teh_4.svg" alt="">
+					<img src="/assets/icon/17.svg" alt="">
 					Сокращаете количество персонала
 				</h3>
 				<h3 >
-					<img src="/assets/img/icon/teh_2.svg" alt="">
+					<img src="/assets/icon/8.svg" alt="">
 					Увеличиваете площадь под посадочные места
 				</h3>
 			</div>
@@ -153,7 +173,7 @@
 				
 			</div>
 			<p class="blue">Ресторан работает лучше и быстрее окупается!</p></h3>
-			<button class="button-about button modal__btn">ОБСУДИТЬ ПРОЕКТИРОВАНИЕ</button>
+			<button class="button-about button modal__KP">ОБСУДИТЬ ПРОЕКТИРОВАНИЕ</button>
 		</article>
 
 	

@@ -5,9 +5,9 @@ RewriteEngine On
 
 
 RewriteRule ^главная$ /index.php [L]
-RewriteRule ^проектирование_технологии$ /pages/tehno.php [L]
+RewriteRule ^технология$ /pages/tehno.php [L]
 RewriteRule ^дизайн$ /pages/design.php [L]
-RewriteRule ^инженерное_проектирование$ /pages/project.php [L]
+RewriteRule ^инженерия$ /pages/project.php [L]
 RewriteRule ^портфолио$ /pages/portfolio.php [L]
 RewriteRule ^СМР$ /pages/SMR.php [L]
 RewriteRule ^контакты$ /pages/contact.php [L]

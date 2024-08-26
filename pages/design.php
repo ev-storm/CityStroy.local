@@ -31,7 +31,30 @@
 		<!-- SCREEN_1-TITLE -->
 		<article id="anchor_title" class="title__con">
 			<div class="title">
+			<div class="title__text">
+					<div>
+						<h1> ДИЗАЙН ПРОЕКТИРОВАНИЕ </h1>
+						<div class="swiper title__slide">
+							<div class="swiper-wrapper title__item">
+							
+								<div class="swiper-slide"><h1>РЕСТОРАНОВ</h1></div>
+								<div class="swiper-slide"><h1>МАГАЗИНОВ</h1></div>
+								<div class="swiper-slide"><h1>КАФЕ</h1></div>
+								<div class="swiper-slide"><h1>КОММЕРЧЕСКИХ ...</h1></div>
+								<div class="swiper-slide"><h1>ПОМЕЩЕНИЙ</h1></div>
+							</div>	
+						</div>
+					</div>
+
+					<h2>
+					Строительство ресторанов и кафе
+					в Москве «под ключ» <br>
+					<p>от дизайн-концепции до 3D визуализации и строительных чертежей</p>
+					</h2>
+				</div>
+<!-- 				
 				<div class="title__text">
+					
 					<div>
 						<h1> ДИЗАЙН РЕСТОРАНОВ </h1>
 					</div>
@@ -39,7 +62,7 @@
 					<h2>
 						Под ключ: от дизайн-концепции до 3D визуализации и строительных чертежей
 					</h2>
-				</div>
+				</div> -->
 
 				<div class="title__button">
 					<button class="button modal__btn">
@@ -85,19 +108,19 @@
 		<h1 class="about__title">Создаем атмосферный интерьер, который работает на увеличение прибыли:</h1>
 		<div class="about__item desi-about__item">
 			<h3>
-				<img class="des-icon" src="/assets/img/icon/des_2.svg" alt="">
+				<img class="des-icon" src="/assets/icon/12.svg" alt="">
 				Привлекает больше новых посетителей
 			</h3>
 			<h3>
-				<img class="des-icon" src="/assets/img/icon/des_3.svg" alt="">
+				<img class="des-icon" src="/assets/icon/4.svg" alt="">
 				Процесс создания дизайна ресторана
 			</h3>
 			<h3 >
-				<img class="des-icon" src="/assets/img/icon/des_1.svg" alt="">
+				<img class="des-icon" src="/assets/icon/5.svg" alt="">
 				Повышает средний чек, привлекая более платежеспособную аудиторию
 			</h3>
 			<h3 >
-				<img class="des-icon" src="/assets/img/icon/des_4.svg" alt="">
+				<img class="des-icon" src="/assets/icon/11.svg" alt="">
 				Увеличивает эффективность сотрудников
 			</h3>
 		</div>
@@ -127,7 +150,7 @@
 				<h3>Предлагаем варианты планировок и визуализаций всех частей ресторана</h3>
 			</div>
 		</div>
-		<button class="button-about button modal__btn">ОБСУДИТЬ ПРОЕКТИРОВАНИЕ</button>
+		<button class="button-about button modal__KP">ОБСУДИТЬ ПРОЕКТИРОВАНИЕ</button>
 	</article>
 
 	
@@ -171,9 +194,9 @@
 					
 				</div>
 
-				<div class="desi-inf_item">
+				<div class="desi-inf_item move-con">
 					<dotlottie-player 
-						class="desi-inf__player-small des-docs"
+						class="desi-inf__player-small des-docs move"
 						src="/assets/animation/docs.json" 
 						background="transparent" 
 						speed="1" 

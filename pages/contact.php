@@ -314,10 +314,10 @@
 				<h3>Пн-Сб: с 9-00 до 21-00</h3>
 				<h3>Вс - выходной</h3>
 			</div> -->
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2d28c45439fe823b6f7eba08d6e39c3af7f77022bbca364b172c1ddd9e17d0c2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
-	</div>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8d8693730a0869f08ed03da284ecfd94eae03b6b2f37acf1da6a5f8bb7b8ca7b&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>	</div>
+		</div>
 
-</body>
+
 
 <!-- FOTTER -->
 <?php
@@ -333,8 +333,8 @@
 	include('../components/big-form.php')
 ?>
 <!-- INFO-BANNER -->
-<?php
-	include('../components/info-banner.php')
-?>
-
+<!-- <?php
+	//include('../components/info-banner.php')
+?> -->
+</body>
 </html>

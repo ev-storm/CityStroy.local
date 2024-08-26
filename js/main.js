@@ -470,10 +470,10 @@ $('.button-video-more').click(function(){
 
 		///////////////----CART SEARCH-----/////////////////
 
-		if (window.location.pathname === '/pages/portfolio.php') {
+	// if (window.location.pathname === '/pages/portfolio.php') {
 
 
-	document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.querySelector('.search-input');
     const clearBtn = document.querySelector('.clear-btn');
     const dropdown = document.querySelector('.dropdown');
@@ -526,11 +526,11 @@ $('.button-video-more').click(function(){
         }
     });
 
-    document.addEventListener('click', function(event) {
-        if (!event.target.closest('.container')) {
-            dropdown.style.display = 'none';
-        }
-    });
+			document.addEventListener('click', function(event) {
+			    if (!event.target.closest('.container-input')) {
+			        dropdown.style.display = 'none';
+			    }
+			});
 
     clearBtn.addEventListener('click', function() {
         searchInput.value = '';
@@ -573,16 +573,16 @@ $('.button-video-more').click(function(){
 
 
 
-	// Инициализация
-	notFound.style.display = 'none';
-	searchInput.addEventListener('input', filterItems);
-	clearBtn.addEventListener('click', clearSearch);
-	observeDisplayChanges();
-	filterItems(); // Изначально запустить фильтрацию
+		// Инициализация
+		notFound.style.display = 'none';
+		searchInput.addEventListener('input', filterItems);
+		clearBtn.addEventListener('click', clearSearch);
+		observeDisplayChanges();
+		filterItems(); // Изначально запустить фильтрацию
 
 	
-});
-};
+	});
+// };
 
 
 

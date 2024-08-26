@@ -92,6 +92,7 @@
     <div class="sh-mob__banner" id="banner">
         <h1 id="banner-text"></h1>
         <h2 id="banner-title"></h2>
+				<button class="button modal__KP" >Рассчитать стоимость проектирования</button>
     </div>
 
 </div>
@@ -196,6 +197,7 @@
 				</div>
 				<h1 id="sh__banner-text"></h1>
         <h2 id="sh__banner-title"></h2>
+				<button class="button button-sh__banner modal__KP" >Рассчитать стоимость проектирования</button>
     </div>
 
 </div>

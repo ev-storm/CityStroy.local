@@ -113,7 +113,7 @@
 	</div>
 </div> 
 
-<div class="container">
+<div class="container-input">
 	<div class="container-in">
 		<input type="text" class="search-input input-carts" placeholder="Введите текст для поиска...">
 	
@@ -153,7 +153,7 @@
         <h2 class="cart__sub-title">Бургерная 180 м²</h2>
         <div class="cart__link">
             <a href="/case/bsb.php">
-                <button class="cart__button button">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
+                <button class="cart__button button ">ПОДРОБНЕЕ О ПРОЕКТЕ</button>
             </a>
             <button class="cart__youtube">
                 <a href="https://www.youtube.com/watch?v=G0Mfo7zb9qE&embeds_referring_euri=https%3A%2F%2Fcitystroy-msk.tilda.ws%2F&source_ve_path=Mjg2NjY&feature=emb_logo" target="_blank">
@@ -657,7 +657,7 @@
 
 
 
-</body>
+
 
 	<!-- --------------------------------------- -->
 	<div class="commer-banner-con">
@@ -688,13 +688,13 @@
 		include('../components/big-form.php')
 	?>
 	<!-- INFO-BANNER -->
-	<?php
-		include('../components/info-banner.php')
-	?>
+	<!-- <?php
+		//include('../components/info-banner.php')
+	?> -->
 	<!-- MODAL-BANNER -->
 	<?php
 		include('../components/modal.php')
 	?>
-
+</body>
 
 </html>

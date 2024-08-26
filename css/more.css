@@ -263,7 +263,7 @@ width: 25%;
 
 
 .plan-con{
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
@@ -306,10 +306,6 @@ width: 25%;
 
 
 
-.plan-pag .swiper-pagination-bullet-active {
-	background-color: var(--main-blue) !important;
-}
-
 
 
 .tehno-plan__img:hover{
@@ -344,38 +340,68 @@ PROJECT */
 
 .step_con{
 	display: flex;
+	flex-direction: column;
 	width: 100%;
 	background-color: #161616;
 	padding: 5vw;
-	justify-content: space-between;
-	align-items: start;
+	align-items: center;
 }
 .step_right{
 	align-self: center;
 }
 .step_right{
-	height: 3vw;
+	height: 1vw;
+	margin: 1vw;
+}
+.step{
+	position: sticky;
+	top: 15%;
 }
 
 .step{
-	width: 22%;
+	width: 80%;
+	height: 7vw;
+	border-style: solid;
+	background-color: #00547c;
+	color: #00547c;
+	border-width: 0.1vw;
+	border-radius: 0.5vw;
+	padding: 1vw 3vw;
 	transition: var(--duration2);
+	box-shadow: 0.5vw 0.5vw 2vw #000000;
+}
+.step:hover{
+	background-color: #1e9dd8;
+	border-color: #1e9dd8;
+	transition: all 0.2s ease-in;
 }
 /* .step:hover{
 	position: relative;
 	scale: 1.2;
 	transition: var(--duration2);
 } */
+.step:hover  h1  span{
+	color: #ffffff;
+	transition: all 0.2s  ease-in;
+	
+}
+.step:hover  h1 {
+	color: #ffffff;
+	transition: all 0.4s  ease-in;
+	text-shadow: 0vw 0.3vw 1vw #000000;
+}
+
 .step > h1{
 	color: #ffffff;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 1.1vw;
 }
 .step > h1 > span{
-	font-weight: 200;
+	font-weight: 400;
 	margin: 0;
-	color: #4ac6ff;
+	color: #ffffff;
 	font-size: 1.1vw;
+	cursor: pointer;
 }
 .warn_con{
 	display: flex;
@@ -386,22 +412,23 @@ PROJECT */
 	display: flex;
 	background-color: var(--main-blue);
 	border-radius: 0.5vw;
-	width: 80%;
+	width: 70%;
 	margin: 0 0 3vw;
-	padding: 0.5vw 2vw;
+	padding: 1vw 3vw;
 	transition: var(--duration2);
 }
-.warn:hover{
+/* .warn:hover{
 	background-color: var(--main-blue); 
 	transition: var(--duration2);
-}
+} */
 .warn > img{
 	width: 0.7vw;
 	margin-right: 1vw;
 }
 .warn > h1{
 	color: #161616;
-	font-weight: 300;
+	font-weight: 400;
+	font-size: 0.9vw;
 }
 
 
@@ -662,7 +689,7 @@ PROJECT */
 	display: flex;
 	justify-content: space-around;
 	padding: 7vw 1vw;
-	background-image: url(../assets/img/portfolio/4.jpg);
+	background-image: url(../assets/img/portfolio/9.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -960,12 +987,15 @@ DESIGN */
 .animation {
 	width: 5vw !important;
 }
-.des-icon{
-	width: 2.5vw !important;
-}
 
 .desi-about__item{
 	justify-content: space-around;
+}
+.proj_about__item h3 img{
+	width: 3.5vw;
+}
+.proj_about__item h3{
+	width: 30%;
 }
 
 .desi-sh_con{

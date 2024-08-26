@@ -309,6 +309,7 @@
 	margin-bottom: 1vw;
 	opacity: 0.5;
 	transition: all 0.5s ease;
+	cursor: pointer;
 }
 .kit-info-banner a h2:hover{
 	transition: all 0.5s ease;

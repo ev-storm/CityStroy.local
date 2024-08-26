@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="ru">
 
 <title>СМР</title>
@@ -30,7 +30,25 @@
 		<!-- SCREEN_1-TITLE -->
 		<article id="anchor_title" class="title__con">
 			<div class="title">
-				<div class="title__text">
+				<div class="title__text title__srm">
+					<div>
+						<h1> СТРОИТЕЛЬНО-МОНТАЖНЫЕ РАБОТЫ</h1>
+						<div class="swiper title__slide">
+							<div class="swiper-wrapper title__item">
+							
+								<div class="swiper-slide"><h1>РЕСТОРАНОВ</h1></div>
+								<div class="swiper-slide"><h1>МАГАЗИНОВ</h1></div>
+								<div class="swiper-slide"><h1>КАФЕ</h1></div>
+								<div class="swiper-slide"><h1>КОММЕРЧЕСКИХ ...</h1></div>
+								<div class="swiper-slide"><h1>ПОМЕЩЕНИЙ</h1></div>
+							</div>	
+							</div>
+						</div>
+						<h2>Строительство ресторанов и кафе в Москве «под ключ» <br>
+							<!-- <p>Архитектурные решения / Отопление, вентиляция и кондиционирование Водоснабжение и канализация / <br> Структурированные кабельные системы /Электроснабжение и электроосвещение / Конструкции металлические</p> -->
+						</h2>
+					</div>
+<!-- 					
 					<div>
 						<h1 class="title_smr"> СТРОИТЕЛЬНО-МОНТАЖНЫЕ <br> И ОТДЕЛОЧНЫЕ РАБОТЫ РЕСТОРАНОВ</h1>
 					</div>
@@ -39,8 +57,8 @@
 						Строим коммерческие помещения с нуля до пуска в 
 						эксплуатацию и постгарантийного обслуживания
 					</h2>
-				</div>
-
+				</div> -->
+				
 				<div class="title__button">
 					<button class="button modal__btn">
 						СВЯЗАТЬСЯ С НАМИ
@@ -82,52 +100,56 @@
 
 	<!-- SCREEN_2 ABOUT-->
 	<article id="smr_about" class="about">
-		<h1 class="about__title">За счёт строительного опыта и технических компетенций:</h1>
-		<div class="about__item">
+		<h1 class="about__title">Укладываемся в срок арендных каникул и не выходим за бюджет сметы за счет того, что:</h1>
+		<div class="about__item about__smr">
 			<h3>
-				<img src="/assets/img/icon/Subtract-1.png" alt="">
-				Cокращаем сроки сдачи объекта
+				<img src="/assets/icon/2.svg" alt="">
+				Cчитаем в смете все и сразу, не занижая количество и стоимость работ
 			</h3>
 			<h3>
-				<img src="/assets/img/icon/Subtract.png" alt="">
-				Оптимизируем бюджет без потери качества
+				<img src="/assets/icon/9.svg" alt="">
+				Специализируемся на строительстве в ТЦ и БЦ
 			</h3>
 			<h3 >
-				<img src="/assets/img/icon/Subtract-2.png" alt="">
-				Уберегаем заказчика от переплат и ошибок
+				<img src="/assets/icon/1.svg" alt="">	
+				Жестко контролируем движение по графику производства работ
+			</h3>
+			<h3 >
+				<img src="/assets/icon/10.svg" alt="">
+				Обеспечиваем выполнение работ в 2-3 смены
+			</h3>
+			<h3 >
+				<img src="/assets/icon/3.svg" alt="">
+				Координируем работу смежных организаций
 			</h3>
 		</div>
 		<div class="about__column">
 			<div>
 				<div>
-					<img src="/assets/img/icon/Frame 34.svg" alt="">
-					<h1 class="about__column_2">Генеральный подрядчик</h1>
+					<h1 class="about__column_2">Создаем проект, смету и сроки СМР</h1>
 				</div>
-				<h3>На всех объектах установлено круглосуточное видеонаблюдение с доступом для Заказчика на удобное устройство</h3>
+				<h3>Мы разрабатываем проекты в множество циклов, в каждом из которых происходят значительные изменения от первоначальной версии. Такой подход позволяет создать максимально-точный и грамотный проект, по которому не будет изменений в смете и сроках при строительстве.</h3>
 			</div>
 			<div>
 				<div>
-					<img src="/assets/img/icon/Frame 34.svg" alt="">
 					<h1>Глубокое погружение в каждый проект</h1>
 				</div>
 				<h3>В целях экономии средств Заказчика уделяем внимание аспектам, выходящих за рамки нашей ответственности и даем рекомендации по исправлению/избеганию ошибок смежников</h3>
 			</div>
 			<div>
 				<div>
-					<img src="/assets/img/icon/Frame 34.svg" alt="">
-					<h1>Ежедневные фото и видео отчёты</h1>
+					<h1>Рекомендации по исправлению/избеганию ошибок смежников</h1>
 				</div>
 				<h3>Выполняем весь спектр задач в рамках нашей основной компетенции, координируем субподрядные и смежные компании, работаем на один общий результат</h3>
 			</div>
 			<div>
 				<div>
-					<img src="/assets/img/icon/Frame 34.svg" alt="">
 					<h1>Ежедневные фото и видео отчёты</h1>
 				</div>
-				<h3>Каждый день от руководителя стройки приходит видео отчет о проделанной работе за предыдущий день</h3>
+				<h3>На всех объектах установлено круглосуточное видеонаблюдение с доступом для Заказчика на удобное устройство. Каждый день от руководителя стройки приходит видео отчет о проделанной работе за предыдущий день</h3>
 			</div>
 		</div>
-		<button class="button-about button modal__btn">ОБСУДИТЬ ПРОЕКТИРОВАНИЕ</button>
+		<button class="button-about button modal__KP">ОБСУДИТЬ ПРОЕКТИРОВАНИЕ</button>
 	</article>
 
 	<!-- SCREEN_3 ABOUT-->
@@ -298,24 +320,41 @@
 
 
 
+
+<div class="commer-banner-con">
+		<div class="commer-banner">
+			<div>
+				<img class="commer-close" src="../assets/img/icon/banner-close.svg" alt="">
+				<img class="commer-img" src="/assets/img/icon/comm-img.svg" alt="">
+				<h1 class="commer-h1">Коммерческое предложение</h1>
+			</div>
+			<h2 class="commer-h2">Ответьте на 6 вопросов, чтобы узнать стоимость и срок реализации вашего проекта</h2>
+			<button class="button commer-btn modal__KP">Заполнить коммерческое предложение</button>
+		</div>
+		
+		<div class="commer-text">
+			<h1> + Бесплатно cделаем предварительные планы зонирования, расстановки кухонного оборудования с размерами, планировки посадочных мест*</h1>
+		</div>
+	</div>
+	<div class="commer-banner-mini">
+			<img class="commer-img" src="/assets/img/icon/comm-img.svg" alt="">
+	</div>
+
+	<!-- FOTTER -->
+	<?php
+		include('../components/footer.php')
+	?>
+	<!-- BIG-BANNER -->
+	<?php
+		include('../components/big-form.php')
+	?>
+	<!-- INFO-BANNER -->
+	<?php
+		include('../components/info-banner.php')
+	?>
+	<!-- MODAL-BANNER -->
+	<?php
+		include('../components/modal.php')
+	?>
 </body>
-
-<!-- FOTTER -->
-<?php
-	include('../components/footer.php')
-?>
-
-<!-- MODAL -->
-<?php
-	include('../components/modal.php')
-?>
-<!-- BIG-BANNER -->
-<?php
-	include('../components/big-form.php')
-?>
-<!-- INFO-BANNER -->
-<?php
-	include('../components/info-banner.php')
-?>
-
 </html>

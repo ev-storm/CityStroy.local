@@ -17,11 +17,11 @@
 
 		<ul  class="menu__main">
 				<li><a class="menu__main__item" href="../главная">Главная</a></li>
-				<li><a class="menu__main__item" href="/проектирование_технологии">Технология</a></li>
+				<li><a class="menu__main__item" href="/технология">Технология</a></li>
 				<li><a class="menu__main__item" href="/дизайн">Дизайн</a></li>
-				<li><a class="menu__main__item" href="/инженерное_проектирование">Проектирование</a></li>
-				<li><a class="menu__main__item" href="/портфолио">Ремонт и СМР</a></li>
-				<li><a class="menu__main__item" href="/СМР">Портфолио</a></li>
+				<li><a class="menu__main__item" href="/инженерия">Инженерия</a></li>
+				<li><a class="menu__main__item" href="/СМР">Ремонт и СМР</a></li>
+				<li><a class="menu__main__item" href="/портфолио">Портфолио</a></li>
 				<li><a class="menu__main__item" href="/контакты">Контакты</a></li>
 
 				<li><button class="button-menu button modal__btn">Связаться с нами</button></li>
