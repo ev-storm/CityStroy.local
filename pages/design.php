@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+
+
 <title>Дизайн</title>
 <!-- HEAD -->
 <?php
@@ -14,6 +16,7 @@
 <?php
 	include('../components/header.php')
 ?>
+
 
 <style>
 	.menu__main > li:nth-child(3) > a {
@@ -385,26 +388,24 @@
 		</div>
 	</div>
 
-
-
 	<!-- --------------------------------------- -->
 	<div class="commer-banner-con">
-		<div class="commer-banner">
-			<div>
-				<img class="commer-close" src="../assets/img/icon/banner-close.svg" alt="">
-				<img class="commer-img" src="/assets/img/icon/comm-img.svg" alt="">
-				<h1 class="commer-h1">Коммерческое предложение</h1>
+			<div class="commer-banner">
+				<div>
+					<img class="commer-close" src="../assets/img/icon/banner-close.svg" alt="">
+					<img class="commer-img" src="/assets/img/icon/comm-img.svg" alt="">
+					<h1 class="commer-h1">Коммерческое предложение</h1>
+				</div>
+				<h2 class="commer-h2">Ответьте на 6 вопросов, чтобы узнать стоимость и срок реализации вашего проекта</h2>
+				<button class="button commer-btn modal__KP">Заполнить коммерческое предложение</button>
 			</div>
-			<h2 class="commer-h2">Ответьте на 6 вопросов, чтобы узнать стоимость и срок реализации вашего проекта</h2>
-			<button class="button commer-btn modal__KP">Заполнить коммерческое предложение</button>
+			
+			<div class="commer-text">
+				<h1> + Бесплатно cделаем предварительные планы зонирования, расстановки кухонного оборудования с размерами, планировки посадочных мест*</h1>
+			</div>
 		</div>
-		
-		<div class="commer-text">
-			<h1> + Бесплатно cделаем предварительные планы зонирования, расстановки кухонного оборудования с размерами, планировки посадочных мест*</h1>
-		</div>
-	</div>
-	<div class="commer-banner-mini">
-			<img class="commer-img" src="/assets/img/icon/comm-img.svg" alt="">
+		<div class="commer-banner-mini">
+				<img class="commer-img" src="/assets/img/icon/comm-img.svg" alt="">
 	</div>
 
 	<!-- FOTTER -->
@@ -423,7 +424,28 @@
 	<?php
 		include('../components/modal.php')
 	?>
-	
-	</body>
+<!-- 
+<script>
+	var swiper = new Swiper(".btnSwiper", {
+				pagination: {
+					el: ".big-pagination",
+					type: "progressbar",
+				},
+				navigation: {
+					nextEl: ".big-next",
+					prevEl: ".big-prev",
+				},
 
+					allowTouchMove: false,
+
+					simulateTouch: false,
+					mousewheel: {
+						invert: false, 
+				},
+			});
+</script>
+ -->
+
+
+</body>
 </html>

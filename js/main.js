@@ -817,8 +817,40 @@ document.querySelectorAll('.info-cart').forEach(cart => {
 // });
 
 
+			
+var swiper = new Swiper(".btnSwiper", {
+	pagination: {
+		el: ".big-pagination",
+		type: "progressbar",
+	},
+	navigation: {
+		nextEl: ".big-next",
+		prevEl: ".big-prev",
+	},
+
+		allowTouchMove: false,
+
+		simulateTouch: false,
+		mousewheel: {
+			invert: false, // Если вам нужно изменить направление скроллинга, используйте `true`
+	},
+});
 
 
+document.addEventListener('DOMContentLoaded', function() {
+	const radioInputs = document.querySelectorAll('.over-res');
+	const textInput = document.querySelector('.over-res-in');
+
+	radioInputs.forEach(radio => {
+		radio.addEventListener('change', function() {
+			if (document.querySelector('.over-res').checked) {
+				textInput.classList.add('show');
+			} else {
+				textInput.classList.remove('show');
+			}
+		});
+	});
+});
 
 
 //////////////////---------COPY------//////////////////
@@ -834,7 +866,7 @@ $('.recvis_copy').click(function(){
 		setTimeout(() => {
 		$(this).children('h3').css({
 			'opacity': '0',
-			'transform':'translateY(-3vw)',
+			'transform':'translateY(-1.5vw)',
 			'transition': 'var(--duration2)',
 		})
 	}, 1000);

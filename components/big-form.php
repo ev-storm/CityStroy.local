@@ -238,9 +238,9 @@
 			
 
 		</div>
-		<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-pagination"></div>
+		<div class="swiper-button-next big-next"></div>
+			<div class="swiper-button-prev big-prev"></div>
+			<div class="swiper-pagination big-pagination"></div>
 	</div>
 
 

@@ -811,7 +811,7 @@ PROJECT */
 	margin: 0;
 	opacity: 0;
 	position: relative;
-	transform:translateY(-3vw);
+	transform:translateY(-1.5vw);
 	transition: var(--duration2);
 }
 .recvis > .recvis_copy > svg > path{
