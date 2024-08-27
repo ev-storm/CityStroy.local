@@ -19,6 +19,7 @@
 
 		<script defer src="../js/main.js"></script>
 		<script defer src="../js/modal.js"></script>
+		<script defer src="../js/shema.js"></script>
 		<script src="../libs/jquery-3.7.1.min.js"></script>
 		<script defer src="../libs/inputmask.min.js"></script>
 		<script defer src="../libs/just-validate3.3.3.min.js"></script>

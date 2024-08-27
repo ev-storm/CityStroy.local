@@ -125,9 +125,12 @@ $('.close-form-ban').click(function(){
 // -----------------------------------------
 
 
+
 $(window).scroll(function() {
 
 let cof = $(this).scrollTop();
+
+
 
 if(cof < 1000){
 	$('.info-banner').css({
@@ -179,6 +182,9 @@ if(cof > 1900 && cof < 1930){
 	})
 }
 
+// Проверяем, что текущая страница не /технология (в закодированном виде)
+
+
 
 
 
@@ -207,7 +213,6 @@ $('.commer-btn').click(function(){
 
 
 if(cof>3300){
-
 	$('.kit-info-banner').css({
 		'transform': 'translateX(0px)',
 		'transition': 'all 0.5s ease-out',
@@ -222,27 +227,11 @@ $('.kit-info-close__banner').click(function(){
 	})
 })
 
-  if (window.location.pathname === '/pages/tehno.php') {
-        // Исполнение скрипта только на странице pages/tehno.php
-        $(window).scroll(function() {
-            var cof = $(window).scrollTop(); // Определение значения cof
+ 
 
-            if(cof > 1300){
-                $('.kit-info-banner').css({
-                    'transform': 'translateX(0px)',
-                    'transition': 'all 0.5s ease-out',
-                });
-            }
 
-            $('.kit-info-close__banner').click(function(){
-                $('.kit-info-banner').fadeOut(400);
-                $('.kit-info-banner').css({
-                    'transform': 'translateX(-200%)',
-                    'transition': 'all 0.5s ease-out',
-                });
-            });
-        });
-    }
+
+
 
 });
 
@@ -321,8 +310,8 @@ $('.kit-info-close__banner').click(function(){
 
 
 
-	// Устанавливаем начальное состояние кнопки
-	updateButtonState();
+		// Устанавливаем начальное состояние кнопки
+		updateButtonState();
 
 
 		// Добавляем обработчик события на чекбокс для изменения состояния кнопки

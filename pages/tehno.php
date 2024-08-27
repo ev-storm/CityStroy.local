@@ -123,7 +123,7 @@
 				<h3> -->
 				<h3>
 					<img src="/assets/icon/19.svg" alt="">
-					Нестандартное оборудование
+					<a href="#tehno-plan-con">Нестандартное оборудование</a>
 				</h3>
 				<h3>
 					<img src="/assets/icon/17.svg" alt="">
@@ -261,7 +261,7 @@
 			</div>
 		</article>
 
-		<div class="tehno-plan-con">
+		<div class="tehno-plan-con" id="tehno-plan-con">
 			<div class="tehno-plan">
 				<div class="tehno-plan__text">
 					<h1>Бесплатно разработаем</h1>
@@ -336,7 +336,7 @@
 
 
 	<!-- --------------------------------------- -->
-	<div class="commer-banner-con">
+	<div class="commer-banner-con" id="commer-banner-con">
 				<div class="commer-banner">
 					<div>
 						<img class="commer-close" src="../assets/img/icon/banner-close.svg" alt="">

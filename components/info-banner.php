@@ -43,7 +43,7 @@
 		<img  class="kit-info__banner-img" src="../assets/img/icon/kit.svg" alt="">
 
 		<h2>Разрабатываем предварительные примерные планы зонирования, расстановки кухонного оборудования с размерами, планировки посадочных мест</h2>
-		<a href="../технология"><h2>Подробнее...</h2></a>
+		<a href="/технология#tehno-plan-con"><h2>Подробнее...</h2></a>
 		<form class="kit-form" action="#" method="POST" enctype="multipart/form-data">
 
 					<input class="modal__input kit-input__name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
@@ -63,3 +63,32 @@
 				<!-- <input id="btn" type="submit" class="button" value="Отправить"> -->
 		</form>
 </div>
+
+
+<!-- <div class="analis-info-banner">
+		<img  class="analis-info-close__banner" src="../assets/img/icon/banner-close.svg" alt="">
+		<h1>БЕСПЛАТНО </h1>
+		<h3>Концепция кухни
+		для ресторана от 300м²</h3>
+		<img  class="analis-info__banner-img" src="../assets/img/icon/kit.svg" alt="">
+
+		<h2>Разрабатываем предварительные примерные планы зонирования, расстановки кухонного оборудования с размерами, планировки посадочных мест</h2>
+		<a href="../технология#tehno-plan-con"><h2>Подробнее...</h2></a>
+		<form class="analis-form" action="#" method="POST" enctype="multipart/form-data">
+
+					<input class="modal__input analis-input__name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
+
+					<input class="modal__input analis-input__tel " type="tel" data-validate-field="tel" name="Телефон" placeholder="Введите телефон">
+
+					<div class="modal__check-con">
+						<input id="analis__check-btn" type="checkbox">
+						<label type="checkbox" class="modal__check-text" for="analis__check-btn">
+							<span class="analis__check-btn modal__check"></span>
+							Согласие на обработку данных
+							<a href="../pages/assent.php"><img class="modal__check-que" src="/assets/img/icon/que.svg" alt=""></a>
+						</label>
+				</div>
+
+				<button  id="btn-analis-banner" class="button analis-button-banner">Отправить</button>
+		</form>
+</div> -->

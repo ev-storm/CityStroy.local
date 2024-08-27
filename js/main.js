@@ -927,5 +927,3 @@ function updateGlowColor() {
 
 //video.addEventListener('play', updateGlowColor);
 
-
-

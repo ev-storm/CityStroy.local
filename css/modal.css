@@ -624,7 +624,9 @@ textarea {
 	width: 3vw;
 }
 
-
+.commer-banner{
+	box-shadow: 0 0 2.5vw #00000080;
+}
 
 .commer-banner div{
 	display: flex;

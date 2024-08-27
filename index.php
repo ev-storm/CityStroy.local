@@ -13,7 +13,7 @@
 <?php
 	include('components/header.php')
 ?>
-<script defer src="../js/shema.js"></script>
+
 <style>
 	.menu__main > li:nth-child(1) > a {
 		color: #28bbff;
@@ -151,9 +151,7 @@
 					<!-- <img src="/assets/img/icon/Frame 34.svg" alt=""> -->
 					<h1>Создаем проект по которому не будет изменений в смете и сроках при СМР</h1>
 				</div>
-				<h3>Мы разрабатываем проекты в множество циклов, в каждом из которых происходят значительные изменения от первоначальной версии.
-
-Такой подход позволяет создать максимально-точный и грамотный проект, по которому не будет изменений в смете и сроках при строительстве.</h3>
+				<h3>Мы разрабатываем проекты в множество циклов, в каждом из которых происходят значительные изменения от первоначальной версии. Такой подход позволяет создать максимально-точный и грамотный проект, по которому не будет изменений в смете и сроках при строительстве.</h3>
 			</div>
 		</div>
 		<h3 class="about-warning">*Данное предложение не является публичной офертой. Исполнитель – СитиСтрой – самостоятельно определяет объем услуг/работ на свое усмотрение. <br>Исполнитель -СитиСтрой- вправе отказаться от оказания данной услуги/проведении работ в любой момент без объяснения причин.</h3>
@@ -166,321 +164,314 @@
 
 	<!-- SWIPER-TICKER -->
 	<div class="swiper ticker">
-		<h1 class="ticker__name">НАШИ КЛИЕНТЫ</h1>
-    <div class="swiper-wrapper">
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (1).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (2).svg"></div></a>
-			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (3).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (4).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (5).svg"></div></a>
-			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (6).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (7).svg"></div></a>
-			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (8).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (9).svg"></div></a>
-			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (10).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (11).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (12).svg"></div></a>
-			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (13).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (14).svg"></div></a>
-			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (15).svg"></div></a>
-			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (16).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (17).svg"></div></a>
-			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (18).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (19).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (20).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (21).svg"></div></a>
-			<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (22).svg"></div></a>
-      <div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (23).svg"></div></a>
-    </div>
+			<h1 class="ticker__name">НАШИ КЛИЕНТЫ</h1>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (1).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (2).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (3).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (4).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (5).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (6).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (7).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (8).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (9).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (10).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (11).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (12).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (13).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (14).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (15).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (16).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (17).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (18).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (19).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (20).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (21).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (22).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (23).svg"></div></a>
+			</div>
 	</div> 
 
+
+	<!-- INFO -->
+	<div class="info-con">
+
+		<div class="info-block_1">
+			<h1 class="info_title" >Специализируемся на ресторанной тематике <span class="seven-e"> 7 лет</span></h1>
+
+			<div class="info_check-con">
+
+				<!-- <div class="info_check move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_1"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title">
+						<h2>Ген. подрядчик. </h2>
+						<h3> Координируем субподрядные и смежные компании, собрали коллектив, «заточенный» на ресторанах.</h3>
+						</div>
+				</div> -->
+				<div class="info_check move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_2"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title">
+						<h2>Ген. подрядчик</h2>
+						<h3>Координируем субподрядные и смежные компании.  <br>Cобрали коллектив, «заточенный» на ресторанах</h3>
+						</div>
+				</div>
+
+				<div class="info_check move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_2"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title">
+						<h2>Работаем в ТЦ/БЦ</h2>
+						<h3>Знаем весь процесс согласования рабочей и сдачи исполнительной документации</h3>
+						</div>
+				</div>
+
+				<div class="info_check move-con" >
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_3"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title">
+						<h2>Работаем с НДС, имеем допуски СРО</h2>
+						<h3> на строительство и проектирование</h3>
+						</div>
+				</div>
+
+				<div class="info_check move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_4"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title">
+						<h2>Даем рекомендации</h2>
+						<h3> по исправлению/избеганию ошибок смежников, уделяя внимание аспектам, выходящим за рамки нашей ответственности</h3>
+						</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- ----------------------------------------------------------------------------- -->
+		<div class="info-block_2">
+			<h1 class="info_title" >Что мы делаем</h1>
+			<div class="info-cart_con">
+
+				<div class="info-back">
+					<div class="info-cart">
+						<img class="info_2-img" src="/assets/img/icon/prob.svg" alt="">
+						<!-- <img class="info_2-img" src="/assets/img/icon/mac.svg" alt=""> -->
+						<h2 class="iTitle">Дизайн интерера</h2>
+						<div class="info_sleep">
+							<h3 class="info-2_sub-title" > Создаем атмосферный интерьер, который работает на увеличение прибыли. Повышаем эффективность каждого метра. Уделяем большое внимание зонированию и балансу функций в интерьере</h3>
+							<a href="/pages/design.php"><div class="button info-button">Подробнее</div></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="info-back">
+					<div class="info-cart">
+						<img class="info_2-img" src="/assets/img/icon/plan_kv.svg" alt="">
+						<h2 class="iTitle">Инженерное проектирование</h2>
+						<div class="info_sleep">
+							<h3 class="info-2_sub-title" >Разрабатываем инженерные проекты, оптимизируя бюджет и уменьшая сроки проведения строительных работ.
+							</h3>
+							<a href="/pages/project.php"><div class="button info-button">Подробнее</div></a>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="info-back">
+					<div class="info-cart">
+							<img class="info_2-img" src="/assets/img/icon/valik.svg" alt="">
+							<h2 class="iTitle">Ремонт и СМР</h2>
+							<div class="info_sleep">
+								<h3 class="info-2_sub-title">Выполняем все этапы работ согласно проекту, управляем строительными процессами, координируем работу субподрядчиков.</h3>
+								<a href="/pages/SMR.php"><div class="button info-button">Подробнее</div></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="info-back">
+					<div class="info-cart">
+							<img class="info_2-img" src="/assets/img/icon/plita.svg" alt="">
+							<h2 class="iTitle">Технологическое проектирование</h2>
+							<div class="info_sleep icart_down">
+								<h3 class="info-2_sub-title">Разрабатываем планировки помещений и расстановку технологического оборудования для максимальной эффективности ресторана.</h3>
+								<a href="/pages/tehno.php"><div class="button info-button">Подробнее</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ----------------------------------------------------------------------------- -->
+		<div class="info-block_3">
+			<h1 class="info_title" >Эксплуатация помещения</h1>
+			<div class="info_check-con_3">
+				<div class="info_check move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_5"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title">
+						<h2>Хорошо представляем</h2>
+						<h3>работу со службами эксплуатации ТЦ.</h3>
+						</div>
+				</div>
+
+				<div class="info_check move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_6"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title">
+						<h2>Знаем</h2>
+						<h3>как спроектировать и согласовать <br>  все разделы проектов.</h3>
+						</div>
+				</div>
+
+				<div class="info_check move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_7"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title">
+						<h2>Умеем</h2>
+						<h3>договориться с инженерами <br>ТЦ о нестандартных решениях.</h3>
+						</div>
+				</div>
+
+				<div class="info_check move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_8"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title">
+						<h2>Заранее готовим</h2>
+						<h3>исполнительную документацию.</h3>
+						</div>
+				</div>
+			</div>
+			<h3 class="info_title-sub_3" >Часто мы сдаем свои объекты службам ТЦ до открытия и запуска в эксплуатацию самого ТЦ.
+				Это снижает риски владельцев ТЦ, а их команде легче управлять своими критическими линиями.
+				</h3>
+		</div>
+
+		<!-- ----------------------------------------------------------------------------- -->
+		<div class="info-block_2">
+			<h1 class="info_title_3" >Мы собрали коллектив, «заточенный» на рестораны:</h1>
+			<div class="info-cart_con">
+
+				<div class="info-back">
+					<div class="info-cart">
+						<img class="info_2-img" src="/assets/img/icon/mac.svg" alt="">
+						<h2 class="iTitle">Дизайн-проекты</h2>
+						<div class="info_sleep icart_down">
+							<h3 class="info-2_sub-title" >Весь состав ИТР нашей компании с высшим строительным и инженерным образованием.</h3>
+							<a href="/pages/design.php"><div class="button info-button">Подробнее</div></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="info-back">
+					<div class="info-cart">
+							<img class="info_2-img" src="/assets/img/icon/lin.svg" alt="">
+							<h2 class="iTitle">Проектирование</h2>
+							<div class="info_sleep icart_down">
+								<h3 class="info-2_sub-title" >Наши дизайнеры имеют множественный успешный опыт ресторанных проектов.
+								</h3>
+								<a href="/pages/project.php"><div class="button info-button">Подробнее</div></a>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="info-back">
+					<div class="info-cart">
+							<img class="info_2-img" src="/assets/img/icon/casc.svg" alt="">
+							<h2 class="iTitle">Строительство</h2>
+							<div class="info_sleep icart_down">
+								<h3 class="info-2_sub-title">Команда строителей обладает разносторонней квалификацией и имеет опыт в ремонте ресторанов, умеет воплотить все задумки дизайнера и пожелания Заказчика.</h3>
+								<a href="/pages/SMR.php"><div class="button info-button">Подробнее</div></a>
+							</div>
+					</div>
+				</div>
+
+				<div class="info-back">
+					<div class="info-cart">
+							<img  class="info_2-img" src="/assets/img/icon/colp.svg" alt="">
+							<h2 class="iTitle">Технологи</h2>
+							<div class="info_sleep icart_down">
+							<h3 class="info-2_sub-title" id="info-sub_4" >Многие технологи помимо технического образования, до нас долго работали поварами в ресторане и знают изнутри как сделать правильно и удобно, а значит у команды ресторана есть где вкладывать душу в работу, что напрямую отражается на качестве кухни и репутации ресторана.</h3>
+							<a href="/pages/tehno.php"><div class="button info-button">Подробнее</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
 
 	<!-- СХЕМА -->
 	<?php
 		include('components/shema.php')
 	?>
 
-
-	
-
-
-	<!-- INFO -->
-	<div class="info-con">
-
-
-	<div class="info-block_1">
-		<h1 class="info_title" >Для своевременного исполнения своих обязательств всеми участниками, мы:</h1>
-		<div class="info_check-con">
-			<div class="info_check"
-			onmouseenter="info_ok_player_1.play()" 
-			onmouseleave="info_ok_player_1.stop()">
-				<dotlottie-player 
-					class="info_ok_player"
-					id="info_ok_player_1"
-					src="/assets/animation/ok.json" 
-					background="transparent" 
-					speed="1" 
-					loop="false"
-					autoplay="true">
-				</dotlottie-player>
-				<div class="info_check-title">
-					<h2>Координируем</h2>
-					<h3>работу всех смежных организаций, контролируем их.</h3>
-					</div>
-			</div>
-
-			<div class="info_check"
-			onmouseenter="info_ok_player_2.play()" 
-			onmouseleave="info_ok_player_2.stop()">
-				<dotlottie-player 
-					class="info_ok_player"
-					id="info_ok_player_2"
-					src="/assets/animation/ok.json" 
-					background="transparent" 
-					speed="1" 
-					loop="false"
-					autoplay="true">
-				</dotlottie-player>
-				<div class="info_check-title">
-					<h2>Следим</h2>
-					<h3>за графиком производственных работ.</h3>
-					</div>
-			</div>
-
-			<div class="info_check"
-			onmouseenter="info_ok_player_3.play()" 
-			onmouseleave="info_ok_player_3.stop()">
-				<dotlottie-player 
-					class="info_ok_player"
-					id="info_ok_player_3"
-					src="/assets/animation/ok.json" 
-					background="transparent" 
-					speed="1" 
-					loop="false"
-					autoplay="true">
-				</dotlottie-player>
-				<div class="info_check-title">
-					<h2>Склеиваем</h2>
-					<h3>весь процесс для достижения одного общего результата.</h3>
-					</div>
-			</div>
-
-			<div class="info_check"
-			onmouseenter="info_ok_player_4.play()" 
-			onmouseleave="info_ok_player_4.stop()">
-				<dotlottie-player 
-					class="info_ok_player"
-					id="info_ok_player_4"
-					src="/assets/animation/ok.json" 
-					background="transparent" 
-					speed="1" 
-					loop="false"
-					autoplay="true">
-				</dotlottie-player>
-				<div class="info_check-title">
-					<h2>Контролируем</h2>
-					<h3>технические задания на производство изделий.</h3>
-					</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="info-block_2">
-		<h1 class="info_title" >На протяжении <span class="seven-e"> 7 лет</span> мы разрабатываем:</h1>
-		<div class="info-cart_con">
-
-			<div class="info-back">
-				<div class="info-cart">
-					<img class="info_2-img" src="/assets/img/icon/mac.svg" alt="">
-					<h2 class="iTitle">Дизайн-проекты</h2>
-					<div class="info_sleep">
-						<h3 class="info-2_sub-title" >Повышаем эффективность каждого метра. Уделяем большое внимание зонированию и балансу функций в интерьере</h3>
-						<a href="/pages/design.php"><div class="button info-button">Подробнее</div></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="info-back">
-				<div class="info-cart">
-					<img class="info_2-img" src="/assets/img/icon/plan_kv.svg" alt="">
-					<h2 class="iTitle">Проектирование</h2>
-					<div class="info_sleep">
-						<h3 class="info-2_sub-title" >Разрабатываем технологию и инженерные проекты, оптимизируя бюджет и уменьшая сроки проведения строительных работ
-						</h3>
-						<a href="/pages/project.php"><div class="button info-button">Подробнее</div></a>
-					</div>
-				</div>
-			</div>
-
-			
-			<div class="info-back">
-				<div class="info-cart">
-						<img class="info_2-img" src="/assets/img/icon/valik.svg" alt="">
-						<h2 class="iTitle"> Строительство</h2>
-						<div class="info_sleep">
-							<h3 class="info-2_sub-title">Выполняем этапы строительно-монтажных и отделочных работ согласно проекту, управляем строительными процессами, координируем работу субподрядчиков</h3>
-							<a href="/pages/SMR.php"><div class="button info-button">Подробнее</div></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="info-back">
-				<div class="info-cart">
-						<img class="info_2-img" src="/assets/img/icon/plita.svg" alt="">
-						<h2 class="iTitle">Технология</h2>
-						<div class="info_sleep icart_down">
-							<h3 class="info-2_sub-title">Разрабатываем планировки помещений и расстановку технологического оборудования для максимальной эффективности ресторана ПО</h3>
-							<a href="/pages/tehno.php"><div class="button info-button">Подробнее</div></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="info-block_3">
-		<h1 class="info_title" >Эксплуатация помещения</h1>
-		<div class="info_check-con_3">
-			<div class="info_check"
-			onmouseenter="info_ok_player_5.play()" 
-			onmouseleave="info_ok_player_5.stop()">
-				<dotlottie-player 
-					class="info_ok_player"
-					id="info_ok_player_5"
-					src="/assets/animation/ok.json" 
-					background="transparent" 
-					speed="1" 
-					loop="false"
-					autoplay="true">
-				</dotlottie-player>
-				<div class="info_check-title">
-					<h2>Хорошо представляем</h2>
-					<h3>работу со службами эксплуатации ТЦ.</h3>
-					</div>
-			</div>
-
-			<div class="info_check"
-			onmouseenter="info_ok_player_6.play()" 
-			onmouseleave="info_ok_player_6.stop()">
-				<dotlottie-player 
-					class="info_ok_player"
-					id="info_ok_player_6"
-					src="/assets/animation/ok.json" 
-					background="transparent" 
-					speed="1" 
-					loop="false"
-					autoplay="true">
-				</dotlottie-player>
-				<div class="info_check-title">
-					<h2>Знаем</h2>
-					<h3>как спроектировать и согласовать <br>  все разделы проектов.</h3>
-					</div>
-			</div>
-
-			<div class="info_check"
-			onmouseenter="info_ok_player_7.play()" 
-			onmouseleave="info_ok_player_7.stop()">
-				<dotlottie-player 
-					class="info_ok_player"
-					id="info_ok_player_7"
-					src="/assets/animation/ok.json" 
-					background="transparent" 
-					speed="1" 
-					loop="false"
-					autoplay="true">
-				</dotlottie-player>
-				<div class="info_check-title">
-					<h2>Умеем</h2>
-					<h3>договориться с инженерами <br>ТЦ о нестандартных решениях.</h3>
-					</div>
-			</div>
-
-			<div class="info_check"
-			onmouseenter="info_ok_player_8.play()" 
-			onmouseleave="info_ok_player_8.stop()">
-				<dotlottie-player 
-					class="info_ok_player"
-					id="info_ok_player_8"
-					src="/assets/animation/ok.json" 
-					background="transparent" 
-					speed="1" 
-					loop="false"
-					autoplay="true">
-				</dotlottie-player>
-				<div class="info_check-title">
-					<h2>Заранее готовим</h2>
-					<h3>исполнительную документацию.</h3>
-					</div>
-			</div>
-		</div>
-		<h3 class="info_title-sub_3" >Часто мы сдаем свои объекты службам ТЦ до открытия и запуска в эксплуатацию самого ТЦ.
-			Это снижает риски владельцев ТЦ, а их команде легче управлять своими критическими линиями.
-			</h3>
-	</div>
-
-
-	<div class="info-block_2">
-		<h1 class="info_title_3" >Мы собрали коллектив, «заточенный» на рестораны:</h1>
-		<div class="info-cart_con">
-
-			<div class="info-back">
-				<div class="info-cart">
-					<img class="info_2-img" src="/assets/img/icon/lin.svg" alt="">
-					<h2 class="iTitle">Дизайн-проекты</h2>
-					<div class="info_sleep icart_down">
-						<h3 class="info-2_sub-title" >Весь состав ИТР нашей компании с высшим строительным и инженерным образованием.</h3>
-						<a href="/pages/design.php"><div class="button info-button">Подробнее</div></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="info-back">
-				<div class="info-cart">
-						<img class="info_2-img" src="/assets/img/icon/prob.svg" alt="">
-						<h2 class="iTitle">Проектирование</h2>
-						<div class="info_sleep icart_down">
-							<h3 class="info-2_sub-title" >Наши дизайнеры имеют множественный успешный опыт ресторанных проектов.
-							</h3>
-							<a href="/pages/project.php"><div class="button info-button">Подробнее</div></a>
-					</div>
-				</div>
-			</div>
-
-			
-			<div class="info-back">
-				<div class="info-cart">
-						<img class="info_2-img" src="/assets/img/icon/casc.svg" alt="">
-						<h2 class="iTitle">Строительство</h2>
-						<div class="info_sleep icart_down">
-							<h3 class="info-2_sub-title">Команда строителей обладает разносторонней квалификацией и имеет опыт в ремонте ресторанов, умеет воплотить все задумки дизайнера и пожелания Заказчика.</h3>
-							<a href="/pages/SMR.php"><div class="button info-button">Подробнее</div></a>
-						</div>
-				</div>
-			</div>
-
-			<div class="info-back">
-				<div class="info-cart">
-						<img  class="info_2-img" src="/assets/img/icon/colp.svg" alt="">
-						<h2 class="iTitle">Технологи</h2>
-						<div class="info_sleep icart_down">
-						<h3 class="info-2_sub-title" id="info-sub_4" >Многие технологи помимо технического образования, до нас долго работали поварами в ресторане и знают изнутри как сделать правильно и удобно, а значит у команды ресторана есть где вкладывать душу в работу, что напрямую отражается на качестве кухни и репутации ресторана.</h3>
-						<a href="/pages/tehno.php"><div class="button info-button">Подробнее</div></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	</div>
-
 	<!-- CART -->
 	<?php
 		include('components/carts.php')
 	?>
-
-
-	
-
 
 	<!-- VIDEO -->
 	<div class="video_con">
@@ -548,10 +539,6 @@
 		</div>
 	</div>
 
-
-
-
-
 	<div class="video-more-con">
 		<div class="video-more">		
 			<a href="https://www.youtube.com/watch?v=kIabk_lPW04&t=56s&ab_channel=%D0%A1%D0%98%D0%A2%D0%98%D0%A1%D0%A2%D0%A0%D0%9E%D0%99" target="_blank">
@@ -614,9 +601,6 @@
 	<?php
 		include('components/modal.php')
 	?>
-
-
-
 
 </body>
 </html>
