@@ -247,7 +247,6 @@
 						<h3>Знаем весь процесс согласования рабочей и сдачи исполнительной документации</h3>
 						</div>
 				</div>
-
 				<div class="info_check move-con" >
 					<dotlottie-player 
 						class="info_ok_player move"
@@ -568,6 +567,7 @@
 	<!-- --------------------------------------- -->
 	<div class="commer-banner-con">
 			<div class="commer-banner">
+			
 				<div>
 					<img class="commer-close" src="../assets/img/icon/banner-close.svg" alt="">
 					<img class="commer-img" src="/assets/img/icon/comm-img.svg" alt="">

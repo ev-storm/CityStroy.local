@@ -227,13 +227,10 @@ $('.kit-info-close__banner').click(function(){
 	})
 })
 
- 
-
-
-
 
 
 });
+
 
 
 
@@ -297,13 +294,17 @@ $('.kit-info-close__banner').click(function(){
 					buttonBannerKit.disabled = true; // Блокируем кнопку
 			}
 
-			if (checkboxButtonKitTehno.checked) {
-				buttonBannerKitTehno.classList.remove('disabled'); // Убираем класс 'disabled'
-				buttonBannerKitTehno.disabled = false; // Разблокируем кнопку
-			} else {
-					buttonBannerKitTehno.classList.add('disabled'); // Добавляем класс 'disabled'
-					buttonBannerKitTehno.disabled = true; // Блокируем кнопку
-			}
+
+
+			if (window.location.pathname === '/технология') {
+					if (checkboxButtonKitTehno.checked) {
+							buttonBannerKitTehno.classList.remove('disabled'); // Убираем класс 'disabled'
+							buttonBannerKitTehno.disabled = false; // Разблокируем кнопку
+					} else {
+							buttonBannerKitTehno.classList.add('disabled'); // Добавляем класс 'disabled'
+							buttonBannerKitTehno.disabled = true; // Блокируем кнопку
+					}
+		}
 
 
 	}
@@ -319,7 +320,7 @@ $('.kit-info-close__banner').click(function(){
 		checkboxButton.addEventListener('change', updateButtonState);
 		checkboxButtonBig.addEventListener('change', updateButtonState);
 		checkboxButtonKit.addEventListener('change', updateButtonState);
-		checkboxButtonKitTehno.addEventListener('change', updateButtonState);
+		//checkboxButtonKitTehno.addEventListener('change', updateButtonState);
 
 
 
@@ -330,7 +331,32 @@ $('.kit-info-close__banner').click(function(){
 
 
 	
+		$('.kit-info-banner h2, .info-banner h2').slideUp()
+		$('.kit-info-banner a h2, .info-banner a 	h2').slideUp()
+		$('.kit-form, .trip-form').slideUp()
 
+		$('.info-banner').click(function(){
+			$('.info-banner h2').slideDown()
+			$('.info-banner a 	h2').slideDown()
+			$('.trip-form').slideDown()
+			// $('.info-banner').css({
+			// 	'transform': 'translateY(-10vw)',
+			// })
+			$('.info-banner').css({
+				'top':'15%'
+			})
+
+		})
+		$('.kit-info-banner').click(function(){
+			$('.kit-info-banner h2').slideDown()
+			$('.kit-info-banner a h2').slideDown()
+			$('.kit-form').slideDown()
+			$('.kit-info-banner').css({
+				'top':'15%'
+			})
+		})
+		
+		
 
 
 

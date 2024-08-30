@@ -6,25 +6,24 @@
 		<div class="swiper btnSwiper">
 			<div class="swiper-wrapper">
 
-				<div class="swiper-slide btnSlide">
+				<div class="swiper-slide slide-cont btnSlide">
 					<form class="big-form" action="#" method="POST" enctype="multipart/form-data">
 
-							<div class="form-section"><h1 class="form-title">Контактные данные</h1>
+							<div class="form-section "><h1 class="form-title">Контактные данные</h1>
 								<div class="input-form-ban">
 									<label class="modal__lab in-cont" for="">Имя
 									
 										<input class="modal__input big-input__name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
 									</label>
-							</div>
+								</div>
 
-							<div class="input-form-ban ">
-								<label class="modal__lab in-cont" for="">Телефон
-									<input class="modal__input big-tel" type="tel" data-validate-field="tel" name="Телефон" placeholder="Введите телефон">
-								</label>
+								<div class="input-form-ban ">
+									<label class="modal__lab in-cont" for="">Телефон
+										<input class="modal__input big-tel" type="tel" data-validate-field="tel" name="Телефон" placeholder="Введите телефон">
+									</label>
+								</div>
+			
 							</div>
-							
-							
-						</div>
 
 						<div class="form-section"><h1 class="form-title">Что вас интересует?</h1>
 							<div class="input-form-ban">
@@ -213,6 +212,10 @@
 							</label>
 						</div>
 					</div>
+
+					<!-- <div class="error_mes-con" style="display: none;">
+            <span class="error_mes"></span>
+        </div> -->
 
 
 						<div class="modal__check-con big-btn-con">

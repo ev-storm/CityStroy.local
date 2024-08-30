@@ -1,5 +1,5 @@
 
-
+if (window.location.pathname === '/главная' || '/инженерия' ) {
 //---------------SCROLL----------------------------------------------------------
 document.addEventListener("scroll", () => {
 	const items = document.querySelectorAll('.sh-mob__item');
@@ -335,3 +335,7 @@ function closeItems(event) {
 }
 // Добавляем слушатель к документу
 document.addEventListener('click', closeItems);
+
+
+
+}

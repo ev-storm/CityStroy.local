@@ -1207,11 +1207,11 @@ li {
 	padding-left: 10%;
 	width: 80%;
 	height: 100vh;
-	background-color: #0000006e;
+	background-color: #0d0d0dd4;
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	position: fixed;
-	z-index: 999;
+	z-index: 9999999;
 	transition: all 1s ease-in-out;
 }
 .menu-mob_main{

@@ -256,63 +256,66 @@ validationKitForm
 
 
 
-//---------- BIG FORM  -----------------
 
+
+
+
+//---------- BIG FORM  -----------------
 
 const bigForm = document.querySelector('.big-form');
 const bigSelector = bigForm.querySelector('.big-tel');
 const inputmaskBig = new Inputmask('+7 (999) 999-99-99');
 inputmaskBig.mask(bigSelector);
 
-
-
-
-
-
 const validationBigForm = new JustValidate('.big-form');
-
 
 validationBigForm
 	.addField('.big-input__name', [
 		{
 			rule: 'minLength',
 			value: 3,
-			errorMessage: 'Введите более 3 символов'
+			errorMessage: function () {
+					const firstSlideIndex = document.querySelector('.swiper-wrapper .slide-cont').parentNode.swiperSlideIndex;
+					swiper.slideTo(firstSlideIndex);
+					return 'Введите более 3 символов'
+			},
 		},
 		{
 			rule: 'maxLength',
 			value: 30,
-			errorMessage: 'Введите менее 30 символов'
+			errorMessage: function () {
+				const firstSlideIndex = document.querySelector('.swiper-wrapper .slide-cont').parentNode.swiperSlideIndex;
+				swiper.slideTo(firstSlideIndex);
+				return 'Введите менее 30 символов'
+		},
 		},
 		{
 			rule: 'required',
 			value: true,
-			errorMessage: 'Введите имя!'
+			errorMessage: function () {
+				const firstSlideIndex = document.querySelector('.swiper-wrapper .slide-cont').parentNode.swiperSlideIndex;
+				swiper.slideTo(firstSlideIndex);
+				return 'Введите имя!'
+			},
 		}
 	])
 	.addField('.big-tel', [
 		{
 			rule: 'required',
 			value: true,
-			errorMessage: 'Телефон обязателен',
 		},
-		// {
-		// 	rule: 'minLength',
-		// 	value: 10,
-		// 	errorMessage: 'Введите корректный телефон'
-		// },
-		// {
-		// 	rule: 'maxLength',
-		// 	value: 11,
-		// 	errorMessage: 'Введите корректный телефон'
-		// },
 		 {
 			rule: 'function',
 			validator: function () {
 				const phoneBig = bigSelector.inputmask.unmaskedvalue();
+				errorMessage: 'Введите телефон';
 				return phoneBig.length === 10;
 			},
-			errorMessage: 'Введите корректный телефон',
+			errorMessage: function () {
+				const firstSlideIndex = document.querySelector('.swiper-wrapper .slide-cont').parentNode.swiperSlideIndex;
+				swiper.slideTo(firstSlideIndex);
+				return 'Введите корректный телефон'
+			},
 		},
 	
 	])
@@ -358,12 +361,4 @@ validationBigForm
 
 
 
-
-
-
-
-
-
-
-
-
+	
