@@ -347,20 +347,23 @@ a{
 
 
 	.carts{
-		width: 90vw;
+		width: 100vw;
 		height: 50vw;
 		margin: 0 0 5vw 0;
 		transition: var(--trans_cart);
-		border-radius: 2vw; 
+		border-radius: 0; 
 	}
 	.carts:hover{
 		height: 70vw;
 		transition: var(--trans_cart);
-		border-radius: 2vw; 
+		border-radius: 0;
 	}
-
 	.carts-slide {
-		border-radius: 2vw; 
+		border-radius: 0;
+		overflow: hidden; 
+	}
+	.carts-slide > img{
+		border-radius: 0;
 		overflow: hidden; 
 	}
 
@@ -373,35 +376,32 @@ a{
 	.carts-back:hover{
 		height: 75vw;
 		transition: var(--trans_cart);
-		border-radius: 2vw; 
+		border-radius: 0vw; 
 		overflow: hidden; 
 	}
 	.carts:hover > .carts-back {
 		transform: scale(1.5);
 		transition: var(--trans_cart);
-		border-radius: 2vw; 
+		border-radius: 0vw; 
 		overflow: hidden; 
 	}
 	.cart__content {
 		backdrop-filter:brightness(100%);
 		-webkit-backdrop-filter: brightness(100%); 
 		transition: var(--trans_content);
-		border-radius: 2vw; 
+		border-radius: 0vw; 
 	}
 	.carts:hover > .cart__content{
 		backdrop-filter:brightness(40%);
 		-webkit-backdrop-filter: brightness(40%); 
 		transition: var(--trans_content);
-		border-radius: 2vw; 
+		border-radius: 0; 
 	}
 
 
-	.carts-slide > img{
-		border-radius: 2vw; 
-		overflow: hidden; 
-	}
+
 	.carts:hover > .carts-slid > img{
-		border-radius: 2vw; 
+		border-radius: 0vw; 
 		overflow: hidden; 
 	}
 
@@ -443,8 +443,46 @@ a{
 		padding: 10vw 0 5vw 0;
 		background-color: #161616;
 	}
-
+	.svgYou-cart {
+		margin-left: 1vw;
+		width: 13.6vw;
+		transition: var(--duration);
+		cursor: pointer;
+	}
+	.container-input {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0 4vw;
+		margin-bottom: -10.5vw;
+		margin: 0;
+		padding: 10vw 0 0 0;
+		background-color: #161616;
+		align-items: center;
+	}
+	.input-carts, .input-carts:focus{
+		font-size: 4vw;
+		border-radius: 1.5vw;
+		border-radius: 1.5vw;
+		width: 70vw;
+		padding: 2vw 6vw;
+		margin: 0 4vw;
+	}
 	
+	.clear-btn-img {
+		width: 4vw;
+	}
+	.dropdown .option{
+		font-size: 4vw;
+	}
+	.dropdown {
+		margin-top: 10.2vw;
+    margin-left: -6vw;
+		width: 68vw;
+		border-radius: 2vw;
+	}
+
+
 	
 
 	

@@ -53,7 +53,7 @@ $('.plan-con').hide();
 
 
 
-$('.tehno-plan__img').click(function(){
+$('.open-pdf').click(function(){
 	$('.plan-con').fadeIn(0);
 	$('.plan-con').css({
 		'display':'flex'
@@ -158,6 +158,18 @@ if(cof > 201){
 		'left': '90%'
 	})
 }
+if ($(window).width() <= 600) {
+	if (cof < 600) {
+			$('.commer-banner-mini').css({
+					'left': '100%'
+			});
+	}
+	if(cof > 601){
+		$('.commer-banner-mini').css({
+			'left': '80%'
+		})
+	}
+}
 
 if(cof>2300){
 	$('.info-banner').css({
@@ -230,8 +242,6 @@ $('.kit-info-close__banner').click(function(){
 
 
 });
-
-
 
 
 
@@ -330,7 +340,7 @@ $('.kit-info-close__banner').click(function(){
 
 
 
-	
+		if ($(window).width() <= 600) {
 		$('.kit-info-banner h2, .info-banner h2').slideUp()
 		$('.kit-info-banner a h2, .info-banner a 	h2').slideUp()
 		$('.kit-form, .trip-form').slideUp()
@@ -339,11 +349,8 @@ $('.kit-info-close__banner').click(function(){
 			$('.info-banner h2').slideDown()
 			$('.info-banner a 	h2').slideDown()
 			$('.trip-form').slideDown()
-			// $('.info-banner').css({
-			// 	'transform': 'translateY(-10vw)',
-			// })
 			$('.info-banner').css({
-				'top':'15%'
+				'top':'38%'
 			})
 
 		})
@@ -352,11 +359,11 @@ $('.kit-info-close__banner').click(function(){
 			$('.kit-info-banner a h2').slideDown()
 			$('.kit-form').slideDown()
 			$('.kit-info-banner').css({
-				'top':'15%'
+				'top':'38%'
 			})
 		})
 		
-		
+	}
 
 
 

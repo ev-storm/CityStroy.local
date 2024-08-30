@@ -324,17 +324,5 @@
 	include('../components/footer.php')
 ?>
 
-<!-- MODAL -->
-<?php
-	include('../components/modal.php')
-?>
-<!-- BIG-BANNER -->
-<?php
-	include('../components/big-form.php')
-?>
-<!-- INFO-BANNER -->
-<!-- <?php
-	//include('../components/info-banner.php')
-?> -->
 </body>
 </html>

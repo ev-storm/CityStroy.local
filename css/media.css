@@ -420,7 +420,9 @@
 .video_con {
 	background-color: #161616;
 }
-
+.open-pdf{
+	margin-top: 2vw;
+}
 
 
 /*-----------------MODAL-------------------*/
@@ -929,8 +931,123 @@
 	transition: all 0.5s ease-in-out;
 	transform: translateY(-27vw);
 }
+.teh-span{
+	font-size: 5vw !important;
+}	
 
-
+.teh-span span {
+	font-size: 5vw !important;
+}
+.sub-teh-span {
+	font-size: 4vw !important;
+	margin: 3vw 0 0 0 !important;
+}
+.blue{
+	font-size: 4vw; 
+	margin: 0 0 9vw 0;
+}
+.tehno-plan{
+	flex-direction: column;
+}
+.tehno-plan-con {
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	padding: 2vw 8vw 2vw 8vw !important;
+	background-color: #00000060;
+}
+.tehno-plan__text h3 p {
+	color: #ffffff80;
+	font-size: 3vw;
+	margin: 0;
+}
+.tehno-plan-con div h1{
+	font-size: 10vw !important;
+	line-height: 1 !important;
+	margin: 4vw 0 2vw 0 !important;
+}
+.tehno-plan__text h2{
+	font-size: 4vw !important;
+}
+.teh h3{
+	width: 100% !important;
+}
+.tehno-plan__text h3{
+	font-size: 4vw;
+}
+.plan-img-pdf{
+	width: 100% !important;
+}
+.plan-img-pdf {
+	width: 100% !important;
+	background-color: #00000000 !important;
+	padding: 0 !important;
+	border-radius: 2vw !important;
+}
+.tehno-plan__img img {
+	position: relative !important;
+	height: fit-content !important;
+	margin: 15vw 15vw 5vw 15vw !important;
+	width: 60% !important;
+}
+.tehno-plan__img__search{
+	display: none !important;
+}
+.tehno-plan__img__main {
+	width: 100% !important;
+	margin: 0 !important;
+}
+.tehno-plan__img {
+	height: fit-content !important;
+	background-color: #00000000 !important;
+}
+.open-pdf, .tehno-plan__pdf {
+	font-size: 2.9vw;
+	margin: 2vw 0;
+	border-radius: 1vw;
+}
+.open-pdf:hover, .tehno-plan__pdf:hover {
+	font-size: 2.9vw;
+	margin: 2vw 0;
+	border-radius: 1vw;
+}
+.plan-input {
+	font-size: 4vw;
+	padding: 2vw 4vw;
+	border-radius: 1.5vw;
+	margin: 2vw 0;
+}
+.plan {
+	width: 95vw !important;
+	height: 185vw !important;
+}
+.plan-slide img {
+	transform: rotate(0deg) !important;
+}
+.planSwiper{
+	border-radius: 2vw;
+}
+.plan-slide{
+	border-radius: 2vw;
+}
+.tehno-plan-con h1 {
+	font-size: 7vw !important;
+	margin: 8vw 0 0 0;
+}
+.tehno-plan-con div {
+	flex-direction: column;
+}
+.tehno-plan-con div h3 {
+	color: #ffffff;
+	font-size: 4vw;
+}
+.tehno-plan-con p {
+	font-size: 3.8vw !important;
+}
+.video-title_2 span {
+	font-size: 5vw;
+	margin-right: 1vw;
+	color: #ffffff;
+}
 
 
 
@@ -943,3 +1060,13 @@
 
 
 }
+
+
+
+
+
+
+
+
+
+

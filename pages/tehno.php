@@ -136,8 +136,8 @@
 			</div>
 			
 
-			<h2 class="about__column-title"><span>Технологический проект</span> — основа для успешной работы ресторана</h2>
-			<h3 class="about__column-sub-title">В проекте мы прорабатываем ключевые факторы, влияющие на
+			<h2 class="about__column-title teh-span"><span>Технологический проект</span> — основа для успешной работы ресторана</h2>
+			<h3 class="about__column-sub-title sub-teh-span">В проекте мы прорабатываем ключевые факторы, влияющие на
 			качество кухни, скорость работы персонала и проходимость заведения</h3>
 			<div class="about__column about__teh teh">
 
@@ -273,9 +273,9 @@
 						- план примернной планировки посадочных мест в зале</h3>
 					<form class="kit-form" action="#" method="POST" enctype="multipart/form-data">
 
-							<input class="modal__input kit-input__name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
+							<input class="modal__input plan-input kit-input__name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
 
-							<input class="modal__input kit-input__tel " type="tel" data-validate-field="tel" name="Телефон" placeholder="Введите телефон">
+							<input class="modal__input plan-input kit-input__tel " type="tel" data-validate-field="tel" name="Телефон" placeholder="Введите телефон">
 
 							<div class="modal__check-con">
 								<input id="kit__check-btn-tehno" type="checkbox">
@@ -291,10 +291,11 @@
 					</form>
 				</div>
 				<div class="plan-img-pdf">
-					<div class="tehno-plan__img">
+					<div class="tehno-plan__img open-pdf">
 						<img class="tehno-plan__img__search" src="/assets/img/icon/search.svg" alt="">
 						<img class="tehno-plan__img__main" src="/assets/img/icon/plan.svg" alt="">
 					</div>
+					<button class="open-pdf open-pdf-btn button">Открыть PDF</button>	
 					<a href="/assets/img/plan/city.pdf" target="_blank">
 						<button class="tehno-plan__pdf button">Скачать PDF</button>	
 					</a>
@@ -336,46 +337,12 @@
 
 
 	<!-- --------------------------------------- -->
-	<div class="commer-banner-con" id="commer-banner-con">
-				<div class="commer-banner">
-					<div>
-						<img class="commer-close" src="../assets/img/icon/banner-close.svg" alt="">
-						<img class="commer-img" src="/assets/img/icon/comm-img.svg" alt="">
-						<h1 class="commer-h1">Коммерческое предложение</h1>
-					</div>
-					<h2 class="commer-h2">Ответьте на 6 вопросов, чтобы узнать стоимость и срок реализации вашего проекта</h2>
-					<button class="button commer-btn modal__KP">Заполнить коммерческое предложение</button>
-				</div>
-				
-				<div class="commer-text">
-					<h1> + Бесплатно cделаем предварительные планы зонирования, расстановки кухонного оборудования с размерами, планировки посадочных мест*</h1>
-				</div>
-			</div>
-			<div class="commer-banner-mini">
-					<img class="commer-img" src="/assets/img/icon/comm-img.svg" alt="">
-	</div>
 
 	<!-- FOTTER -->
 	<?php
 		include('../components/footer.php')
 	?>
-	<!-- BIG-BANNER -->
-	<?php
-		include('../components/big-form.php')
-	?>
-	<!-- INFO-BANNER -->
-	<?php
-		include('../components/info-banner.php')
-	?>
-	<!-- MODAL-BANNER -->
-	<?php
-		include('../components/modal.php')
-	?>
-
-
-
-
-
+	
 </body>
 
 

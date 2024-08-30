@@ -6,6 +6,17 @@ $('#btnBD').hide();
 
 
 
+function initSwiper() {
+	const swiperContainer = document.querySelector('.swiper-container');
+	if (swiperContainer) {
+			const swiper = new Swiper(swiperContainer, {
+					// Настройки Swiper
+			});
+	} else {
+			console.error('Swiper container not found');
+	}
+}
+
 
 
 ///////////////----PRELOADER-----/////////////////
@@ -502,120 +513,6 @@ $('.button-video-more').click(function(){
 
 
 
-		///////////////----CART SEARCH-----/////////////////
-
-	
-
-	// if (window.location.pathname === '/портфолио' ) {
-
-document.addEventListener('DOMContentLoaded', function() {
-
-    const searchInput = document.querySelector('.search-input');
-    const clearBtn = document.querySelector('.clear-btn');
-    const dropdown = document.querySelector('.dropdown');
-    const divItems = document.querySelectorAll('.carts');
-		const notFound = document.querySelector('.not-found');
-
-    function updateDropdown() {
-        const filter = searchInput.value.trim().toLowerCase();
-        const options = Array.from(divItems)
-            .filter(item => item.querySelector('.cart__title').textContent.toLowerCase().includes(filter))
-            .map(item => `<div class="option" data-class="${item.className}">${item.querySelector('.cart__title').textContent}</div>`)
-            .join('');
-        dropdown.innerHTML = options;
-        dropdown.style.display = options ? 'block' : 'none';
-				// const activeItems = Array.from(divItems).filter(item => item.style.display === 'block');
-				// notFound.style.display = activeItems.length ? 'none' : 'block';
-	
-        if (filter === '') {
-            Array.from(divItems).forEach(item => {
-                item.style.display = 'block';
-							
-            });
-        } else {
-            Array.from(divItems).forEach(item => {
-                item.style.display = item.querySelector('.cart__title').textContent.toLowerCase().includes(filter) ? 'block' : 'none';
-            });
-        }
-    }
-
-
-
-			searchInput.addEventListener('focus', function() {
-					updateDropdown();
-			});
-	
-			searchInput.addEventListener('input', function() {
-					updateDropdown();
-			});
-		
-
-    dropdown.addEventListener('click', function(event) {
-        if (event.target.classList.contains('option')) {
-            searchInput.value = event.target.textContent;
-            const selectedClass = event.target.dataset.class.split(' ').filter(c => c.startsWith('class')).join('');
-            Array.from(divItems).forEach(item => {
-                item.style.display = item.classList.contains(selectedClass) ? 'block' : 'none';
-            });
-            dropdown.style.display = 'none';
-        }
-    });
-
-			document.addEventListener('click', function(event) {
-			    if (!event.target.closest('.container-input')) {
-			        dropdown.style.display = 'none';
-			    }
-			});
-
-    clearBtn.addEventListener('click', function() {
-        searchInput.value = '';
-        Array.from(divItems).forEach(item => {
-            item.style.display = 'block';
-        });
-        dropdown.style.display = 'none';
-    });
-
-
-		function filterItems() {
-			const filter = searchInput.value.toLowerCase();
-			divItems.forEach(item => {
-					if (item.textContent.toLowerCase().includes(filter)) {
-							item.style.display = 'block';
-					} else {
-							item.style.display = 'none';
-					}
-			});
-			updateNotFound();
-	}
-
-	function clearSearch() {
-			searchInput.value = '';
-			filterItems();
-	}
-
-	function updateNotFound() {
-			const activeItems = Array.from(divItems).filter(item => item.style.display === 'block');
-			notFound.style.display = activeItems.length ? 'none' : 'block';
-	}
-
-	function observeDisplayChanges() {
-			const observer = new MutationObserver(updateNotFound);
-			divItems.forEach(item => {
-					observer.observe(item, { attributes: true, attributeFilter: ['style'] });
-			});
-	}
-	// Инициализация
-	notFound.style.display = 'none';
-	searchInput.addEventListener('input', filterItems);
-	clearBtn.addEventListener('click', clearSearch);
-	observeDisplayChanges();
-	filterItems(); // Изначально запустить фильтрацию
-
-	});
-// };
-
-
-
 
 
 
@@ -959,3 +856,117 @@ function updateGlowColor() {
 
 
 
+
+	///////////////----CART SEARCH-----/////////////////
+
+	document.addEventListener("DOMContentLoaded", () => {
+		const containerInput = document.querySelector('.container-input');
+	
+		if (containerInput) {
+
+
+		const searchInput = document.querySelector('.search-input');
+		const clearBtn = document.querySelector('.clear-btn');
+		const dropdown = document.querySelector('.dropdown');
+		const divItems = document.querySelectorAll('.carts');
+		const notFound = document.querySelector('.not-found');
+		
+		function updateDropdown() {
+				const filter = searchInput.value.trim().toLowerCase();
+				const options = Array.from(divItems)
+						.filter(item => item.querySelector('.cart__title').textContent.toLowerCase().includes(filter))
+						.map(item => `<div class="option" data-class="${item.className}">${item.querySelector('.cart__title').textContent}</div>`)
+						.join('');
+				dropdown.innerHTML = options;
+				dropdown.style.display = options ? 'block' : 'none';
+				// const activeItems = Array.from(divItems).filter(item => item.style.display === 'block');
+				// notFound.style.display = activeItems.length ? 'none' : 'block';
+		
+				if (filter === '') {
+						Array.from(divItems).forEach(item => {
+								item.style.display = 'block';
+							
+						});
+				} else {
+						Array.from(divItems).forEach(item => {
+								item.style.display = item.querySelector('.cart__title').textContent.toLowerCase().includes(filter) ? 'block' : 'none';
+						});
+				}
+		}
+		
+		
+		
+			searchInput.addEventListener('focus', function() {
+					updateDropdown();
+			});
+		
+			searchInput.addEventListener('input', function() {
+					updateDropdown();
+			});
+		
+		
+		dropdown.addEventListener('click', function(event) {
+				if (event.target.classList.contains('option')) {
+						searchInput.value = event.target.textContent;
+						const selectedClass = event.target.dataset.class.split(' ').filter(c => c.startsWith('class')).join('');
+						Array.from(divItems).forEach(item => {
+								item.style.display = item.classList.contains(selectedClass) ? 'block' : 'none';
+						});
+						dropdown.style.display = 'none';
+				}
+		});
+		
+			document.addEventListener('click', function(event) {
+					if (!event.target.closest('.container-input')) {
+							dropdown.style.display = 'none';
+					}
+			});
+		
+		clearBtn.addEventListener('click', function() {
+				searchInput.value = '';
+				Array.from(divItems).forEach(item => {
+						item.style.display = 'block';
+				});
+				dropdown.style.display = 'none';
+		});
+		
+		
+		function filterItems() {
+			const filter = searchInput.value.toLowerCase();
+			divItems.forEach(item => {
+					if (item.textContent.toLowerCase().includes(filter)) {
+							item.style.display = 'block';
+					} else {
+							item.style.display = 'none';
+					}
+			});
+			updateNotFound();
+		}
+		
+		function clearSearch() {
+			searchInput.value = '';
+			filterItems();
+		}
+		
+		function updateNotFound() {
+			const activeItems = Array.from(divItems).filter(item => item.style.display === 'block');
+			notFound.style.display = activeItems.length ? 'none' : 'block';
+		}
+		
+		function observeDisplayChanges() {
+			const observer = new MutationObserver(updateNotFound);
+			divItems.forEach(item => {
+					observer.observe(item, { attributes: true, attributeFilter: ['style'] });
+			});
+		}
+		// Инициализация
+		notFound.style.display = 'none';
+		searchInput.addEventListener('input', filterItems);
+		clearBtn.addEventListener('click', clearSearch);
+		observeDisplayChanges();
+		filterItems(); // Изначально запустить фильтрацию
+		
+		
+
+	}
+	});

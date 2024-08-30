@@ -12,7 +12,7 @@
 
 					<input class="modal__input trip-input__tel " type="tel" data-validate-field="tel" name="Телефон" placeholder="Введите телефон">
 
-					<div class="modal__check-con">
+					<div class="modal__check-con trip-modal__check-con">
 						<input id="modal__check-btn" type="checkbox">
 						<label type="checkbox" class="modal__check-text" for="modal__check-btn">
 							<span class="modal__check-btn modal__check"></span>
@@ -50,7 +50,7 @@
 
 					<input class="modal__input kit-input__tel " type="tel" data-validate-field="tel" name="Телефон" placeholder="Введите телефон">
 
-					<div class="modal__check-con">
+					<div class="modal__check-con kit-modal__check-con">
 						<input id="kit__check-btn" type="checkbox">
 						<label type="checkbox" class="modal__check-text" for="kit__check-btn">
 							<span class="kit__check-btn modal__check"></span>
