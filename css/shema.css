@@ -77,7 +77,7 @@
 		transition: all 0.7s ease;
 	}
 	.sh-mob__item.active{
-		height: 60vw;
+		height: 70vw;
 		transition: all 0.5s ease;
 	}
 	.sh-mob__item > img{

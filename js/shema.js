@@ -1,10 +1,11 @@
 
-//if (window.location.pathname === '/index.php' || window.location.pathname === '/инженерия') {
 	document.addEventListener("DOMContentLoaded", function() {
-		var shMobElement = document.querySelector('.sh-mob');
+		
 		var shElement = document.querySelector('.sh');
+	
 
-		if (shMobElement && shElement) {
+
+		if ( shElement ) {
 
 		//---------------SCROLL----------------------------------------------------------
 		document.addEventListener("scroll", () => {
@@ -60,7 +61,7 @@
 		});
 
 		//-------------BANNER-----------------------------------------------------------
-		document.addEventListener('DOMContentLoaded', () => {
+		
 			const buttonsMob = document.querySelectorAll('.fork-m__btn button, .AR'); 
 			const bannerMob = document.getElementById('banner');
 			const bannerTitle = document.getElementById('banner-title');
@@ -101,7 +102,7 @@
 			} else {
 					console.error('Элемент с id "banner" не найден');
 			}
-		});
+		
 
 		//----------------ITEMS-------------------------------------
 		document.querySelectorAll('.sh-mob__item').forEach(item => {
@@ -168,70 +169,70 @@
 
 		//-------------BANNER-----------------------------------------------------------
 
-		// document.addEventListener('DOMContentLoaded', () => {
-		// 	const buttons__sh = document.querySelectorAll('.sh__fork-btn button, .AR'); 
-		// 	const banner__sh = document.getElementById('sh__banner');
-		// 	const bannerTitle__sh = document.getElementById('sh__banner-title');
-		// 	const bannerText__sh = document.getElementById('sh__banner-text');
-		// 	let bannerTimeout__sh; // Переменная для хранения идентификатора таймера
+		
+			const buttons__sh = document.querySelectorAll('.sh__fork-btn button, .AR'); 
+			const banner__sh = document.getElementById('sh__banner');
+			const bannerTitle__sh = document.getElementById('sh__banner-title');
+			const bannerText__sh = document.getElementById('sh__banner-text');
+			let bannerTimeout__sh; // Переменная для хранения идентификатора таймера
 
-		// 	if (buttons__sh) {
-		// 			buttons__sh.forEach(button => {
-		// 					button.addEventListener('click', () => {
-		// 							const banTitle__sh = button.getAttribute('data-message');
-		// 							const banText__sh = button.getAttribute('value');
-		// 							bannerTitle__sh.textContent = banTitle__sh;
-		// 							bannerText__sh.textContent = banText__sh;
+			if (buttons__sh) {
+					buttons__sh.forEach(button => {
+							button.addEventListener('click', () => {
+									const banTitle__sh = button.getAttribute('data-message');
+									const banText__sh = button.getAttribute('value');
+									bannerTitle__sh.textContent = banTitle__sh;
+									bannerText__sh.textContent = banText__sh;
 
-		// 							banner__sh.classList.add('show');
+									banner__sh.classList.add('show');
 
-		// 							if (bannerTimeout__sh) {
-		// 									clearTimeout(bannerTimeout__sh);
-		// 							}
+									if (bannerTimeout__sh) {
+											clearTimeout(bannerTimeout__sh);
+									}
 
-		// 							bannerTimeout__sh = setTimeout(() => {
-		// 								banner__sh.classList.remove('show'); 
-		// 							}, 8000);
-		// 					});
-		// 			});
+									bannerTimeout__sh = setTimeout(() => {
+										banner__sh.classList.remove('show'); 
+									}, 8000);
+							});
+					});
 
-		// 			window.addEventListener('scroll', () => {
-		// 					if (banner__sh.classList.contains('show')) {
-		// 							banner__sh.classList.remove('show');
+					window.addEventListener('scroll', () => {
+							if (banner__sh.classList.contains('show')) {
+									banner__sh.classList.remove('show');
 
-		// 							if (bannerTimeout__sh) {
-		// 									clearTimeout(bannerTimeout__sh);
-		// 									bannerTimeout__sh = null;
-		// 							}
-		// 					}
-		// 			});
+									if (bannerTimeout__sh) {
+											clearTimeout(bannerTimeout__sh);
+											bannerTimeout__sh = null;
+									}
+							}
+					});
 
-		// 			window.addEventListener('scroll', () => {
-		// 				if (banner__sh.classList.contains('show')) {
-		// 						banner__sh.classList.remove('show');
+					window.addEventListener('scroll', () => {
+						if (banner__sh.classList.contains('show')) {
+								banner__sh.classList.remove('show');
 
-		// 						if (bannerTimeout__sh) {
-		// 								clearTimeout(bannerTimeout__sh);
-		// 								bannerTimeout__sh = null;
-		// 						}
-		// 				}
-		// 			});
+								if (bannerTimeout__sh) {
+										clearTimeout(bannerTimeout__sh);
+										bannerTimeout__sh = null;
+								}
+						}
+					});
 
-		// 			const closeBannerButton = document.querySelector('.close__banner-con');
+					const closeBannerButton = document.querySelector('.close__banner-con');
 
-		// 			closeBannerButton.addEventListener('click', () => {
+					closeBannerButton.addEventListener('click', () => {
 
-		// 				if (banner__sh.classList.contains('show')) {
-		// 							banner__sh.classList.remove('show');
-		// 					}
-		// 			});
+						if (banner__sh.classList.contains('show')) {
+									banner__sh.classList.remove('show');
+							}
+					});
 				
 
-		// 	} else {
-		// 			console.error('Элемент с id "banner" не найден');
-		// 	}
+			} else {
+					console.error('Элемент с id "banner" не найден');
+			}
 
-		// });
+		
 
 		document.addEventListener('DOMContentLoaded', () => {
 			const buttons__sh = document.querySelectorAll('.sh__fork-btn button, .AR'); 

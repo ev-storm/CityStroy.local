@@ -66,13 +66,13 @@
 
 		<div class="mob-menu">
 			<ul class="menu-mob_main">
-				<li><a href="../index.php">Главная</a></li>
-				<li><a href="/pages/tehno.php">Технология</a></li>
-				<li><a href="/pages/design.php">Дизайн</a></li>
-				<li><a href="/pages/project.php">Проектирование</a></li>
-				<li><a href="/pages/SMR.php">Ремонт и СМР</a></li>
-				<li><a href="/pages/portfolio.php">Портфолио</a></li>
-				<li><a href="/pages/contact.php">Контакты</a></li>
+				<li><a class="menu__main__item" href="../главная">Главная</a></li>
+				<li><a class="menu__main__item" href="/технология">Технология</a></li>
+				<li><a class="menu__main__item" href="/дизайн">Дизайн</a></li>
+				<li><a class="menu__main__item" href="/инженерия">Инженерия</a></li>
+				<li><a class="menu__main__item" href="/СМР">Ремонт и СМР</a></li>
+				<li><a class="menu__main__item" href="/портфолио">Портфолио</a></li>
+				<li><a class="menu__main__item" href="/контакты">Контакты</a></li>
 			</ul>
 			<button class="button-menu-mob modal__btn">СВЯЗАТЬСЯ С НАМИ</button>
 

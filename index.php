@@ -586,15 +586,15 @@
 
 		<!-- BIG-BANNER -->
 		<?php
-		include('../components/big-form.php')
+		include('components/big-form.php')
 	?>
 	<!-- INFO-BANNER -->
 	<?php
-		include('../components/info-banner.php')
+		include('components/info-banner.php')
 	?>
 	<!-- MODAL-BANNER -->
 	<?php
-		include('../components/modal.php')
+		include('components/modal.php')
 	?>
 
 
