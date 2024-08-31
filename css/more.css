@@ -1041,11 +1041,12 @@ DESIGN */
 	flex-direction: column;
 	padding: 4vw 0;
 }
-.desi-inf_con > h1{
+
+.desi-inf_con > h1 {
 	color: #ffffff;
-	font-size: 6.5vw;
+	font-size: 2.5vw;
 	font-weight: 300;
-	padding: 8vw;
+	padding: 2vw 4vw 0 4vw;
 }
 .desi-inf{
 	display: flex;
@@ -1127,13 +1128,15 @@ DESIGN */
 	.shema__right{
 		transform: rotate(90deg);
 	}
-	.desi-inf_con > h1 {
-		color: #ffffff;
-		font-size: 6vw;
-		font-weight: 300;
-	}
+	
 	.video-title_2 span{
 		font-size: 5vw;
+	}
+	.desi-inf_con > h1{
+		color: #ffffff;
+		font-size: 6.5vw;
+		font-weight: 300;
+		padding: 8vw;
 	}
 
 	/* .desi-inf {
