@@ -101,20 +101,20 @@
 		<h1 class="about__title">Помогаем открыть заведение, которое эффективно функционирует и окупается, прорабатывая при строительстве все ключевые аспекты его успеха</h1>
 		<div class="about__item">
 			<h3 class="element-animation">
-				<img src="/assets/icon/6.svg" alt="">
-				Укладывамся в срок и не выходим за бюджет сметы во время ремонта и СМР	
-			</h3>
-			<h3 class="element-animation">
-				<img src="/assets/icon/7.svg" alt="">
-				Сокращаем бюджет строительства за счет оптимальных инженерных решений
-			</h3>
-			<h3 class="element-animation">
 				<img src="/assets/icon/15.svg" alt="">
 				Закладываем основу окупаемости через технологический проект кухни
 			</h3>
 			<h3 class="element-animation">
 				<img src="/assets/icon/18.svg" alt="">
 				Работаем на увеличение прибыли, создавая атмосферный дизайн интерьера
+			</h3>
+			<h3 class="element-animation">
+				<img src="/assets/icon/7.svg" alt="">
+				Сокращаем бюджет строительства за счет оптимальных инженерных решений
+			</h3>
+			<h3 class="element-animation">
+				<img src="/assets/icon/6.svg" alt="">
+				Укладывамся в срок и не выходим за бюджет сметы во время ремонта и СМР	
 			</h3>
 		</div>
 
@@ -228,7 +228,7 @@
 					</dotlottie-player>
 					<div class="info_check-title">
 						<h2>Ген. подрядчик</h2>
-						<h3>Координируем субподрядные и смежные компании.  <br>Cобрали коллектив, «заточенный» на ресторанах</h3>
+						<h3>Координируем субподрядные и смежные компании, cобрали коллектив, «заточенный» на ресторанах</h3>
 						</div>
 				</div>
 
@@ -290,9 +290,9 @@
 					<div class="info-cart">
 						<img class="info_2-img" src="/assets/img/icon/prob.svg" alt="">
 						<!-- <img class="info_2-img" src="/assets/img/icon/mac.svg" alt=""> -->
-						<h2 class="iTitle">Дизайн интерера</h2>
+						<h2 class="iTitle">Дизайн интерьера</h2>
 						<div class="info_sleep">
-							<h3 class="info-2_sub-title" > Создаем атмосферный интерьер, который работает на увеличение прибыли. Повышаем эффективность каждого метра. Уделяем большое внимание зонированию и балансу функций в интерьере</h3>
+							<h3 class="info-2_sub-title" > Создаем атмосферный интерьер, который работает на увеличение прибыли.</h3>
 							<a href="/pages/design.php"><div class="button info-button">Подробнее</div></a>
 						</div>
 					</div>
@@ -336,7 +336,8 @@
 		</div>
 		<!-- ----------------------------------------------------------------------------- -->
 		<div class="info-block_3">
-			<h1 class="info_title" >Эксплуатация помещения</h1>
+			<h1 class="info_title" >Наша компетенция</h1>
+			
 			<div class="info_check-con_3">
 				<div class="info_check move-con">
 					<dotlottie-player 
@@ -402,7 +403,7 @@
 						</div>
 				</div>
 			</div>
-			<h3 class="info_title-sub_3" >Часто мы сдаем свои объекты службам ТЦ до открытия и запуска в эксплуатацию самого ТЦ.
+			<h3 class="info_title-sub_3 chasto" >Часто мы сдаем свои объекты службам ТЦ до открытия и запуска в эксплуатацию самого ТЦ.
 				Это снижает риски владельцев ТЦ, а их команде легче управлять своими критическими линиями.
 				</h3>
 		</div>
@@ -415,9 +416,9 @@
 				<div class="info-back">
 					<div class="info-cart">
 						<img class="info_2-img" src="/assets/img/icon/mac.svg" alt="">
-						<h2 class="iTitle">Дизайн-проекты</h2>
+						<h2 class="iTitle">Дизайнеры</h2>
 						<div class="info_sleep icart_down">
-							<h3 class="info-2_sub-title" >Весь состав ИТР нашей компании с высшим строительным и инженерным образованием.</h3>
+							<h3 class="info-2_sub-title">Наши дизайнеры имеют множественный успешный опыт ресторанных проектов.</h3>
 							<a href="/pages/design.php"><div class="button info-button">Подробнее</div></a>
 						</div>
 					</div>
@@ -426,9 +427,9 @@
 				<div class="info-back">
 					<div class="info-cart">
 							<img class="info_2-img" src="/assets/img/icon/lin.svg" alt="">
-							<h2 class="iTitle">Проектирование</h2>
+							<h2 class="iTitle">Инженеры и проектировщики</h2>
 							<div class="info_sleep icart_down">
-								<h3 class="info-2_sub-title" >Наши дизайнеры имеют множественный успешный опыт ресторанных проектов.
+								<h3 class="info-2_sub-title">Весь состав ИТР нашей компании с высшим строительным и инженерным образованием.
 								</h3>
 								<a href="/pages/project.php"><div class="button info-button">Подробнее</div></a>
 						</div>
@@ -439,7 +440,7 @@
 				<div class="info-back">
 					<div class="info-cart">
 							<img class="info_2-img" src="/assets/img/icon/casc.svg" alt="">
-							<h2 class="iTitle">Строительство</h2>
+							<h2 class="iTitle">Строители</h2>
 							<div class="info_sleep icart_down">
 								<h3 class="info-2_sub-title">Команда строителей обладает разносторонней квалификацией и имеет опыт в ремонте ресторанов, умеет воплотить все задумки дизайнера и пожелания Заказчика.</h3>
 								<a href="/pages/SMR.php"><div class="button info-button">Подробнее</div></a>
@@ -465,12 +466,70 @@
 	<!-- СХЕМА -->
 	<?php
 		include('components/shema.php')
-	?>
+	?>	
+	<div class="step_con step_con-mob">
+	<div class="step-container">
+		<div class="step">
+			<h1>Сначала запускаются <span>Технология</span> и <span>Дизайн,</span> далее разрабатываются архитектурный и инженерные разделы, только после этого считается смета, а потом - стройка.</h1>
+		</div>
+	
+	<img class="_R" src="/assets/icon/R.svg"></img>
+
+	<div class="step">
+		<h1>Далее обязательно разрабатывается раздел <span>АР</span>. Он объединяет <span>Дизайн</span> и <span>Технологию.</span> Раздел <span>АР</span> является техническим заданием на проектирование инженерных разделов</h1>
+	</div>
+
+	</div>
+
+	<img class="long_R" src="/assets/icon/long_R.svg"></img>
+	<img class="R" src="/assets/icon/R.svg"></img>
+
+	<div class="step-container">
+
+		<div class="step">
+			<h1>После разработки раздела <span>АР</span>, разрабатываются инженерные разделы: <span>ОВиК</span>, <span>ВК</span>, <span>СКС</span>, <span>ЭОМ</span> и если есть конструкции из металла, то раздел <span>КМ</span>.</h1>
+		</div>
+	
+		<img class="_R" src="/assets/icon/R.svg"></img>
+
+	<div class="step">
+		<h1><span>ЭОМ</span> разрабатывается последним, так как в нем сведена вся информация от всех потребителей энергии со всех проектов.</h1>
+	</div>
+
+	</div>
+	<img class="long_R" src="/assets/icon/long_R.svg"></img>
+	<img class="R" src="/assets/icon/R.svg"></img>
+
+	<div class="step-container">
+
+	<div class="step">
+		<h1>От соблюдения такой последовательности этапов зависит количество ошибок и перерасход ресурсов Заказчика</h1>
+	</div>
+
+	<img class="_R" src="/assets/icon/R.svg"></img>
+
+	<div class="step">
+		<h1>Эта зависимость прямо пропорциональна масштабу проекта – чем больше объект, тем строже нужно соблюдать эту этапность.</h1>
+	</div>
+
+	</div>
+
+</div>
+
+<div class="warn_con  warn-mob">
+	<div class="warn">
+		<img src="/assets/img/icon/!.svg" alt="">
+		<h1>От соблюдения такой последовательности этапов зависит количество ошибок и перерасход ресурсов Заказчика.<br>
+		Эта зависимость прямо пропорциональна масштабу проекта – чем больше объект, тем строже нужно соблюдать эту этапность.</h1>
+	</div>
+</div>
+
 
 	<!-- CART -->
 	<?php
 		include('components/carts.php')
 	?>
+
 
 	<!-- VIDEO -->
 	<div class="video_con">
