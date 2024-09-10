@@ -396,18 +396,18 @@ if ('IntersectionObserver' in window) {
 			$('.mob_open').fadeOut(400);
 
 			////////////////
-			$('.kit-info-banner').fadeOut(400)
-			$('.kit-info-banner').css({
-				'transform': 'translateX(-200%)',
-				'transition': 'all 0.5s ease-out',
-			})
+			// $('.kit-info-banner').fadeOut(400)
+			// $('.kit-info-banner').css({
+			// 	'transform': 'translateX(-200%)',
+			// 	'transition': 'all 0.5s ease-out',
+			// })
 
 			////////////////
-			$('.info-banner').fadeOut(400)
-			$('.info-banner').css({
-				'transform': 'translateX(-200%)',
-				'transition': 'all 0.5s ease-out',
-			})
+			// $('.info-banner').fadeOut(400)
+			// $('.info-banner').css({
+			// 	'transform': 'translateX(-200%)',
+			// 	'transition': 'all 0.5s ease-out',
+			// })
 
 		});
 

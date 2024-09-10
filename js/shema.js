@@ -304,6 +304,57 @@
 			}
 		});
 
+
+
+		$(document).ready(function() {
+				// Проверяем, есть ли элемент с классом sh__item на странице
+				if ($('.sh__item').length) {
+						$('.sh__item-an').on('click', function() {
+								window.location.href = '/технология';
+						});
+				}
+		});
+		$(document).ready(function() {
+				// Проверяем, есть ли элемент с классом sh__item на странице
+				if ($('.sh__item').length) {
+						$('.sh__teh').on('click', function() {
+								window.location.href = '/дизайн';
+						});
+				}
+		});
+		$(document).ready(function() {
+				// Проверяем, есть ли элемент с классом sh__item на странице
+				if ($('.sh__item').length) {
+						$('.item-proj').on('click', function() {
+								window.location.href = '/инженерия';
+						});
+				}
+		});
+		$(document).ready(function() {
+			// Проверяем, есть ли элемент с классом sh__item на странице
+			if ($('.sh__item').length) {
+					$('.sh__item-smet').on('click', function() {
+							window.location.href = '/СМР#smeta_con';
+					});
+			}
+		});
+		$(document).ready(function() {
+			// Проверяем, есть ли элемент с классом sh__item на странице
+			if ($('.sh__item').length) {
+					$('.sh__item-SMR').on('click', function() {
+							window.location.href = '/СМР';
+					});
+			}
+		});
+		$(document).ready(function() {
+			// Проверяем, есть ли элемент с классом sh__item на странице
+			if ($('.sh__item').length) {
+					$('.sh__gar').on('click', function() {
+							window.location.href = '/СМР';
+					});
+			}
+		});
+
 		//----------------ITEMS-------------------------------------
 		document.querySelectorAll('.sh__item').forEach(item => {
 			item.addEventListener('mouseenter', () => {

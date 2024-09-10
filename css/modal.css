@@ -187,56 +187,76 @@
 
 /* ---------------INFO FORM ---------- */
 
-
 /* info */
+.info-banner-con{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 2vw 0;
+}
+.kit-info-banner-con{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 2vw 0;
+}
 .info-banner{
 	display: flex;
-	flex-direction: column;
-	position: fixed;
-	top: 15%;
-	left: 3%;
-	padding: 2vw;
+	padding: 2vw 3vw;
 	background: -moz-linear-gradient(221deg, rgba(37,156,212,1) 0%, rgba(1,70,102,1) 100%);
 	background: -webkit-linear-gradient(221deg, rgba(37,156,212,1) 0%, rgba(1,70,102,1) 100%);
 	background: linear-gradient(221deg, rgba(37,156,212,1) 0%, rgba(1,70,102,1) 100%);
-	width: 20vw;
+	width: 60vw;
 	height: fit-content;
 	box-shadow: 0vw 0vw 2vw #00000090;
 	border-radius: 0.5vw;
-	/* transform: translateX(-600px);  */
-	transform: translateX(-200%); 
-	transition: all 0.5s ease-out;
 	z-index: 99;
 	cursor: pointer;
 }
-.info-banner>h1{
+.info-banner>div{
+	display: flex;
+	flex-direction: column;
+	padding: 0 2vw;
+}
+.info-banner>div form{
+	width: 80%;
+}
+.info-banner>div div{
+	display: flex;
+	flex-direction: column;
+}
+.info-banner>div h1{
 	color: #ffffff;
 	font-size: 2vw;
 	font-weight: 400;
 	margin: 0;
 }
-.info-banner>h2{
+.info-banner>div h2{
 	font-size: 0.8vw;
 	font-weight: 200;
 	color:	#ffffff;
 	letter-spacing: 0.05vw;
 	margin-bottom: 1vw;
+	width: 100%;
 }
-.info-banner>h3{
+.info-banner>div h3{
 	font-size: 1.5vw;
 	font-weight: 200;
+	width: 100%;
 	color:	#ffffff;
 	letter-spacing: 0.05vw;
 	margin-bottom: 1vw;
 	margin: 0;
 }
-.info-close__banner{
+/* .info-close__banner{
 	width: 1vw;
 	position: absolute;
 	top: 3%;
 	left: 90%;
 	cursor: pointer;
-}
+} */
 .info-btn{
 	background-color: #ffffff00;
 	color: #ffffff;
@@ -245,16 +265,10 @@
 .info-btn:hover{
 	background-color: #ffffff;
 	color: var(--main-blue);
-}	
-
-
-
+}
 .form-ban__lab{
 	display: flex;
 }
-
-
-
 .check-sub{
 	display: flex;
 	width: 100%;
@@ -271,77 +285,66 @@
 /* kit */
 .kit-info-banner{
 	display: flex;
-	flex-direction: column;
-	position: fixed;
-	top: 15%;
-	left: 3%;
-	padding: 2vw;
+	padding: 2vw 3vw;
 	background: -moz-linear-gradient(221deg, rgba(37,156,212,1) 0%, rgba(1,70,102,1) 100%);
 	background: -webkit-linear-gradient(221deg, rgba(37,156,212,1) 0%, rgba(1,70,102,1) 100%);
 	background: linear-gradient(221deg, rgba(37,156,212,1) 0%, rgba(1,70,102,1) 100%);
-	width: 20vw;
+	width: 60vw;
 	height: fit-content;
 	box-shadow: 0vw 0vw 2vw #00000090;
 	border-radius: 0.5vw;
-	transform: translateX(-200%); 
-	transition: all 0.5s ease-out;
-	z-index: 999;
+	z-index: 99;
 	cursor: pointer;
 }
-.kit-info-banner>h1{
+.kit-info-banner>div{
+	display: flex;
+	flex-direction: column;
+	padding: 0 2vw;
+}
+.kit-info-banner>div form{
+	width: 100%;
+}
+.kit-info-banner>div div{
+	display: flex;
+	flex-direction: column;
+}
+.kit-info-banner>div h1{
 	color: #ffffff;
 	font-size: 2vw;
 	font-weight: 400;
 	margin: 0;
 }
-.kit-info-banner>h2{
+.kit-info-banner>div h2{
 	font-size: 0.8vw;
 	font-weight: 200;
 	color:	#ffffff;
 	letter-spacing: 0.05vw;
-	margin: 0;
-}
-.kit-info-banner a h2{
-	font-size: 0.8vw;
-	font-weight: 200;
-	color:	#ffffff;
-	margin: 0;
 	margin-bottom: 1vw;
-	opacity: 0.5;
-	transition: all 0.5s ease;
-	cursor: pointer;
+	width: 100%;
 }
-.kit-info-banner a h2:hover{
-	transition: all 0.5s ease;
-	opacity: 1;
-}
-.kit-info-banner>h3{
+.kit-info-banner>div h3{
 	font-size: 1.5vw;
 	font-weight: 200;
+	width: 100%;
 	color:	#ffffff;
 	letter-spacing: 0.05vw;
 	margin-bottom: 1vw;
 	margin: 0;
 }
-.kit-info-close__banner{
+/* .kit-info-close__banner{
 	width: 1vw;
 	position: absolute;
 	top: 3%;
 	left: 90%;
 	cursor: pointer;
-}
+} */
 .kit-info__banner-img{
-	width: 100%;
-	padding: 1vw 2vw;
+	width: 50%;
 	cursor: pointer;
 }
 .info-map__banner{
 	cursor: pointer;
 }
-
-
-
-
 /* .modal__input.textarea::placeholder{
 	letter-spacing: 0.05vw;
 	font-family: Gilroy;
@@ -565,7 +568,7 @@ textarea {
 	pointer-events: none;
 }
 .info-map__banner{
-	width: 100%;
+	width: 30%;
 	padding: 1vw 2vw;
 }
 

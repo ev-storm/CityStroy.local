@@ -140,18 +140,6 @@
 			<img class="commer-img" src="/assets/img/icon/comm-img.svg" alt="">
 	</div>
 
-		<!-- BIG-BANNER -->
-		<?php
-		include('../components/big-form.php')
-	?>
-	<!-- INFO-BANNER -->
-	<?php
-		include('../components/info-banner.php')
-	?>
-	<!-- MODAL-BANNER -->
-	<?php
-		include('../components/modal.php')
-	?>
 
 </footer>
 

@@ -88,7 +88,7 @@
 
 			<div class="video__con">
 					<video  class="video" loop="true" muted="true" autoplay="true" playsinline>
-						<source src="/assets/video/City_low.mp4" type="video/mp4">
+						<source src="/assets/video/City.mp4" type="video/mp4">
 					</video>
 			</div>
 
@@ -168,27 +168,28 @@
 			<div class="swiper-wrapper">
 				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (1).svg"></div></a>
 				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (2).svg"></div></a>
-				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (3).svg"></div></a>
-				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (4).svg"></div></a>
-				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (5).svg"></div></a>
-				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (6).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../case/pasta.php"><img src="assets/img/logo_swiper/swiper (3).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../case/il_patio.php"><img src="assets/img/logo_swiper/swiper (4).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../case/miata-ostrov.php"><img src="assets/img/logo_swiper/swiper (5).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../case/bsb.php"><img src="assets/img/logo_swiper/swiper (6).svg"></div></a>
 				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (7).svg"></div></a>
-				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (8).svg"></div></a>
-				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (9).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../case/bsb.php"><img src="assets/img/logo_swiper/swiper (8).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../case/costa.php"><img src="assets/img/logo_swiper/swiper (9).svg"></div></a>
 				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (10).svg"></div></a>
 				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (11).svg"></div></a>
-				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (12).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../case/luna.php"><img src="assets/img/logo_swiper/swiper (12).svg"></div></a>
 				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (13).svg"></div></a>
-				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (14).svg"></div></a>
-				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (15).svg"></div></a>
-				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (16).svg"></div></a>
-				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (17).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../case/il_&_geo.php"><img src="assets/img/logo_swiper/swiper (14).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../case/river.php"><img src="assets/img/logo_swiper/swiper (15).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../case/sinabon.php"><img src="assets/img/logo_swiper/swiper (16).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../pages/case/il_&_geo.php"><img src="assets/img/logo_swiper/swiper (17).svg"></div></a>
 				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (18).svg"></div></a>
 				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (19).svg"></div></a>
 				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (20).svg"></div></a>
 				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (21).svg"></div></a>
 				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (22).svg"></div></a>
 				<div class="swiper-slide ticker__slide"><a href="../pages/portfolio.php"><img src="assets/img/logo_swiper/swiper (23).svg"></div></a>
+				<div class="swiper-slide ticker__slide"><a href="../case/niama_butovo.php"><img src="assets/img/logo_swiper/swiper (25).svg"></div></a>
 			</div>
 	</div> 
 
@@ -335,78 +336,7 @@
 			</div>
 		</div>
 		<!-- ----------------------------------------------------------------------------- -->
-		<div class="info-block_3">
-			<h1 class="info_title" >Наша компетенция</h1>
-			
-			<div class="info_check-con_3">
-				<div class="info_check move-con">
-					<dotlottie-player 
-						class="info_ok_player move"
-						id="info_ok_player_5"
-						src="/assets/animation/ok.json" 
-						background="transparent" 
-						speed="1" 
-						loop="false"
-						autoplay="true">
-					</dotlottie-player>
-					<div class="info_check-title">
-						<h2>Хорошо представляем</h2>
-						<h3>работу со службами эксплуатации ТЦ.</h3>
-						</div>
-				</div>
-
-				<div class="info_check move-con">
-					<dotlottie-player 
-						class="info_ok_player move"
-						id="info_ok_player_6"
-						src="/assets/animation/ok.json" 
-						background="transparent" 
-						speed="1" 
-						loop="false"
-						autoplay="true">
-					</dotlottie-player>
-					<div class="info_check-title">
-						<h2>Знаем</h2>
-						<h3>как спроектировать и согласовать <br>  все разделы проектов.</h3>
-						</div>
-				</div>
-
-				<div class="info_check move-con">
-					<dotlottie-player 
-						class="info_ok_player move"
-						id="info_ok_player_7"
-						src="/assets/animation/ok.json" 
-						background="transparent" 
-						speed="1" 
-						loop="false"
-						autoplay="true">
-					</dotlottie-player>
-					<div class="info_check-title">
-						<h2>Умеем</h2>
-						<h3>договориться с инженерами <br>ТЦ о нестандартных решениях.</h3>
-						</div>
-				</div>
-
-				<div class="info_check move-con">
-					<dotlottie-player 
-						class="info_ok_player move"
-						id="info_ok_player_8"
-						src="/assets/animation/ok.json" 
-						background="transparent" 
-						speed="1" 
-						loop="false"
-						autoplay="true">
-					</dotlottie-player>
-					<div class="info_check-title">
-						<h2>Заранее готовим</h2>
-						<h3>исполнительную документацию.</h3>
-						</div>
-				</div>
-			</div>
-			<h3 class="info_title-sub_3 chasto" >Часто мы сдаем свои объекты службам ТЦ до открытия и запуска в эксплуатацию самого ТЦ.
-				Это снижает риски владельцев ТЦ, а их команде легче управлять своими критическими линиями.
-				</h3>
-		</div>
+		
 
 		<!-- ----------------------------------------------------------------------------- -->
 		<div class="info-block_2">
@@ -462,6 +392,13 @@
 		</div>
 
 	</div>
+
+
+	<!-- info-banner -->
+	<?php
+		include('components/info-banner.php')
+	?>
+
 
 	<!-- СХЕМА -->
 	<?php
@@ -523,6 +460,16 @@
 		Эта зависимость прямо пропорциональна масштабу проекта – чем больше объект, тем строже нужно соблюдать эту этапность.</h1>
 	</div>
 </div>
+
+
+
+
+
+
+	<!-- kit-info-banner -->
+	<?php
+		include('components/kit-info-banner.php')
+	?>
 
 
 	<!-- CART -->
@@ -648,9 +595,9 @@
 		include('components/big-form.php')
 	?>
 	<!-- INFO-BANNER -->
-	<?php
-		include('components/info-banner.php')
-	?>
+	<!-- <?php
+		//include('components/info-banner.php')
+	?> -->
 	<!-- MODAL-BANNER -->
 	<?php
 		include('components/modal.php')

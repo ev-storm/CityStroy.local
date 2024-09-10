@@ -424,25 +424,26 @@ PROJECT */
 }
 .warn{
 	display: flex;
-	background-color: #00547c;
+	background-color: #00547c00;
 	border-radius: 0.5vw;
 	width: 70%;
 	margin: 0 0 3vw;
 	padding: 1vw 3vw;
 	transition: all 0.2s ease-in;
 }
-.warn:hover{
-	background-color: var(--main-blue); 
+/* .warn:hover{
+	background-color: #00547c; 
 	transition: all 0.2s ease-in;
-}
+} */
 .warn > img{
 	width: 0.7vw;
 	margin-right: 1vw;
 }
 .warn > h1{
-	color: #161616;
+	color: #ffffff;
 	font-weight: 400;
 	font-size: 0.9vw;
+	text-align: center;
 }
 
 

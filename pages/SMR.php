@@ -152,6 +152,8 @@
 		<button class="button-about button modal__KP">ОБСУДИТЬ ПРОЕКТИРОВАНИЕ</button>
 	</article>
 
+	
+
 	<!-- SCREEN_3 ABOUT-->
 	<article  class="about__3">
 			
@@ -163,7 +165,7 @@
 				</div>
 			</div> 
 			
-			<div class="smeta_con ">
+			<div class="smeta_con" id="smeta_con">
 				<h1><span class="element-animation">Честные сметы.</span> Как известно, есть два метода работы с Клиентом.</h1>
 				
 				<div class="cart-teh element-animation smeta">	
@@ -216,6 +218,112 @@
 					</div>
 				</div>
 			</div>
+			<div class="info-block_3">
+			<h1 class="info_title  info_title-smr" >Неизменная смета с честными ценами на ремонт ресторана</h1>
+			<h3 class="info_title-sub_3 chasto" >Еще до расчета сметы глубоко погружаемся в ваши проекты, прорабатываем их на предмет неточностей и наложений, тем самым исключая любые возможные изменения в количестве, стоимости и сроках во время строительно-монтажных работ.
+				</h3>
+			
+			<div class="info_check-con_3 info_check-con_3-smr">
+				<div class="info_check  info_check-title-smr move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_5"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title ">
+						<h2>Глубоко погружаемся в проект </h2>
+						<h3>внимательно изучаем все его нюансы.</h3>
+						</div>
+				</div>
+
+				<div class="info_check  info_check-title-smr move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_6"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title ">
+						<h2>Находим неточности</h2>
+						<h3>нестыковки и разночтения в разных его разделах из-за которых может не сложиться проект.</h3>
+						</div>
+				</div>
+
+				<div class="info_check  info_check-title-smr move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_7"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title">
+						<h2>Ищем варианты сокращения бюджета</h2>
+						<h3> за счет оптимальных технических решений.</h3>
+						</div>
+				</div>
+
+				<div class="info_check  info_check-title-smr move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_8"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title ">
+						<h2>Даем список рекомендаций </h2>
+						<h3>по улучшению и дополнению проектов. При необходимости помогаем Вам доработать проекты.</h3>
+						</div>
+				</div>
+
+				<div class="info_check  info_check-title-smr move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_8"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title " >
+						<h2>Считаем смету </h2>
+						<h3>по скорректированным проектам, не занижая количества и стоимости работ, чтобы «зайти» на объект.</h3>
+						</div>
+				</div>
+
+				<div class="info_check  info_check-title-smr move-con">
+					<dotlottie-player 
+						class="info_ok_player move"
+						id="info_ok_player_8"
+						src="/assets/animation/ok.json" 
+						background="transparent" 
+						speed="1" 
+						loop="false"
+						autoplay="true">
+					</dotlottie-player>
+					<div class="info_check-title">
+						<h2>Итоговую смету </h2>
+						<h3>закрепляем в договоре на СМР.</h3>
+						</div>
+				</div>	
+
+
+			</div>
+			
+	</div>
 
 			<div class="cart-teh smeta-team ">	
 				<div class=" title-teh_con">

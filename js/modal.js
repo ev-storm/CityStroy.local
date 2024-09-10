@@ -133,18 +133,18 @@ let cof = $(this).scrollTop();
 
 
 if(cof < 1000){
-	$('.info-banner').css({
-		'transform': 'translateX(-200%)',
-		'transition': 'all 0.5s ease-out',
-	})
+	// $('.info-banner').css({
+	// 	'transform': 'translateX(-200%)',
+	// 	'transition': 'all 0.5s ease-out',
+	// })
 	$('.commer-banner-con').css({
 		'transform': 'translateX(200%)',
 		'transition': 'all 0.5s ease-out',
 	})
-	$('.kit-info-banner').css({
-		'transform': 'translateX(-200%)',
-		'transition': 'all 0.5s ease-out',
-	})
+	// $('.kit-info-banner').css({
+	// 	'transform': 'translateX(-200%)',
+	// 	'transition': 'all 0.5s ease-out',
+	// })
 	
 
 }
@@ -171,20 +171,20 @@ if ($(window).width() <= 600) {
 	}
 }
 
-if(cof>2300){
-	$('.info-banner').css({
-		'transform': 'translateX(0px)',
-		'transition': 'all 0.5s ease-out',
-	})
-}
+// if(cof>2300){
+// 	$('.info-banner').css({
+// 		'transform': 'translateX(0px)',
+// 		'transition': 'all 0.5s ease-out',
+// 	})
+// }
 
-$('.info-close__banner').click(function(){
-	$('.info-banner').fadeOut(400)
-	$('.info-banner').css({
-		'transform': 'translateX(-200%)',
-		'transition': 'all 0.5s ease-out',
-	})
-})
+// $('.info-close__banner').click(function(){
+// 	$('.info-banner').fadeOut(400)
+// 	$('.info-banner').css({
+// 		'transform': 'translateX(-200%)',
+// 		'transition': 'all 0.5s ease-out',
+// 	})
+// })
 
 
 if(cof > 1900 && cof < 1930){
@@ -195,7 +195,6 @@ if(cof > 1900 && cof < 1930){
 }
 
 // Проверяем, что текущая страница не /технология (в закодированном виде)
-
 
 
 
@@ -224,20 +223,20 @@ $('.commer-btn').click(function(){
 })
 
 
-if(cof>3300){
-	$('.kit-info-banner').css({
-		'transform': 'translateX(0px)',
-		'transition': 'all 0.5s ease-out',
-	})
-}
+// if(cof>3300){
+// 	$('.kit-info-banner').css({
+// 		'transform': 'translateX(0px)',
+// 		'transition': 'all 0.5s ease-out',
+// 	})
+// }
 
-$('.kit-info-close__banner').click(function(){
-	$('.kit-info-banner').fadeOut(400)
-	$('.kit-info-banner').css({
-		'transform': 'translateX(-200%)',
-		'transition': 'all 0.5s ease-out',
-	})
-})
+// $('.kit-info-close__banner').click(function(){
+// 	$('.kit-info-banner').fadeOut(400)
+// 	$('.kit-info-banner').css({
+// 		'transform': 'translateX(-200%)',
+// 		'transition': 'all 0.5s ease-out',
+// 	})
+// })
 
 
 
@@ -272,13 +271,13 @@ $('.kit-info-close__banner').click(function(){
 	// Функция для обновления состояния кнопки
 	function updateButtonState() {
 	
-			if (checkbox.checked) {
-					button.classList.remove('disabled'); // Убираем класс 'disabled'
-					button.disabled = false; // Разблокируем кнопку
-			} else {
-					button.classList.add('disabled'); // Добавляем класс 'disabled'
-					button.disabled = true; // Блокируем кнопку
-			}
+				if (checkbox.checked) {
+						button.classList.remove('disabled'); // Убираем класс 'disabled'
+						button.disabled = false; // Разблокируем кнопку
+				} else {
+						button.classList.add('disabled'); // Добавляем класс 'disabled'
+						button.disabled = true; // Блокируем кнопку
+				}
 
 			if (checkboxButton.checked) {
 					buttonBanner.classList.remove('disabled'); // Убираем класс 'disabled'
@@ -330,7 +329,7 @@ $('.kit-info-close__banner').click(function(){
 		checkboxButton.addEventListener('change', updateButtonState);
 		checkboxButtonBig.addEventListener('change', updateButtonState);
 		checkboxButtonKit.addEventListener('change', updateButtonState);
-		//checkboxButtonKitTehno.addEventListener('change', updateButtonState);
+		checkboxButtonKitTehno.addEventListener('change', updateButtonState);
 
 
 
@@ -444,3 +443,4 @@ $('.kit-info-close__banner').click(function(){
 					invert: false,
 			},
 		});
+

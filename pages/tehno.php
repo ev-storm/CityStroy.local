@@ -206,6 +206,7 @@
 					</h3>
 				</div>
 			</div>
+
 			<!-- 3 -->
 			<div class="cart-teh сart-teh__mob">
 				<img class="element-animation" src="/assets/img/teh/3.jpg" alt="">
@@ -337,12 +338,24 @@
 		</div>
 
 
+
+
+  
 	<!-- --------------------------------------- -->
 
 	<!-- FOTTER -->
 	<?php
 		include('../components/footer.php')
 	?>
+			<!-- BIG-BANNER -->
+			<?php
+		include('../components/big-form.php')
+	?>
+	<!-- MODAL-BANNER -->
+	<?php
+		include('../components/modal.php')
+	?>
+
 	
 </body>
 

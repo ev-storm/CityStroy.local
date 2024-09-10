@@ -110,6 +110,7 @@
 		<div class="swiper-slide portfolio_ticker__slide"><img src="../assets/img/blue_logo_swiper/22.png"></div>
 		<div class="swiper-slide portfolio_ticker__slide"><img src="../assets/img/blue_logo_swiper/23.png"></div>
 		<div class="swiper-slide portfolio_ticker__slide"><img src="../assets/img/blue_logo_swiper/24.png"></div>
+		<div class="swiper-slide portfolio_ticker__slide"><img src="../assets/img/blue_logo_swiper/25.png"></div>
 	</div>
 </div> 
 

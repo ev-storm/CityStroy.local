@@ -1,11 +1,11 @@
 
 
 <!-----------------------MOB----------------------------------->
-<h1 class="shema-title" >Дорожная карта реализации объекта</h1>
+<h1 class="shema-title" >Для удобства Заказчика мы разработали дорожную карту реализации объекта</h1>
 <div class="sh-mob">
 
     <!----------------- АНАЛИЗ ------------------------------>
-    <div class="sh-mob__item">
+    <div class="sh-mob__item sh-mob__item-an">
         <h1>Анализ Т.У.</h1>
         <h2>Сбор данных</h2>
         <h2>Технических условий</h2>
@@ -103,22 +103,27 @@
 <div class="sh">
 
     <!----------------- АНАЛИЗ ------------------------------>
-    <div class="sh__item">
-        <h1>Анализ Т.У.</h1>
-        <h2>Сбор данных</h2>
-        <h2>Технических условий</h2>
-    </div>
+    
+			<div class="sh__item sh__item-an">
+					<h1>Анализ Т.У.</h1>
+					<h2>Сбор данных</h2>
+					<h2>Технических условий</h2>
+			</div>
+		
     <img class="sh__down " src="/assets/img/icon/right.svg">
 
     <!----------------------- ТЕХНОЛОГИЯ ------------------>
+		
     <div class="sh__item sh__teh">
         <h1>Технология <br> Дизайня</h1>
         <h2>Разработка технологий</h2>
         <h2> Дизайн порект</h2> 
     </div>
+	
 		<img class="sh__down down-proj" src="/assets/img/icon/right-white.svg">
 
     <!------------------ ПРОЕКТИРОВАНИЕ -------------------->
+	
     <div class="sh__item item-proj">
         <h1>Проектирование <br> </h1>
         <img class="sh__img" src="/assets/img/icon/sh.svg" alt="">
@@ -165,31 +170,38 @@
             </div>
         </div>
     </div>
+
 		<img class="sh__down" src="/assets/img/icon/right.svg">
 
     <!-------------------- СMЕТА ----------------------------->
-    <div class="sh__item">
+	
+    <div class="sh__item sh__item-smet">
         <h1>Смета</h1>
 					<h2>Честные смены</h2>
 					<h2>Подсчёт всего и сразу</h2>
     </div>
+		
 		<img class="sh__down" src="/assets/img/icon/right.svg">
 
     <!------------------------- СМР --------------------->
-    <div class="sh__item">
+		
+    <div class="sh__item sh__item-SMR">
         <h1>СМР</h1>
         <h2>Выполнение работ согласно проекту</h2>
         <h2>Инженеры и проектировщики</h2>
         <h2>Квалифицированные строители</h2>
     </div>
+		
     <img class="sh__down" src="/assets/img/icon/right.svg">
 
     <!----------------------- ГАРАНТИЯ ------------------------->
+	
     <div class="sh__item sh__gar">
         <h1>Гарантийное обслуживание</h1>
         <h2>1 год сервисного обслуживания</h2>
         <h2>Постгарантийное обслуживание <br>на договорных условиях</h2>
     </div>
+
 
     <div class="sh__banner" id="sh__banner">
 				<div class="close__banner-con">

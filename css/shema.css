@@ -299,7 +299,7 @@
 		position: relative;
 	}
 	.sh__item {
-		width: 18vw;
+		width: 13vw;
 		background: linear-gradient(173deg, rgba(22,22,22,1) 0%, rgba(22,22,22,1) 100%);
 		margin: 2vw 0;
 		z-index: 9;
@@ -316,12 +316,13 @@
 		overflow: hidden;
 		scale: 1;
 		z-index: 9;
+		cursor: pointer;
 	}
 
 	.sh__item.active {
 		background: linear-gradient(173deg, rgba(57,57,57,1) 0%, rgba(0,0,0,1) 100%);
 		/* scale: 1.1; */
-		width: 25vw;
+		width: 20vw;
 		height: 11vw;
 		padding: 1vw;
 		transition: all 0.5s ease-out;
