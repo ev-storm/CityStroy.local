@@ -96,161 +96,313 @@ validation
 
 
 
-
-
-// --------TRIP FORM ------------------
+// Получаем элементы формы поездки
 const tripForm = document.querySelector('.trip-form');
-const tripTelSelector = tripForm.querySelector('.trip-input__tel');
-const inputmaskTrip = new Inputmask('+7 (999) 999-99-99');
-inputmaskTrip.mask(tripTelSelector);
+if (tripForm) {
+    const tripTelSelector = tripForm.querySelector('.trip-input__tel');
+    if (tripTelSelector) {
+        const inputmaskTrip = new Inputmask('+7 (999) 999-99-99');
+        inputmaskTrip.mask(tripTelSelector);
+        
+        const validationTripForm = new JustValidate('.trip-form');
+        
+        validationTripForm
+            .addField('.trip-input__name', [
+                {
+                    rule: 'minLength',
+                    value: 3,
+                    errorMessage: 'Введите более 3 символов'
+                },
+                {
+                    rule: 'maxLength',
+                    value: 30,
+                    errorMessage: 'Введите менее 30 символов'
+                },
+                {
+                    rule: 'required',
+                    value: true,
+                    errorMessage: 'Введите имя!'
+                }
+            ])
+            .addField('.trip-input__tel', [
+                {
+                    rule: 'required',
+                    value: true,
+                    errorMessage: 'Телефон обязателен',
+                },
+                {
+                    rule: 'function',
+                    validator: function () {
+                        const phone = tripTelSelector.inputmask.unmaskedvalue();
+                        return phone.length === 10;
+                    },
+                    errorMessage: 'Введите корректный телефон',
+                },
+            ])
+            .onSuccess((event) => {
+                console.log('Validation passes and form submitted', event);
 
-const validationTripForm = new JustValidate('.trip-form');
+                let infoFormData = new FormData(event.target);
+                let xhr = new XMLHttpRequest();
 
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            console.log('Отправлено');
 
-validationTripForm
-	.addField('.trip-input__name', [
-		{
-			rule: 'minLength',
-			value: 3,
-			errorMessage: 'Введите более 3 символов'
-		},
-		{
-			rule: 'maxLength',
-			value: 30,
-			errorMessage: 'Введите менее 30 символов'
-		},
-		{
-			rule: 'required',
-			value: true,
-			errorMessage: 'Введите имя!'
-		}
-	])
-	.addField('.trip-input__tel', [
-		{
-			rule: 'required',
-			value: true,
-			errorMessage: 'Телефон обязателен',
-		},
-		{
-			rule: 'function',
-			validator: function () {
-				const phone = tripTelSelector.inputmask.unmaskedvalue();
-				return phone.length === 10;
-			},
-			errorMessage: 'Введите корректный телефон',
-		},
-	])
-	.onSuccess((event) => {
-		console.log('Validation passes and form submitted', event);
+                            $('.info-banner').fadeOut(400);
+                            $('.info-banner').css({
+                                'transform': 'translateX(-100%)',
+                                'transition': 'all 0.5s ease-out',
+                            });
 
-		let infoFormData = new FormData(event.target);
-		
+                            $('.banner__mail').removeClass('hide');
+                            $('.banner__mail').addClass('show');
 
-		let xhr = new XMLHttpRequest();
+                            setTimeout(() => {
+                                $('.banner__mail').addClass('hide');
+                            }, 3000);
+                        }
+                    }
+                };
 
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState === 4) {
-				if (xhr.status === 200) {
-					console.log('Отправлено');
+                xhr.open('POST', 'mail.php', true);
+                xhr.send(infoFormData);
+                event.target.reset();
+            });
+    }
+}
 
-					$('.info-banner').fadeOut(400)
-					$('.info-banner').css({
-						'transform': 'translateX(-100%)',
-						'transition': 'all 0.5s ease-out',
-					})
-
-					$('.banner__mail').removeClass('hide');
-					$('.banner__mail').addClass('show');
-
-					setTimeout(() => {
-						$('.banner__mail').addClass('hide');
-					}, 3000);
-				}
-			}
-		}
-
-		xhr.open('POST', 'mail.php', true);
-		xhr.send(infoFormData);
-
-		event.target.reset();
-	});
-
-	
 // --------KIT FORM ------------------
 const kitForm = document.querySelector('.kit-form');
-const kitTelSelector = kitForm.querySelector('.kit-input__tel');
-const inputmaskKit = new Inputmask('+7 (999) 999-99-99');
-inputmaskKit.mask(kitTelSelector);
+if (kitForm) {
+    const kitTelSelector = kitForm.querySelector('.kit-input__tel');
+    if (kitTelSelector) {
+        const inputmaskKit = new Inputmask('+7 (999) 999-99-99');
+        inputmaskKit.mask(kitTelSelector);
 
-const validationKitForm = new JustValidate('.kit-form');
+        const validationKitForm = new JustValidate('.kit-form');
 
-validationKitForm
-	.addField('.kit-input__name', [
-		{
-			rule: 'minLength',
-			value: 3,
-			errorMessage: 'Введите более 3 символов'
-		},
-		{
-			rule: 'maxLength',
-			value: 30,
-			errorMessage: 'Введите менее 30 символов'
-		},
-		{
-			rule: 'required',
-			value: true,
-			errorMessage: 'Введите имя!'
-		}
-	])
-		.addField('.kit-input__tel', [
-			{
-				rule: 'required',
-				value: true,
-				errorMessage: 'Телефон обязателен',
-			},
-			{
-				rule: 'function',
-				validator: function () {
-					const phone = kitTelSelector.inputmask.unmaskedvalue();
-					return phone.length === 10;
-				},
-				errorMessage: 'Введите корректный телефон',
-			},
-		])
-	.onSuccess((event) => {
-		console.log('Validation passes and form submitted', event);
+        validationKitForm
+            .addField('.kit-input__name', [
+                {
+                    rule: 'minLength',
+                    value: 3,
+                    errorMessage: 'Введите более 3 символов'
+                },
+                {
+                    rule: 'maxLength',
+                    value: 30,
+                    errorMessage: 'Введите менее 30 символов'
+                },
+                {
+                    rule: 'required',
+                    value: true,
+                    errorMessage: 'Введите имя!'
+                }
+            ])
+            .addField('.kit-input__tel', [
+                {
+                    rule: 'required',
+                    value: true,
+                    errorMessage: 'Телефон обязателен',
+                },
+                {
+                    rule: 'function',
+                    validator: function () {
+                        const phone = kitTelSelector.inputmask.unmaskedvalue();
+                        return phone.length === 10;
+                    },
+                    errorMessage: 'Введите корректный телефон',
+                },
+            ])
+            .onSuccess((event) => {
+                console.log('Validation passes and form submitted', event);
 
-		let infoKitFormData = new FormData(event.target);
+                let infoKitFormData = new FormData(event.target);
+                let xhr = new XMLHttpRequest();
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            console.log('Отправлено');
+
+                            $('.kit-info-banner').fadeOut(400);
+                            $('.kit-info-banner').css({
+                                'transform': 'translateX(-100%)',
+                                'transition': 'all 0.5s ease-out',
+                            });
+
+                            $('.banner__mail').removeClass('hide');
+                            $('.banner__mail').addClass('show');
+
+                            setTimeout(() => {
+                                $('.banner__mail').addClass('hide');
+                            }, 3000);
+                        }
+                    }
+                };
+
+                xhr.open('POST', 'mail.php', true);
+                xhr.send(infoKitFormData);
+                event.target.reset();
+            });
+    }
+}
+
+// // --------TRIP FORM ------------------
+// const tripForm = document.querySelector('.trip-form');
+// const tripTelSelector = tripForm.querySelector('.trip-input__tel');
+// const inputmaskTrip = new Inputmask('+7 (999) 999-99-99');
+// inputmaskTrip.mask(tripTelSelector);
+
+// const validationTripForm = new JustValidate('.trip-form');
+
+
+// validationTripForm
+// 	.addField('.trip-input__name', [
+// 		{
+// 			rule: 'minLength',
+// 			value: 3,
+// 			errorMessage: 'Введите более 3 символов'
+// 		},
+// 		{
+// 			rule: 'maxLength',
+// 			value: 30,
+// 			errorMessage: 'Введите менее 30 символов'
+// 		},
+// 		{
+// 			rule: 'required',
+// 			value: true,
+// 			errorMessage: 'Введите имя!'
+// 		}
+// 	])
+// 	.addField('.trip-input__tel', [
+// 		{
+// 			rule: 'required',
+// 			value: true,
+// 			errorMessage: 'Телефон обязателен',
+// 		},
+// 		{
+// 			rule: 'function',
+// 			validator: function () {
+// 				const phone = tripTelSelector.inputmask.unmaskedvalue();
+// 				return phone.length === 10;
+// 			},
+// 			errorMessage: 'Введите корректный телефон',
+// 		},
+// 	])
+// 	.onSuccess((event) => {
+// 		console.log('Validation passes and form submitted', event);
+
+// 		let infoFormData = new FormData(event.target);
 		
 
-		let xhr = new XMLHttpRequest();
+// 		let xhr = new XMLHttpRequest();
 
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState === 4) {
-				if (xhr.status === 200) {
-					console.log('Отправлено');
+// 		xhr.onreadystatechange = function () {
+// 			if (xhr.readyState === 4) {
+// 				if (xhr.status === 200) {
+// 					console.log('Отправлено');
 
-					$('.kit-info-banner').fadeOut(400)
-					$('.kit-info-banner').css({
-						'transform': 'translateX(-100%)',
-						'transition': 'all 0.5s ease-out',
-					})
+// 					$('.info-banner').fadeOut(400)
+// 					$('.info-banner').css({
+// 						'transform': 'translateX(-100%)',
+// 						'transition': 'all 0.5s ease-out',
+// 					})
 
-					$('.banner__mail').removeClass('hide');
-					$('.banner__mail').addClass('show');
+// 					$('.banner__mail').removeClass('hide');
+// 					$('.banner__mail').addClass('show');
 
-					setTimeout(() => {
-						$('.banner__mail').addClass('hide');
-					}, 3000);
-				}
-			}
-		}
+// 					setTimeout(() => {
+// 						$('.banner__mail').addClass('hide');
+// 					}, 3000);
+// 				}
+// 			}
+// 		}
 
-		xhr.open('POST', 'mail.php', true);
-		xhr.send(infoKitFormData);
+// 		xhr.open('POST', 'mail.php', true);
+// 		xhr.send(infoFormData);
 
-		event.target.reset();
-	});
+// 		event.target.reset();
+// 	});
+
+	
+// // --------KIT FORM ------------------
+// const kitForm = document.querySelector('.kit-form');
+// const kitTelSelector = kitForm.querySelector('.kit-input__tel');
+// const inputmaskKit = new Inputmask('+7 (999) 999-99-99');
+// inputmaskKit.mask(kitTelSelector);
+
+// const validationKitForm = new JustValidate('.kit-form');
+
+// validationKitForm
+// 	.addField('.kit-input__name', [
+// 		{
+// 			rule: 'minLength',
+// 			value: 3,
+// 			errorMessage: 'Введите более 3 символов'
+// 		},
+// 		{
+// 			rule: 'maxLength',
+// 			value: 30,
+// 			errorMessage: 'Введите менее 30 символов'
+// 		},
+// 		{
+// 			rule: 'required',
+// 			value: true,
+// 			errorMessage: 'Введите имя!'
+// 		}
+// 	])
+// 		.addField('.kit-input__tel', [
+// 			{
+// 				rule: 'required',
+// 				value: true,
+// 				errorMessage: 'Телефон обязателен',
+// 			},
+// 			{
+// 				rule: 'function',
+// 				validator: function () {
+// 					const phone = kitTelSelector.inputmask.unmaskedvalue();
+// 					return phone.length === 10;
+// 				},
+// 				errorMessage: 'Введите корректный телефон',
+// 			},
+// 		])
+// 	.onSuccess((event) => {
+// 		console.log('Validation passes and form submitted', event);
+
+// 		let infoKitFormData = new FormData(event.target);
+		
+
+// 		let xhr = new XMLHttpRequest();
+
+// 		xhr.onreadystatechange = function () {
+// 			if (xhr.readyState === 4) {
+// 				if (xhr.status === 200) {
+// 					console.log('Отправлено');
+
+// 					$('.kit-info-banner').fadeOut(400)
+// 					$('.kit-info-banner').css({
+// 						'transform': 'translateX(-100%)',
+// 						'transition': 'all 0.5s ease-out',
+// 					})
+
+// 					$('.banner__mail').removeClass('hide');
+// 					$('.banner__mail').addClass('show');
+
+// 					setTimeout(() => {
+// 						$('.banner__mail').addClass('hide');
+// 					}, 3000);
+// 				}
+// 			}
+// 		}
+
+// 		xhr.open('POST', 'mail.php', true);
+// 		xhr.send(infoKitFormData);
+
+// 		event.target.reset();
+// 	});
 
 
 

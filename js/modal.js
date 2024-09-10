@@ -245,91 +245,159 @@ $('.commer-btn').click(function(){
 
 
 
-
-
-
-
 // CHECK
-  // Получаем элементы чекбокса и кнопки
-	const checkbox = document.getElementById('modal__check');
-	const button = document.getElementById('btn');
+// Получаем элементы чекбокса и кнопки
+const checkbox = document.getElementById('modal__check');
+const button = document.getElementById('btn');
+const checkboxButtonBig = document.getElementById('big__check-btn');
+const buttonBannerBig = document.getElementById('btn-big-form');
+// info-banner
+const checkboxButton = document.getElementById('modal__check-btn');
+const buttonBanner = document.getElementById('btn-banner');
+
+// kit-info-banner
+const checkboxButtonKit = document.getElementById('kit__check-btn');
+const buttonBannerKit = document.getElementById('btn-kit-banner');
+
+const checkboxButtonKitTehno = document.getElementById('kit__check-btn-tehno');
+const buttonBannerKitTehno = document.getElementById('btn-kit-banner-tehno');
+
+// Функция для обновления состояния кнопки
+function updateButtonState() {
+    if (checkbox && checkbox.checked) {
+        button.classList.remove('disabled'); // Убираем класс 'disabled'
+        button.disabled = false; // Разблокируем кнопку
+    } else if (button) {
+        button.classList.add('disabled'); // Добавляем класс 'disabled'
+        button.disabled = true; // Блокируем кнопку
+    }
+
+    if (checkboxButton && checkboxButton.checked) {
+        buttonBanner.classList.remove('disabled'); // Убираем класс 'disabled'
+        buttonBanner.disabled = false; // Разблокируем кнопку
+    } else if (buttonBanner) {
+        buttonBanner.classList.add('disabled'); // Добавляем класс 'disabled'
+        buttonBanner.disabled = true; // Блокируем кнопку
+    }
+
+    if (checkboxButtonBig && checkboxButtonBig.checked) {
+        buttonBannerBig.classList.remove('disabled'); // Убираем класс 'disabled'
+        buttonBannerBig.disabled = false; // Разблокируем кнопку
+    } else if (buttonBannerBig) {
+        buttonBannerBig.classList.add('disabled'); // Добавляем класс 'disabled'
+        buttonBannerBig.disabled = true; // Блокируем кнопку
+    }
+
+    if (checkboxButtonKit && checkboxButtonKit.checked) {
+        buttonBannerKit.classList.remove('disabled'); // Убираем класс 'disabled'
+        buttonBannerKit.disabled = false; // Разблокируем кнопку
+    } else if (buttonBannerKit) {
+        buttonBannerKit.classList.add('disabled'); // Добавляем класс 'disabled'
+        buttonBannerKit.disabled = true; // Блокируем кнопку
+    }
+
+    if (checkboxButtonKitTehno && checkboxButtonKitTehno.checked) {
+        buttonBannerKitTehno.classList.remove('disabled'); // Убираем класс 'disabled'
+        buttonBannerKitTehno.disabled = false; // Разблокируем кнопку
+    } else if (buttonBannerKitTehno) {
+        buttonBannerKitTehno.classList.add('disabled'); // Добавляем класс 'disabled'
+        buttonBannerKitTehno.disabled = true; // Блокируем кнопку
+    }
+}
+
+// Устанавливаем начальное состояние кнопки, если есть хотя бы один элемент чекбокса и кнопки
+if (checkbox || checkboxButton || checkboxButtonBig || checkboxButtonKit || checkboxButtonKitTehno) {
+    updateButtonState();
+
+    // Добавляем обработчик события на чекбокс для изменения состояния кнопки
+    if (checkbox) checkbox.addEventListener('change', updateButtonState);
+    if (checkboxButton) checkboxButton.addEventListener('change', updateButtonState);
+    if (checkboxButtonBig) checkboxButtonBig.addEventListener('change', updateButtonState);
+    if (checkboxButtonKit) checkboxButtonKit.addEventListener('change', updateButtonState);
+    if (checkboxButtonKitTehno) checkboxButtonKitTehno.addEventListener('change', updateButtonState);
+}
 
 
-	const checkboxButton = document.getElementById('modal__check-btn');
-	const buttonBanner = document.getElementById('btn-banner');
-
-	const checkboxButtonBig = document.getElementById('big__check-btn');
-	const buttonBannerBig = document.getElementById('btn-big-form');
-
-	const checkboxButtonKit = document.getElementById('kit__check-btn');
-	const buttonBannerKit = document.getElementById('btn-kit-banner');
-
-	const checkboxButtonKitTehno = document.getElementById('kit__check-btn-tehno');
-	const buttonBannerKitTehno = document.getElementById('btn-kit-banner-tehno');
 
 
-	// Функция для обновления состояния кнопки
-	function updateButtonState() {
+// // CHECK
+//   // Получаем элементы чекбокса и кнопки
+// 	const checkbox = document.getElementById('modal__check');
+// 	const button = document.getElementById('btn');
+// 	const checkboxButtonBig = document.getElementById('big__check-btn');
+// 	const buttonBannerBig = document.getElementById('btn-big-form');
+// 	// info-banner
+// 	const checkboxButton = document.getElementById('modal__check-btn');
+// 	const buttonBanner = document.getElementById('btn-banner');
+
+// 	// kit-info-banner
+// 	const checkboxButtonKit = document.getElementById('kit__check-btn');
+// 	const buttonBannerKit = document.getElementById('btn-kit-banner');
+
+// 	const checkboxButtonKitTehno = document.getElementById('kit__check-btn-tehno');
+// 	const buttonBannerKitTehno = document.getElementById('btn-kit-banner-tehno');
+
+
+
+
+
+// 	// Функция для обновления состояния кнопки
+// 	function updateButtonState() {
 	
-				if (checkbox.checked) {
-						button.classList.remove('disabled'); // Убираем класс 'disabled'
-						button.disabled = false; // Разблокируем кнопку
-				} else {
-						button.classList.add('disabled'); // Добавляем класс 'disabled'
-						button.disabled = true; // Блокируем кнопку
-				}
+// 				if (checkbox.checked) {
+// 						button.classList.remove('disabled'); // Убираем класс 'disabled'
+// 						button.disabled = false; // Разблокируем кнопку
+// 				} else {
+// 						button.classList.add('disabled'); // Добавляем класс 'disabled'
+// 						button.disabled = true; // Блокируем кнопку
+// 				}
+	
+// 			if (checkboxButton.checked) {
+// 					buttonBanner.classList.remove('disabled'); // Убираем класс 'disabled'
+// 					buttonBanner.disabled = false; // Разблокируем кнопку
+// 			} else {
+// 					buttonBanner.classList.add('disabled'); // Добавляем класс 'disabled'
+// 					buttonBanner.disabled = true; // Блокируем кнопку
+// 			}
+		
 
-			if (checkboxButton.checked) {
-					buttonBanner.classList.remove('disabled'); // Убираем класс 'disabled'
-					buttonBanner.disabled = false; // Разблокируем кнопку
-			} else {
-					buttonBanner.classList.add('disabled'); // Добавляем класс 'disabled'
-					buttonBanner.disabled = true; // Блокируем кнопку
-			}
+// 			if (checkboxButtonBig.checked) {
+// 					buttonBannerBig.classList.remove('disabled'); // Убираем класс 'disabled'
+// 					buttonBannerBig.disabled = false; // Разблокируем кнопку
+// 			} else {
+// 					buttonBannerBig.classList.add('disabled'); // Добавляем класс 'disabled'
+// 					buttonBannerBig.disabled = true; // Блокируем кнопку
+// 			}
 
-			if (checkboxButtonBig.checked) {
-					buttonBannerBig.classList.remove('disabled'); // Убираем класс 'disabled'
-					buttonBannerBig.disabled = false; // Разблокируем кнопку
-			} else {
-					buttonBannerBig.classList.add('disabled'); // Добавляем класс 'disabled'
-					buttonBannerBig.disabled = true; // Блокируем кнопку
-			}
-
-			if (checkboxButtonKit.checked) {
-				buttonBannerKit.classList.remove('disabled'); // Убираем класс 'disabled'
-				buttonBannerKit.disabled = false; // Разблокируем кнопку
-			} else {
-					buttonBannerKit.classList.add('disabled'); // Добавляем класс 'disabled'
-					buttonBannerKit.disabled = true; // Блокируем кнопку
-			}
-
-
-
-			if (window.location.pathname === '/технология') {
-					if (checkboxButtonKitTehno.checked) {
-							buttonBannerKitTehno.classList.remove('disabled'); // Убираем класс 'disabled'
-							buttonBannerKitTehno.disabled = false; // Разблокируем кнопку
-					} else {
-							buttonBannerKitTehno.classList.add('disabled'); // Добавляем класс 'disabled'
-							buttonBannerKitTehno.disabled = true; // Блокируем кнопку
-					}
-		}
-
-
-	}
+// 			if (checkboxButtonKit.checked) {
+// 				buttonBannerKit.classList.remove('disabled'); // Убираем класс 'disabled'
+// 				buttonBannerKit.disabled = false; // Разблокируем кнопку
+// 			} else {
+// 					buttonBannerKit.classList.add('disabled'); // Добавляем класс 'disabled'
+// 					buttonBannerKit.disabled = true; // Блокируем кнопку
+// 			}
+	
+// 			if (checkboxButtonKitTehno.checked) {
+// 					buttonBannerKitTehno.classList.remove('disabled'); // Убираем класс 'disabled'
+// 					buttonBannerKitTehno.disabled = false; // Разблокируем кнопку
+// 			} else {
+// 					buttonBannerKitTehno.classList.add('disabled'); // Добавляем класс 'disabled'
+// 					buttonBannerKitTehno.disabled = true; // Блокируем кнопку
+// 			}
+// 	}
 
 
 
-		// Устанавливаем начальное состояние кнопки
-		updateButtonState();
+// 		// Устанавливаем начальное состояние кнопки
+// 		updateButtonState();
 
 
-		// Добавляем обработчик события на чекбокс для изменения состояния кнопки
-		checkbox.addEventListener('change', updateButtonState);
-		checkboxButton.addEventListener('change', updateButtonState);
-		checkboxButtonBig.addEventListener('change', updateButtonState);
-		checkboxButtonKit.addEventListener('change', updateButtonState);
-		checkboxButtonKitTehno.addEventListener('change', updateButtonState);
+// 		// Добавляем обработчик события на чекбокс для изменения состояния кнопки
+// 		checkbox.addEventListener('change', updateButtonState);
+// 		checkboxButton.addEventListener('change', updateButtonState);
+// 		checkboxButtonBig.addEventListener('change', updateButtonState);
+// 		checkboxButtonKit.addEventListener('change', updateButtonState);
+// 		checkboxButtonKitTehno.addEventListener('change', updateButtonState);
 
 
 
