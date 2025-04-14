@@ -322,14 +322,14 @@
 						});
 				}
 		});
-		$(document).ready(function() {
-				// Проверяем, есть ли элемент с классом sh__item на странице
-				if ($('.sh__item').length) {
-						$('.item-proj').on('click', function() {
-								window.location.href = '/инженерия';
-						});
-				}
-		});
+		// $(document).ready(function() {
+		// 		// Проверяем, есть ли элемент с классом sh__item на странице
+		// 		if ($('.sh__item').length) {
+		// 				$('.item-proj').on('click', function() {
+		// 						window.location.href = '/инженерия';
+		// 				});
+		// 		}
+		// });
 		$(document).ready(function() {
 			// Проверяем, есть ли элемент с классом sh__item на странице
 			if ($('.sh__item').length) {
