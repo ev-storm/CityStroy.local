@@ -354,7 +354,7 @@
 		
 	<!-- VIDEO -->
 	<div class="video_con">
-		<h1 class="video-title">О дизайне ресторанов, кафе, баров и кальянных</h1>
+		<h1 class="video-title">Видеоблог с лицами компании</h1>
 		<h2 class="video-title_2"><span>Дизайнер</span>Дина Дмитриева</h2>
 		<div class="video-block">
 			<div class="video_b">

@@ -34,6 +34,7 @@
 				<h1>Экскурсия </h1>
 				<h3>на построенные объекты</h3>
 				<h2>Мы открыты на 100% и приглашаем посетить заведения, которые были спроектированы и построены нами.</h2>
+				
 				<form class="trip-form" action="#" method="POST" enctype="multipart/form-data">
 
 					<input class="modal__input trip-input__name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя" >

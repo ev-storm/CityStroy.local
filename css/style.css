@@ -45,7 +45,7 @@ a{
 
 
 :root {
-  	--main-blue: #1e9dd8;
+  --main-blue: #1e9dd8;
 	--dark-blue: rgba(0,84,124,1) 69%;
 	--grad-blue: linear-gradient(119deg, rgba(30,157,216,1) 0%, rgba(0,84,124,1) 69%);
 	--main-black: #161616;
@@ -157,12 +157,13 @@ a{
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
-	padding: 15vw 5vw 0 5vw;
+	padding: 15vw 2vw 0 2vw;
 	width: 70vw;
 	z-index: 10;
 	align-items: center;
 } 
 .menu__main__item{
+	text-align: center;
 	display: flex;
 	margin: 0;
 	padding: 0;
@@ -170,18 +171,16 @@ a{
 	font-family: Gilroy;
 	font-size: clamp(5px, 0.8vw, 25px);
 	color: #ffffff;
-	font-weight: 100;
+	font-weight: 200;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	transition: var(--duration2);
-	transition-duration: var(--duration2);
-	&:hover{
-		color: #28bbff;
-		font-weight: 200;
-		transition: var(--duration2);
-		transition-duration: var(--duration2);
-	}
+	transition: all 0.2s ease;
+}
+.menu__main__item:hover{
+	color: #28bbff;
+	font-weight: 200;
+	transition: all 0.2s ease;
 }
  
 .menu__activ{
@@ -202,6 +201,7 @@ a{
 	width: 1.5vw;
 	margin-right: 2vw;
 	cursor: pointer;
+	height: fit-content;
 }
 .button-menu{
 	font-size: clamp(5px, 0.8vw, 25px);
@@ -837,15 +837,25 @@ li {
 	margin: 1vw 2vw;
 	border-radius: 2vw;
 } */
+.you-btn-video > path{
+	cursor: pointer;
+}
 
 .svgYou:hover{
 	margin-left: 1vw;
 	scale: 1.2;
 	transition: var(--duration2);
 }
+.you-btn-video:hover{
+	margin: 0vw !important;
+	scale: 1.2;
+	transition: var(--duration2);
+	cursor: pointer;
+}
 .svgYou > path{
 	fill: #ffffff;
 	transition: var(--duration2);
+	cursor: pointer;
 }
 .svgYou:hover > path{
 	fill: #ff4343;
@@ -1018,6 +1028,20 @@ li {
 #v10{
 	background-image: url('/assets/video/cover/2_vdnh.jpg');
 }
+
+#v11{
+	background-image: url('/assets/video/cover/t1.jpg');
+}
+#v12{
+	background-image: url('/assets/video/cover/t2.jpg');
+}
+#v13{
+	background-image: url('/assets/video/cover/t3.jpg');
+}
+#v14{
+	background-image: url('/assets/video/cover/t4.jpg');
+}
+
 
 /* MAP */
 .map{

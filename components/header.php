@@ -17,9 +17,9 @@
 
 		<ul  class="menu__main">
 				<li><a class="menu__main__item" href="../главная">Главная</a></li>
-				<li><a class="menu__main__item" href="/технология">Технология</a></li>
+				<li><a class="menu__main__item" href="/технология">Проектироваение<br>технологии</a></li>
 				<li><a class="menu__main__item" href="/дизайн">Дизайн</a></li>
-				<li><a class="menu__main__item" href="/инженерия">Инженерия</a></li>
+				<li><a class="menu__main__item inj-m" href="/инженерия">Инженерное<br>проектироваение</a></li>
 				<li><a class="menu__main__item" href="/СМР">Ремонт и СМР</a></li>
 				<li><a class="menu__main__item" href="/портфолио">Портфолио</a></li>
 				<li><a class="menu__main__item" href="/контакты">Контакты</a></li>
